@@ -1,0 +1,56 @@
+{
+  "schema": "stateful-workflow-selection-protocol-v1",
+  "registered_at_utc": "2026-11-11T02:44:57.499833+00:00",
+  "script_sha256": "eadcea61b1849f783b3dd3976c01a4e0706e377a2e7a2e2dd3bc5fe5c341edc8",
+  "input_selections": {
+    "new30": {
+      "path": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+      "sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c"
+    },
+    "foundational20": {
+      "path": "work/expanded-validation-20261111/foundational-installs/selection.json",
+      "sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364"
+    },
+    "published20": {
+      "path": "work/fp-fixes-20261110/expanded/published/selection.json",
+      "sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0"
+    }
+  },
+  "cohort": "Union of new30 verified22, foundational20 importance+correspondence verified19, priorpublished20 verified12. Deduplicate canonical_name plus exact PEP440-equivalent fixed pin; preserve every repository/candidate-slot provenance. No latest refresh or substitution. Unmapped16 repository slots and excluded foundational build remain explicit coverage.",
+  "target": "For roots in foundational19 preserve that layer prior registered311-or314 runtime. Others first available compatible fixed native target in311.16,312.14,314.4,310.21 order. Full marker environments and native wheel tags captured before workflow selection. Current release must permit target; otherwise retain unsupported.",
+  "update_predecessor": "Use only the already frozen full-project PyPI JSON releases catalogue. Same epoch and first2 zero-padded release components (major.minor), greatest PEP440 version strictly below frozen current pin, stable (not prerelease/dev), not fully yanked, with at least one unyanked target-native-compatible wheel whose file Requires-Python allows this same native target. No cross-minor fallback. Calendar/single-component versions without a predecessor in this line remain unsupported. Capture exact selected predecessor /pypi/name/version/json only after these rules freeze.",
+  "update_compatibility": "Predecessor version-specific Requires-Python must allow same registered native target; frozen catalogue compatible wheel must remain present with matching URL/SHA in exact-version JSON. Failure is unsupported evidence; do not replace with another result-selected predecessor.",
+  "extras": "Use published Provides-Extra from frozen current PyPI info.provides_extra. Normalize with canonicalize_name. Exclude names with hyphen-separated tokens in fixed excluded set. Sort remaining normalized extras lexicographically; choose first with >=1 additional marker-active direct requirement identity on full registered native environment versus base. Requirement identity=(canonical name, extras, specifier, URL); omit marker after evaluating it. Empty/inactive extras are skipped with explicit reason. No resolver result influences extra choice.",
+  "excluded_extra_tokens": [
+    "bench",
+    "benchmark",
+    "benchmarks",
+    "build",
+    "check",
+    "checks",
+    "ci",
+    "coverage",
+    "dev",
+    "develop",
+    "development",
+    "doc",
+    "docs",
+    "documentation",
+    "format",
+    "formatting",
+    "lint",
+    "linting",
+    "release",
+    "test",
+    "testing",
+    "tests",
+    "typecheck",
+    "typechecking",
+    "typing"
+  ],
+  "extras_workflow": "Base→one selected published runtime extra→base under exact same package pin; record actual existing state. Extra removal residual packages under ordinary pip install are not automatically defects; strict sync semantics must be distinguished.",
+  "relock": "Exact fixed current main pin, declared target, original source policy and complete selected request. Resolver operation/upgrade flags explicit; no requirement weakening or hidden synthesis reported as the official repository install path.",
+  "source_switch": "Separate source agent accepts only inspectable official project instructions and actual alternate artifact/index/source binding for this frozen public release. Exact local versions are distinct and must be recorded; no modified metadata/repacked wheels/local synthetic registry counts as real project impact. Absence of supported official alternate preserved.",
+  "measurement": "Selection only; installer agents separately freeze executable/runtimes/budget/cache/isolation protocols. Native artifact support and all heavy closure/timeouts remain coverage; never silently trim requested extras or dependencies.",
+  "admission": "Differences in valid versions, stale optional packages, minimum-change behavior and planned candidate sets are not automatically bugs. Check actual installed own METADATA active closures/root+extras/source contracts; preserve unknowns. No precision/recall without truth labels."
+}

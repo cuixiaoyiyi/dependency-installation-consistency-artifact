@@ -1,0 +1,55 @@
+{
+  "status": "one_completed_real_torch_source_transition_no_installed_contract_violation",
+  "rows": [
+    {
+      "stage": "02-cpu-install",
+      "source": "cpu",
+      "installed_count": 10,
+      "root_version": "2.15.0+cpu",
+      "official_metadata_matches": true,
+      "root_closure": {
+        "active_roots": 1,
+        "reachable_nodes": 10,
+        "active_edges": 9,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "all_installed_base_closure": {
+        "active_roots": 11,
+        "reachable_nodes": 10,
+        "active_edges": 9,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "inventory_sha256": "27da5617c247c5aacb868b7151a4f02fe08b256e30a1dc4791bc937216dae001"
+    },
+    {
+      "stage": "04-warm-pypi-sync",
+      "source": "pypi",
+      "installed_count": 29,
+      "root_version": "2.15.0",
+      "official_metadata_matches": true,
+      "root_closure": {
+        "active_roots": 1,
+        "reachable_nodes": 29,
+        "active_edges": 41,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "all_installed_base_closure": {
+        "active_roots": 30,
+        "reachable_nodes": 29,
+        "active_edges": 41,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "inventory_sha256": "eaf79366d57f3b1e0926f6078ca3098e6397ed0f7b2721ba9c4e010b4d9da594"
+    }
+  ],
+  "source_result_sha256": "53579915ea20644ea349937bf8049cd80d46584a22529d1397b0342ec9e72f96",
+  "protocol_sha256": "51fdc913d8687c6c5d2bcb1976b1375fcb70cd4d81829356c3792ce3941e97fb",
+  "reproduction_controls": "Skipped under the negative rule registered before this root ran. No fresh/reinstall equivalence is claimed.",
+  "scope": "Full unmodified official CPU and PyPI artifact dependencies were actually installed; independent installed metadata/checker/source identity review only, no GPU inference or independent whole-payload hashing in this gate.",
+  "confirmed_new_defects": 0,
+  "script_sha256": "5091eec39c7541b5b39ff619da9348c74eca9576ebb1dad72476c7066615953c"
+}

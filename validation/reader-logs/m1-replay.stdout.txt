@@ -1,0 +1,32 @@
+{"step": "01-initial-lock", "exit": 0, "installed": [], "violations": null, "pip_check_exit": null, "uv_check_exit": null}
+{"step": "02-initial-sync", "exit": 0, "installed": [["old-dep", "dependency-old"], ["warm-closure-probe", "old"]], "violations": [], "pip_check_exit": 0, "uv_check_exit": 0}
+{"step": "03-relock-new-source", "exit": 0, "installed": [["old-dep", "dependency-old"], ["warm-closure-probe", "old"]], "violations": [], "pip_check_exit": 0, "uv_check_exit": 0}
+{"step": "04-warm-sync", "exit": 0, "installed": [["new-dep", "dependency-new"], ["warm-closure-probe", "old"]], "violations": [{"parent": "warm-closure-probe", "requirement": "old-dep==1.0", "actual_version": null}], "pip_check_exit": 1, "uv_check_exit": 1}
+{"step": "05-fresh-sync", "exit": 0, "installed": [["new-dep", "dependency-new"], ["warm-closure-probe", "new"]], "violations": [], "pip_check_exit": 0, "uv_check_exit": 0}
+{"step": "06-reinstall-probe", "exit": 0, "installed": [["new-dep", "dependency-new"], ["warm-closure-probe", "new"]], "violations": [], "pip_check_exit": 0, "uv_check_exit": 0}
+{
+  "output": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1",
+  "tool": "uv 0.13.7 (x86_64-unknown-linux-gnu)",
+  "reproduced_closure_violation": true,
+  "checks": {
+    "initial_old_probe_old_dep_consistent": true,
+    "relock_leaves_old_environment_consistent": true,
+    "new_lock_selects_new_probe_hash_registry_and_dep": true,
+    "warm_fresh_reinstall_identical_manifest": true,
+    "warm_fresh_reinstall_identical_lock": true,
+    "warm_keeps_exact_old_probe_metadata": true,
+    "warm_removes_old_dep_installs_new_dep": true,
+    "warm_both_checkers_fail": true,
+    "warm_independent_missing_old_dep": true,
+    "fresh_new_probe_new_dep_consistent": true,
+    "reinstall_new_probe_new_dep_consistent": true,
+    "all_installed_record_hashes_match": true,
+    "same_full_target_environment": true,
+    "initial_probe_http_full_bytes_sha": true,
+    "initial_dep_http_full_bytes_sha": true,
+    "warm_new_dep_http_full_bytes_sha": true,
+    "fresh_probe_http_full_bytes_sha": true,
+    "fresh_dep_http_full_bytes_sha": true,
+    "reinstall_probe_http_full_bytes_sha": true
+  }
+}

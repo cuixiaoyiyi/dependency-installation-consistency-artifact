@@ -1,0 +1,51 @@
+{
+ "id": "ip--github-workflows-ci-fast-yml-fast-unit-tests-3-2|uv|declared",
+ "resolver": "uv",
+ "requirements": [
+  "pytest-cov"
+ ],
+ "index_url": "https://pypi.org/simple",
+ "extra_index_urls": [
+  "https://download.pytorch.org/whl/cpu"
+ ],
+ "find_links": [],
+ "no_index": false,
+ "pre": false,
+ "index_strategy": "first-index",
+ "sources": {
+  "torch": "pytorch-cu128",
+  "torchvision": "pytorch-cu128",
+  "torchaudio": "pytorch-cu128",
+  "numpy": "pypi"
+ },
+ "named_indexes": [
+  {
+   "name": "pytorch-cu128",
+   "url": "https://download.pytorch.org/whl/cu128",
+   "explicit": true,
+   "default": false
+  },
+  {
+   "name": "pytorch-cpu",
+   "url": "https://download.pytorch.org/whl/cpu",
+   "explicit": true,
+   "default": false
+  },
+  {
+   "name": "pypi",
+   "url": "https://pypi.org/simple",
+   "explicit": false,
+   "default": false
+  }
+ ],
+ "constraints": [],
+ "platform": "linux-x86_64",
+ "python_version": "3.11",
+ "derived_from": "declared",
+ "factors": {
+  "resolver": "uv",
+  "indexes": "declared",
+  "sources": "on"
+ },
+ "description": "uv with the project's declared index configuration and tool.uv.sources"
+}

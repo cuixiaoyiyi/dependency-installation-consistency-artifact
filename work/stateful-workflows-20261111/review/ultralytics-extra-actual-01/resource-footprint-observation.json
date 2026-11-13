@@ -1,0 +1,23 @@
+{
+  "schema": "ultralytics-completed-run-resource-observation-v1",
+  "observed_at_utc": "2026-11-11T06:44:47.285443+00:00",
+  "source": "Native read-only du tool session29742 completed with exit0 after the actual driver session92767 completed all8 states.",
+  "command": [
+    "du",
+    "-s",
+    "-B1",
+    "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01"
+  ],
+  "stdout": "8012124160\twork/stateful-workflows-20261111/review/ultralytics-extra-actual-01\n",
+  "allocated_final_bytes": 8012124160,
+  "registered_compressed_max_each_state_bytes": 17179869184,
+  "observed_max_state_compressed_bytes": 509176390,
+  "sixty_gib_bytes": 64424509440,
+  "final_allocated_under_60_gib": true,
+  "scope": "Primary run directory only: complete original archives, both caches, three actual environments and raw evidence. Independent second-run environment lives separately.",
+  "limits": [
+    "This is final allocated space, not a continuous peak meter.",
+    "The original frozen driver registered a minimum-free60GiB preflight rather than continuous disk-ceiling enforcement; this observation does not rewrite that protocol.",
+    "No new installation or original evidence mutation occurred."
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "schema": "foundational-stateful-coverage-review-v1",
+  "recorded_at_utc": "2026-11-11T06:29:51.445372+00:00",
+  "counts": {
+    "eligible_roots": 19,
+    "logical_root_workflow_slots": 57,
+    "effective_status": {
+      "completed_actual_stateful_workflow": 48,
+      "unsupported_no_eligible_runtime_extra": 7,
+      "actual_operation_chain_completed_with_additional_readonly_validation": 1,
+      "unsupported_selected_extra_tooling_semantics": 1
+    },
+    "completed_chains": 49,
+    "completed_by_evidence_class": {
+      "original_actual_chain": 24,
+      "method_repair_same_complete_official_world": 21,
+      "preparation_continuation_same_requests_new_snapshot": 3,
+      "original_actual_chain_plus_additional_readonly_validation": 1
+    },
+    "completed_by_workflow": {
+      "update": 19,
+      "extras": 11,
+      "relock": 19
+    },
+    "nondegenerate_update_both_installers": 19,
+    "extras_added_distributions": 31,
+    "extras_removed_distributions": 31,
+    "extras_actual_name_version_delta": 11,
+    "relock_actual_name_version_delta": 1,
+    "relock_no_name_version_delta": 18,
+    "candidate_workflows": 0,
+    "saved_metadata_stage_candidates": 0,
+    "saved_metadata_stage_unknowns": 0,
+    "confirmed_new_defects": 0
+  },
+  "all57_slots_unique": true,
+  "all19_roots_retained": true,
+  "build_excluded_slot_preserved": [
+    {
+      "category": "packaging",
+      "canonical_name": "build",
+      "registered_repo": "pypa/build",
+      "status": "registered",
+      "version": "1.6.1",
+      "request": "build==1.6.1",
+      "requires_python": ">=3.10",
+      "official_repository": "pypa/build",
+      "importance_verified": false,
+      "correspondence_verified": true,
+      "stars": 863,
+      "pushed_at": "2026-11-10T16:49:57Z",
+      "pypi_json": "work\\expanded-validation-20261111\\foundational-installs\\sources\\build.json",
+      "pypi_sha256": "1f23d3112e2d03277e2cdc3902b216387b30fea87b01f1b2d16877d785feeb44",
+      "github_json": "work\\expanded-validation-20261111\\foundational-installs\\sources\\build-github.json",
+      "github_sha256": "a2fa0381b4d267bb9cda43b770c9176cefedda02a359ba4b756db4f5013222e6"
+    }
+  ],
+  "layered_counting": "49 completed logical chains=24 original+1 original NumPy chain with independent additional read-only final validation+21 exact-world method continuations+3 Django preparation continuations. Old900s unknown outcomes, explicit interruption and unused registrations stay preserved; no chain counted twice.",
+  "saved_metadata_review": {
+    "saved_inventories": 203,
+    "unaggregated": 12,
+    "status": {
+      "saved_metadata_current_request_and_strict_contract_satisfied": 160,
+      "pip_incremental_current_request_satisfied_observation": 43
+    },
+    "historical_stages_missing_payload_audit": 3,
+    "stages_with_explicit_data_path_unknowns": 16
+  },
+  "strict_lock_source_review": {
+    "original_complete_saved_prefixes_verified": 84,
+    "continuation_complete_saved_stages_verified": 74,
+    "numpy_final_readonly_certificate": 1,
+    "verified_saved_strict_observations_total": 159,
+    "effective_completed_chains_strict_stage_count": 158,
+    "additional_original_partial_chain_prefix": 1,
+    "qualification": "159 observations include the original interrupted Boto3 extra-chain base prefix. They are not159 logical workflows. The 158 strict stages belonging to49 effective completed chains are covered, including NumPy final by separate RO proof. Original Boto3 extra stage lacking historical payload proof remains a metadata-only partial observation."
+  },
+  "historical_missing_saved_payload_audits": [
+    {
+      "source": "work/stateful-workflows-20261111/foundational",
+      "root": "boto3",
+      "workflow": "extras",
+      "stage": "uv-extra"
+    },
+    {
+      "source": "work/stateful-workflows-20261111/foundational",
+      "root": "django",
+      "workflow": "update",
+      "stage": "pip-old"
+    },
+    {
+      "source": "work/stateful-workflows-20261111/foundational",
+      "root": "numpy",
+      "workflow": "update",
+      "stage": "uv-fresh-final-lock"
+    }
+  ],
+  "numpy_missing_original_final_payload_resolved_only_by_separate_ro_proof": true,
+  "unresolved_original_partial_payload_stages": [
+    {
+      "source": "work/stateful-workflows-20261111/foundational",
+      "root": "boto3",
+      "workflow": "extras",
+      "stage": "uv-extra"
+    },
+    {
+      "source": "work/stateful-workflows-20261111/foundational",
+      "root": "django",
+      "workflow": "update",
+      "stage": "pip-old"
+    }
+  ],
+  "data_path_boundary": {
+    "distinct_original_wheel_data_entries": [
+      [
+        "boto3",
+        "jmespath",
+        "jmespath-1.1.0.data/scripts/jp.py"
+      ],
+      [
+        "sqlalchemy",
+        "greenlet",
+        "greenlet-3.5.6.data/headers/greenlet.h"
+      ]
+    ],
+    "stage_audit_occurrences": 16,
+    "installed_RECORD_hashes_checked": true,
+    "original_data_bytes_compared": false,
+    "qualification": "Retain original .data path-transform unknowns. Regular original payload plus actual RECORD were checked; these two distinct transformed entries are not silently certified by original-byte equality."
+  },
+  "actual_relock_change": {
+    "root": "aiohttp",
+    "dependency": "multidict",
+    "before": "6.9.1",
+    "after": "7.2.1",
+    "other18_relocks_have_no_installed_name_version_delta": true
+  },
+  "core29_all_unchanged": true,
+  "core29_count": 29,
+  "core_tests_rerun_this_phase": false,
+  "new_upstream_issues_written_or_submitted": 0,
+  "references": {
+    "ledger": {
+      "path": "work/stateful-workflows-20261111/foundational-effective/effective-ledger.json",
+      "sha256": "9780f1c64fcaf92acf8435a0710d42c6642770bb60e0e157816a781717e98367"
+    },
+    "actual_deltas": {
+      "path": "work/stateful-workflows-20261111/foundational-effective/actual-deltas.md",
+      "sha256": "d1c14c47d6d3919423f36d62ccde041a34e4c7e9c330d995602e729192364bcf"
+    },
+    "original_protocol": {
+      "path": "work/stateful-workflows-20261111/foundational/protocol.json",
+      "sha256": "f85387d3c8a549946e598f88ebc44606fad0ae1356962b302e142913e84c0282"
+    },
+    "controlled_interruption": {
+      "path": "work/stateful-workflows-20261111/review/foundational-original-interruption.json",
+      "sha256": "d08f9e3854cc26c2b8cf87036a3335adb8f7d69de1c0f285c4f9c561f8169e0a"
+    },
+    "continuation_protocol": {
+      "path": "work/stateful-workflows-20261111/foundational-continuation1/protocol.json",
+      "sha256": "6df3828d3f4f7c1b89531f88e524a230f802378ff17b6c8d4ffcfca730abc611"
+    },
+    "continuation_summary": {
+      "path": "work/stateful-workflows-20261111/foundational-continuation1/summary.json",
+      "sha256": "0e892efc5983fd3b1d3842a334deb8034e5557f87023cf2995137ef704bb1631"
+    },
+    "all_saved_states": {
+      "path": "work/stateful-workflows-20261111/review/foundational-final-saved-states.json",
+      "sha256": "231fddfbf6afa83f08761bd39c9c6f7dfcaf4650c204559e1d72f2b47b6155d4"
+    },
+    "original_strict_prefixes": {
+      "path": "work/stateful-workflows-20261111/foundational/target-lock-original-complete-prefixes.json",
+      "sha256": "bc50aa50563d880c44b8932661f038cee3323cebc7d97c00e75ae192260be694"
+    },
+    "continuation_strict_prefixes": {
+      "path": "work/stateful-workflows-20261111/foundational-continuation1/target-lock-complete-prefixes.json",
+      "sha256": "80430d362b364d2426f75ba273d83d0de21cd4c50fcd601c15faeea5f145c854"
+    },
+    "numpy_readonly_result": {
+      "path": "work/stateful-workflows-20261111/foundational-completed-operations-review/numpy/update/results.json",
+      "sha256": "212fc8a36b5688a397a7476359468172406bd79c0c0d911c59e765355d3d6791"
+    },
+    "django_classification_clarification": {
+      "path": "work/stateful-workflows-20261111/foundational-continuation1/classification-clarification.json",
+      "sha256": "ce026cc774744df4d698976250b1a912be20880b04ca21403137badb48273fbc"
+    }
+  },
+  "limits": [
+    "Each logical root/workflow occurs once. Original outcomes, additional read-only proof and actual continuation remain distinct.",
+    "No-change relock is a real command chain but provides no observed graph/version-change sensitivity.",
+    "Official native-wheel restricted worlds and controlled package-root manifests do not replay original repository commands or the complete public index.",
+    "Original .data payload comparisons and any partial historical verification remain bounded separately; installed RECORD evidence does not erase that boundary.",
+    "No precision, recall, prevalence, cross-platform or application-behavior claim follows from these negative controlled workflows."
+  ]
+}

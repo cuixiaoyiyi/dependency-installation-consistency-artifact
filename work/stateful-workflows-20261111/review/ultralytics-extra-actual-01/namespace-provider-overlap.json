@@ -1,0 +1,116 @@
+{
+  "schema": "original-opencv-provider-overlap-readonly-v1",
+  "observed_at_utc": "2026-11-11T05:18:44.968950+00:00",
+  "stage": "complete-extra-installed-before-extra-removal",
+  "root_metadata_inventory_sha256": "bb5609d2711e152264034aa20ef49e942ad3bc0d057e05c9012c82856718325e",
+  "normal": {
+    "name": "opencv-python",
+    "version": "5.0.0.93",
+    "url": "https://files.pythonhosted.org/packages/cf/4c/c73f828fdbcd37eaf21d08fa852544a3ca7c2dbb3ea76873d64f2ea413d1/opencv_python-5.0.0.93-cp37-abi3-manylinux_2_28_x86_64.whl",
+    "sha256": "c8de2dec111122a02e8beb28e16c31904992dfd6186560b142a92c71403c1039",
+    "metadata_sha256": "20749df4e7500c53075dee344cd02f63d4df0dce93526e49e7e1c90fbc094e3e"
+  },
+  "headless": {
+    "name": "opencv-python-headless",
+    "version": "5.0.0.93",
+    "url": "https://files.pythonhosted.org/packages/9b/21/f6ef335f6e65724aa78b8d792b48d40a48c381715f1e62f5a5049e09d07e/opencv_python_headless-5.0.0.93-cp37-abi3-manylinux_2_28_x86_64.whl",
+    "sha256": "ed709fdf9aa0bd1f2ed8549e71d19449b03a675bb581eb292285f6861953be37",
+    "metadata_sha256": "f8e9104b4dce58f708d4cc7af95ebd8a5d65a3e36209d42386eb61065ae50e1a"
+  },
+  "shared_original_payload_paths": [
+    "cv2/Error/__init__.pyi",
+    "cv2/LICENSE-3RD-PARTY.txt",
+    "cv2/LICENSE.txt",
+    "cv2/__init__.py",
+    "cv2/__init__.pyi",
+    "cv2/aruco/__init__.pyi",
+    "cv2/barcode/__init__.pyi",
+    "cv2/ccm/__init__.pyi",
+    "cv2/config-3.py",
+    "cv2/config.py",
+    "cv2/cuda/__init__.pyi",
+    "cv2/cv2.abi3.so",
+    "cv2/data/__init__.py",
+    "cv2/detail/__init__.pyi",
+    "cv2/dnn/__init__.pyi",
+    "cv2/fisheye/__init__.pyi",
+    "cv2/flann/__init__.pyi",
+    "cv2/instr/__init__.pyi",
+    "cv2/ipp/__init__.pyi",
+    "cv2/load_config_py2.py",
+    "cv2/load_config_py3.py",
+    "cv2/mat_wrapper/__init__.py",
+    "cv2/mcc/__init__.pyi",
+    "cv2/misc/__init__.py",
+    "cv2/misc/version.py",
+    "cv2/ocl/__init__.pyi",
+    "cv2/ogl/__init__.pyi",
+    "cv2/parallel/__init__.pyi",
+    "cv2/py.typed",
+    "cv2/samples/__init__.pyi",
+    "cv2/segmentation/__init__.pyi",
+    "cv2/typing/__init__.py",
+    "cv2/utils/__init__.py",
+    "cv2/utils/__init__.pyi",
+    "cv2/utils/fs/__init__.pyi",
+    "cv2/utils/logging/__init__.pyi",
+    "cv2/utils/nested/__init__.pyi",
+    "cv2/version.py",
+    "cv2/videoio_registry/__init__.pyi"
+  ],
+  "shared_path_count": 39,
+  "original_shared_paths_with_different_expected_bytes": [
+    "cv2/cv2.abi3.so",
+    "cv2/typing/__init__.py",
+    "cv2/version.py"
+  ],
+  "observed_divergent_paths": [
+    {
+      "path": "cv2/cv2.abi3.so",
+      "actual_sha256": "9e29605abcc31c9942d0e7dffc53b4ccaa601676c794327b0ea71a570a0c26c2",
+      "actual_bytes": 73874137,
+      "normal_expected": {
+        "sha256": "f7746177b49e0368c73142ab92d3d5a4a9ce989aecce7178d7e05c58679349c9",
+        "bytes": 74161369
+      },
+      "headless_expected": {
+        "sha256": "9e29605abcc31c9942d0e7dffc53b4ccaa601676c794327b0ea71a570a0c26c2",
+        "bytes": 73874137
+      },
+      "matches_normal": false,
+      "matches_headless": true
+    },
+    {
+      "path": "cv2/typing/__init__.py",
+      "actual_sha256": "68724d42b4f7c1ae5f23cdf846a6caf0ea53743ebe4a72fb8ec30b03153fd669",
+      "actual_bytes": 4306,
+      "normal_expected": {
+        "sha256": "2b3b300c0cb200e24779970429a7e9f447fbcc54e679bd60740d16549ecc63ef",
+        "bytes": 4306
+      },
+      "headless_expected": {
+        "sha256": "68724d42b4f7c1ae5f23cdf846a6caf0ea53743ebe4a72fb8ec30b03153fd669",
+        "bytes": 4306
+      },
+      "matches_normal": false,
+      "matches_headless": true
+    },
+    {
+      "path": "cv2/version.py",
+      "actual_sha256": "e718587212508acdcb296839c287c7fa346edb621005ffb199c26397592544ed",
+      "actual_bytes": 91,
+      "normal_expected": {
+        "sha256": "2ce40cb5304ebfc940682d2646a3f1f53d0a30a546e7cdf73eacb1511238a4d9",
+        "bytes": 92
+      },
+      "headless_expected": {
+        "sha256": "e718587212508acdcb296839c287c7fa346edb621005ffb199c26397592544ed",
+        "bytes": 91
+      },
+      "matches_normal": false,
+      "matches_headless": true
+    }
+  ],
+  "no_removal_operation_started_during_observation": true,
+  "conclusion": "Both original published distributions cannot simultaneously satisfy their own different bytes at the shared paths. This demonstrates provider conflict, not a new installer mechanism or a completed extra-removal failure."
+}

@@ -1,0 +1,27 @@
+{
+ "id": "ip--github-workflows-ci-yml-Benchmarks-3-1|uv|ip-github-workflows-ci-yml-Benchmarks-3-1",
+ "resolver": "uv",
+ "requirements": [
+  "coverage[toml]"
+ ],
+ "index_url": null,
+ "extra_index_urls": [
+  "https://download.pytorch.org/whl/cpu"
+ ],
+ "find_links": [],
+ "no_index": false,
+ "pre": false,
+ "index_strategy": "unsafe-first-match",
+ "sources": {},
+ "named_indexes": [],
+ "constraints": [],
+ "platform": "linux-x86_64",
+ "python_version": "3.11",
+ "derived_from": "install-path:.github/workflows/ci.yml::Benchmarks[3]#1",
+ "factors": {
+  "resolver": "uv",
+  "indexes": "install-path",
+  "path": ".github/workflows/ci.yml::Benchmarks[3]#1"
+ },
+ "description": "as installed by ci .github/workflows/ci.yml:114: uv pip install --system -e \".[export]\" \"coverage[toml]\" --extra-index-url https://download.pytorch.org/whl/cpu --index-s"
+}

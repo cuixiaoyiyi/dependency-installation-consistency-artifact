@@ -1,0 +1,113 @@
+{
+  "status": "one_completed_real_source_transition_no_installed_contract_violation",
+  "confirmed_new_defects": 0,
+  "confirmed_affected_roots": [],
+  "source_result_sha256": "1fec92b36c0672babd3b2068eddcab78ed29d5185c6cc967e4ac22c069eff84f",
+  "rows": [
+    {
+      "stage": "work/stateful-workflows-20261111/source-switch/native-intel-url-normalized/runs/vllm/02-cpu-install",
+      "inventory_sha256": "967ee656eb5c44c2b32a419475b1e6621727a4e2df4729afda10af6b5c724922",
+      "installed_count": 152,
+      "root_version": "0.33.0+cpu",
+      "official_source_metadata_match": true,
+      "root_closure": {
+        "active_roots": 1,
+        "reachable_nodes": 152,
+        "active_edges": 320,
+        "violations": [],
+        "source_unknowns": [
+          {
+            "parent": "vllm",
+            "requirement": "triton @ https://github.com/triton-lang/triton-cpu/releases/download/v3.8.0/triton-3.8.0+cpu-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl ; platform_machine == \"x86_64\" and python_version == \"3.11\"",
+            "reason": "direct URL identity needs artifact review"
+          }
+        ]
+      },
+      "all_installed_base_closure": {
+        "active_roots": 153,
+        "reachable_nodes": 152,
+        "active_edges": 320,
+        "violations": [],
+        "source_unknowns": [
+          {
+            "parent": "vllm",
+            "requirement": "triton @ https://github.com/triton-lang/triton-cpu/releases/download/v3.8.0/triton-3.8.0+cpu-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl ; platform_machine == \"x86_64\" and python_version == \"3.11\"",
+            "reason": "direct URL identity needs artifact review"
+          }
+        ]
+      },
+      "direct_url_metadata_unknowns_independently_matched": 2
+    },
+    {
+      "stage": "work/stateful-workflows-20261111/source-switch/native-intel-url-normalized/transport-continuation/04-warm-pypi-sync-retry",
+      "inventory_sha256": "3d0a056f04b32a8a740ea05f668941303e5b3ac639633dee02e168280c0db938",
+      "installed_count": 198,
+      "root_version": "0.33.0",
+      "official_source_metadata_match": true,
+      "root_closure": {
+        "active_roots": 1,
+        "reachable_nodes": 198,
+        "active_edges": 449,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "all_installed_base_closure": {
+        "active_roots": 199,
+        "reachable_nodes": 198,
+        "active_edges": 449,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "direct_url_metadata_unknowns_independently_matched": 0
+    },
+    {
+      "stage": "work/stateful-workflows-20261111/source-switch/native-intel-url-normalized/transport-continuation/05-fresh-pypi-sync",
+      "inventory_sha256": "47a2be93dae3da3d469ba9b448c25bfaf2b01fd016632b9fbdd95b4ebc388881",
+      "installed_count": 198,
+      "root_version": "0.33.0",
+      "official_source_metadata_match": true,
+      "root_closure": {
+        "active_roots": 1,
+        "reachable_nodes": 198,
+        "active_edges": 449,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "all_installed_base_closure": {
+        "active_roots": 199,
+        "reachable_nodes": 198,
+        "active_edges": 449,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "direct_url_metadata_unknowns_independently_matched": 0
+    },
+    {
+      "stage": "work/stateful-workflows-20261111/source-switch/native-intel-url-normalized/transport-continuation/06-forced-root-reinstall",
+      "inventory_sha256": "3d0a056f04b32a8a740ea05f668941303e5b3ac639633dee02e168280c0db938",
+      "installed_count": 198,
+      "root_version": "0.33.0",
+      "official_source_metadata_match": true,
+      "root_closure": {
+        "active_roots": 1,
+        "reachable_nodes": 198,
+        "active_edges": 449,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "all_installed_base_closure": {
+        "active_roots": 199,
+        "reachable_nodes": 198,
+        "active_edges": 449,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "direct_url_metadata_unknowns_independently_matched": 0
+    }
+  ],
+  "final_three_full_metadata_inventories_equal": true,
+  "same_final_manifest_and_lock": true,
+  "starting_record_payloads_checked": 35608,
+  "scope": "Official CPU consumer configuration with explicit original backend requirements, Triton authorization and native Intel-wheel URL workaround, then complete PyPI backend configuration. Full real dependencies installed. Original transport timeout remains unknown; parent healthy CPU plus one bounded continuation constitute one composite source workflow. Same shared verified content cache, distinct fresh environment, no GPU inference. Final whole CUDA payloads were not independently byte-hashed here; root METADATA/source identity and every installed active dependency were checked.",
+  "script_sha256": "abd743dec1aff1502411d6f5da4dc0d2f776aeb1cecfbe9cf5394ae6d32bf04c"
+}

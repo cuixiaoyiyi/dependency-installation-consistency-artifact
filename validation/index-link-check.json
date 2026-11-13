@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://pypi.org/simple/",
+    "status": 200,
+    "final_url": "https://pypi.org/simple/"
+  },
+  {
+    "url": "https://download.pytorch.org/whl/cpu/",
+    "status": 200,
+    "final_url": "https://download.pytorch.org/whl/cpu/"
+  },
+  {
+    "url": "https://download.pytorch.org/whl/cpu/torch/",
+    "status": 200,
+    "final_url": "https://download.pytorch.org/whl/cpu/torch/"
+  },
+  {
+    "url": "https://download.pytorch.org/whl/cpu/torchvision/",
+    "status": 200,
+    "final_url": "https://download.pytorch.org/whl/cpu/torchvision/"
+  }
+]

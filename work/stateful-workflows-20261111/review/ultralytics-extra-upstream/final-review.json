@@ -1,0 +1,448 @@
+{
+  "schema": "ultralytics-extra-final-bounded-upstream-review-v1",
+  "reviewed_at_utc": "2026-11-11T06:12:22.553041+00:00",
+  "scope": "Read-only synthesis of official captured GitHub/PyPI sources. No new public message, installation or alteration of prior evidence. Runtime admission is a separate certificate.",
+  "prior_review": {
+    "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/review.json",
+    "sha256": "bebb883a69f3e5f2f7676b8d8b88e5b1c88bd64bf3f48dde1752672a6d264b5b"
+  },
+  "queries": [
+    {
+      "number": 1,
+      "url": "https://api.github.com/search/issues?q=repo%3Aultralytics%2Fultralytics+opencv+headless+in%3Atitle&per_page=100&sort=updated&order=desc",
+      "total_count": 10,
+      "captured_items": 10,
+      "all_matching_results_captured": true,
+      "pages": [
+        {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/search-01.json",
+          "sha256": "9bd01fa797ab3a0f552e11cf51b8a0e79157f87653e97355caafc0272587df14"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "url": "https://api.github.com/search/issues?q=repo%3Aultralytics%2Fultralytics+albumentations+conflict+in%3Atitle&per_page=100&sort=updated&order=desc",
+      "total_count": 0,
+      "captured_items": 0,
+      "all_matching_results_captured": true,
+      "pages": [
+        {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/search-02.json",
+          "sha256": "c9938edecb99d754b2d039ac9eec320a94c769b6a6417921e2dcbef9e2fe01a0"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "url": "https://api.github.com/search/issues?q=repo%3Aultralytics%2Fultralytics+%22opencv-python-headless%22+%22extra%22&per_page=100&sort=updated&order=desc",
+      "total_count": 36,
+      "captured_items": 36,
+      "all_matching_results_captured": true,
+      "pages": [
+        {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/search-03.json",
+          "sha256": "1781e307acc90d8cac77a0de755ef98b31c0aa9126951099d3406038ed94d320"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "url": "https://api.github.com/search/issues?q=repo%3Aultralytics%2Fultralytics+%22opencv%22+%22uninstall%22&per_page=100&sort=updated&order=desc",
+      "total_count": 128,
+      "captured_items": 128,
+      "all_matching_results_captured": true,
+      "pages": [
+        {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/search-04.json",
+          "sha256": "290b6c0ed6c5a414bc1fff11b127a9022e73b9fb48aeb398f44ad260b33a9d9a"
+        },
+        {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/search-04-page2.json",
+          "sha256": "dcc6bfeaf60c39609451ef081506116784f343d46440ca65ec9b947e3f54bbf1"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "url": "https://api.github.com/search/issues?q=repo%3Aultralytics%2Fultralytics+%22albumentations%22+%22opencv-python-headless%22&per_page=100&sort=updated&order=desc",
+      "total_count": 30,
+      "captured_items": 30,
+      "all_matching_results_captured": true,
+      "pages": [
+        {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/search-05.json",
+          "sha256": "994bff74ad1a73ce3d75de46bdcf8968979cac2fcf7a2ba0e93174c9fb544035"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "url": "https://api.github.com/search/issues?q=repo%3Aultralytics%2Fultralytics+%22albumentations%22+%22opencv-python-headless%22+in%3Acomments&per_page=100&sort=updated&order=desc",
+      "total_count": 8,
+      "captured_items": 8,
+      "all_matching_results_captured": true,
+      "pages": [
+        {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/search-06.json",
+          "sha256": "769e91cc4854e8f27b566ace90d777b09e666cd01e1a184ac9ff1d6ce52c3c13"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "url": "https://api.github.com/search/issues?q=repo%3Aultralytics%2Fultralytics+opencv+conflict+in%3Atitle&per_page=100&sort=updated&order=desc",
+      "total_count": 1,
+      "captured_items": 1,
+      "all_matching_results_captured": true,
+      "pages": [
+        {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/search-07.json",
+          "sha256": "b4795a513dc31af12f9090145fc9d84b14f95b6d3f1e154a97adb41a27c8170f"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "url": "https://api.github.com/search/issues?q=repo%3Aultralytics%2Fultralytics+cv2+uninstall+in%3Abody&per_page=100&sort=updated&order=desc",
+      "total_count": 6,
+      "captured_items": 6,
+      "all_matching_results_captured": true,
+      "pages": [
+        {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/search-08.json",
+          "sha256": "658ee77c59b18173ec07a73e542e34a98eb30708f218a24ccfb8fec1f27d883c"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "url": "https://api.github.com/search/issues?q=repo%3Aultralytics%2Fultralytics+cv2+uv+extra&per_page=100&sort=updated&order=desc",
+      "total_count": 2,
+      "captured_items": 2,
+      "all_matching_results_captured": true,
+      "pages": [
+        {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/search-09.json",
+          "sha256": "2840b0c2c05d6aa4b9651221e860bbed84b1e78d5c08929417a5af3146dacaaa"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "url": "https://api.github.com/search/issues?q=repo%3Aultralytics%2Fultralytics+%22cv2%22+%22has+no+attribute%22+in%3Atitle&per_page=100&sort=updated&order=desc",
+      "total_count": 3,
+      "captured_items": 3,
+      "all_matching_results_captured": true,
+      "pages": [
+        {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/search-10.json",
+          "sha256": "dd94220829f506a655e7c541109c868a7919c355efe6c4e71963100422c006dc"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "url": "https://api.github.com/search/issues?q=repo%3Aultralytics%2Fultralytics+cv2+sync+remove&per_page=100&sort=updated&order=desc",
+      "total_count": 15,
+      "captured_items": 15,
+      "all_matching_results_captured": true,
+      "pages": [
+        {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/search-11.json",
+          "sha256": "a4f0bb7babe6664b4a254ce6fbc0bebd6b1a1d12c9f428bc4c6461b60adc1a05"
+        }
+      ]
+    }
+  ],
+  "unique_result_items": 202,
+  "previously_reviewed_project_threads": [
+    {
+      "number": 20385,
+      "url": "https://github.com/ultralytics/ultralytics/issues/20385",
+      "title": "opencv-python-headless install mechanism",
+      "state": "closed",
+      "state_reason": "completed",
+      "closed_at": "2025-08-08T00:25:38Z",
+      "classification": "related_headless_selection",
+      "exact_current_extra_lifecycle_duplicate": false,
+      "assessment": "Headless-vs-standard selection proposal and acknowledged co-installation risk, not exact official extra add/remove workflow.",
+      "raw_issue": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue20385.json",
+        "sha256": "afe6dc36a54f897b5d82c16fb5d51bb33b051a0b6e0dcb72479e4178e011963e"
+      },
+      "comments": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue20385-comments.json",
+        "sha256": "c8d3665ac7fec00d6cb23378b2c3d09f2b339ef66382d69830df4d2a914530f0"
+      }
+    },
+    {
+      "number": 17527,
+      "url": "https://github.com/ultralytics/ultralytics/pull/17527",
+      "title": "refactor: split out base dependencies to reduce docker image size",
+      "state": "closed",
+      "state_reason": null,
+      "closed_at": "2025-06-19T00:24:33Z",
+      "classification": "related_unmerged_packaging_proposal",
+      "exact_current_extra_lifecycle_duplicate": false,
+      "assessment": "Split base/train/headless dependencies and opt-out markers; discussion of universal-extra marker semantics, not retained cv2 deletion.",
+      "raw_issue": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue17527.json",
+        "sha256": "83f10ba7c333c70b0e8163a76d414e5d549adff97ffcedc9f7d323ad85fdf7d5"
+      },
+      "comments": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue17527-comments.json",
+        "sha256": "a8589e7e2ccc2584d29c0e55adaff6c31d6abd00fbd9c87c9566719cec3f2f25"
+      },
+      "merged": false,
+      "merged_at": null,
+      "raw_pull": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-pull17527.json",
+        "sha256": "4ec2110f8da766d766a811b970e7689e37d3626bd14efa386307f6f8714bb836"
+      }
+    },
+    {
+      "number": 20692,
+      "url": "https://github.com/ultralytics/ultralytics/pull/20692",
+      "title": "Add `opencv-python-headless` optional support",
+      "state": "closed",
+      "state_reason": null,
+      "closed_at": "2025-05-26T12:07:13Z",
+      "classification": "related_unmerged_headless_extra_proposal",
+      "exact_current_extra_lifecycle_duplicate": false,
+      "assessment": "Proposed headless extra plus manual uninstall of normal OpenCV; closed without merge, not current extra through Albumentations.",
+      "raw_issue": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue20692.json",
+        "sha256": "7edbd9bd24693c8ccdef4fa8d983d2a176ec39bdafb6dfcdf3924da4b76cb8c5"
+      },
+      "comments": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue20692-comments.json",
+        "sha256": "65c6ddde08ad58c5074b51ce98ec274b8a2b7080cfad8a1b9c5be15235a725fc"
+      },
+      "merged": false,
+      "merged_at": null,
+      "raw_pull": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-pull20692.json",
+        "sha256": "3a4e511783ccef972879805e8383fc21533b18d5af57e95b81c20c18e01b8acd"
+      }
+    },
+    {
+      "number": 23075,
+      "url": "https://github.com/ultralytics/ultralytics/pull/23075",
+      "title": "`ultralytics 8.3.242` New `ultralytics-opencv-headless` PyPI package",
+      "state": "closed",
+      "state_reason": null,
+      "closed_at": "2025-12-29T15:13:00Z",
+      "classification": "related_merged_alternate_distribution",
+      "exact_current_extra_lifecycle_duplicate": false,
+      "assessment": "Merged separate ultralytics-opencv-headless publishing while explicitly retaining primary package dependencies. Does not remove the standard extra combination.",
+      "raw_issue": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue23075.json",
+        "sha256": "f89e9fb19d524a880822054ca7018abec8f60ee6720609b950c6efce8bf987c8"
+      },
+      "comments": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue23075-comments.json",
+        "sha256": "8501025293d5f654de239d6aeb03240465f7ae8a8d1331da7bcec35aab4e7125"
+      },
+      "merged": true,
+      "merged_at": "2025-12-29T15:13:00Z",
+      "raw_pull": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-pull23075.json",
+        "sha256": "d9956530d751330631b2f81267f20da2b5a8628a964faf7740a9550889653166"
+      }
+    },
+    {
+      "number": 18814,
+      "url": "https://github.com/ultralytics/ultralytics/issues/18814",
+      "title": "Install with numpy 2.2.1 using poetry on windows / linux fails",
+      "state": "closed",
+      "state_reason": "completed",
+      "closed_at": "2025-01-22T07:34:52Z",
+      "classification": "different_numpy_lock_conflict",
+      "exact_current_extra_lifecycle_duplicate": false,
+      "assessment": "Older NumPy platform-marker resolution issue with headless present in a larger custom request, not exact extra removal lifecycle.",
+      "raw_issue": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue18814.json",
+        "sha256": "91f65fbae108f2135e09e47f9e03588aeca866275e592da24bd6974dbb523e4c"
+      },
+      "comments": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue18814-comments.json",
+        "sha256": "17b5ea0c56533dcd5c15df9474a3fa6d07965dfe2f783d096949bf2ce429e11b"
+      }
+    },
+    {
+      "number": 2179,
+      "url": "https://github.com/ultralytics/ultralytics/issues/2179",
+      "title": "Can opencv-python be switched to headless?",
+      "state": "closed",
+      "state_reason": "not_planned",
+      "closed_at": "2023-07-14T00:19:29Z",
+      "classification": "related_headless_deployment_request",
+      "exact_current_extra_lifecycle_duplicate": false,
+      "assessment": "Request to replace mandatory GUI OpenCV in headless deployment, not current standard extra lifecycle.",
+      "raw_issue": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue2179.json",
+        "sha256": "305f1400fa46d2da0be84ac4b4f993d3a78f4da190a565bb7b8e8075e1183dfb"
+      },
+      "comments": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue2179-comments.json",
+        "sha256": "46b659bdfaeeaccb33457c0bcea2f5424e75ce9d6e8b0443ccf7708a3aa111a1"
+      }
+    }
+  ],
+  "additional_project_threads": [
+    {
+      "number": 16939,
+      "url": "https://github.com/ultralytics/ultralytics/issues/16939",
+      "title": " Unable to Import cv2 when Setting up YOLOv5 in Visual Studio Code",
+      "state_at_capture": "closed",
+      "state_reason_at_capture": "completed",
+      "updated_at": "2026-01-10T15:01:32Z",
+      "assessment": "Closest known same-project runtime symptom: January 2026 comments describe uv sync, missing cv2.imshow, and removal/re-addition restoring imports. They do not establish the exact extra -> Albumentations dependency path, but prevent any claim of first known Ultralytics impact.",
+      "exact_current_extra_lifecycle_established_in_captured_thread": false,
+      "raw_issue": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue16939.json",
+        "sha256": "fcfe8495170c35c9756bf50c67811929ac997a4ea515b880a8bd775bcd2cf095"
+      },
+      "raw_comments": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue16939-comments.json",
+        "sha256": "ca085905ad10378cfcc15ba8f2854dc9f8292e82ae546c649d497f27be240054"
+      },
+      "comment_count_captured": 14,
+      "all_current_comments_captured": true,
+      "closest_comment_links": [
+        "https://github.com/ultralytics/ultralytics/issues/16939#issuecomment-3731822287",
+        "https://github.com/ultralytics/ultralytics/issues/16939#issuecomment-3732957943"
+      ]
+    },
+    {
+      "number": 893,
+      "url": "https://github.com/ultralytics/ultralytics/issues/893",
+      "title": "When importing ultralytics, I get AttributeError: module 'cv2' has no attribute 'setNumThreads' ?",
+      "state_at_capture": "closed",
+      "state_reason_at_capture": "not_planned",
+      "updated_at": "2024-08-02T23:15:24Z",
+      "assessment": "Earlier same-project OpenCV attribute/import failures and manual provider mixing/reinstallation. Related failure family; exact standard extra lifecycle not established.",
+      "exact_current_extra_lifecycle_established_in_captured_thread": false,
+      "raw_issue": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue893.json",
+        "sha256": "5380d4d901c07375eb643182995537017da6dffc679bc00d15bb5eee511000c1"
+      },
+      "raw_comments": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue893-comments.json",
+        "sha256": "7a5ef57d91ac388ab1300cd1d3b443058521c9d4b8b9ed71d1217915fffbab08"
+      },
+      "comment_count_captured": 24,
+      "all_current_comments_captured": true,
+      "closest_comment_links": []
+    },
+    {
+      "number": 2113,
+      "url": "https://github.com/ultralytics/ultralytics/issues/2113",
+      "title": "AttributeError: partially initialized module 'cv2' has no attribute '_registerMatType' (most likely due to a circular import)",
+      "state_at_capture": "closed",
+      "state_reason_at_capture": "not_planned",
+      "updated_at": "2024-10-20T20:56:24Z",
+      "assessment": "Jetson/container OpenCV partial-initialization symptom; exact dependency path and state transition not established.",
+      "exact_current_extra_lifecycle_established_in_captured_thread": false,
+      "raw_issue": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue2113.json",
+        "sha256": "b3f9662d7e4af7908b09d889cee864e373aafa0b5e3fbe13150edb530fc9d2ea"
+      },
+      "raw_comments": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue2113-comments.json",
+        "sha256": "92ba779dd16a01e01b2c7380a06606ca63c09b7b1e2a6e99804c90a19ebcf3b6"
+      },
+      "comment_count_captured": 13,
+      "all_current_comments_captured": true,
+      "closest_comment_links": []
+    },
+    {
+      "number": 25701,
+      "url": "https://github.com/ultralytics/ultralytics/issues/25701",
+      "title": "module 'cv2' has no attribute 'imdecodemulti'",
+      "state_at_capture": "closed",
+      "state_reason_at_capture": "completed",
+      "updated_at": "2026-08-07T10:32:57Z",
+      "assessment": "Missing imdecodemulti under older OpenCV 4.6 is a different version/API compatibility symptom, not the witnessed removal of shared wheel files.",
+      "exact_current_extra_lifecycle_established_in_captured_thread": false,
+      "raw_issue": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue25701.json",
+        "sha256": "cb9d5bf56d92702d75331233bf6a8482e64a3ec7800ebb74eeb8b31dee5919c3"
+      },
+      "raw_comments": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/ultralytics-issue25701-comments.json",
+        "sha256": "825033f745e69153b5ffe03350e4191c48f67eaad0d83bfcbbb8199bfe860afb"
+      },
+      "comment_count_captured": 4,
+      "all_current_comments_captured": true,
+      "closest_comment_links": []
+    }
+  ],
+  "known_installer_mechanism": {
+    "url": "https://github.com/astral-sh/uv/issues/19412",
+    "title": "`uv sync` does not properly recover from an environment with faulty packages (opencv-contrib-python package problem)",
+    "state": "open",
+    "raw": {
+      "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/astral-sh__uv-19412.json",
+      "sha256": "f63f2adc475ecb7532cfb4d173c8725d396ff268117d56795520e8c4d5c5d21b"
+    },
+    "comments": {
+      "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/astral-sh__uv-19412-comments.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "same_shared_namespace_file_removal_mechanism_already_reported": true,
+    "difference": "The earlier witness uses normal/contrib installed directly; this experiment asks whether the official Ultralytics extra automatically introduces normal/headless through its declared Albumentations dependency."
+  },
+  "provider_family_prior_reports": [
+    {
+      "url": "https://github.com/opencv/opencv-python/issues/677",
+      "raw": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/opencv__opencv-python-677.json",
+        "sha256": "e0a6dd251fb1bf5f0d4efbf8b61079a4c54030064d91c9ce5959865ed3a6c6bf"
+      }
+    },
+    {
+      "url": "https://github.com/albumentations-team/albumentations/issues/1140",
+      "raw": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/albumentations-team__albumentations-1140.json",
+        "sha256": "b49f9b1d62b7c63323e59fd656198cbe170cfdf427c36221b361bf851ed8d1f3"
+      }
+    }
+  ],
+  "current_declaration_status": {
+    "pypi_info_version": "8.4.210",
+    "raw_pypi": {
+      "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/current-pypi.json",
+      "sha256": "23dfd3c0e2df504ab021aa9be1d9e82196bdbc974c6ce42867758056036c34a4"
+    },
+    "still_declares": [
+      "opencv-python!=4.13.0.90,>=4.7.0",
+      "albumentations>=1.4.6; extra == \"extra\""
+    ],
+    "current_main_commit": "3d91c10d77dd250931d899d72a3490a649df7bdb",
+    "raw_main_pyproject": {
+      "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/current-main-pyproject.toml",
+      "sha256": "92ccf55694c7b369697433ff494ea075a175098d8ed0287f76c6fe4fcc9c2448"
+    },
+    "actual_install_pin_unchanged": "8.4.208",
+    "latest8_4_210_installation_not_claimed": true
+  },
+  "assessment": {
+    "shared_file_removal_uv_mechanism_already_reported": true,
+    "opencv_mutually_exclusive_provider_family_already_known": true,
+    "ultralytics_headless_packaging_risk_already_discussed": true,
+    "ultralytics_uv_cv2_imshow_failure_and_reinstall_repair_already_reported": true,
+    "exact_official_extra_albumentations_add_remove_entry_not_found_in_captured_threads": true,
+    "ecosystem_wide_novelty_established": false,
+    "first_known_affected_ultralytics_project_claim_supported": false,
+    "new_uv_mechanism_claim_supported": false,
+    "local_issue_role": "Supplementary, fully controlled real-project dependency-declaration/workflow witness for a known conflict family; not a claim of a new uv mechanism or first discovery. Existing same-project reports must be linked.",
+    "upstream_submission_recommendation": "Do not automatically open another public issue. Present this local evidence as a supplement to the related Ultralytics packaging discussions and uv #19412; maintainers may determine the appropriate existing thread."
+  },
+  "counts": {
+    "new_public_messages": 0,
+    "new_uv_mechanisms": 0,
+    "new_installations_in_this_review": 0
+  }
+}

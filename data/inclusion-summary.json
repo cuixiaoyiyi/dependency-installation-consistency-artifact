@@ -1,0 +1,132 @@
+{
+  "groups": {
+    "selection": {
+      "files": 328,
+      "bytes": 70345106
+    },
+    "rq1_audit": {
+      "files": 113,
+      "bytes": 5652313
+    },
+    "hashmap_path_keys": {
+      "files": 62,
+      "bytes": 14303102
+    },
+    "rq2_main": {
+      "files": 7424,
+      "bytes": 297254003
+    },
+    "method_scripts": {
+      "files": 8,
+      "bytes": 151033
+    },
+    "rq3_cases": {
+      "files": 94,
+      "bytes": 22186054
+    },
+    "required_bound_references": {
+      "files": 33,
+      "bytes": 13946617
+    },
+    "rq3_stage_support": {
+      "files": 2332,
+      "bytes": 74834255
+    },
+    "rq2_stage_support": {
+      "files": 32958,
+      "bytes": 600756383
+    },
+    "source_supplements": {
+      "files": 280,
+      "bytes": 26301338
+    }
+  },
+  "unique_original_files": 36076,
+  "unique_original_bytes": 789362891,
+  "archives": [
+    {
+      "path": "data/evidence-01.tar.gz",
+      "bytes": 12790344,
+      "sha256": "ad15e5830d44bc11da9e4aeeb576887b82c1fdb353bdc08daa2967001e733e9d",
+      "members": 535
+    },
+    {
+      "path": "data/evidence-02.tar.gz",
+      "bytes": 15817719,
+      "sha256": "b960191438a377f26b4e3939ef5f5dc3dfc1e5b5aedf58850479c25351429e60",
+      "members": 4530
+    },
+    {
+      "path": "data/evidence-03.tar.gz",
+      "bytes": 14446843,
+      "sha256": "ffdfc20c031cf7bf06331877543bfd377c7027d7195c0a3d94995ea509d39f2c",
+      "members": 6321
+    },
+    {
+      "path": "data/evidence-04.tar.gz",
+      "bytes": 18939085,
+      "sha256": "60db55397e9270f1f380ea67b57b701d95128b9848d395f8ecf8d4ac2c5971c7",
+      "members": 3460
+    },
+    {
+      "path": "data/evidence-05.tar.gz",
+      "bytes": 16049372,
+      "sha256": "4f931d85e8610e768093afaab6807e74a583b6a119b421fe956af24bcec3763b",
+      "members": 2524
+    },
+    {
+      "path": "data/evidence-06.tar.gz",
+      "bytes": 17044100,
+      "sha256": "e4539ec6521e394b5aa72443a3a83ebfdeca3f5ce30b55ac17cb7cea5f2b6463",
+      "members": 2366
+    },
+    {
+      "path": "data/evidence-07.tar.gz",
+      "bytes": 17285699,
+      "sha256": "5b0cf11ee41d35eaecb6eba8a6f6b917a4454d6224e3d8db7bd273df67f5e347",
+      "members": 1449
+    },
+    {
+      "path": "data/evidence-08.tar.gz",
+      "bytes": 19139005,
+      "sha256": "8d05b3b3c35beedd19159aec96807063d3b20fc4e7971c5ef01913dde9c5699d",
+      "members": 3525
+    },
+    {
+      "path": "data/evidence-09.tar.gz",
+      "bytes": 18448570,
+      "sha256": "a2a9c16bcb2b0991063b8c2f51181954d1fa0614a955f2a7dcf2a88f422d50b1",
+      "members": 3142
+    },
+    {
+      "path": "data/evidence-10.tar.gz",
+      "bytes": 17535980,
+      "sha256": "cbcaf23fc89cfe56b3f92a41862b99a5bd101c4c74fb287305e5206e8a8bf445",
+      "members": 3945
+    },
+    {
+      "path": "data/evidence-11.tar.gz",
+      "bytes": 17150862,
+      "sha256": "e20fcb4d4aafb6e6cb7ad3374a7bb6928b3d1f3dfe540da0a20130cb082b0d6c",
+      "members": 2318
+    },
+    {
+      "path": "data/evidence-12.tar.gz",
+      "bytes": 20565032,
+      "sha256": "d72f4cba2972cd26f04d498790642f2caa3dbbdc897620dd97d0038deec7bf3c",
+      "members": 1781
+    },
+    {
+      "path": "data/evidence-13.tar.gz",
+      "bytes": 4702215,
+      "sha256": "790b6b96a38f17f258dee25250a520df20f085065d730a9bb5c99744da0cf55a",
+      "members": 107
+    }
+  ],
+  "excluded_categories": [
+    "Issue drafts and issue discussion captures.",
+    "Manuscript, bibliography and writing material.",
+    "Installed environments, wheel payloads, download caches, runtime binaries and model weights."
+  ],
+  "scope": "Implementation and saved experimental inputs, metadata, command logs and observations. Original file bytes are preserved except for the container indexes."
+}

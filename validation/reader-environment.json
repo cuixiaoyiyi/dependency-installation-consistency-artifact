@@ -1,0 +1,108 @@
+{
+  "schema": "public-reader-validation-v1",
+  "started_at_utc": "2026-11-13T05:13:38.774590+00:00",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "create-environment",
+      "argv": [
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+        "-m",
+        "venv",
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env"
+      ],
+      "exit": 0,
+      "seconds": 56.39,
+      "stdout": "reader-logs/create-environment.stdout.txt",
+      "stderr": "reader-logs/create-environment.stderr.txt"
+    },
+    {
+      "name": "install-requirements",
+      "argv": [
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+        "-m",
+        "pip",
+        "--isolated",
+        "install",
+        "--no-cache-dir",
+        "--index-url",
+        "https://pypi.org/simple",
+        "-r",
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/artifact/requirements.txt"
+      ],
+      "exit": 0,
+      "seconds": 70.535,
+      "stdout": "reader-logs/install-requirements.stdout.txt",
+      "stderr": "reader-logs/install-requirements.stderr.txt"
+    },
+    {
+      "name": "versions",
+      "argv": [
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+        "-c",
+        "import importlib.metadata,json,platform; print(json.dumps({'python':platform.python_version(), 'packages':{name:importlib.metadata.version(name) for name in ['packaging','PyYAML','uv','pip']}}))"
+      ],
+      "exit": 0,
+      "seconds": 0.181,
+      "stdout": "reader-logs/versions.stdout.txt",
+      "stderr": "reader-logs/versions.stderr.txt"
+    },
+    {
+      "name": "regression-tests",
+      "argv": [
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit": 0,
+      "seconds": 9.307,
+      "stdout": "reader-logs/regression-tests.stdout.txt",
+      "stderr": "reader-logs/regression-tests.stderr.txt"
+    },
+    {
+      "name": "m1-replay",
+      "argv": [
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/artifact/artifact_tools/replay_cases.py",
+        "m1",
+        "--python",
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+        "--uv",
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv",
+        "--out",
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1",
+        "--execute"
+      ],
+      "exit": 0,
+      "seconds": 60.248,
+      "stdout": "reader-logs/m1-replay.stdout.txt",
+      "stderr": "reader-logs/m1-replay.stderr.txt"
+    }
+  ],
+  "input": "artifact/requirements.txt",
+  "scope": "New CPython virtual environment, dependencies installed from official PyPI, regression suite, and local inert-wheel M1 replay. No full cohort or M2 installation.",
+  "versions": {
+    "python": "3.11.16",
+    "packages": {
+      "packaging": "26.3",
+      "PyYAML": "6.0.3",
+      "uv": "0.13.7",
+      "pip": "26.3"
+    }
+  },
+  "m1_checks": {
+    "passed": 19,
+    "total": 19,
+    "reproduced_closure_violation": true
+  },
+  "regression_tests": {
+    "count": 192,
+    "passed": true,
+    "skipped": 0
+  },
+  "finished_at_utc": "2026-11-13T05:16:55.485448+00:00"
+}

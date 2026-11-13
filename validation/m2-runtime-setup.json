@@ -1,0 +1,139 @@
+{
+  "schema": "public-m2-setup-validation-v1",
+  "started_at_utc": "2026-11-13T05:17:53.822777+00:00",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "uv-version",
+      "argv": [
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+        "--version"
+      ],
+      "exit": 0,
+      "seconds": 0.071,
+      "stdout": "m2-setup/logs/uv-version.stdout.txt",
+      "stderr": "m2-setup/logs/uv-version.stderr.txt"
+    },
+    {
+      "name": "download-python",
+      "argv": [
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+        "--no-config",
+        "python",
+        "install",
+        "3.11.16"
+      ],
+      "exit": 0,
+      "seconds": 22.417,
+      "stdout": "m2-setup/logs/download-python.stdout.txt",
+      "stderr": "m2-setup/logs/download-python.stderr.txt"
+    },
+    {
+      "name": "create-environment",
+      "argv": [
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+        "--no-config",
+        "venv",
+        "--python",
+        "3.11.16",
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/venv"
+      ],
+      "exit": 0,
+      "seconds": 0.93,
+      "stdout": "m2-setup/logs/create-environment.stdout.txt",
+      "stderr": "m2-setup/logs/create-environment.stderr.txt"
+    },
+    {
+      "name": "python-version",
+      "argv": [
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/venv/bin/python",
+        "-I",
+        "-c",
+        "import json,platform,sys; print(json.dumps({'version':platform.python_version(),'machine':platform.machine(),'implementation':sys.implementation.name,'base_prefix':sys.base_prefix,'executable':sys.executable}))"
+      ],
+      "exit": 0,
+      "seconds": 0.677,
+      "stdout": "m2-setup/logs/python-version.stdout.txt",
+      "stderr": "m2-setup/logs/python-version.stderr.txt"
+    },
+    {
+      "name": "install-requirements",
+      "argv": [
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+        "--no-config",
+        "pip",
+        "install",
+        "--python",
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/venv/bin/python",
+        "--index-url",
+        "https://pypi.org/simple",
+        "-r",
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/artifact/requirements.txt"
+      ],
+      "exit": 0,
+      "seconds": 15.447,
+      "stdout": "m2-setup/logs/install-requirements.stdout.txt",
+      "stderr": "m2-setup/logs/install-requirements.stderr.txt"
+    },
+    {
+      "name": "dependency-versions",
+      "argv": [
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/venv/bin/python",
+        "-I",
+        "-c",
+        "import importlib.metadata,json; print(json.dumps({name:importlib.metadata.version(name) for name in ['packaging','PyYAML','uv','pip']}))"
+      ],
+      "exit": 0,
+      "seconds": 1.58,
+      "stdout": "m2-setup/logs/dependency-versions.stdout.txt",
+      "stderr": "m2-setup/logs/dependency-versions.stderr.txt"
+    },
+    {
+      "name": "m2-preview",
+      "argv": [
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/venv/bin/python",
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/artifact/artifact_tools/replay_cases.py",
+        "m2",
+        "--inputs",
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/artifact/inputs/ultralytics-extra",
+        "--out",
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/m2-preview",
+        "--python",
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/venv/bin/python",
+        "--uv",
+        "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/venv/bin/uv",
+        "--dry-run"
+      ],
+      "exit": 0,
+      "seconds": 0.727,
+      "stdout": "m2-setup/logs/m2-preview.stdout.txt",
+      "stderr": "m2-setup/logs/m2-preview.stderr.txt"
+    }
+  ],
+  "scope": "Download a fresh official CPython 3.11.16 runtime with uv 0.13.7, prepare its runner environment, install requirements from PyPI, and validate M2 inputs in dry-run mode. No M2 package installation.",
+  "environment": {
+    "UV_PYTHON_INSTALL_DIR": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/python",
+    "UV_CACHE_DIR": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/cache"
+  },
+  "runtime": {
+    "version": "3.11.16",
+    "machine": "x86_64",
+    "implementation": "cpython",
+    "base_prefix": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/python/cpython-3.11.16-linux-x86_64-gnu",
+    "executable": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/venv/bin/python"
+  },
+  "dependencies": {
+    "packaging": "26.3",
+    "PyYAML": "6.0.3",
+    "uv": "0.13.7",
+    "pip": "26.3"
+  },
+  "fresh_runtime_download": true,
+  "m2_preview": {
+    "status": "passed",
+    "input_files": 6,
+    "created_output": false
+  },
+  "m2_installation_executed": false,
+  "finished_at_utc": "2026-11-13T05:18:35.722165+00:00"
+}

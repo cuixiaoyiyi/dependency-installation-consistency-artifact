@@ -1,0 +1,37 @@
+{
+ "id": "ip-ci-utils-run-notebooks-sh-2|uv|declared",
+ "resolver": "uv",
+ "requirements": [
+  "papermill"
+ ],
+ "index_url": null,
+ "extra_index_urls": [],
+ "find_links": [],
+ "no_index": false,
+ "pre": false,
+ "index_strategy": null,
+ "sources": {
+  "cuml-cu12": "nvidia",
+  "cuopt-cu12": "nvidia",
+  "cuml-cu13": "nvidia",
+  "cuopt-cu13": "nvidia"
+ },
+ "named_indexes": [
+  {
+   "name": "nvidia",
+   "url": "https://pypi.nvidia.com",
+   "explicit": false,
+   "default": false
+  }
+ ],
+ "constraints": [],
+ "platform": "linux-x86_64",
+ "python_version": "3.11",
+ "derived_from": "declared",
+ "factors": {
+  "resolver": "uv",
+  "indexes": "declared",
+  "sources": "on"
+ },
+ "description": "uv with the project's declared index configuration and tool.uv.sources"
+}

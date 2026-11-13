@@ -1,0 +1,1018 @@
+{
+  "schema": "ultralytics-original-data-path-addendum-v1",
+  "reviewed_at_utc": "2026-11-11T06:44:13.528883+00:00",
+  "review_tool": {
+    "path": "work/stateful-workflows-20261111/review/supplement_ultralytics_data_paths.py",
+    "sha256": "e43087f867284cfd8e9254e6605047747c5edab5230b7a79e9c354008e9ec87c"
+  },
+  "actual_result": {
+    "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/results.json",
+    "sha256": "348c18ffeb20885fdbaab59e7fe09c931e7e8028c4aa3fd240047d75bd1d798e"
+  },
+  "scope": "Only the original auditor's .data/data original-path mapping unknowns. Original reports remain unchanged. Each exact official wheel payload equals its saved installed RECORD entry; complete historical hashed-RECORD checks provide actual-file evidence at that state.",
+  "rows": [
+    {
+      "stage": "base",
+      "distribution": "fonttools",
+      "version": "4.68.0",
+      "original_member": "fonttools-4.68.0.data/data/share/man/man1/ttx.1",
+      "original_wheel_sha256": "4b9c89b5876f1a74b1341632dfaf4c4c2be565d76c060445df401ebe7a4ceefa",
+      "original_bytes": 5377,
+      "original_sha256": "70b6e6fe938e8f50bbe93d905ef0f1cf00e3f6093e193779473b6f4ccb28b85c",
+      "installed_record_entry": [
+        "../../../share/man/man1/ttx.1",
+        "sha256=cLbm_pOOj1C76T2QXvDxzwDj9gk-GTd5RztvTMsouFw",
+        "5377"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base/metadata/fonttools/RECORD",
+        "sha256": "0b83360d1448aa1b659fcb666c9fe4ceb8e8a7f656d81c9293b36761bf6bccbf"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base/installed.json",
+        "sha256": "51eb25d79b4b26403dc1ec49bf602b103c5a9f4b5453ef9377aa66af6653fb63"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base/file-audit.json",
+        "sha256": "800bebbc7a11407414702f37bdfad512f9ef7a05d273b7b8c943c929c1c712e5"
+      },
+      "record_hashes_checked": 379,
+      "entire_saved_record_hashed_entry_count": 379,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "base",
+      "distribution": "sympy",
+      "version": "1.14.0",
+      "original_member": "sympy-1.14.0.data/data/share/man/man1/isympy.1",
+      "original_wheel_sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+      "original_bytes": 6659,
+      "original_sha256": "f4365d48e2102e292b0131e56e4743674e0b0508a0643504d3fa025c10ef741b",
+      "installed_record_entry": [
+        "../../../share/man/man1/isympy.1",
+        "sha256=9DZdSOIQLikrATHlbkdDZ04LBQigZDUE0_oCXBDvdBs",
+        "6659"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base/metadata/sympy/RECORD",
+        "sha256": "24c470dc09c28f98f6ecc13a49095adbd4f284714b1f8c63d77cf60bc0124368"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base/installed.json",
+        "sha256": "51eb25d79b4b26403dc1ec49bf602b103c5a9f4b5453ef9377aa66af6653fb63"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base/file-audit.json",
+        "sha256": "800bebbc7a11407414702f37bdfad512f9ef7a05d273b7b8c943c929c1c712e5"
+      },
+      "record_hashes_checked": 1572,
+      "entire_saved_record_hashed_entry_count": 1572,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "extra",
+      "distribution": "faster-coco-eval",
+      "version": "1.8.0",
+      "original_member": "faster_coco_eval-1.8.0.data/data/docs.txt",
+      "original_wheel_sha256": "f4a2ad80b8d7619b9e043d716ddb5b43896125a3ba408414a25793fb04f83751",
+      "original_bytes": 123,
+      "original_sha256": "305faaeac5c0aca0c5b69b190d0b933469a7f68f6d18dbb8e7bb839707e9c807",
+      "installed_record_entry": [
+        "../../../docs.txt",
+        "sha256=MF-q6sXArKDFtpsZDQuTNGmn9o9tGNu457uDlwfpyAc",
+        "123"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/metadata/faster-coco-eval/RECORD",
+        "sha256": "1a0dfaf287e88cf3322c650eb4abc6c37aa404af5ed4a8391bc988e145939b45"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/installed.json",
+        "sha256": "bb5609d2711e152264034aa20ef49e942ad3bc0d057e05c9012c82856718325e"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/file-audit.json",
+        "sha256": "598553eb94e02e30e133b10ec6c5e2bb8f362969b98fc9195d098c40788b722d"
+      },
+      "record_hashes_checked": 29,
+      "entire_saved_record_hashed_entry_count": 29,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "extra",
+      "distribution": "faster-coco-eval",
+      "version": "1.8.0",
+      "original_member": "faster_coco_eval-1.8.0.data/data/extra.txt",
+      "original_wheel_sha256": "f4a2ad80b8d7619b9e043d716ddb5b43896125a3ba408414a25793fb04f83751",
+      "original_bytes": 44,
+      "original_sha256": "62821ee67287f4cc3bd217196ca072eb7ab9718b175ea88497b9d5bc03eb3562",
+      "installed_record_entry": [
+        "../../../extra.txt",
+        "sha256=YoIe5nKH9Mw70hcZbKBy63q5cYsXXqiEl7nVvAPrNWI",
+        "44"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/metadata/faster-coco-eval/RECORD",
+        "sha256": "1a0dfaf287e88cf3322c650eb4abc6c37aa404af5ed4a8391bc988e145939b45"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/installed.json",
+        "sha256": "bb5609d2711e152264034aa20ef49e942ad3bc0d057e05c9012c82856718325e"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/file-audit.json",
+        "sha256": "598553eb94e02e30e133b10ec6c5e2bb8f362969b98fc9195d098c40788b722d"
+      },
+      "record_hashes_checked": 29,
+      "entire_saved_record_hashed_entry_count": 29,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "extra",
+      "distribution": "faster-coco-eval",
+      "version": "1.8.0",
+      "original_member": "faster_coco_eval-1.8.0.data/data/runtime.txt",
+      "original_wheel_sha256": "f4a2ad80b8d7619b9e043d716ddb5b43896125a3ba408414a25793fb04f83751",
+      "original_bytes": 6,
+      "original_sha256": "e09f656c130b9c08b2c5ab7187c891295e449ed77febea2a6ceee9cc98ccb0fc",
+      "installed_record_entry": [
+        "../../../runtime.txt",
+        "sha256=4J9lbBMLnAiyxatxh8iRKV5Entd_6-oqbO7pzJjMsPw",
+        "6"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/metadata/faster-coco-eval/RECORD",
+        "sha256": "1a0dfaf287e88cf3322c650eb4abc6c37aa404af5ed4a8391bc988e145939b45"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/installed.json",
+        "sha256": "bb5609d2711e152264034aa20ef49e942ad3bc0d057e05c9012c82856718325e"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/file-audit.json",
+        "sha256": "598553eb94e02e30e133b10ec6c5e2bb8f362969b98fc9195d098c40788b722d"
+      },
+      "record_hashes_checked": 29,
+      "entire_saved_record_hashed_entry_count": 29,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "extra",
+      "distribution": "faster-coco-eval",
+      "version": "1.8.0",
+      "original_member": "faster_coco_eval-1.8.0.data/data/tests.txt",
+      "original_wheel_sha256": "f4a2ad80b8d7619b9e043d716ddb5b43896125a3ba408414a25793fb04f83751",
+      "original_bytes": 76,
+      "original_sha256": "f607cc475834cd08a45236d772464b7e83e155db48c5f0f6a7946a2d1411301f",
+      "installed_record_entry": [
+        "../../../tests.txt",
+        "sha256=9gfMR1g0zQikUjbXckZLfoPhVdtIxfD2p5RqLRQRMB8",
+        "76"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/metadata/faster-coco-eval/RECORD",
+        "sha256": "1a0dfaf287e88cf3322c650eb4abc6c37aa404af5ed4a8391bc988e145939b45"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/installed.json",
+        "sha256": "bb5609d2711e152264034aa20ef49e942ad3bc0d057e05c9012c82856718325e"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/file-audit.json",
+        "sha256": "598553eb94e02e30e133b10ec6c5e2bb8f362969b98fc9195d098c40788b722d"
+      },
+      "record_hashes_checked": 29,
+      "entire_saved_record_hashed_entry_count": 29,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "extra",
+      "distribution": "fonttools",
+      "version": "4.68.0",
+      "original_member": "fonttools-4.68.0.data/data/share/man/man1/ttx.1",
+      "original_wheel_sha256": "4b9c89b5876f1a74b1341632dfaf4c4c2be565d76c060445df401ebe7a4ceefa",
+      "original_bytes": 5377,
+      "original_sha256": "70b6e6fe938e8f50bbe93d905ef0f1cf00e3f6093e193779473b6f4ccb28b85c",
+      "installed_record_entry": [
+        "../../../share/man/man1/ttx.1",
+        "sha256=cLbm_pOOj1C76T2QXvDxzwDj9gk-GTd5RztvTMsouFw",
+        "5377"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/metadata/fonttools/RECORD",
+        "sha256": "0b83360d1448aa1b659fcb666c9fe4ceb8e8a7f656d81c9293b36761bf6bccbf"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/installed.json",
+        "sha256": "bb5609d2711e152264034aa20ef49e942ad3bc0d057e05c9012c82856718325e"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/file-audit.json",
+        "sha256": "598553eb94e02e30e133b10ec6c5e2bb8f362969b98fc9195d098c40788b722d"
+      },
+      "record_hashes_checked": 379,
+      "entire_saved_record_hashed_entry_count": 379,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "extra",
+      "distribution": "ipython",
+      "version": "9.18.1",
+      "original_member": "ipython-9.18.1.data/data/share/man/man1/ipython.1",
+      "original_wheel_sha256": "997ce9140d374531a61069c70c0f9ef299d6dd3559ea0f94b8af589726e3c1d5",
+      "original_bytes": 2058,
+      "original_sha256": "3d57503f6847987c94130ccb38f7206af9c27bd8d30d5accd63299b7872717f4",
+      "installed_record_entry": [
+        "../../../share/man/man1/ipython.1",
+        "sha256=PVdQP2hHmHyUEwzLOPcgavnCe9jTDVrM1jKZt4cnF_Q",
+        "2058"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/metadata/ipython/RECORD",
+        "sha256": "800c620b2807e93ecc3878c6ea74f3b1cafd1e3cfe2477233f105c0f87fc2858"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/installed.json",
+        "sha256": "bb5609d2711e152264034aa20ef49e942ad3bc0d057e05c9012c82856718325e"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/file-audit.json",
+        "sha256": "598553eb94e02e30e133b10ec6c5e2bb8f362969b98fc9195d098c40788b722d"
+      },
+      "record_hashes_checked": 197,
+      "entire_saved_record_hashed_entry_count": 197,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "extra",
+      "distribution": "sympy",
+      "version": "1.14.0",
+      "original_member": "sympy-1.14.0.data/data/share/man/man1/isympy.1",
+      "original_wheel_sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+      "original_bytes": 6659,
+      "original_sha256": "f4365d48e2102e292b0131e56e4743674e0b0508a0643504d3fa025c10ef741b",
+      "installed_record_entry": [
+        "../../../share/man/man1/isympy.1",
+        "sha256=9DZdSOIQLikrATHlbkdDZ04LBQigZDUE0_oCXBDvdBs",
+        "6659"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/metadata/sympy/RECORD",
+        "sha256": "24c470dc09c28f98f6ecc13a49095adbd4f284714b1f8c63d77cf60bc0124368"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/installed.json",
+        "sha256": "bb5609d2711e152264034aa20ef49e942ad3bc0d057e05c9012c82856718325e"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/file-audit.json",
+        "sha256": "598553eb94e02e30e133b10ec6c5e2bb8f362969b98fc9195d098c40788b722d"
+      },
+      "record_hashes_checked": 1572,
+      "entire_saved_record_hashed_entry_count": 1572,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "base-restored",
+      "distribution": "fonttools",
+      "version": "4.68.0",
+      "original_member": "fonttools-4.68.0.data/data/share/man/man1/ttx.1",
+      "original_wheel_sha256": "4b9c89b5876f1a74b1341632dfaf4c4c2be565d76c060445df401ebe7a4ceefa",
+      "original_bytes": 5377,
+      "original_sha256": "70b6e6fe938e8f50bbe93d905ef0f1cf00e3f6093e193779473b6f4ccb28b85c",
+      "installed_record_entry": [
+        "../../../share/man/man1/ttx.1",
+        "sha256=cLbm_pOOj1C76T2QXvDxzwDj9gk-GTd5RztvTMsouFw",
+        "5377"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base-restored/metadata/fonttools/RECORD",
+        "sha256": "0b83360d1448aa1b659fcb666c9fe4ceb8e8a7f656d81c9293b36761bf6bccbf"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base-restored/installed.json",
+        "sha256": "51eb25d79b4b26403dc1ec49bf602b103c5a9f4b5453ef9377aa66af6653fb63"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base-restored/file-audit.json",
+        "sha256": "c63c8d37b0334be161cd0fc9629dd61d42dac8c1154cf68c7c90ea5fed85f445"
+      },
+      "record_hashes_checked": 379,
+      "entire_saved_record_hashed_entry_count": 379,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "base-restored",
+      "distribution": "sympy",
+      "version": "1.14.0",
+      "original_member": "sympy-1.14.0.data/data/share/man/man1/isympy.1",
+      "original_wheel_sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+      "original_bytes": 6659,
+      "original_sha256": "f4365d48e2102e292b0131e56e4743674e0b0508a0643504d3fa025c10ef741b",
+      "installed_record_entry": [
+        "../../../share/man/man1/isympy.1",
+        "sha256=9DZdSOIQLikrATHlbkdDZ04LBQigZDUE0_oCXBDvdBs",
+        "6659"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base-restored/metadata/sympy/RECORD",
+        "sha256": "24c470dc09c28f98f6ecc13a49095adbd4f284714b1f8c63d77cf60bc0124368"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base-restored/installed.json",
+        "sha256": "51eb25d79b4b26403dc1ec49bf602b103c5a9f4b5453ef9377aa66af6653fb63"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base-restored/file-audit.json",
+        "sha256": "c63c8d37b0334be161cd0fc9629dd61d42dac8c1154cf68c7c90ea5fed85f445"
+      },
+      "record_hashes_checked": 1572,
+      "entire_saved_record_hashed_entry_count": 1572,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "fresh-final",
+      "distribution": "fonttools",
+      "version": "4.68.0",
+      "original_member": "fonttools-4.68.0.data/data/share/man/man1/ttx.1",
+      "original_wheel_sha256": "4b9c89b5876f1a74b1341632dfaf4c4c2be565d76c060445df401ebe7a4ceefa",
+      "original_bytes": 5377,
+      "original_sha256": "70b6e6fe938e8f50bbe93d905ef0f1cf00e3f6093e193779473b6f4ccb28b85c",
+      "installed_record_entry": [
+        "../../../share/man/man1/ttx.1",
+        "sha256=cLbm_pOOj1C76T2QXvDxzwDj9gk-GTd5RztvTMsouFw",
+        "5377"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/fresh-final/metadata/fonttools/RECORD",
+        "sha256": "fbf8a06b79b8660fd8916abe8344c88f40ca44184c8c586bed706c44f66bddb9"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/fresh-final/installed.json",
+        "sha256": "fbffbfdb89e77a31f7062015002aceb84e86bf5329366f4a0e7cc141c18eb571"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/fresh-final/file-audit.json",
+        "sha256": "800bebbc7a11407414702f37bdfad512f9ef7a05d273b7b8c943c929c1c712e5"
+      },
+      "record_hashes_checked": 379,
+      "entire_saved_record_hashed_entry_count": 379,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "fresh-final",
+      "distribution": "sympy",
+      "version": "1.14.0",
+      "original_member": "sympy-1.14.0.data/data/share/man/man1/isympy.1",
+      "original_wheel_sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+      "original_bytes": 6659,
+      "original_sha256": "f4365d48e2102e292b0131e56e4743674e0b0508a0643504d3fa025c10ef741b",
+      "installed_record_entry": [
+        "../../../share/man/man1/isympy.1",
+        "sha256=9DZdSOIQLikrATHlbkdDZ04LBQigZDUE0_oCXBDvdBs",
+        "6659"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/fresh-final/metadata/sympy/RECORD",
+        "sha256": "cd9629efeee233b768bbccc91c6a83e6be08595a7091bfb492ebaf6a0a3a2027"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/fresh-final/installed.json",
+        "sha256": "fbffbfdb89e77a31f7062015002aceb84e86bf5329366f4a0e7cc141c18eb571"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/fresh-final/file-audit.json",
+        "sha256": "800bebbc7a11407414702f37bdfad512f9ef7a05d273b7b8c943c929c1c712e5"
+      },
+      "record_hashes_checked": 1572,
+      "entire_saved_record_hashed_entry_count": 1572,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "forced-reinstall-final",
+      "distribution": "fonttools",
+      "version": "4.68.0",
+      "original_member": "fonttools-4.68.0.data/data/share/man/man1/ttx.1",
+      "original_wheel_sha256": "4b9c89b5876f1a74b1341632dfaf4c4c2be565d76c060445df401ebe7a4ceefa",
+      "original_bytes": 5377,
+      "original_sha256": "70b6e6fe938e8f50bbe93d905ef0f1cf00e3f6093e193779473b6f4ccb28b85c",
+      "installed_record_entry": [
+        "../../../share/man/man1/ttx.1",
+        "sha256=cLbm_pOOj1C76T2QXvDxzwDj9gk-GTd5RztvTMsouFw",
+        "5377"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/forced-reinstall-final/metadata/fonttools/RECORD",
+        "sha256": "0b83360d1448aa1b659fcb666c9fe4ceb8e8a7f656d81c9293b36761bf6bccbf"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/forced-reinstall-final/installed.json",
+        "sha256": "51eb25d79b4b26403dc1ec49bf602b103c5a9f4b5453ef9377aa66af6653fb63"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/forced-reinstall-final/file-audit.json",
+        "sha256": "800bebbc7a11407414702f37bdfad512f9ef7a05d273b7b8c943c929c1c712e5"
+      },
+      "record_hashes_checked": 379,
+      "entire_saved_record_hashed_entry_count": 379,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "forced-reinstall-final",
+      "distribution": "sympy",
+      "version": "1.14.0",
+      "original_member": "sympy-1.14.0.data/data/share/man/man1/isympy.1",
+      "original_wheel_sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+      "original_bytes": 6659,
+      "original_sha256": "f4365d48e2102e292b0131e56e4743674e0b0508a0643504d3fa025c10ef741b",
+      "installed_record_entry": [
+        "../../../share/man/man1/isympy.1",
+        "sha256=9DZdSOIQLikrATHlbkdDZ04LBQigZDUE0_oCXBDvdBs",
+        "6659"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/forced-reinstall-final/metadata/sympy/RECORD",
+        "sha256": "24c470dc09c28f98f6ecc13a49095adbd4f284714b1f8c63d77cf60bc0124368"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/forced-reinstall-final/installed.json",
+        "sha256": "51eb25d79b4b26403dc1ec49bf602b103c5a9f4b5453ef9377aa66af6653fb63"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/forced-reinstall-final/file-audit.json",
+        "sha256": "800bebbc7a11407414702f37bdfad512f9ef7a05d273b7b8c943c929c1c712e5"
+      },
+      "record_hashes_checked": 1572,
+      "entire_saved_record_hashed_entry_count": 1572,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "pip-base",
+      "distribution": "fonttools",
+      "version": "4.68.0",
+      "original_member": "fonttools-4.68.0.data/data/share/man/man1/ttx.1",
+      "original_wheel_sha256": "4b9c89b5876f1a74b1341632dfaf4c4c2be565d76c060445df401ebe7a4ceefa",
+      "original_bytes": 5377,
+      "original_sha256": "70b6e6fe938e8f50bbe93d905ef0f1cf00e3f6093e193779473b6f4ccb28b85c",
+      "installed_record_entry": [
+        "../../../share/man/man1/ttx.1",
+        "sha256=cLbm_pOOj1C76T2QXvDxzwDj9gk-GTd5RztvTMsouFw",
+        "5377"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base/metadata/fonttools/RECORD",
+        "sha256": "b8bd36d0ed7cf9da2ea010b1aacfe819da5127364975ed332e807f93239b91e7"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base/installed.json",
+        "sha256": "d462faf448e097d9881051f35ee3a4270cef07f554d1fa9aeb114a619d4f2b2f"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base/file-audit.json",
+        "sha256": "18f4ee50383a0ebaa73770085a759e21a1048caaa93142c43ab2e1e5da96065c"
+      },
+      "record_hashes_checked": 378,
+      "entire_saved_record_hashed_entry_count": 378,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "pip-base",
+      "distribution": "sympy",
+      "version": "1.14.0",
+      "original_member": "sympy-1.14.0.data/data/share/man/man1/isympy.1",
+      "original_wheel_sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+      "original_bytes": 6659,
+      "original_sha256": "f4365d48e2102e292b0131e56e4743674e0b0508a0643504d3fa025c10ef741b",
+      "installed_record_entry": [
+        "../../../share/man/man1/isympy.1",
+        "sha256=9DZdSOIQLikrATHlbkdDZ04LBQigZDUE0_oCXBDvdBs",
+        "6659"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base/metadata/sympy/RECORD",
+        "sha256": "8378f129cf1222cbb579c70204a7bacb222c068c0a95373fefe598c33e70c0c5"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base/installed.json",
+        "sha256": "d462faf448e097d9881051f35ee3a4270cef07f554d1fa9aeb114a619d4f2b2f"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base/file-audit.json",
+        "sha256": "18f4ee50383a0ebaa73770085a759e21a1048caaa93142c43ab2e1e5da96065c"
+      },
+      "record_hashes_checked": 1571,
+      "entire_saved_record_hashed_entry_count": 1571,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "pip-extra",
+      "distribution": "faster-coco-eval",
+      "version": "1.8.0",
+      "original_member": "faster_coco_eval-1.8.0.data/data/docs.txt",
+      "original_wheel_sha256": "f4a2ad80b8d7619b9e043d716ddb5b43896125a3ba408414a25793fb04f83751",
+      "original_bytes": 123,
+      "original_sha256": "305faaeac5c0aca0c5b69b190d0b933469a7f68f6d18dbb8e7bb839707e9c807",
+      "installed_record_entry": [
+        "../../../docs.txt",
+        "sha256=MF-q6sXArKDFtpsZDQuTNGmn9o9tGNu457uDlwfpyAc",
+        "123"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/metadata/faster-coco-eval/RECORD",
+        "sha256": "7f0ddec2c4001801b15522553f28b759232febec9eeafd3aa3387a9397e5a03d"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/installed.json",
+        "sha256": "fcce140e182df7f8f984ef24bcb4963e2d3dc39d9af727108b428ed391bc508f"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/file-audit.json",
+        "sha256": "31a62df74c47663ec4f5318152a78df2955e98403034a08a14dbef9764adca0f"
+      },
+      "record_hashes_checked": 28,
+      "entire_saved_record_hashed_entry_count": 28,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "pip-extra",
+      "distribution": "faster-coco-eval",
+      "version": "1.8.0",
+      "original_member": "faster_coco_eval-1.8.0.data/data/extra.txt",
+      "original_wheel_sha256": "f4a2ad80b8d7619b9e043d716ddb5b43896125a3ba408414a25793fb04f83751",
+      "original_bytes": 44,
+      "original_sha256": "62821ee67287f4cc3bd217196ca072eb7ab9718b175ea88497b9d5bc03eb3562",
+      "installed_record_entry": [
+        "../../../extra.txt",
+        "sha256=YoIe5nKH9Mw70hcZbKBy63q5cYsXXqiEl7nVvAPrNWI",
+        "44"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/metadata/faster-coco-eval/RECORD",
+        "sha256": "7f0ddec2c4001801b15522553f28b759232febec9eeafd3aa3387a9397e5a03d"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/installed.json",
+        "sha256": "fcce140e182df7f8f984ef24bcb4963e2d3dc39d9af727108b428ed391bc508f"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/file-audit.json",
+        "sha256": "31a62df74c47663ec4f5318152a78df2955e98403034a08a14dbef9764adca0f"
+      },
+      "record_hashes_checked": 28,
+      "entire_saved_record_hashed_entry_count": 28,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "pip-extra",
+      "distribution": "faster-coco-eval",
+      "version": "1.8.0",
+      "original_member": "faster_coco_eval-1.8.0.data/data/runtime.txt",
+      "original_wheel_sha256": "f4a2ad80b8d7619b9e043d716ddb5b43896125a3ba408414a25793fb04f83751",
+      "original_bytes": 6,
+      "original_sha256": "e09f656c130b9c08b2c5ab7187c891295e449ed77febea2a6ceee9cc98ccb0fc",
+      "installed_record_entry": [
+        "../../../runtime.txt",
+        "sha256=4J9lbBMLnAiyxatxh8iRKV5Entd_6-oqbO7pzJjMsPw",
+        "6"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/metadata/faster-coco-eval/RECORD",
+        "sha256": "7f0ddec2c4001801b15522553f28b759232febec9eeafd3aa3387a9397e5a03d"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/installed.json",
+        "sha256": "fcce140e182df7f8f984ef24bcb4963e2d3dc39d9af727108b428ed391bc508f"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/file-audit.json",
+        "sha256": "31a62df74c47663ec4f5318152a78df2955e98403034a08a14dbef9764adca0f"
+      },
+      "record_hashes_checked": 28,
+      "entire_saved_record_hashed_entry_count": 28,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "pip-extra",
+      "distribution": "faster-coco-eval",
+      "version": "1.8.0",
+      "original_member": "faster_coco_eval-1.8.0.data/data/tests.txt",
+      "original_wheel_sha256": "f4a2ad80b8d7619b9e043d716ddb5b43896125a3ba408414a25793fb04f83751",
+      "original_bytes": 76,
+      "original_sha256": "f607cc475834cd08a45236d772464b7e83e155db48c5f0f6a7946a2d1411301f",
+      "installed_record_entry": [
+        "../../../tests.txt",
+        "sha256=9gfMR1g0zQikUjbXckZLfoPhVdtIxfD2p5RqLRQRMB8",
+        "76"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/metadata/faster-coco-eval/RECORD",
+        "sha256": "7f0ddec2c4001801b15522553f28b759232febec9eeafd3aa3387a9397e5a03d"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/installed.json",
+        "sha256": "fcce140e182df7f8f984ef24bcb4963e2d3dc39d9af727108b428ed391bc508f"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/file-audit.json",
+        "sha256": "31a62df74c47663ec4f5318152a78df2955e98403034a08a14dbef9764adca0f"
+      },
+      "record_hashes_checked": 28,
+      "entire_saved_record_hashed_entry_count": 28,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "pip-extra",
+      "distribution": "fonttools",
+      "version": "4.68.0",
+      "original_member": "fonttools-4.68.0.data/data/share/man/man1/ttx.1",
+      "original_wheel_sha256": "4b9c89b5876f1a74b1341632dfaf4c4c2be565d76c060445df401ebe7a4ceefa",
+      "original_bytes": 5377,
+      "original_sha256": "70b6e6fe938e8f50bbe93d905ef0f1cf00e3f6093e193779473b6f4ccb28b85c",
+      "installed_record_entry": [
+        "../../../share/man/man1/ttx.1",
+        "sha256=cLbm_pOOj1C76T2QXvDxzwDj9gk-GTd5RztvTMsouFw",
+        "5377"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/metadata/fonttools/RECORD",
+        "sha256": "b8bd36d0ed7cf9da2ea010b1aacfe819da5127364975ed332e807f93239b91e7"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/installed.json",
+        "sha256": "fcce140e182df7f8f984ef24bcb4963e2d3dc39d9af727108b428ed391bc508f"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/file-audit.json",
+        "sha256": "31a62df74c47663ec4f5318152a78df2955e98403034a08a14dbef9764adca0f"
+      },
+      "record_hashes_checked": 378,
+      "entire_saved_record_hashed_entry_count": 378,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "pip-extra",
+      "distribution": "ipython",
+      "version": "9.18.1",
+      "original_member": "ipython-9.18.1.data/data/share/man/man1/ipython.1",
+      "original_wheel_sha256": "997ce9140d374531a61069c70c0f9ef299d6dd3559ea0f94b8af589726e3c1d5",
+      "original_bytes": 2058,
+      "original_sha256": "3d57503f6847987c94130ccb38f7206af9c27bd8d30d5accd63299b7872717f4",
+      "installed_record_entry": [
+        "../../../share/man/man1/ipython.1",
+        "sha256=PVdQP2hHmHyUEwzLOPcgavnCe9jTDVrM1jKZt4cnF_Q",
+        "2058"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/metadata/ipython/RECORD",
+        "sha256": "2d391e97c5b8defd93aa1ec5f57424101652d379ea894b62cf2c0b1165d56318"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/installed.json",
+        "sha256": "fcce140e182df7f8f984ef24bcb4963e2d3dc39d9af727108b428ed391bc508f"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/file-audit.json",
+        "sha256": "31a62df74c47663ec4f5318152a78df2955e98403034a08a14dbef9764adca0f"
+      },
+      "record_hashes_checked": 196,
+      "entire_saved_record_hashed_entry_count": 196,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "pip-extra",
+      "distribution": "sympy",
+      "version": "1.14.0",
+      "original_member": "sympy-1.14.0.data/data/share/man/man1/isympy.1",
+      "original_wheel_sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+      "original_bytes": 6659,
+      "original_sha256": "f4365d48e2102e292b0131e56e4743674e0b0508a0643504d3fa025c10ef741b",
+      "installed_record_entry": [
+        "../../../share/man/man1/isympy.1",
+        "sha256=9DZdSOIQLikrATHlbkdDZ04LBQigZDUE0_oCXBDvdBs",
+        "6659"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/metadata/sympy/RECORD",
+        "sha256": "8378f129cf1222cbb579c70204a7bacb222c068c0a95373fefe598c33e70c0c5"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/installed.json",
+        "sha256": "fcce140e182df7f8f984ef24bcb4963e2d3dc39d9af727108b428ed391bc508f"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/file-audit.json",
+        "sha256": "31a62df74c47663ec4f5318152a78df2955e98403034a08a14dbef9764adca0f"
+      },
+      "record_hashes_checked": 1571,
+      "entire_saved_record_hashed_entry_count": 1571,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "pip-base-request-again",
+      "distribution": "faster-coco-eval",
+      "version": "1.8.0",
+      "original_member": "faster_coco_eval-1.8.0.data/data/docs.txt",
+      "original_wheel_sha256": "f4a2ad80b8d7619b9e043d716ddb5b43896125a3ba408414a25793fb04f83751",
+      "original_bytes": 123,
+      "original_sha256": "305faaeac5c0aca0c5b69b190d0b933469a7f68f6d18dbb8e7bb839707e9c807",
+      "installed_record_entry": [
+        "../../../docs.txt",
+        "sha256=MF-q6sXArKDFtpsZDQuTNGmn9o9tGNu457uDlwfpyAc",
+        "123"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/metadata/faster-coco-eval/RECORD",
+        "sha256": "7f0ddec2c4001801b15522553f28b759232febec9eeafd3aa3387a9397e5a03d"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/installed.json",
+        "sha256": "fcce140e182df7f8f984ef24bcb4963e2d3dc39d9af727108b428ed391bc508f"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/file-audit.json",
+        "sha256": "31a62df74c47663ec4f5318152a78df2955e98403034a08a14dbef9764adca0f"
+      },
+      "record_hashes_checked": 28,
+      "entire_saved_record_hashed_entry_count": 28,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "pip-base-request-again",
+      "distribution": "faster-coco-eval",
+      "version": "1.8.0",
+      "original_member": "faster_coco_eval-1.8.0.data/data/extra.txt",
+      "original_wheel_sha256": "f4a2ad80b8d7619b9e043d716ddb5b43896125a3ba408414a25793fb04f83751",
+      "original_bytes": 44,
+      "original_sha256": "62821ee67287f4cc3bd217196ca072eb7ab9718b175ea88497b9d5bc03eb3562",
+      "installed_record_entry": [
+        "../../../extra.txt",
+        "sha256=YoIe5nKH9Mw70hcZbKBy63q5cYsXXqiEl7nVvAPrNWI",
+        "44"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/metadata/faster-coco-eval/RECORD",
+        "sha256": "7f0ddec2c4001801b15522553f28b759232febec9eeafd3aa3387a9397e5a03d"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/installed.json",
+        "sha256": "fcce140e182df7f8f984ef24bcb4963e2d3dc39d9af727108b428ed391bc508f"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/file-audit.json",
+        "sha256": "31a62df74c47663ec4f5318152a78df2955e98403034a08a14dbef9764adca0f"
+      },
+      "record_hashes_checked": 28,
+      "entire_saved_record_hashed_entry_count": 28,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "pip-base-request-again",
+      "distribution": "faster-coco-eval",
+      "version": "1.8.0",
+      "original_member": "faster_coco_eval-1.8.0.data/data/runtime.txt",
+      "original_wheel_sha256": "f4a2ad80b8d7619b9e043d716ddb5b43896125a3ba408414a25793fb04f83751",
+      "original_bytes": 6,
+      "original_sha256": "e09f656c130b9c08b2c5ab7187c891295e449ed77febea2a6ceee9cc98ccb0fc",
+      "installed_record_entry": [
+        "../../../runtime.txt",
+        "sha256=4J9lbBMLnAiyxatxh8iRKV5Entd_6-oqbO7pzJjMsPw",
+        "6"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/metadata/faster-coco-eval/RECORD",
+        "sha256": "7f0ddec2c4001801b15522553f28b759232febec9eeafd3aa3387a9397e5a03d"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/installed.json",
+        "sha256": "fcce140e182df7f8f984ef24bcb4963e2d3dc39d9af727108b428ed391bc508f"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/file-audit.json",
+        "sha256": "31a62df74c47663ec4f5318152a78df2955e98403034a08a14dbef9764adca0f"
+      },
+      "record_hashes_checked": 28,
+      "entire_saved_record_hashed_entry_count": 28,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "pip-base-request-again",
+      "distribution": "faster-coco-eval",
+      "version": "1.8.0",
+      "original_member": "faster_coco_eval-1.8.0.data/data/tests.txt",
+      "original_wheel_sha256": "f4a2ad80b8d7619b9e043d716ddb5b43896125a3ba408414a25793fb04f83751",
+      "original_bytes": 76,
+      "original_sha256": "f607cc475834cd08a45236d772464b7e83e155db48c5f0f6a7946a2d1411301f",
+      "installed_record_entry": [
+        "../../../tests.txt",
+        "sha256=9gfMR1g0zQikUjbXckZLfoPhVdtIxfD2p5RqLRQRMB8",
+        "76"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/metadata/faster-coco-eval/RECORD",
+        "sha256": "7f0ddec2c4001801b15522553f28b759232febec9eeafd3aa3387a9397e5a03d"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/installed.json",
+        "sha256": "fcce140e182df7f8f984ef24bcb4963e2d3dc39d9af727108b428ed391bc508f"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/file-audit.json",
+        "sha256": "31a62df74c47663ec4f5318152a78df2955e98403034a08a14dbef9764adca0f"
+      },
+      "record_hashes_checked": 28,
+      "entire_saved_record_hashed_entry_count": 28,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "pip-base-request-again",
+      "distribution": "fonttools",
+      "version": "4.68.0",
+      "original_member": "fonttools-4.68.0.data/data/share/man/man1/ttx.1",
+      "original_wheel_sha256": "4b9c89b5876f1a74b1341632dfaf4c4c2be565d76c060445df401ebe7a4ceefa",
+      "original_bytes": 5377,
+      "original_sha256": "70b6e6fe938e8f50bbe93d905ef0f1cf00e3f6093e193779473b6f4ccb28b85c",
+      "installed_record_entry": [
+        "../../../share/man/man1/ttx.1",
+        "sha256=cLbm_pOOj1C76T2QXvDxzwDj9gk-GTd5RztvTMsouFw",
+        "5377"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/metadata/fonttools/RECORD",
+        "sha256": "b8bd36d0ed7cf9da2ea010b1aacfe819da5127364975ed332e807f93239b91e7"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/installed.json",
+        "sha256": "fcce140e182df7f8f984ef24bcb4963e2d3dc39d9af727108b428ed391bc508f"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/file-audit.json",
+        "sha256": "31a62df74c47663ec4f5318152a78df2955e98403034a08a14dbef9764adca0f"
+      },
+      "record_hashes_checked": 378,
+      "entire_saved_record_hashed_entry_count": 378,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "pip-base-request-again",
+      "distribution": "ipython",
+      "version": "9.18.1",
+      "original_member": "ipython-9.18.1.data/data/share/man/man1/ipython.1",
+      "original_wheel_sha256": "997ce9140d374531a61069c70c0f9ef299d6dd3559ea0f94b8af589726e3c1d5",
+      "original_bytes": 2058,
+      "original_sha256": "3d57503f6847987c94130ccb38f7206af9c27bd8d30d5accd63299b7872717f4",
+      "installed_record_entry": [
+        "../../../share/man/man1/ipython.1",
+        "sha256=PVdQP2hHmHyUEwzLOPcgavnCe9jTDVrM1jKZt4cnF_Q",
+        "2058"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/metadata/ipython/RECORD",
+        "sha256": "2d391e97c5b8defd93aa1ec5f57424101652d379ea894b62cf2c0b1165d56318"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/installed.json",
+        "sha256": "fcce140e182df7f8f984ef24bcb4963e2d3dc39d9af727108b428ed391bc508f"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/file-audit.json",
+        "sha256": "31a62df74c47663ec4f5318152a78df2955e98403034a08a14dbef9764adca0f"
+      },
+      "record_hashes_checked": 196,
+      "entire_saved_record_hashed_entry_count": 196,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    },
+    {
+      "stage": "pip-base-request-again",
+      "distribution": "sympy",
+      "version": "1.14.0",
+      "original_member": "sympy-1.14.0.data/data/share/man/man1/isympy.1",
+      "original_wheel_sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+      "original_bytes": 6659,
+      "original_sha256": "f4365d48e2102e292b0131e56e4743674e0b0508a0643504d3fa025c10ef741b",
+      "installed_record_entry": [
+        "../../../share/man/man1/isympy.1",
+        "sha256=9DZdSOIQLikrATHlbkdDZ04LBQigZDUE0_oCXBDvdBs",
+        "6659"
+      ],
+      "installed_record": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/metadata/sympy/RECORD",
+        "sha256": "8378f129cf1222cbb579c70204a7bacb222c068c0a95373fefe598c33e70c0c5"
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/installed.json",
+        "sha256": "fcce140e182df7f8f984ef24bcb4963e2d3dc39d9af727108b428ed391bc508f"
+      },
+      "frozen_file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/file-audit.json",
+        "sha256": "31a62df74c47663ec4f5318152a78df2955e98403034a08a14dbef9764adca0f"
+      },
+      "record_hashes_checked": 1571,
+      "entire_saved_record_hashed_entry_count": 1571,
+      "original_payload_equals_saved_record_hash_and_size": true,
+      "original_member_bytes_rehashed_at_addendum": true,
+      "historical_actual_record_check_reported_no_failure_for_this_path": true,
+      "proof_type": "Original wheel hash/size -> saved installed RECORD hash/size -> frozen all-RECORD actual-file checks. Not a later environment read used to infer an earlier state."
+    }
+  ],
+  "counts": {
+    "saved_stage_unknown_entries": 31,
+    "distinct_original_data_members": 7,
+    "covered_by_exact_original_to_record_chain": 31,
+    "unresolved_original_data_path_entries": 0
+  },
+  "limits": [
+    "This addendum does not turn damaged cv2 entries into passes; the original actual file violations remain.",
+    "Original unknown counts are retained in raw reports. The supplementary proof is explicit and separate.",
+    "This is read-only analysis, not another package installation or affected project."
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "schema": "stateful-artifact-preparation-recovery-summary-v1",
+  "finished_at_utc": "2026-11-11T09:19:47.157314+00:00",
+  "protocol_sha256": "a0c110042fd342cfa8f0ad6d7ae231df042756a87fb7340e55f0bcb55bc61f1c",
+  "results": [
+    {
+      "name": "akshare",
+      "status": "not_eligible_for_preparation_recovery",
+      "original_artifact_status": "artifact_preparation_finished",
+      "workflows": {}
+    },
+    {
+      "name": "celery",
+      "status": "not_eligible_for_preparation_recovery",
+      "original_artifact_status": "artifact_preparation_finished",
+      "workflows": {}
+    },
+    {
+      "name": "deepspeed",
+      "status": "not_eligible_for_preparation_recovery",
+      "original_artifact_status": "artifact_preparation_finished",
+      "workflows": {}
+    },
+    {
+      "name": "diffusers",
+      "status": "not_eligible_for_preparation_recovery",
+      "original_artifact_status": "artifact_preparation_finished",
+      "workflows": {}
+    },
+    {
+      "name": "genesis-world",
+      "status": "not_eligible_for_preparation_recovery",
+      "original_artifact_status": "artifact_preparation_finished",
+      "workflows": {}
+    },
+    {
+      "name": "aider-chat",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "extras": "completed_actual_stateful_workflow"
+      }
+    },
+    {
+      "name": "homeassistant",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "unknown_preparation_coverage",
+        "relock": "unknown_preparation_coverage"
+      }
+    },
+    {
+      "name": "jax",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "completed_actual_stateful_workflow",
+        "extras": "completed_actual_stateful_workflow",
+        "relock": "completed_actual_stateful_workflow"
+      }
+    },
+    {
+      "name": "khoj",
+      "status": "not_eligible_for_preparation_recovery",
+      "original_artifact_status": "artifact_preparation_finished",
+      "workflows": {}
+    },
+    {
+      "name": "langchain-chatchat",
+      "status": "not_eligible_for_preparation_recovery",
+      "original_artifact_status": "artifact_preparation_finished",
+      "workflows": {}
+    },
+    {
+      "name": "graphrag",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "completed_actual_stateful_workflow",
+        "relock": "completed_actual_stateful_workflow"
+      }
+    },
+    {
+      "name": "llamafactory",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "unknown_preparation_coverage",
+        "relock": "unknown_preparation_coverage"
+      }
+    },
+    {
+      "name": "llama-index",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "completed_actual_stateful_workflow",
+        "relock": "completed_actual_stateful_workflow"
+      }
+    },
+    {
+      "name": "mineru",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "unknown_preparation_coverage",
+        "extras": "unknown_preparation_coverage",
+        "relock": "unknown_preparation_coverage"
+      }
+    },
+    {
+      "name": "openai-whisper",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "relock": "unknown_preparation_coverage"
+      }
+    },
+    {
+      "name": "matplotlib",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "completed_actual_stateful_workflow",
+        "relock": "completed_actual_stateful_workflow"
+      }
+    },
+    {
+      "name": "pipenv",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "completed_actual_stateful_workflow",
+        "extras": "completed_actual_stateful_workflow",
+        "relock": "completed_actual_stateful_workflow"
+      }
+    },
+    {
+      "name": "pandas",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "completed_actual_stateful_workflow",
+        "extras": "unknown_preparation_coverage",
+        "relock": "completed_actual_stateful_workflow"
+      }
+    },
+    {
+      "name": "pyqlib",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "unknown_preparation_coverage",
+        "extras": "unknown_preparation_coverage",
+        "relock": "unknown_preparation_coverage"
+      }
+    },
+    {
+      "name": "rasa",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "unknown_preparation_coverage",
+        "relock": "unknown_preparation_coverage"
+      }
+    },
+    {
+      "name": "poetry",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "completed_actual_stateful_workflow",
+        "relock": "completed_actual_stateful_workflow"
+      }
+    },
+    {
+      "name": "scikit-learn",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "unknown_preparation_coverage",
+        "relock": "unknown_preparation_coverage"
+      }
+    },
+    {
+      "name": "superclaude",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "completed_actual_stateful_workflow",
+        "relock": "completed_actual_stateful_workflow"
+      }
+    },
+    {
+      "name": "timm",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "unknown_preparation_coverage",
+        "relock": "unknown_preparation_coverage"
+      }
+    },
+    {
+      "name": "torch",
+      "status": "registered_resource_coverage_exclusion",
+      "workflows": {
+        "update": "unsupported_registered_main_wheel_size",
+        "extras": "unsupported_registered_main_wheel_size",
+        "relock": "unsupported_registered_main_wheel_size"
+      }
+    },
+    {
+      "name": "ray",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "completed_actual_stateful_workflow",
+        "extras": "completed_actual_stateful_workflow",
+        "relock": "completed_actual_stateful_workflow"
+      }
+    },
+    {
+      "name": "torch-geometric",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "completed_actual_stateful_workflow",
+        "extras": "unknown_preparation_coverage",
+        "relock": "completed_actual_stateful_workflow"
+      }
+    },
+    {
+      "name": "ultralytics",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "unknown_preparation_coverage",
+        "extras": "unknown_preparation_coverage",
+        "relock": "unknown_preparation_coverage"
+      }
+    },
+    {
+      "name": "unsloth",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "unknown_preparation_coverage",
+        "extras": "unknown_preparation_coverage",
+        "relock": "unknown_preparation_coverage"
+      }
+    },
+    {
+      "name": "transformers",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "artifact_preparation_finished",
+        "update": "completed_actual_stateful_workflow",
+        "extras": "unknown_preparation_coverage",
+        "relock": "completed_actual_stateful_workflow"
+      }
+    },
+    {
+      "name": "vllm",
+      "status": "registered_resource_coverage_exclusion",
+      "workflows": {
+        "update": "unsupported_registered_main_wheel_size",
+        "extras": "unsupported_registered_main_wheel_size",
+        "relock": "unsupported_registered_main_wheel_size"
+      }
+    },
+    {
+      "name": "verl",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "unknown_worker_or_budget",
+        "update": "unknown_worker_or_budget",
+        "extras": "unknown_worker_or_budget",
+        "relock": "unknown_worker_or_budget"
+      }
+    },
+    {
+      "name": "whisperx",
+      "status": "bounded_preparation_recovery_finished",
+      "workflows": {
+        "artifacts": "unknown_worker_or_budget",
+        "update": "unknown_worker_or_budget",
+        "relock": "unknown_worker_or_budget"
+      }
+    }
+  ],
+  "original_data_preserved": true,
+  "eligible_preparation_roots": 26,
+  "inputs_unchanged": true,
+  "core_unchanged": true,
+  "confirmed_defects": 0
+}

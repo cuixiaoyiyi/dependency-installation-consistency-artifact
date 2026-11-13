@@ -1,0 +1,296 @@
+{
+  "schema": "uv-installed-closure-admission-review-v1",
+  "local_technical_verdict": "confirmed_observed_installed_requires_dist_violation_after_successful_warm_sync",
+  "independent_mechanisms": 1,
+  "separate_new_bug_count": 0,
+  "runs": [
+    {
+      "directory": "work/expanded-validation-20261111/install-review/uv-warm-closure-actual-01",
+      "results_sha256": "a8a7b1008bba75989b71a20f8d01625fdd54fcfdb9463e50c1dce42020da12f8",
+      "executed_script_sha256": "f36385239c398797ee5e65982008e0a5df97b396a38f105d3d9fe56ff4f72868",
+      "tool": "uv 0.13.7 (x86_64-unknown-linux-gnu)",
+      "uv_binary_sha256": "4b5e59bc557ff2cd70934beb59d0eaa92820702853d49f0066b50aa11a8f0c52",
+      "full_target_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "common_manifest_sha256": "9a5ecd8ab2a6c7a6053f46f2eeb5826b74c8f0d056a78f4e8337504f1269c514",
+      "common_lock_sha256": "6bee0017cfc1eb3a1e1532f2fcafe933f538dd0cd4b56ff4ae313a3bcabc6d7b",
+      "warm_installed_metadata_sha256": "34b1b0a41120986cdb2a23042caea50b7ff58b5163ab883a6ba8dd6bf7d407ef",
+      "checks_reported_true": 19,
+      "checks_reported_total": 19,
+      "independent_reaudit_passed": true,
+      "http_artifact_witnesses": [
+        {
+          "witness": "initial-probe",
+          "http_response_sha256": "5e06eed9fbbe0dfdd67774f9bb610907346293f570423101190d3a225aee9bc3",
+          "port": 33149,
+          "path": "/old/files/warm_closure_probe-1.0-py3-none-any.whl"
+        },
+        {
+          "witness": "initial-old-dep",
+          "http_response_sha256": "a3156a1a4b3b57a1d06732ff358cd8d6dfa7f3368546895565175050ee82a9cd",
+          "port": 46633,
+          "path": "/new/files/old_dep-1.0-py3-none-any.whl"
+        },
+        {
+          "witness": "warm-new-dep",
+          "http_response_sha256": "675ebf68ad8517af1220f9482ad29c4fc89be98fb868c214da57d06e722d3a75",
+          "port": 46633,
+          "path": "/new/files/new_dep-1.0-py3-none-any.whl"
+        },
+        {
+          "witness": "fresh-probe",
+          "http_response_sha256": "d3cdbf43c5d40902f2d95ecb3a82e8a34ebab6341ea853f7d79fab143e29b971",
+          "port": 46633,
+          "path": "/new/files/warm_closure_probe-1.0-py3-none-any.whl"
+        },
+        {
+          "witness": "fresh-new-dep",
+          "http_response_sha256": "675ebf68ad8517af1220f9482ad29c4fc89be98fb868c214da57d06e722d3a75",
+          "port": 46633,
+          "path": "/new/files/new_dep-1.0-py3-none-any.whl"
+        },
+        {
+          "witness": "reinstall-probe",
+          "http_response_sha256": "d3cdbf43c5d40902f2d95ecb3a82e8a34ebab6341ea853f7d79fab143e29b971",
+          "port": 46633,
+          "path": "/new/files/warm_closure_probe-1.0-py3-none-any.whl"
+        }
+      ]
+    },
+    {
+      "directory": "work/expanded-validation-20261111/install-review/uv-warm-closure-independent-02",
+      "results_sha256": "7a864e2399ba88ef8dda1cc1b4f91c6c6a64cba93a829868658e98451aabd40f",
+      "executed_script_sha256": "3b1d9355f9a43b122064c54088b483509405cba1149a529ec49a339a865ad02b",
+      "tool": "uv 0.13.7 (x86_64-unknown-linux-gnu)",
+      "uv_binary_sha256": "4b5e59bc557ff2cd70934beb59d0eaa92820702853d49f0066b50aa11a8f0c52",
+      "full_target_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "common_manifest_sha256": "1bb45bf184e49f487e2c8e5bce013c63f36fc11ad609fea47d305927d48cf3e2",
+      "common_lock_sha256": "9c2f3c7f807d34c70bdd20e1cb23c49d1f14c5b8581342642488ea51d8871580",
+      "warm_installed_metadata_sha256": "34b1b0a41120986cdb2a23042caea50b7ff58b5163ab883a6ba8dd6bf7d407ef",
+      "checks_reported_true": 19,
+      "checks_reported_total": 19,
+      "independent_reaudit_passed": true,
+      "http_artifact_witnesses": [
+        {
+          "witness": "initial-probe",
+          "http_response_sha256": "5e06eed9fbbe0dfdd67774f9bb610907346293f570423101190d3a225aee9bc3",
+          "port": 41827,
+          "path": "/old/files/warm_closure_probe-1.0-py3-none-any.whl"
+        },
+        {
+          "witness": "initial-old-dep",
+          "http_response_sha256": "a3156a1a4b3b57a1d06732ff358cd8d6dfa7f3368546895565175050ee82a9cd",
+          "port": 43175,
+          "path": "/new/files/old_dep-1.0-py3-none-any.whl"
+        },
+        {
+          "witness": "warm-new-dep",
+          "http_response_sha256": "675ebf68ad8517af1220f9482ad29c4fc89be98fb868c214da57d06e722d3a75",
+          "port": 43175,
+          "path": "/new/files/new_dep-1.0-py3-none-any.whl"
+        },
+        {
+          "witness": "fresh-probe",
+          "http_response_sha256": "d3cdbf43c5d40902f2d95ecb3a82e8a34ebab6341ea853f7d79fab143e29b971",
+          "port": 43175,
+          "path": "/new/files/warm_closure_probe-1.0-py3-none-any.whl"
+        },
+        {
+          "witness": "fresh-new-dep",
+          "http_response_sha256": "675ebf68ad8517af1220f9482ad29c4fc89be98fb868c214da57d06e722d3a75",
+          "port": 43175,
+          "path": "/new/files/new_dep-1.0-py3-none-any.whl"
+        },
+        {
+          "witness": "reinstall-probe",
+          "http_response_sha256": "d3cdbf43c5d40902f2d95ecb3a82e8a34ebab6341ea853f7d79fab143e29b971",
+          "port": 43175,
+          "path": "/new/files/warm_closure_probe-1.0-py3-none-any.whl"
+        }
+      ]
+    },
+    {
+      "directory": "work/expanded-validation-20261111/install-review/uv-warm-closure-delivery-03",
+      "results_sha256": "d688e523a5db77ca66723a5848bb2162c97f049410b42e14bcbbca18ac4724cd",
+      "executed_script_sha256": "a7c753483531c82e4f4b7fd2ae25f3bad31909c72e9e634cf2b13a1546eafb63",
+      "tool": "uv 0.13.7 (x86_64-unknown-linux-gnu)",
+      "uv_binary_sha256": "4b5e59bc557ff2cd70934beb59d0eaa92820702853d49f0066b50aa11a8f0c52",
+      "full_target_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "common_manifest_sha256": "8d9151688efd4ee2891b6c96714fc497207744a255b61ab3faa7d66942284fec",
+      "common_lock_sha256": "60937e712374f65c5e5686f7a5de962140b97d5084cbc5c6a7f1f4e3acfa3489",
+      "warm_installed_metadata_sha256": "34b1b0a41120986cdb2a23042caea50b7ff58b5163ab883a6ba8dd6bf7d407ef",
+      "checks_reported_true": 19,
+      "checks_reported_total": 19,
+      "independent_reaudit_passed": true,
+      "http_artifact_witnesses": [
+        {
+          "witness": "initial-probe",
+          "http_response_sha256": "5e06eed9fbbe0dfdd67774f9bb610907346293f570423101190d3a225aee9bc3",
+          "port": 43947,
+          "path": "/old/files/warm_closure_probe-1.0-py3-none-any.whl"
+        },
+        {
+          "witness": "initial-old-dep",
+          "http_response_sha256": "a3156a1a4b3b57a1d06732ff358cd8d6dfa7f3368546895565175050ee82a9cd",
+          "port": 35699,
+          "path": "/new/files/old_dep-1.0-py3-none-any.whl"
+        },
+        {
+          "witness": "warm-new-dep",
+          "http_response_sha256": "675ebf68ad8517af1220f9482ad29c4fc89be98fb868c214da57d06e722d3a75",
+          "port": 35699,
+          "path": "/new/files/new_dep-1.0-py3-none-any.whl"
+        },
+        {
+          "witness": "fresh-probe",
+          "http_response_sha256": "d3cdbf43c5d40902f2d95ecb3a82e8a34ebab6341ea853f7d79fab143e29b971",
+          "port": 35699,
+          "path": "/new/files/warm_closure_probe-1.0-py3-none-any.whl"
+        },
+        {
+          "witness": "fresh-new-dep",
+          "http_response_sha256": "675ebf68ad8517af1220f9482ad29c4fc89be98fb868c214da57d06e722d3a75",
+          "port": 35699,
+          "path": "/new/files/new_dep-1.0-py3-none-any.whl"
+        },
+        {
+          "witness": "reinstall-probe",
+          "http_response_sha256": "d3cdbf43c5d40902f2d95ecb3a82e8a34ebab6341ea853f7d79fab143e29b971",
+          "port": 35699,
+          "path": "/new/files/warm_closure_probe-1.0-py3-none-any.whl"
+        }
+      ]
+    }
+  ],
+  "same_inert_fixture_bytes_across_all_three_runs": true,
+  "final_delivery_script": "1110ISSUEs/01-uv-dependency-closure-repro.py",
+  "final_delivery_script_sha256": "a7c753483531c82e4f4b7fd2ae25f3bad31909c72e9e634cf2b13a1546eafb63",
+  "official_latest_release": {
+    "tag": "0.13.7",
+    "published_at": "2026-11-03T02:45:04Z",
+    "captured_path": "work/expanded-validation-20261111/install-review/uv-upstream/latest-release.json"
+  },
+  "document_scope_audit": [
+    {
+      "ref": "0.13.7",
+      "path": "work/expanded-validation-20261111/install-review/uv-upstream/0.13.7-docs__guides__integration__pytorch.md",
+      "sha256": "ed2efdd402b3062794c77c71e24e7b01e3e3de28287b3bbe91a665f47e3acc03",
+      "reinstall_word_occurrences": 0,
+      "same_version_phrase_occurrences": 0
+    },
+    {
+      "ref": "0.13.7",
+      "path": "work/expanded-validation-20261111/install-review/uv-upstream/0.13.7-docs__concepts__indexes.md",
+      "sha256": "dc4ac8da5885765b8c37833e8953e81d6d236d2ff2763e2f29fd8622fcaf3bf7",
+      "reinstall_word_occurrences": 0,
+      "same_version_phrase_occurrences": 0
+    },
+    {
+      "ref": "main",
+      "path": "work/expanded-validation-20261111/install-review/uv-upstream/main-docs__guides__integration__pytorch.md",
+      "sha256": "ed2efdd402b3062794c77c71e24e7b01e3e3de28287b3bbe91a665f47e3acc03",
+      "reinstall_word_occurrences": 0,
+      "same_version_phrase_occurrences": 0
+    },
+    {
+      "ref": "main",
+      "path": "work/expanded-validation-20261111/install-review/uv-upstream/main-docs__concepts__indexes.md",
+      "sha256": "a5ebc0bf975241358ddfc1c1e07673dd932f4a717cd2da456076910d0d69756c",
+      "reinstall_word_occurrences": 0,
+      "same_version_phrase_occurrences": 0
+    }
+  ],
+  "semantic_assessment": {
+    "conclusion": "可将既有01提升为本地实装确认的依赖闭包违约；源复用、extras与relock见证仍只计同一机制。维护者是否认定bug及新颖性未确定。",
+    "basis": "Core metadata的Requires-Dist声明运行时所需分发；pip与uv自身检查器均确认warm已装probe需要old-dep但该包被同步删除。fresh和reinstall同输入消除该缺失。",
+    "official_sync_document": "docs/concepts/projects/sync.md:3-11,94-108说明从lock安装及同步环境、exact删除非选包；没有支持成功sync后留下不满足Requires-Dist环境的明示例外。",
+    "reinstall_caveat": "docs/concepts/cache.md:24-36提供忽略已装版本的通用--reinstall逃生口；这不能证明每次同版索引切换必然自动重装，也不是明确许可留下缺依赖。",
+    "pytorch_index_specific_audit": "所查0.13.7与main的PyTorch/index两篇文档没有reinstall或same version文字，不存在该范围内的明示强制重装说明；不能据此排除其他文档或维护者未记录语义。"
+  },
+  "upstream_novelty": {
+    "status": "not_established",
+    "maintainer_confirmed_for_this_exact_closure_case": false,
+    "known_family": [
+      {
+        "url": "https://github.com/astral-sh/uv/issues/16368",
+        "relation": "已知torch local/nonlocal版本无效化；同版来源复用有维护者语义保留意见。"
+      },
+      {
+        "url": "https://github.com/astral-sh/uv/pull/16480",
+        "relation": "明确承认理想需跟踪index/hash的缺口；closed但未merged，不得声称此已修或根因全新。"
+      },
+      {
+        "url": "https://github.com/astral-sh/uv/issues/13943",
+        "relation": "path/registry来源切换需reinstall的已知用户报告；未展示本例双registry同版sync后缺old-dep。"
+      },
+      {
+        "url": "https://github.com/astral-sh/uv/issues/15129",
+        "relation": "本地开发来源切换及强制reinstall讨论，相关但未展示本fixture闭包失败。"
+      },
+      {
+        "url": "https://github.com/astral-sh/uv/pull/15234",
+        "relation": "editable→registry类型切换已修；本例两者都是registry，guard不区分其index身份。"
+      }
+    ],
+    "other_outcomes_distinguished": [
+      {
+        "url": "https://github.com/astral-sh/uv/issues/23073",
+        "reason": "人为或merge混合的不一致lock；本例lock自动生成且新来源新依赖正确。"
+      },
+      {
+        "url": "https://github.com/astral-sh/uv/issues/12588",
+        "reason": "解算阶段假定不同wheel的依赖相同；本例锁内新依赖正确且fresh成功，失败发生在复用已安装包。"
+      },
+      {
+        "url": "https://github.com/astral-sh/uv/issues/17378",
+        "reason": "构建时/运行时sdist依赖元数据不一致；本例无构建、纯dist-info两固定注册源。"
+      },
+      {
+        "url": "https://github.com/astral-sh/uv/issues/21484",
+        "reason": "恶意lock来源验证；本例无手改lock或恶意内容。"
+      }
+    ],
+    "search_limits": "8条较宽查询加5条title/body查询，部分返回首100条而total>100；已抓取17个相关线程及其全部≤100 comments，并细读最接近的来源切换/同版本/重装讨论与相关PR状态，另检视针对pip-check/source的完整较小结果集。未找到exact闭包复现不等于无重复，不可宣称首次发现。"
+  },
+  "issue_action": "更新01而非新增02；保留原候选稿备份及旧来源-only脚本；不公开提交。",
+  "limits": [
+    "仅uv0.13.7、CPython3.11.16 Linux x86_64的本地惰性wheel协议。",
+    "无应用模块或GPU载荷，不能宣称实际Torch/CUDA应用故障或恶意包攻击已经发生。",
+    "每阶段METADATA有持久副本；共享环境在最后reinstall被修复，历史warm状态由阶段命令、inspect/check日志和元数据指纹佐证。"
+  ]
+}

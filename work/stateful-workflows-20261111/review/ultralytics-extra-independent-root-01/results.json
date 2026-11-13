@@ -1,0 +1,1113 @@
+{
+  "started_at_utc": "2026-11-11T05:32:58.458819+00:00",
+  "protocol_sha256": "448272018853367d0161c8d7a9d76d158cc38a0993aa23026c56f66952a5ce05",
+  "stages": [
+    {
+      "label": "base",
+      "installed_count": 39,
+      "names_versions": {
+        "anyio": "4.16.0",
+        "certifi": "2026.10.23",
+        "charset-normalizer": "3.5.2",
+        "contourpy": "1.3.3",
+        "cycler": "0.12.1",
+        "filelock": "4.2.10",
+        "fonttools": "4.68.0",
+        "fsspec": "2026.9.0",
+        "h11": "0.16.0",
+        "httpcore": "1.0.9",
+        "httpx": "0.28.1",
+        "idna": "3.20",
+        "jinja2": "3.1.6",
+        "kiwisolver": "1.5.1",
+        "markupsafe": "3.0.4",
+        "matplotlib": "3.11.2",
+        "mpmath": "1.3.0",
+        "networkx": "3.6.1",
+        "numpy": "2.4.6",
+        "nvidia-ml-py": "13.615.71",
+        "opencv-python": "5.0.0.93",
+        "packaging": "26.3",
+        "pillow": "13.0.0",
+        "polars": "2.1.0",
+        "polars-runtime-32": "2.1.0",
+        "psutil": "7.2.2",
+        "pyparsing": "3.3.3",
+        "python-dateutil": "4.0.0",
+        "requests": "2.34.2",
+        "setuptools": "84.2.1",
+        "sympy": "1.14.0",
+        "torch": "2.15.0+cpu",
+        "torchvision": "0.29.2+cpu",
+        "typing-extensions": "4.16.0",
+        "tzdata": "2026.6",
+        "ultralytics": "8.4.208",
+        "ultralytics-platform": "0.1.109",
+        "ultralytics-thop": "2.2.5",
+        "urllib3": "2.8.0"
+      },
+      "root_closure": {
+        "active_roots": 3,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "all_base_closure": {
+        "active_roots": 42,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "pip_check_exit": 0,
+      "uv_check_exit": 0,
+      "cv2_smoke_exit": 0,
+      "yolo_import_exit": 0,
+      "normal_cv2_payload": [
+        {
+          "path": "cv2/LICENSE-3RD-PARTY.txt",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/LICENSE.txt",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/config-3.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/config.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/cv2.abi3.so",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/load_config_py2.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/load_config_py3.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/py.typed",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/version.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/Error/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/aruco/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/barcode/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/ccm/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/cuda/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/data/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/detail/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/dnn/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/fisheye/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/flann/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/instr/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/ipp/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/mat_wrapper/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/mcc/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/misc/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/misc/version.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/ocl/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/ogl/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/parallel/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/qt/plugins/platforms/libqxcb.so",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/samples/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/segmentation/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/typing/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/utils/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/utils/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/utils/fs/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/utils/logging/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/utils/nested/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/videoio_registry/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        }
+      ],
+      "normal_cv2_missing": 0,
+      "normal_cv2_mismatches": 0,
+      "manifest_sha256": "577a33fa107e91eca991c1c7f02e125994de5dc2f28a108b7c0eb5c4ea5b17b3",
+      "lock_sha256": "6ddaab7950c19485fd95936daafd3f226c606384168d8279786d4f51272041e1"
+    },
+    {
+      "label": "extra",
+      "installed_count": 66,
+      "names_versions": {
+        "albucore": "0.0.24",
+        "albumentations": "2.0.8",
+        "annotated-types": "0.8.0",
+        "anyio": "4.16.0",
+        "asttokens": "3.0.2",
+        "certifi": "2026.10.23",
+        "charset-normalizer": "3.5.2",
+        "contourpy": "1.3.3",
+        "cycler": "0.12.1",
+        "executing": "2.3.0",
+        "faster-coco-eval": "1.8.0",
+        "filelock": "4.2.10",
+        "fonttools": "4.68.0",
+        "fsspec": "2026.9.0",
+        "h11": "0.16.0",
+        "httpcore": "1.0.9",
+        "httpx": "0.28.1",
+        "idna": "3.20",
+        "ipython": "9.18.1",
+        "ipython-pygments-lexers": "1.1.1",
+        "jedi": "0.20.1",
+        "jinja2": "3.1.6",
+        "kiwisolver": "1.5.1",
+        "markupsafe": "3.0.4",
+        "matplotlib": "3.11.2",
+        "matplotlib-inline": "0.2.2",
+        "mpmath": "1.3.0",
+        "networkx": "3.6.1",
+        "numpy": "2.4.6",
+        "nvidia-ml-py": "13.615.71",
+        "opencv-python": "5.0.0.93",
+        "opencv-python-headless": "5.0.0.93",
+        "packaging": "26.3",
+        "parso": "0.8.7",
+        "pexpect": "4.9.0",
+        "pillow": "13.0.0",
+        "polars": "2.1.0",
+        "polars-runtime-32": "2.1.0",
+        "prompt-toolkit": "3.0.53",
+        "psutil": "7.2.2",
+        "ptyprocess": "0.7.0",
+        "pure-eval": "0.2.4",
+        "pydantic": "2.14.3",
+        "pydantic-core": "2.50.4",
+        "pygments": "2.21.0",
+        "pyparsing": "3.3.3",
+        "python-dateutil": "4.0.0",
+        "pyyaml": "6.0.3",
+        "requests": "2.34.2",
+        "scipy": "1.17.1",
+        "setuptools": "84.2.1",
+        "simsimd": "6.5.16",
+        "stack-data": "0.6.3",
+        "stringzilla": "5.3.2",
+        "sympy": "1.14.0",
+        "torch": "2.15.0+cpu",
+        "torchvision": "0.29.2+cpu",
+        "traitlets": "5.16.1",
+        "typing-extensions": "4.16.0",
+        "typing-inspection": "0.4.5",
+        "tzdata": "2026.6",
+        "ultralytics": "8.4.208",
+        "ultralytics-platform": "0.1.109",
+        "ultralytics-thop": "2.2.5",
+        "urllib3": "2.8.0",
+        "wcwidth": "0.9.4"
+      },
+      "root_closure": {
+        "active_roots": 3,
+        "reachable_nodes": 66,
+        "active_edges": 92,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "all_base_closure": {
+        "active_roots": 69,
+        "reachable_nodes": 66,
+        "active_edges": 92,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "pip_check_exit": 0,
+      "uv_check_exit": 0,
+      "cv2_smoke_exit": 0,
+      "yolo_import_exit": 0,
+      "normal_cv2_payload": [
+        {
+          "path": "cv2/LICENSE-3RD-PARTY.txt",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/LICENSE.txt",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/config-3.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/config.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/cv2.abi3.so",
+          "exists": true,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/load_config_py2.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/load_config_py3.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/py.typed",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/version.py",
+          "exists": true,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/Error/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/aruco/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/barcode/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/ccm/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/cuda/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/data/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/detail/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/dnn/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/fisheye/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/flann/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/instr/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/ipp/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/mat_wrapper/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/mcc/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/misc/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/misc/version.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/ocl/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/ogl/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/parallel/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/qt/plugins/platforms/libqxcb.so",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/samples/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/segmentation/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/typing/__init__.py",
+          "exists": true,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/utils/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/utils/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/utils/fs/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/utils/logging/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/utils/nested/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/videoio_registry/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        }
+      ],
+      "normal_cv2_missing": 0,
+      "normal_cv2_mismatches": 3,
+      "manifest_sha256": "83d1282b28cdb88d120f2ad15ef32a2114e45e6c7e3f51119ffb299f83aa9bef",
+      "lock_sha256": "4945d6f5f646d6f354690e35c0ed95e8e94ec76a1e7875792f5155a6b66bcece"
+    },
+    {
+      "label": "base-restored",
+      "installed_count": 39,
+      "names_versions": {
+        "anyio": "4.16.0",
+        "certifi": "2026.10.23",
+        "charset-normalizer": "3.5.2",
+        "contourpy": "1.3.3",
+        "cycler": "0.12.1",
+        "filelock": "4.2.10",
+        "fonttools": "4.68.0",
+        "fsspec": "2026.9.0",
+        "h11": "0.16.0",
+        "httpcore": "1.0.9",
+        "httpx": "0.28.1",
+        "idna": "3.20",
+        "jinja2": "3.1.6",
+        "kiwisolver": "1.5.1",
+        "markupsafe": "3.0.4",
+        "matplotlib": "3.11.2",
+        "mpmath": "1.3.0",
+        "networkx": "3.6.1",
+        "numpy": "2.4.6",
+        "nvidia-ml-py": "13.615.71",
+        "opencv-python": "5.0.0.93",
+        "packaging": "26.3",
+        "pillow": "13.0.0",
+        "polars": "2.1.0",
+        "polars-runtime-32": "2.1.0",
+        "psutil": "7.2.2",
+        "pyparsing": "3.3.3",
+        "python-dateutil": "4.0.0",
+        "requests": "2.34.2",
+        "setuptools": "84.2.1",
+        "sympy": "1.14.0",
+        "torch": "2.15.0+cpu",
+        "torchvision": "0.29.2+cpu",
+        "typing-extensions": "4.16.0",
+        "tzdata": "2026.6",
+        "ultralytics": "8.4.208",
+        "ultralytics-platform": "0.1.109",
+        "ultralytics-thop": "2.2.5",
+        "urllib3": "2.8.0"
+      },
+      "root_closure": {
+        "active_roots": 3,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "all_base_closure": {
+        "active_roots": 42,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "pip_check_exit": 0,
+      "uv_check_exit": 0,
+      "cv2_smoke_exit": 1,
+      "yolo_import_exit": 1,
+      "normal_cv2_payload": [
+        {
+          "path": "cv2/LICENSE-3RD-PARTY.txt",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/LICENSE.txt",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/__init__.py",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/config-3.py",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/config.py",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/cv2.abi3.so",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/load_config_py2.py",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/load_config_py3.py",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/py.typed",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/version.py",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/Error/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/aruco/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/barcode/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/ccm/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/cuda/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/data/__init__.py",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/detail/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/dnn/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/fisheye/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/flann/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/instr/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/ipp/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/mat_wrapper/__init__.py",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/mcc/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/misc/__init__.py",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/misc/version.py",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/ocl/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/ogl/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/parallel/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/qt/plugins/platforms/libqxcb.so",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/samples/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/segmentation/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/typing/__init__.py",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/utils/__init__.py",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/utils/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/utils/fs/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/utils/logging/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/utils/nested/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        },
+        {
+          "path": "cv2/videoio_registry/__init__.pyi",
+          "exists": false,
+          "matches_original_normal": false
+        }
+      ],
+      "normal_cv2_missing": 39,
+      "normal_cv2_mismatches": 39,
+      "manifest_sha256": "577a33fa107e91eca991c1c7f02e125994de5dc2f28a108b7c0eb5c4ea5b17b3",
+      "lock_sha256": "6ddaab7950c19485fd95936daafd3f226c606384168d8279786d4f51272041e1"
+    },
+    {
+      "label": "repair-opencv-only",
+      "installed_count": 39,
+      "names_versions": {
+        "anyio": "4.16.0",
+        "certifi": "2026.10.23",
+        "charset-normalizer": "3.5.2",
+        "contourpy": "1.3.3",
+        "cycler": "0.12.1",
+        "filelock": "4.2.10",
+        "fonttools": "4.68.0",
+        "fsspec": "2026.9.0",
+        "h11": "0.16.0",
+        "httpcore": "1.0.9",
+        "httpx": "0.28.1",
+        "idna": "3.20",
+        "jinja2": "3.1.6",
+        "kiwisolver": "1.5.1",
+        "markupsafe": "3.0.4",
+        "matplotlib": "3.11.2",
+        "mpmath": "1.3.0",
+        "networkx": "3.6.1",
+        "numpy": "2.4.6",
+        "nvidia-ml-py": "13.615.71",
+        "opencv-python": "5.0.0.93",
+        "packaging": "26.3",
+        "pillow": "13.0.0",
+        "polars": "2.1.0",
+        "polars-runtime-32": "2.1.0",
+        "psutil": "7.2.2",
+        "pyparsing": "3.3.3",
+        "python-dateutil": "4.0.0",
+        "requests": "2.34.2",
+        "setuptools": "84.2.1",
+        "sympy": "1.14.0",
+        "torch": "2.15.0+cpu",
+        "torchvision": "0.29.2+cpu",
+        "typing-extensions": "4.16.0",
+        "tzdata": "2026.6",
+        "ultralytics": "8.4.208",
+        "ultralytics-platform": "0.1.109",
+        "ultralytics-thop": "2.2.5",
+        "urllib3": "2.8.0"
+      },
+      "root_closure": {
+        "active_roots": 3,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "all_base_closure": {
+        "active_roots": 42,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "pip_check_exit": 0,
+      "uv_check_exit": 0,
+      "cv2_smoke_exit": 0,
+      "yolo_import_exit": 0,
+      "normal_cv2_payload": [
+        {
+          "path": "cv2/LICENSE-3RD-PARTY.txt",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/LICENSE.txt",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/config-3.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/config.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/cv2.abi3.so",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/load_config_py2.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/load_config_py3.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/py.typed",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/version.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/Error/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/aruco/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/barcode/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/ccm/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/cuda/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/data/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/detail/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/dnn/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/fisheye/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/flann/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/instr/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/ipp/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/mat_wrapper/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/mcc/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/misc/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/misc/version.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/ocl/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/ogl/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/parallel/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/qt/plugins/platforms/libqxcb.so",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/samples/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/segmentation/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/typing/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/utils/__init__.py",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/utils/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/utils/fs/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/utils/logging/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/utils/nested/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        },
+        {
+          "path": "cv2/videoio_registry/__init__.pyi",
+          "exists": true,
+          "matches_original_normal": true
+        }
+      ],
+      "normal_cv2_missing": 0,
+      "normal_cv2_mismatches": 0,
+      "manifest_sha256": "577a33fa107e91eca991c1c7f02e125994de5dc2f28a108b7c0eb5c4ea5b17b3",
+      "lock_sha256": "6ddaab7950c19485fd95936daafd3f226c606384168d8279786d4f51272041e1"
+    }
+  ],
+  "status": "independent_real_witness_repeated_first_full_controls_pending",
+  "confirmed_defects": 0,
+  "same_final_inputs": true,
+  "finished_at_utc": "2026-11-11T05:53:42.896144+00:00"
+}

@@ -1,0 +1,2906 @@
+{
+  "schema": "published-completed-workflow-file-audit-coverage-v1",
+  "effective_ledger": {
+    "path": "work/stateful-workflows-20261111/published/effective-ledger.json",
+    "sha256": "a21133302cc85e777395a0374c3e4d2a81ef6f577245a6bfd59956524be127de"
+  },
+  "logical_completed_workflows": 33,
+  "completed_chain_stage_occurrences": 131,
+  "later_readonly_audit_stage_occurrences": 3,
+  "stages_with_original_mapping_unknowns": 42,
+  "original_mapping_unknown_occurrences": 178,
+  "distinct_original_mapping_unknowns": [
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "cupy-cuda12x",
+      "path": "cupy/.data/_wheel.json"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "dulwich",
+      "path": "dulwich-1.2.21.data/scripts/dul-receive-pack"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "dulwich",
+      "path": "dulwich-1.2.21.data/scripts/dul-upload-pack"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "fonttools",
+      "path": "fonttools-4.68.0.data/data/share/man/man1/ttx.1"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "greenlet",
+      "path": "greenlet-3.3.1.data/headers/greenlet.h"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "greenlet",
+      "path": "greenlet-3.5.6.data/headers/greenlet.h"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "jmespath",
+      "path": "jmespath-1.1.0.data/scripts/jp.py"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "magika",
+      "path": "magika-1.0.3.data/scripts/magika"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "mini-racer",
+      "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__about__.py"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "mini-racer",
+      "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__init__.py"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "mini-racer",
+      "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_context.py"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "mini-racer",
+      "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_dll.py"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "mini-racer",
+      "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_exc.py"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "mini-racer",
+      "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_mini_racer.py"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "mini-racer",
+      "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_objects.py"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "mini-racer",
+      "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_set_timeout.py"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "mini-racer",
+      "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_types.py"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "mini-racer",
+      "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_value_handle.py"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "mini-racer",
+      "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/icudtl.dat"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "mini-racer",
+      "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/libmini_racer.so"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "mini-racer",
+      "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/py.typed"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "pdfminer.six",
+      "path": "pdfminer_six-20260107.data/scripts/dumppdf.py"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "pdfminer.six",
+      "path": "pdfminer_six-20260107.data/scripts/pdf2txt.py"
+    },
+    {
+      "kind": "wheel_data_path_transform",
+      "name": "xlrd",
+      "path": "xlrd-2.0.2.data/scripts/runxlrd.py"
+    }
+  ],
+  "original_archive_member_comparison_occurrences": 558360,
+  "installed_RECORD_hash_comparison_occurrences": 571731,
+  "file_violations": 0,
+  "rows": [
+    {
+      "canonical_name": "aider-chat",
+      "workflow": "extras",
+      "stage": "uv-base",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/aider-chat/extras/stages/uv-base/file-audit.json",
+        "sha256": "8f6046c11905ea9a2483a16ae152e8d700d55d5bc026c8ec965b037b9232a98b"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 9478,
+      "record_hashes_checked": 9828,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "aider-chat",
+      "workflow": "extras",
+      "stage": "uv-base-restored",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/aider-chat/extras/stages/uv-base-restored/file-audit.json",
+        "sha256": "8f6046c11905ea9a2483a16ae152e8d700d55d5bc026c8ec965b037b9232a98b"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 9478,
+      "record_hashes_checked": 9828,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "aider-chat",
+      "workflow": "extras",
+      "stage": "uv-extra",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/aider-chat/extras/stages/uv-extra/file-audit.json",
+        "sha256": "468cd547f765d8a0c581394dc4cab218da614ff496789f926d7d85b8477a130f"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 10018,
+      "record_hashes_checked": 10379,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "greenlet",
+          "path": "greenlet-3.3.1.data/headers/greenlet.h"
+        }
+      ]
+    },
+    {
+      "canonical_name": "aider-chat",
+      "workflow": "extras",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/aider-chat/extras/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "8f6046c11905ea9a2483a16ae152e8d700d55d5bc026c8ec965b037b9232a98b"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 9478,
+      "record_hashes_checked": 9828,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "aider-chat",
+      "workflow": "relock",
+      "stage": "uv-after-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/aider-chat/relock/stages/uv-after-relock/file-audit.json",
+        "sha256": "8f6046c11905ea9a2483a16ae152e8d700d55d5bc026c8ec965b037b9232a98b"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 9478,
+      "record_hashes_checked": 9828,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "aider-chat",
+      "workflow": "relock",
+      "stage": "uv-before-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/aider-chat/relock/stages/uv-before-relock/file-audit.json",
+        "sha256": "8f6046c11905ea9a2483a16ae152e8d700d55d5bc026c8ec965b037b9232a98b"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 9478,
+      "record_hashes_checked": 9828,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "aider-chat",
+      "workflow": "relock",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/aider-completed-relock-readonly1/aider-chat/relock/final-file-audit.json",
+        "sha256": "8f6046c11905ea9a2483a16ae152e8d700d55d5bc026c8ec965b037b9232a98b"
+      },
+      "later_readonly_audit": true,
+      "original_files_checked": 9478,
+      "record_hashes_checked": 9828,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "akshare",
+      "workflow": "update",
+      "stage": "pip-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/akshare/update/stages/pip-old/file-audit.json",
+        "sha256": "ff85b6fac7d0045adc8327613b911cb0c4078dc4f0d43e9776d9b4066a061ee5"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 4372,
+      "record_hashes_checked": 4419,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__about__.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__init__.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_context.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_dll.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_exc.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_mini_racer.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_objects.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_set_timeout.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_types.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_value_handle.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/icudtl.dat"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/libmini_racer.so"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/py.typed"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "xlrd",
+          "path": "xlrd-2.0.2.data/scripts/runxlrd.py"
+        }
+      ]
+    },
+    {
+      "canonical_name": "akshare",
+      "workflow": "update",
+      "stage": "pip-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/akshare/update/stages/pip-updated/file-audit.json",
+        "sha256": "d5ab0ce466facc15bd9f951cb84d011453301b46d0b52d5e18f3f921f25b37fe"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 4372,
+      "record_hashes_checked": 4419,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__about__.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__init__.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_context.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_dll.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_exc.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_mini_racer.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_objects.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_set_timeout.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_types.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_value_handle.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/icudtl.dat"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/libmini_racer.so"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/py.typed"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "xlrd",
+          "path": "xlrd-2.0.2.data/scripts/runxlrd.py"
+        }
+      ]
+    },
+    {
+      "canonical_name": "akshare",
+      "workflow": "update",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/akshare-completed-operations-readonly1/akshare/update/final-file-audit.json",
+        "sha256": "0ba24dcf5e79954beda0ca86efeba95845f750d974cdd5cd32609ecff094e3d9"
+      },
+      "later_readonly_audit": true,
+      "original_files_checked": 4372,
+      "record_hashes_checked": 4468,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__about__.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__init__.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_context.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_dll.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_exc.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_mini_racer.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_objects.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_set_timeout.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_types.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_value_handle.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/icudtl.dat"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/libmini_racer.so"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/py.typed"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "xlrd",
+          "path": "xlrd-2.0.2.data/scripts/runxlrd.py"
+        }
+      ]
+    },
+    {
+      "canonical_name": "akshare",
+      "workflow": "update",
+      "stage": "uv-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/akshare/update/stages/uv-old/file-audit.json",
+        "sha256": "de765a97cdf20828c973119ff6301716abf860a215afabfb10322a50a8885699"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 4372,
+      "record_hashes_checked": 4468,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__about__.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__init__.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_context.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_dll.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_exc.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_mini_racer.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_objects.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_set_timeout.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_types.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_value_handle.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/icudtl.dat"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/libmini_racer.so"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/py.typed"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "xlrd",
+          "path": "xlrd-2.0.2.data/scripts/runxlrd.py"
+        }
+      ]
+    },
+    {
+      "canonical_name": "akshare",
+      "workflow": "update",
+      "stage": "uv-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/akshare/update/stages/uv-updated/file-audit.json",
+        "sha256": "0ba24dcf5e79954beda0ca86efeba95845f750d974cdd5cd32609ecff094e3d9"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 4372,
+      "record_hashes_checked": 4468,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__about__.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__init__.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_context.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_dll.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_exc.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_mini_racer.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_objects.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_set_timeout.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_types.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_value_handle.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/icudtl.dat"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/libmini_racer.so"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/py.typed"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "xlrd",
+          "path": "xlrd-2.0.2.data/scripts/runxlrd.py"
+        }
+      ]
+    },
+    {
+      "canonical_name": "akshare",
+      "workflow": "relock",
+      "stage": "uv-after-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/akshare/relock/stages/uv-after-relock/file-audit.json",
+        "sha256": "0ba24dcf5e79954beda0ca86efeba95845f750d974cdd5cd32609ecff094e3d9"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 4372,
+      "record_hashes_checked": 4468,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__about__.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__init__.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_context.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_dll.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_exc.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_mini_racer.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_objects.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_set_timeout.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_types.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_value_handle.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/icudtl.dat"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/libmini_racer.so"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/py.typed"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "xlrd",
+          "path": "xlrd-2.0.2.data/scripts/runxlrd.py"
+        }
+      ]
+    },
+    {
+      "canonical_name": "akshare",
+      "workflow": "relock",
+      "stage": "uv-before-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/akshare/relock/stages/uv-before-relock/file-audit.json",
+        "sha256": "0ba24dcf5e79954beda0ca86efeba95845f750d974cdd5cd32609ecff094e3d9"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 4372,
+      "record_hashes_checked": 4468,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__about__.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__init__.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_context.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_dll.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_exc.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_mini_racer.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_objects.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_set_timeout.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_types.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_value_handle.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/icudtl.dat"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/libmini_racer.so"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/py.typed"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "xlrd",
+          "path": "xlrd-2.0.2.data/scripts/runxlrd.py"
+        }
+      ]
+    },
+    {
+      "canonical_name": "akshare",
+      "workflow": "relock",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/akshare/relock/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "0ba24dcf5e79954beda0ca86efeba95845f750d974cdd5cd32609ecff094e3d9"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 4372,
+      "record_hashes_checked": 4468,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__about__.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/__init__.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_context.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_dll.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_exc.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_mini_racer.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_objects.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_set_timeout.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_types.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/_value_handle.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/icudtl.dat"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/libmini_racer.so"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "mini-racer",
+          "path": "mini_racer-0.14.1.data/purelib/py_mini_racer/py.typed"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "xlrd",
+          "path": "xlrd-2.0.2.data/scripts/runxlrd.py"
+        }
+      ]
+    },
+    {
+      "canonical_name": "celery",
+      "workflow": "update",
+      "stage": "pip-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/pip-old/file-audit.json",
+        "sha256": "6c06621f0a3d56b4707948153bee83605d0e458ec721d0af5de3efb641d8a322"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1237,
+      "record_hashes_checked": 1254,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "celery",
+      "workflow": "update",
+      "stage": "pip-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/pip-updated/file-audit.json",
+        "sha256": "d5b99d2dca779ac9cee5b2c4cc76e8c04ba88f4cf2eab359c9f30743704c58a6"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1241,
+      "record_hashes_checked": 1259,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "celery",
+      "workflow": "update",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "6bdb1c64bf9c765dcf23c5c9b7138a677f3ad232c4da100b7553cede0cd26e38"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 609,
+      "record_hashes_checked": 655,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "celery",
+      "workflow": "update",
+      "stage": "uv-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-old/file-audit.json",
+        "sha256": "6dc07698f773f0bcac7f3fd2e5b3d0bae3aa6025b99157cd8ec04432953ba024"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1237,
+      "record_hashes_checked": 1283,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "celery",
+      "workflow": "update",
+      "stage": "uv-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-updated/file-audit.json",
+        "sha256": "6bdb1c64bf9c765dcf23c5c9b7138a677f3ad232c4da100b7553cede0cd26e38"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 609,
+      "record_hashes_checked": 655,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "celery",
+      "workflow": "relock",
+      "stage": "uv-after-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/celery/relock/stages/uv-after-relock/file-audit.json",
+        "sha256": "6bdb1c64bf9c765dcf23c5c9b7138a677f3ad232c4da100b7553cede0cd26e38"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 609,
+      "record_hashes_checked": 655,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "celery",
+      "workflow": "relock",
+      "stage": "uv-before-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/celery/relock/stages/uv-before-relock/file-audit.json",
+        "sha256": "6bdb1c64bf9c765dcf23c5c9b7138a677f3ad232c4da100b7553cede0cd26e38"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 609,
+      "record_hashes_checked": 655,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "celery",
+      "workflow": "relock",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/celery/relock/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "6bdb1c64bf9c765dcf23c5c9b7138a677f3ad232c4da100b7553cede0cd26e38"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 609,
+      "record_hashes_checked": 655,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "diffusers",
+      "workflow": "update",
+      "stage": "pip-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/diffusers/update/stages/pip-old/file-audit.json",
+        "sha256": "2a0203c316e33f9949557c88ac819c65a3b54380465d7fe42177a311949fc27b"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3013,
+      "record_hashes_checked": 3050,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "diffusers",
+      "workflow": "update",
+      "stage": "pip-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/diffusers/update/stages/pip-updated/file-audit.json",
+        "sha256": "3226042337ce31873eec182114bca2d4537351070ff7ba78246746156468ce90"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3013,
+      "record_hashes_checked": 3050,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "diffusers",
+      "workflow": "update",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/diffusers-completed-update-readonly1/diffusers/update/final-file-audit.json",
+        "sha256": "6e4c4b551eb713845823635fa6fcc8d1923c4c4bcbf1e8bd161450d8d079b358"
+      },
+      "later_readonly_audit": true,
+      "original_files_checked": 3013,
+      "record_hashes_checked": 3103,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "diffusers",
+      "workflow": "update",
+      "stage": "uv-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/diffusers/update/stages/uv-old/file-audit.json",
+        "sha256": "82a6687f1e711342964c536641f9a76b0f2948dee5e85e387a59fe70896a4dc9"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3013,
+      "record_hashes_checked": 3103,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "diffusers",
+      "workflow": "update",
+      "stage": "uv-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/diffusers/update/stages/uv-updated/file-audit.json",
+        "sha256": "6e4c4b551eb713845823635fa6fcc8d1923c4c4bcbf1e8bd161450d8d079b358"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3013,
+      "record_hashes_checked": 3103,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "diffusers",
+      "workflow": "relock",
+      "stage": "uv-after-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/diffusers/relock/stages/uv-after-relock/file-audit.json",
+        "sha256": "6e4c4b551eb713845823635fa6fcc8d1923c4c4bcbf1e8bd161450d8d079b358"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3013,
+      "record_hashes_checked": 3103,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "diffusers",
+      "workflow": "relock",
+      "stage": "uv-before-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/diffusers/relock/stages/uv-before-relock/file-audit.json",
+        "sha256": "6e4c4b551eb713845823635fa6fcc8d1923c4c4bcbf1e8bd161450d8d079b358"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3013,
+      "record_hashes_checked": 3103,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "diffusers",
+      "workflow": "relock",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/diffusers/relock/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "6e4c4b551eb713845823635fa6fcc8d1923c4c4bcbf1e8bd161450d8d079b358"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3013,
+      "record_hashes_checked": 3103,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "graphrag",
+      "workflow": "update",
+      "stage": "pip-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/graphrag/update/stages/pip-old/file-audit.json",
+        "sha256": "665e042186700902552834f2e26691027678c310882b07f289fdb91f1edeab84"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 18198,
+      "record_hashes_checked": 18385,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "jmespath",
+          "path": "jmespath-1.1.0.data/scripts/jp.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "magika",
+          "path": "magika-1.0.3.data/scripts/magika"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "pdfminer.six",
+          "path": "pdfminer_six-20260107.data/scripts/dumppdf.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "pdfminer.six",
+          "path": "pdfminer_six-20260107.data/scripts/pdf2txt.py"
+        }
+      ]
+    },
+    {
+      "canonical_name": "graphrag",
+      "workflow": "update",
+      "stage": "pip-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/graphrag/update/stages/pip-updated/file-audit.json",
+        "sha256": "6fe16705c9ea088c522b56d3165e88438fc611705452c5b3d7c7aa219a447429"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 18198,
+      "record_hashes_checked": 18385,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "jmespath",
+          "path": "jmespath-1.1.0.data/scripts/jp.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "magika",
+          "path": "magika-1.0.3.data/scripts/magika"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "pdfminer.six",
+          "path": "pdfminer_six-20260107.data/scripts/dumppdf.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "pdfminer.six",
+          "path": "pdfminer_six-20260107.data/scripts/pdf2txt.py"
+        }
+      ]
+    },
+    {
+      "canonical_name": "graphrag",
+      "workflow": "update",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/graphrag/update/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "e5f81f562a3cf58d3b6be4194150f2efa99870ccd6b33d9abd117930de8537ca"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 18198,
+      "record_hashes_checked": 18664,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "jmespath",
+          "path": "jmespath-1.1.0.data/scripts/jp.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "magika",
+          "path": "magika-1.0.3.data/scripts/magika"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "pdfminer.six",
+          "path": "pdfminer_six-20260107.data/scripts/dumppdf.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "pdfminer.six",
+          "path": "pdfminer_six-20260107.data/scripts/pdf2txt.py"
+        }
+      ]
+    },
+    {
+      "canonical_name": "graphrag",
+      "workflow": "update",
+      "stage": "uv-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/graphrag/update/stages/uv-old/file-audit.json",
+        "sha256": "27faee0244037a1ea62d807fc6c18af300c7d33fa892169f15dc5e320b04bbcb"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 18198,
+      "record_hashes_checked": 18664,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "jmespath",
+          "path": "jmespath-1.1.0.data/scripts/jp.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "magika",
+          "path": "magika-1.0.3.data/scripts/magika"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "pdfminer.six",
+          "path": "pdfminer_six-20260107.data/scripts/dumppdf.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "pdfminer.six",
+          "path": "pdfminer_six-20260107.data/scripts/pdf2txt.py"
+        }
+      ]
+    },
+    {
+      "canonical_name": "graphrag",
+      "workflow": "update",
+      "stage": "uv-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/graphrag/update/stages/uv-updated/file-audit.json",
+        "sha256": "e5f81f562a3cf58d3b6be4194150f2efa99870ccd6b33d9abd117930de8537ca"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 18198,
+      "record_hashes_checked": 18664,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "jmespath",
+          "path": "jmespath-1.1.0.data/scripts/jp.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "magika",
+          "path": "magika-1.0.3.data/scripts/magika"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "pdfminer.six",
+          "path": "pdfminer_six-20260107.data/scripts/dumppdf.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "pdfminer.six",
+          "path": "pdfminer_six-20260107.data/scripts/pdf2txt.py"
+        }
+      ]
+    },
+    {
+      "canonical_name": "graphrag",
+      "workflow": "relock",
+      "stage": "uv-after-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/graphrag/relock/stages/uv-after-relock/file-audit.json",
+        "sha256": "e5f81f562a3cf58d3b6be4194150f2efa99870ccd6b33d9abd117930de8537ca"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 18198,
+      "record_hashes_checked": 18664,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "jmespath",
+          "path": "jmespath-1.1.0.data/scripts/jp.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "magika",
+          "path": "magika-1.0.3.data/scripts/magika"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "pdfminer.six",
+          "path": "pdfminer_six-20260107.data/scripts/dumppdf.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "pdfminer.six",
+          "path": "pdfminer_six-20260107.data/scripts/pdf2txt.py"
+        }
+      ]
+    },
+    {
+      "canonical_name": "graphrag",
+      "workflow": "relock",
+      "stage": "uv-before-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/graphrag/relock/stages/uv-before-relock/file-audit.json",
+        "sha256": "e5f81f562a3cf58d3b6be4194150f2efa99870ccd6b33d9abd117930de8537ca"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 18198,
+      "record_hashes_checked": 18664,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "jmespath",
+          "path": "jmespath-1.1.0.data/scripts/jp.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "magika",
+          "path": "magika-1.0.3.data/scripts/magika"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "pdfminer.six",
+          "path": "pdfminer_six-20260107.data/scripts/dumppdf.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "pdfminer.six",
+          "path": "pdfminer_six-20260107.data/scripts/pdf2txt.py"
+        }
+      ]
+    },
+    {
+      "canonical_name": "graphrag",
+      "workflow": "relock",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/graphrag/relock/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "e5f81f562a3cf58d3b6be4194150f2efa99870ccd6b33d9abd117930de8537ca"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 18198,
+      "record_hashes_checked": 18664,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "jmespath",
+          "path": "jmespath-1.1.0.data/scripts/jp.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "magika",
+          "path": "magika-1.0.3.data/scripts/magika"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "pdfminer.six",
+          "path": "pdfminer_six-20260107.data/scripts/dumppdf.py"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "pdfminer.six",
+          "path": "pdfminer_six-20260107.data/scripts/pdf2txt.py"
+        }
+      ]
+    },
+    {
+      "canonical_name": "jax",
+      "workflow": "update",
+      "stage": "pip-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/update/stages/pip-old/file-audit.json",
+        "sha256": "b91875e570528c7dd698d873d94424be916b768458d538cf971f82e18d49dc7f"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3171,
+      "record_hashes_checked": 3180,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "jax",
+      "workflow": "update",
+      "stage": "pip-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/update/stages/pip-updated/file-audit.json",
+        "sha256": "77bf9539b515d8c8ba9142d91c05ce2bffcbfc9caf0018472464b1ccae4bb9e6"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3171,
+      "record_hashes_checked": 3180,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "jax",
+      "workflow": "update",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/update/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "dbf5b435b1e7cee5921cccddff17793caf30e0a857ed3cc22ce55d83328d9451"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3171,
+      "record_hashes_checked": 3191,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "jax",
+      "workflow": "update",
+      "stage": "uv-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/update/stages/uv-old/file-audit.json",
+        "sha256": "dc578324cb9a76af17603f65c91db07ceff4756ba467bdcf4b91ed10019a19b6"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3171,
+      "record_hashes_checked": 3191,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "jax",
+      "workflow": "update",
+      "stage": "uv-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/update/stages/uv-updated/file-audit.json",
+        "sha256": "dbf5b435b1e7cee5921cccddff17793caf30e0a857ed3cc22ce55d83328d9451"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3171,
+      "record_hashes_checked": 3191,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "jax",
+      "workflow": "extras",
+      "stage": "uv-base",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/extras/stages/uv-base/file-audit.json",
+        "sha256": "0b6e0169fe277a64001a72fee0a35af2fc680b3570b0b83a82f3eab34c78fe6b"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3171,
+      "record_hashes_checked": 3191,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "jax",
+      "workflow": "extras",
+      "stage": "uv-base-restored",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/extras/stages/uv-base-restored/file-audit.json",
+        "sha256": "0b6e0169fe277a64001a72fee0a35af2fc680b3570b0b83a82f3eab34c78fe6b"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3171,
+      "record_hashes_checked": 3191,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "jax",
+      "workflow": "extras",
+      "stage": "uv-extra",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/extras/stages/uv-extra/file-audit.json",
+        "sha256": "7c62f9c89f9e39e0c5978076ab5d97525cb72dfac8c50a972d05df91289698e2"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 6372,
+      "record_hashes_checked": 6476,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "jax",
+      "workflow": "extras",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/extras/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "0b6e0169fe277a64001a72fee0a35af2fc680b3570b0b83a82f3eab34c78fe6b"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3171,
+      "record_hashes_checked": 3191,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "jax",
+      "workflow": "relock",
+      "stage": "uv-after-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/relock/stages/uv-after-relock/file-audit.json",
+        "sha256": "0b6e0169fe277a64001a72fee0a35af2fc680b3570b0b83a82f3eab34c78fe6b"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3171,
+      "record_hashes_checked": 3191,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "jax",
+      "workflow": "relock",
+      "stage": "uv-before-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/relock/stages/uv-before-relock/file-audit.json",
+        "sha256": "dbf5b435b1e7cee5921cccddff17793caf30e0a857ed3cc22ce55d83328d9451"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3171,
+      "record_hashes_checked": 3191,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "jax",
+      "workflow": "relock",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/relock/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "0b6e0169fe277a64001a72fee0a35af2fc680b3570b0b83a82f3eab34c78fe6b"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3171,
+      "record_hashes_checked": 3191,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "llama-index",
+      "workflow": "update",
+      "stage": "pip-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/llama-index/update/stages/pip-old/file-audit.json",
+        "sha256": "fcefb13c1946faa62c62734dabe6e3344d58bdd9ce6fcbd55e03561d49033420"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 6332,
+      "record_hashes_checked": 6427,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "greenlet",
+          "path": "greenlet-3.5.6.data/headers/greenlet.h"
+        }
+      ]
+    },
+    {
+      "canonical_name": "llama-index",
+      "workflow": "update",
+      "stage": "pip-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/llama-index/update/stages/pip-updated/file-audit.json",
+        "sha256": "d8466dfc92dc3564f0d9a2c05bfef76e2d0d58be2a35a6cec1d1e55339664be3"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 6332,
+      "record_hashes_checked": 6427,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "greenlet",
+          "path": "greenlet-3.5.6.data/headers/greenlet.h"
+        }
+      ]
+    },
+    {
+      "canonical_name": "llama-index",
+      "workflow": "update",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/llama-index/update/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "80b40e508c05b56cac92de9265020b8b92498fcd8a56d9f91dbb063fc940cbde"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 6332,
+      "record_hashes_checked": 6564,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "greenlet",
+          "path": "greenlet-3.5.6.data/headers/greenlet.h"
+        }
+      ]
+    },
+    {
+      "canonical_name": "llama-index",
+      "workflow": "update",
+      "stage": "uv-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/llama-index/update/stages/uv-old/file-audit.json",
+        "sha256": "795445effacbe20787208a9002cc48b78eea09b27ed5a47311fc5ccdb4c9e26e"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 6332,
+      "record_hashes_checked": 6564,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "greenlet",
+          "path": "greenlet-3.5.6.data/headers/greenlet.h"
+        }
+      ]
+    },
+    {
+      "canonical_name": "llama-index",
+      "workflow": "update",
+      "stage": "uv-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/llama-index/update/stages/uv-updated/file-audit.json",
+        "sha256": "80b40e508c05b56cac92de9265020b8b92498fcd8a56d9f91dbb063fc940cbde"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 6332,
+      "record_hashes_checked": 6564,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "greenlet",
+          "path": "greenlet-3.5.6.data/headers/greenlet.h"
+        }
+      ]
+    },
+    {
+      "canonical_name": "llama-index",
+      "workflow": "relock",
+      "stage": "uv-after-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/llama-index/relock/stages/uv-after-relock/file-audit.json",
+        "sha256": "80b40e508c05b56cac92de9265020b8b92498fcd8a56d9f91dbb063fc940cbde"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 6332,
+      "record_hashes_checked": 6564,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "greenlet",
+          "path": "greenlet-3.5.6.data/headers/greenlet.h"
+        }
+      ]
+    },
+    {
+      "canonical_name": "llama-index",
+      "workflow": "relock",
+      "stage": "uv-before-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/llama-index/relock/stages/uv-before-relock/file-audit.json",
+        "sha256": "80b40e508c05b56cac92de9265020b8b92498fcd8a56d9f91dbb063fc940cbde"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 6332,
+      "record_hashes_checked": 6564,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "greenlet",
+          "path": "greenlet-3.5.6.data/headers/greenlet.h"
+        }
+      ]
+    },
+    {
+      "canonical_name": "llama-index",
+      "workflow": "relock",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/llama-index/relock/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "80b40e508c05b56cac92de9265020b8b92498fcd8a56d9f91dbb063fc940cbde"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 6332,
+      "record_hashes_checked": 6564,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "greenlet",
+          "path": "greenlet-3.5.6.data/headers/greenlet.h"
+        }
+      ]
+    },
+    {
+      "canonical_name": "matplotlib",
+      "workflow": "update",
+      "stage": "pip-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/matplotlib/update/stages/pip-old/file-audit.json",
+        "sha256": "41911eb731d8243fd53251e3ace0038ab8b22690d37a52c78e88a6e61821d85e"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 2896,
+      "record_hashes_checked": 2915,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "fonttools",
+          "path": "fonttools-4.68.0.data/data/share/man/man1/ttx.1"
+        }
+      ]
+    },
+    {
+      "canonical_name": "matplotlib",
+      "workflow": "update",
+      "stage": "pip-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/matplotlib/update/stages/pip-updated/file-audit.json",
+        "sha256": "06f1f58022760092cef476869e907c2f9bb4731e9248c74610dde0cc1fc0fd7b"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 2896,
+      "record_hashes_checked": 2915,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "fonttools",
+          "path": "fonttools-4.68.0.data/data/share/man/man1/ttx.1"
+        }
+      ]
+    },
+    {
+      "canonical_name": "matplotlib",
+      "workflow": "update",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/matplotlib/update/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "2b920723bfdb74290e0407eb5d3885d87585cae5ce4d87304763295f305636fe"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 2896,
+      "record_hashes_checked": 2936,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "fonttools",
+          "path": "fonttools-4.68.0.data/data/share/man/man1/ttx.1"
+        }
+      ]
+    },
+    {
+      "canonical_name": "matplotlib",
+      "workflow": "update",
+      "stage": "uv-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/matplotlib/update/stages/uv-old/file-audit.json",
+        "sha256": "811bd0acfe6f201d6ff62fba10ce59762d956e1fb7f2e74ca7110b4b3303fc6e"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 2896,
+      "record_hashes_checked": 2936,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "fonttools",
+          "path": "fonttools-4.68.0.data/data/share/man/man1/ttx.1"
+        }
+      ]
+    },
+    {
+      "canonical_name": "matplotlib",
+      "workflow": "update",
+      "stage": "uv-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/matplotlib/update/stages/uv-updated/file-audit.json",
+        "sha256": "2b920723bfdb74290e0407eb5d3885d87585cae5ce4d87304763295f305636fe"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 2896,
+      "record_hashes_checked": 2936,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "fonttools",
+          "path": "fonttools-4.68.0.data/data/share/man/man1/ttx.1"
+        }
+      ]
+    },
+    {
+      "canonical_name": "matplotlib",
+      "workflow": "relock",
+      "stage": "uv-after-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/matplotlib/relock/stages/uv-after-relock/file-audit.json",
+        "sha256": "2b920723bfdb74290e0407eb5d3885d87585cae5ce4d87304763295f305636fe"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 2896,
+      "record_hashes_checked": 2936,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "fonttools",
+          "path": "fonttools-4.68.0.data/data/share/man/man1/ttx.1"
+        }
+      ]
+    },
+    {
+      "canonical_name": "matplotlib",
+      "workflow": "relock",
+      "stage": "uv-before-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/matplotlib/relock/stages/uv-before-relock/file-audit.json",
+        "sha256": "2b920723bfdb74290e0407eb5d3885d87585cae5ce4d87304763295f305636fe"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 2896,
+      "record_hashes_checked": 2936,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "fonttools",
+          "path": "fonttools-4.68.0.data/data/share/man/man1/ttx.1"
+        }
+      ]
+    },
+    {
+      "canonical_name": "matplotlib",
+      "workflow": "relock",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/matplotlib/relock/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "2b920723bfdb74290e0407eb5d3885d87585cae5ce4d87304763295f305636fe"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 2896,
+      "record_hashes_checked": 2936,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "fonttools",
+          "path": "fonttools-4.68.0.data/data/share/man/man1/ttx.1"
+        }
+      ]
+    },
+    {
+      "canonical_name": "pandas",
+      "workflow": "update",
+      "stage": "pip-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pandas/update/stages/pip-old/file-audit.json",
+        "sha256": "bdcde1c061476c4ddfc988b8da3e1f71f67cd05298a9a9198ccb825ab34686bf"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3255,
+      "record_hashes_checked": 3262,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pandas",
+      "workflow": "update",
+      "stage": "pip-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pandas/update/stages/pip-updated/file-audit.json",
+        "sha256": "1e38b4c42cedb650e4d753069775b14ad2289ab0592afd97bf7f26114a2fa0c1"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3255,
+      "record_hashes_checked": 3262,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pandas",
+      "workflow": "update",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pandas/update/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "b33e3f44481c1d9db6d63425cd725b55d4d82d679c19691a100081dbf0783443"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3255,
+      "record_hashes_checked": 3269,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pandas",
+      "workflow": "update",
+      "stage": "uv-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pandas/update/stages/uv-old/file-audit.json",
+        "sha256": "700f0d2c894fe23d34eeb28187744d5eb48e4b452df8c416c86035b102899cb6"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3255,
+      "record_hashes_checked": 3269,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pandas",
+      "workflow": "update",
+      "stage": "uv-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pandas/update/stages/uv-updated/file-audit.json",
+        "sha256": "b33e3f44481c1d9db6d63425cd725b55d4d82d679c19691a100081dbf0783443"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3255,
+      "record_hashes_checked": 3269,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pandas",
+      "workflow": "relock",
+      "stage": "uv-after-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pandas/relock/stages/uv-after-relock/file-audit.json",
+        "sha256": "b33e3f44481c1d9db6d63425cd725b55d4d82d679c19691a100081dbf0783443"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3255,
+      "record_hashes_checked": 3269,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pandas",
+      "workflow": "relock",
+      "stage": "uv-before-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pandas/relock/stages/uv-before-relock/file-audit.json",
+        "sha256": "b33e3f44481c1d9db6d63425cd725b55d4d82d679c19691a100081dbf0783443"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3255,
+      "record_hashes_checked": 3269,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pandas",
+      "workflow": "relock",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pandas/relock/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "b33e3f44481c1d9db6d63425cd725b55d4d82d679c19691a100081dbf0783443"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3255,
+      "record_hashes_checked": 3269,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pipenv",
+      "workflow": "update",
+      "stage": "pip-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/update/stages/pip-old/file-audit.json",
+        "sha256": "5d98482485446c67e3447c01ba960e0d7272cd9a9b4abd850937e8b866a8499f"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1293,
+      "record_hashes_checked": 1318,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pipenv",
+      "workflow": "update",
+      "stage": "pip-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/update/stages/pip-updated/file-audit.json",
+        "sha256": "8c8c260dd14cfd6f7ecfb695da08c2f291b6bdc4bff286399370856e20a2005b"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1329,
+      "record_hashes_checked": 1354,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pipenv",
+      "workflow": "update",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/update/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "112418ae1b90c721cb38b516e1f281cbe1c71f3fed9a5126d674afd41e769ee7"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1329,
+      "record_hashes_checked": 1371,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pipenv",
+      "workflow": "update",
+      "stage": "uv-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/update/stages/uv-old/file-audit.json",
+        "sha256": "43df9bcb783d87e0e3ca28dad9bd12cc53307736c16346f239d5b85d887f49d2"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1293,
+      "record_hashes_checked": 1335,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pipenv",
+      "workflow": "update",
+      "stage": "uv-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/update/stages/uv-updated/file-audit.json",
+        "sha256": "112418ae1b90c721cb38b516e1f281cbe1c71f3fed9a5126d674afd41e769ee7"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1329,
+      "record_hashes_checked": 1371,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pipenv",
+      "workflow": "extras",
+      "stage": "uv-base",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/extras/stages/uv-base/file-audit.json",
+        "sha256": "112418ae1b90c721cb38b516e1f281cbe1c71f3fed9a5126d674afd41e769ee7"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1329,
+      "record_hashes_checked": 1371,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pipenv",
+      "workflow": "extras",
+      "stage": "uv-base-restored",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/extras/stages/uv-base-restored/file-audit.json",
+        "sha256": "112418ae1b90c721cb38b516e1f281cbe1c71f3fed9a5126d674afd41e769ee7"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1329,
+      "record_hashes_checked": 1371,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pipenv",
+      "workflow": "extras",
+      "stage": "uv-extra",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/extras/stages/uv-extra/file-audit.json",
+        "sha256": "1715f594ba5c43777b846b9919fe6b0c1cdbdc7ae72b26429b423490d88f6af8"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1351,
+      "record_hashes_checked": 1398,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pipenv",
+      "workflow": "extras",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/extras/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "112418ae1b90c721cb38b516e1f281cbe1c71f3fed9a5126d674afd41e769ee7"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1329,
+      "record_hashes_checked": 1371,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pipenv",
+      "workflow": "relock",
+      "stage": "uv-after-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/relock/stages/uv-after-relock/file-audit.json",
+        "sha256": "112418ae1b90c721cb38b516e1f281cbe1c71f3fed9a5126d674afd41e769ee7"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1329,
+      "record_hashes_checked": 1371,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pipenv",
+      "workflow": "relock",
+      "stage": "uv-before-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/relock/stages/uv-before-relock/file-audit.json",
+        "sha256": "112418ae1b90c721cb38b516e1f281cbe1c71f3fed9a5126d674afd41e769ee7"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1329,
+      "record_hashes_checked": 1371,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "pipenv",
+      "workflow": "relock",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/relock/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "112418ae1b90c721cb38b516e1f281cbe1c71f3fed9a5126d674afd41e769ee7"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1329,
+      "record_hashes_checked": 1371,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "poetry",
+      "workflow": "update",
+      "stage": "pip-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/poetry/update/stages/pip-old/file-audit.json",
+        "sha256": "8efc3867792636fd50a2850f45589ab3be4aa3aa04eb32923fe3dcc460e5cb25"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1707,
+      "record_hashes_checked": 1775,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "dulwich",
+          "path": "dulwich-1.2.21.data/scripts/dul-receive-pack"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "dulwich",
+          "path": "dulwich-1.2.21.data/scripts/dul-upload-pack"
+        }
+      ]
+    },
+    {
+      "canonical_name": "poetry",
+      "workflow": "update",
+      "stage": "pip-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/poetry/update/stages/pip-updated/file-audit.json",
+        "sha256": "f997f3e0fc1258c7b0cd31fa0820cb4c6e0fde51fd9acde6cd5e7759c12577cb"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1707,
+      "record_hashes_checked": 1775,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "dulwich",
+          "path": "dulwich-1.2.21.data/scripts/dul-receive-pack"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "dulwich",
+          "path": "dulwich-1.2.21.data/scripts/dul-upload-pack"
+        }
+      ]
+    },
+    {
+      "canonical_name": "poetry",
+      "workflow": "update",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/poetry/update/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "8609dc155c3ea2d2d2fd2605a486c6db4cd2bfdcf200ca9bd541d39db74a8a0c"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1707,
+      "record_hashes_checked": 1876,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "dulwich",
+          "path": "dulwich-1.2.21.data/scripts/dul-receive-pack"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "dulwich",
+          "path": "dulwich-1.2.21.data/scripts/dul-upload-pack"
+        }
+      ]
+    },
+    {
+      "canonical_name": "poetry",
+      "workflow": "update",
+      "stage": "uv-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/poetry/update/stages/uv-old/file-audit.json",
+        "sha256": "1488618b8e6bfc9a12e94a551d67a1d1b0c0e366841d268ab029716f55081ba0"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1707,
+      "record_hashes_checked": 1876,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "dulwich",
+          "path": "dulwich-1.2.21.data/scripts/dul-receive-pack"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "dulwich",
+          "path": "dulwich-1.2.21.data/scripts/dul-upload-pack"
+        }
+      ]
+    },
+    {
+      "canonical_name": "poetry",
+      "workflow": "update",
+      "stage": "uv-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/poetry/update/stages/uv-updated/file-audit.json",
+        "sha256": "8609dc155c3ea2d2d2fd2605a486c6db4cd2bfdcf200ca9bd541d39db74a8a0c"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1707,
+      "record_hashes_checked": 1876,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "dulwich",
+          "path": "dulwich-1.2.21.data/scripts/dul-receive-pack"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "dulwich",
+          "path": "dulwich-1.2.21.data/scripts/dul-upload-pack"
+        }
+      ]
+    },
+    {
+      "canonical_name": "poetry",
+      "workflow": "relock",
+      "stage": "uv-after-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/poetry/relock/stages/uv-after-relock/file-audit.json",
+        "sha256": "8609dc155c3ea2d2d2fd2605a486c6db4cd2bfdcf200ca9bd541d39db74a8a0c"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1707,
+      "record_hashes_checked": 1876,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "dulwich",
+          "path": "dulwich-1.2.21.data/scripts/dul-receive-pack"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "dulwich",
+          "path": "dulwich-1.2.21.data/scripts/dul-upload-pack"
+        }
+      ]
+    },
+    {
+      "canonical_name": "poetry",
+      "workflow": "relock",
+      "stage": "uv-before-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/poetry/relock/stages/uv-before-relock/file-audit.json",
+        "sha256": "8609dc155c3ea2d2d2fd2605a486c6db4cd2bfdcf200ca9bd541d39db74a8a0c"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1707,
+      "record_hashes_checked": 1876,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "dulwich",
+          "path": "dulwich-1.2.21.data/scripts/dul-receive-pack"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "dulwich",
+          "path": "dulwich-1.2.21.data/scripts/dul-upload-pack"
+        }
+      ]
+    },
+    {
+      "canonical_name": "poetry",
+      "workflow": "relock",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/poetry/relock/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "8609dc155c3ea2d2d2fd2605a486c6db4cd2bfdcf200ca9bd541d39db74a8a0c"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1707,
+      "record_hashes_checked": 1876,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "dulwich",
+          "path": "dulwich-1.2.21.data/scripts/dul-receive-pack"
+        },
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "dulwich",
+          "path": "dulwich-1.2.21.data/scripts/dul-upload-pack"
+        }
+      ]
+    },
+    {
+      "canonical_name": "ray",
+      "workflow": "update",
+      "stage": "pip-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/update/stages/pip-old/file-audit.json",
+        "sha256": "c5c2e3fdcb7da8eec931170eb0f31a4fbf0cc7c70f52215f660f6d608ae9bcac"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3179,
+      "record_hashes_checked": 3216,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "ray",
+      "workflow": "update",
+      "stage": "pip-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/update/stages/pip-updated/file-audit.json",
+        "sha256": "7db7cb6f9f7cfe52678a215bebe96ef731f863e5ae4e21ac5d66fe7b0917f055"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3213,
+      "record_hashes_checked": 3250,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "ray",
+      "workflow": "update",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/update/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "1ec109e9852972e5c3518791d272ed2ef30ad5d40ceeb73f54dcece489154ebc"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3213,
+      "record_hashes_checked": 3285,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "ray",
+      "workflow": "update",
+      "stage": "uv-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/update/stages/uv-old/file-audit.json",
+        "sha256": "53aae78f13673ed677c8d05db36555814ec3a71f6e1004eb925c1fcc03690f0f"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3179,
+      "record_hashes_checked": 3251,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "ray",
+      "workflow": "update",
+      "stage": "uv-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/update/stages/uv-updated/file-audit.json",
+        "sha256": "1ec109e9852972e5c3518791d272ed2ef30ad5d40ceeb73f54dcece489154ebc"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3213,
+      "record_hashes_checked": 3285,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "ray",
+      "workflow": "extras",
+      "stage": "uv-base",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/extras/stages/uv-base/file-audit.json",
+        "sha256": "1ec109e9852972e5c3518791d272ed2ef30ad5d40ceeb73f54dcece489154ebc"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3213,
+      "record_hashes_checked": 3285,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "ray",
+      "workflow": "extras",
+      "stage": "uv-base-restored",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/extras/stages/uv-base-restored/file-audit.json",
+        "sha256": "1ec109e9852972e5c3518791d272ed2ef30ad5d40ceeb73f54dcece489154ebc"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3213,
+      "record_hashes_checked": 3285,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "ray",
+      "workflow": "extras",
+      "stage": "uv-extra",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/extras/stages/uv-extra/file-audit.json",
+        "sha256": "b95ed286a5b8bd28add23c916e7ab5e50f19acffe5803d79a438a5bc4d631bc4"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 6728,
+      "record_hashes_checked": 6812,
+      "violations": [],
+      "unknown": [
+        {
+          "kind": "wheel_data_path_transform",
+          "name": "cupy-cuda12x",
+          "path": "cupy/.data/_wheel.json"
+        }
+      ]
+    },
+    {
+      "canonical_name": "ray",
+      "workflow": "extras",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/extras/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "1ec109e9852972e5c3518791d272ed2ef30ad5d40ceeb73f54dcece489154ebc"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3213,
+      "record_hashes_checked": 3285,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "ray",
+      "workflow": "relock",
+      "stage": "uv-after-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/relock/stages/uv-after-relock/file-audit.json",
+        "sha256": "1ec109e9852972e5c3518791d272ed2ef30ad5d40ceeb73f54dcece489154ebc"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3213,
+      "record_hashes_checked": 3285,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "ray",
+      "workflow": "relock",
+      "stage": "uv-before-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/relock/stages/uv-before-relock/file-audit.json",
+        "sha256": "1ec109e9852972e5c3518791d272ed2ef30ad5d40ceeb73f54dcece489154ebc"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3213,
+      "record_hashes_checked": 3285,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "ray",
+      "workflow": "relock",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/relock/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "1ec109e9852972e5c3518791d272ed2ef30ad5d40ceeb73f54dcece489154ebc"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 3213,
+      "record_hashes_checked": 3285,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "superclaude",
+      "workflow": "update",
+      "stage": "pip-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/superclaude/update/stages/pip-old/file-audit.json",
+        "sha256": "2ab11996dd4047e6b21a87dc1aa6dba3b7904a2b1feab957b824dc5a4ea29509"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1045,
+      "record_hashes_checked": 1061,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "superclaude",
+      "workflow": "update",
+      "stage": "pip-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/superclaude/update/stages/pip-updated/file-audit.json",
+        "sha256": "a080f036e7a451e6319d68697bbc91e47eb25b0e7df6fba4b1c92776532bf3da"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1041,
+      "record_hashes_checked": 1057,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "superclaude",
+      "workflow": "update",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/superclaude/update/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "4fddb51ca253c2e6f026de4b55b7f0cac6f1cac58a0196c3f8e4a1416773414f"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1041,
+      "record_hashes_checked": 1076,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "superclaude",
+      "workflow": "update",
+      "stage": "uv-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/superclaude/update/stages/uv-old/file-audit.json",
+        "sha256": "26ab0c961dc2f27606ed60d2654136de07e28ed8288b661b4f91ab4f84366ea8"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1045,
+      "record_hashes_checked": 1080,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "superclaude",
+      "workflow": "update",
+      "stage": "uv-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/superclaude/update/stages/uv-updated/file-audit.json",
+        "sha256": "4fddb51ca253c2e6f026de4b55b7f0cac6f1cac58a0196c3f8e4a1416773414f"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1041,
+      "record_hashes_checked": 1076,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "superclaude",
+      "workflow": "relock",
+      "stage": "uv-after-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/superclaude/relock/stages/uv-after-relock/file-audit.json",
+        "sha256": "4fddb51ca253c2e6f026de4b55b7f0cac6f1cac58a0196c3f8e4a1416773414f"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1041,
+      "record_hashes_checked": 1076,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "superclaude",
+      "workflow": "relock",
+      "stage": "uv-before-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/superclaude/relock/stages/uv-before-relock/file-audit.json",
+        "sha256": "4fddb51ca253c2e6f026de4b55b7f0cac6f1cac58a0196c3f8e4a1416773414f"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1041,
+      "record_hashes_checked": 1076,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "superclaude",
+      "workflow": "relock",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/superclaude/relock/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "4fddb51ca253c2e6f026de4b55b7f0cac6f1cac58a0196c3f8e4a1416773414f"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 1041,
+      "record_hashes_checked": 1076,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "torch-geometric",
+      "workflow": "update",
+      "stage": "pip-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/torch-geometric/update/stages/pip-old/file-audit.json",
+        "sha256": "3f69e2a6fe591f3e0fa8878580c5ecd32f155a66380b30a5f9f0728935fea0c6"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 2177,
+      "record_hashes_checked": 2206,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "torch-geometric",
+      "workflow": "update",
+      "stage": "pip-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/torch-geometric/update/stages/pip-updated/file-audit.json",
+        "sha256": "08acef4626d1f8399ff91ebf85971c6ee5f4b1f6e5c539bb8d81c178481e6882"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 2177,
+      "record_hashes_checked": 2206,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "torch-geometric",
+      "workflow": "update",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/torch-geometric/update/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "905c58320a7109b1b0e7935e1fa1cd8da5366cff2e92f4582204078e4f7256d0"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 2177,
+      "record_hashes_checked": 2251,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "torch-geometric",
+      "workflow": "update",
+      "stage": "uv-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/torch-geometric/update/stages/uv-old/file-audit.json",
+        "sha256": "e4b16ab1186bcb4b7b14eec34324ac6ba0b960649f012ba3098128a985a15783"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 2177,
+      "record_hashes_checked": 2251,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "torch-geometric",
+      "workflow": "update",
+      "stage": "uv-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/torch-geometric/update/stages/uv-updated/file-audit.json",
+        "sha256": "905c58320a7109b1b0e7935e1fa1cd8da5366cff2e92f4582204078e4f7256d0"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 2177,
+      "record_hashes_checked": 2251,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "torch-geometric",
+      "workflow": "relock",
+      "stage": "uv-after-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/torch-geometric/relock/stages/uv-after-relock/file-audit.json",
+        "sha256": "905c58320a7109b1b0e7935e1fa1cd8da5366cff2e92f4582204078e4f7256d0"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 2177,
+      "record_hashes_checked": 2251,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "torch-geometric",
+      "workflow": "relock",
+      "stage": "uv-before-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/torch-geometric/relock/stages/uv-before-relock/file-audit.json",
+        "sha256": "905c58320a7109b1b0e7935e1fa1cd8da5366cff2e92f4582204078e4f7256d0"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 2177,
+      "record_hashes_checked": 2251,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "torch-geometric",
+      "workflow": "relock",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/torch-geometric/relock/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "905c58320a7109b1b0e7935e1fa1cd8da5366cff2e92f4582204078e4f7256d0"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 2177,
+      "record_hashes_checked": 2251,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "transformers",
+      "workflow": "update",
+      "stage": "pip-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/transformers/update/stages/pip-old/file-audit.json",
+        "sha256": "c1b636f49720062a14204ce2bfdba734d68eb6eb7d7c9ff99e7a0370c1369d76"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 5203,
+      "record_hashes_checked": 5246,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "transformers",
+      "workflow": "update",
+      "stage": "pip-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/transformers/update/stages/pip-updated/file-audit.json",
+        "sha256": "a759efc084c63b62dfbcaac97a2b66f03c7d513c7d52f17982347cd11fec3bae"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 5203,
+      "record_hashes_checked": 5246,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "transformers",
+      "workflow": "update",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/transformers/update/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "e73f61d43cc44af4023a93a25971e78db1def8752407c735b693bb5dea79d66c"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 5203,
+      "record_hashes_checked": 5307,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "transformers",
+      "workflow": "update",
+      "stage": "uv-old",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/transformers/update/stages/uv-old/file-audit.json",
+        "sha256": "33b24c1d7ac3665b08df1ee5c95451efc8e9ed5b9bfdaf2235a1f38316c9fd12"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 5203,
+      "record_hashes_checked": 5307,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "transformers",
+      "workflow": "update",
+      "stage": "uv-updated",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/transformers/update/stages/uv-updated/file-audit.json",
+        "sha256": "e73f61d43cc44af4023a93a25971e78db1def8752407c735b693bb5dea79d66c"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 5203,
+      "record_hashes_checked": 5307,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "transformers",
+      "workflow": "relock",
+      "stage": "uv-after-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/transformers/relock/stages/uv-after-relock/file-audit.json",
+        "sha256": "e73f61d43cc44af4023a93a25971e78db1def8752407c735b693bb5dea79d66c"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 5203,
+      "record_hashes_checked": 5307,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "transformers",
+      "workflow": "relock",
+      "stage": "uv-before-relock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/transformers/relock/stages/uv-before-relock/file-audit.json",
+        "sha256": "e73f61d43cc44af4023a93a25971e78db1def8752407c735b693bb5dea79d66c"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 5203,
+      "record_hashes_checked": 5307,
+      "violations": [],
+      "unknown": []
+    },
+    {
+      "canonical_name": "transformers",
+      "workflow": "relock",
+      "stage": "uv-fresh-final-lock",
+      "audit": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/transformers/relock/stages/uv-fresh-final-lock/file-audit.json",
+        "sha256": "e73f61d43cc44af4023a93a25971e78db1def8752407c735b693bb5dea79d66c"
+      },
+      "later_readonly_audit": false,
+      "original_files_checked": 5203,
+      "record_hashes_checked": 5307,
+      "violations": [],
+      "unknown": []
+    }
+  ],
+  "limits": "Stages and hash checks are repeated observations, not independent projects or defects. Mapping unknowns remain original-wheel-to-install path comparison limitations; installed RECORD hash checks are separate evidence. This report reads saved audits, performs no new installation or payload hash scan, and is not an exhaustive application-function certificate."
+}

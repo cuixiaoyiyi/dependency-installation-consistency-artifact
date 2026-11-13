@@ -1,0 +1,13 @@
+{
+  "schema": "stateful-workflow-selection-addendum-v2",
+  "registered_at_utc": "2026-11-11T02:48:37.586118+00:00",
+  "before_any_workflow_installation": true,
+  "original_protocol_sha256": "a0b22a23d1214788ee838f1b65c8bc21295a976f1dcb40ad2fd4536f326c7e62",
+  "original_workflow_selection_sha256": "f7955ba6fce5d8eb98519206151127a251b2a7804cfd5be0fa08f570c79ff6e4",
+  "cohort_sha256": "64a93166c2f095de95186f32c7e68a970e6f6e583995de8c5ce5a94127264056",
+  "new_script_sha256": "e8ebde3d7f636aceb4d423d51c3a60db94bea89aeb5209c131267b2c0cc34d4d",
+  "reason": "Latest parent task specifies previous compatible stable release. Avoid deliberately making pip/no-same-minor-patch updates no-ops; preserve old selection and strengthen transparent runtime-extra selection before installer outcomes.",
+  "update": "Greatest PEP440 version below fixed current pin from frozen full-project JSON releases, stable/non-yanked and native-compatible wheel; major/minor crossing permitted, epoch must match. Exact predecessor JSON captured and bound; no current-pin refresh or downgrade and no result-driven substitution.",
+  "extras": "Published runtime extra with smallest positive count of additional marker-active direct requirement identities; normalized-extra lexicographic tie. Exclude original tooling tokens plus qa/all/full/complete aggregate bundle names. Static target-environment declarations only; no attempt to guess satisfiability or result-based replacement.",
+  "execution_assignment": "Foundation19 by pipeline; other33 unique official distribution roots by rounds; build plus16unmapped repo slots remain explicit coverage. Source-switch independent official-source agent."
+}

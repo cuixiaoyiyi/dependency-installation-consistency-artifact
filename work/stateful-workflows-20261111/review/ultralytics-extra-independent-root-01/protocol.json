@@ -1,0 +1,38 @@
+{
+  "registered_at_utc": "2026-11-11T05:32:56.214726+00:00",
+  "script_sha256": "62ca90e8867f6311efe540f80b5061ead1a14161fb3faad0747a81d3033fb1c1",
+  "inputs": {
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/protocol.json": "a14bc985631728c13fd5a6e5e01b2245e88eeeaa0b63da3f377312d7fa6eb5d7",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/preparation/base.json": "af8540f6415b323e0a5c4ad3d528f745db3fd7186e90774125453e66c239f756",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/preparation/extra.json": "5e0d4923ae2e04b86f11d2e3f36bb34211df428af49f639afd456a052fa30f43",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base/pyproject.toml": "577a33fa107e91eca991c1c7f02e125994de5dc2f28a108b7c0eb5c4ea5b17b3",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base/uv.lock": "6ddaab7950c19485fd95936daafd3f226c606384168d8279786d4f51272041e1",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/pyproject.toml": "83d1282b28cdb88d120f2ad15ef32a2114e45e6c7e3f51119ffb299f83aa9bef",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/uv.lock": "4945d6f5f646d6f354690e35c0ed95e8e94ec76a1e7875792f5155a6b66bcece",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base-restored/pyproject.toml": "577a33fa107e91eca991c1c7f02e125994de5dc2f28a108b7c0eb5c4ea5b17b3",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base-restored/uv.lock": "6ddaab7950c19485fd95936daafd3f226c606384168d8279786d4f51272041e1",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base-restored/installed.json": "51eb25d79b4b26403dc1ec49bf602b103c5a9f4b5453ef9377aa66af6653fb63",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/base-restored-sync/command.json": "8a7fa0da0be13e6d79adb9eb8f7d3918f8cf8848001ec3707ae27bf33cc1e1b3"
+  },
+  "helpers": {
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/scripts/real_source_switch_workflows_1111.py": "e814ee738f484eaa4f8bd8e30e2bfae3216da4697be8ff66daab9ab1df058a72",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/review_saved_partial_stages.py": "f644cbb5b88fbd6bf2e9e24139b354928428b1fbce12eee2b766bf2c5d1851c7",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/scripts/validate_foundational_installs_1111.py": "0afc01d88be42238b2eadd047c95bdbc7910fa040039e0752c18b2f3f4a016bd"
+  },
+  "sequence": [
+    "empty environment full base sync",
+    "same environment full extra sync",
+    "remove extra using frozen base-restored manifest/lock",
+    "same final inputs reinstall only retained opencv-python"
+  ],
+  "independence": "Root authored and executes this focused replay in a new project/environment. Every dependency is installed by uv from the original official frozen lock. The first run's official verified content cache is shared, so this is not a cold-cache replication. No no-deps, wheel/metadata edits, manual child insertion or copied installed environment.",
+  "start_gate": "The first run's actual removal sync has exit0 and a saved inventory retaining normal OpenCV while removing headless. Its long full-payload audit may still be underway; this independent sequence tests the concrete outcome itself. No positivity or completed first-run controls are inferred from this start gate.",
+  "scope": "Verify full actual installed metadata and both checkers; independently verify original archive SHA and the OpenCV cv2 payload bytes and API. Other dependencies' complete payloads are audited in the first full run, not claimed as independently hashed again here. Full first-run same-final fresh and full-reinstall controls remain required for final admission.",
+  "limits": {
+    "sync_seconds_each": 1800,
+    "checker_seconds_each": 300,
+    "smoke_seconds_each": 120,
+    "minimum_free_bytes": 64424509440
+  },
+  "counting": "Independent repetition of the same one real root and same known shared-file mechanism. Not a new uv root cause, another affected project, or public submission. Project attribution and novelty require separate review."
+}

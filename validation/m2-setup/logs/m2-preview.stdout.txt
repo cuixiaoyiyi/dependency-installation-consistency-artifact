@@ -1,0 +1,52 @@
+{
+  "case": "m2",
+  "mode": "dry-run",
+  "out": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/m2-preview",
+  "python": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/venv/bin/python",
+  "uv": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/venv/bin/uv",
+  "network": "official package downloads from the supplied locks",
+  "inputs": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/artifact/inputs/ultralytics-extra",
+  "input_files": [
+    {
+      "state": "base",
+      "file": "pyproject.toml",
+      "sha256": "577a33fa107e91eca991c1c7f02e125994de5dc2f28a108b7c0eb5c4ea5b17b3"
+    },
+    {
+      "state": "base",
+      "file": "uv.lock",
+      "sha256": "6ddaab7950c19485fd95936daafd3f226c606384168d8279786d4f51272041e1"
+    },
+    {
+      "state": "extra",
+      "file": "pyproject.toml",
+      "sha256": "83d1282b28cdb88d120f2ad15ef32a2114e45e6c7e3f51119ffb299f83aa9bef"
+    },
+    {
+      "state": "extra",
+      "file": "uv.lock",
+      "sha256": "4945d6f5f646d6f354690e35c0ed95e8e94ec76a1e7875792f5155a6b66bcece"
+    },
+    {
+      "state": "base-restored",
+      "file": "pyproject.toml",
+      "sha256": "577a33fa107e91eca991c1c7f02e125994de5dc2f28a108b7c0eb5c4ea5b17b3"
+    },
+    {
+      "state": "base-restored",
+      "file": "uv.lock",
+      "sha256": "6ddaab7950c19485fd95936daafd3f226c606384168d8279786d4f51272041e1"
+    }
+  ],
+  "target": "CPython3.11.16 Linux x86_64",
+  "recorded_uv": "0.13.7",
+  "sequence": [
+    "base",
+    "extra",
+    "base-restored",
+    "fresh-final",
+    "repair-opencv-only"
+  ],
+  "minimum_free_gib": 60,
+  "scope": "Portable replay of the supplied manifests and locks, metadata closure, retained OpenCV RECORD paths, and selected runtime probes. This does not repeat every original wheel-byte audit."
+}

@@ -1,0 +1,2361 @@
+{
+  "schema": "stateful-fixed-primary-distribution-cohort-v1",
+  "frozen_at_utc": "2026-11-11T02:45:02.224718+00:00",
+  "protocol_sha256": "a0b22a23d1214788ee838f1b65c8bc21295a976f1dcb40ad2fd4536f326c7e62",
+  "native_profiles_sha256": "8678d65dc39340168d198120696a589b49be189c4e9b38023f502cea0642911c",
+  "root_count": 52,
+  "included_original_slots": 53,
+  "unique_repositories": 52,
+  "deduplication": "Same canonical name+fixed equivalent version merged; numpy2.5.4 appears in new30 and foundational20 and remains one root with2provenances.",
+  "roots": [
+    {
+      "canonical_name": "aider-chat",
+      "version": "0.86.2",
+      "request": "aider-chat==0.86.2",
+      "requires_python": "<3.13,>=3.10",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/Aider-AI/aider",
+          "repository_commit": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
+          "source_slot": "Aider-AI__aider",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/aider-chat.json",
+          "pypi_json_sha256": "cb124f46f966faa741bc675c76956b3c6fd50ed2e9bb8b0b0e7b6aba24afaf36"
+        }
+      ],
+      "repositories": [
+        "github.com/Aider-AI/aider"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/aider-chat.json",
+      "pypi_json_sha256": "cb124f46f966faa741bc675c76956b3c6fd50ed2e9bb8b0b0e7b6aba24afaf36",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "aiohttp",
+      "version": "3.14.5",
+      "request": "aiohttp==3.14.5",
+      "requires_python": ">=3.10",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/aio-libs/aiohttp",
+          "repository_commit": null,
+          "source_slot": "aiohttp",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/aiohttp.json",
+          "pypi_json_sha256": "cfcf228e6b87f966a0c34e2eb65ae8fc372fe22df276ada678c266c6501ad796"
+        }
+      ],
+      "repositories": [
+        "github.com/aio-libs/aiohttp"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/aiohttp.json",
+      "pypi_json_sha256": "cfcf228e6b87f966a0c34e2eb65ae8fc372fe22df276ada678c266c6501ad796",
+      "target_python": "3.11.16",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "akshare",
+      "version": "1.20.37",
+      "request": "akshare==1.20.37",
+      "requires_python": ">=3.11",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/akfamily/akshare",
+          "repository_commit": "1aef113ff143df4802a61e33ea2e3933839595e7",
+          "source_slot": "akfamily__akshare",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/akshare.json",
+          "pypi_json_sha256": "9496f901bb6f4adc1bfcf7ccf94877f626328e28f5b9376169b6d4dab0ef82b0"
+        }
+      ],
+      "repositories": [
+        "github.com/akfamily/akshare"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/akshare.json",
+      "pypi_json_sha256": "9496f901bb6f4adc1bfcf7ccf94877f626328e28f5b9376169b6d4dab0ef82b0",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "boto3",
+      "version": "1.44.0",
+      "request": "boto3==1.44.0",
+      "requires_python": ">=3.10",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/boto/boto3",
+          "repository_commit": null,
+          "source_slot": "boto3",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/boto3.json",
+          "pypi_json_sha256": "8c6dc53ed753c993f393ec0a709a4b4289a1ae1a87c000ec05f3d93cb76a3046"
+        }
+      ],
+      "repositories": [
+        "github.com/boto/boto3"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/boto3.json",
+      "pypi_json_sha256": "8c6dc53ed753c993f393ec0a709a4b4289a1ae1a87c000ec05f3d93cb76a3046",
+      "target_python": "3.11.16",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "celery",
+      "version": "5.7.0",
+      "request": "celery==5.7.0",
+      "requires_python": ">=3.10",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/celery/celery",
+          "repository_commit": "40a3154d457f085770ee7ed85ee892b4608cfb94",
+          "source_slot": "celery__celery",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/celery.json",
+          "pypi_json_sha256": "1a9a025d73d39b2dc37b97d099775e25b5db4a9b92fd3bec7c23ea90b20a4f21"
+        }
+      ],
+      "repositories": [
+        "github.com/celery/celery"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/celery.json",
+      "pypi_json_sha256": "1a9a025d73d39b2dc37b97d099775e25b5db4a9b92fd3bec7c23ea90b20a4f21",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "cryptography",
+      "version": "50.0.2",
+      "request": "cryptography==50.0.2",
+      "requires_python": "!=3.9.0,!=3.9.1,>=3.9",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/pyca/cryptography",
+          "repository_commit": null,
+          "source_slot": "cryptography",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/cryptography.json",
+          "pypi_json_sha256": "32975256deff83cfe92bfcb93233debf77ddc6e8222b2227dec5f45094173d66"
+        }
+      ],
+      "repositories": [
+        "github.com/pyca/cryptography"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/cryptography.json",
+      "pypi_json_sha256": "32975256deff83cfe92bfcb93233debf77ddc6e8222b2227dec5f45094173d66",
+      "target_python": "3.11.16",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "deepspeed",
+      "version": "0.19.9",
+      "request": "deepspeed==0.19.9",
+      "requires_python": "",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/deepspeedai/DeepSpeed",
+          "repository_commit": "f9fe4df3478b3452ebb922be69e7101b4a77f59f",
+          "source_slot": "deepspeedai__DeepSpeed",
+          "prior_measurement_status": "unsupported_main_artifact_policy",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/deepspeed.json",
+          "pypi_json_sha256": "697804aaf0aa1140eea74d008d58226f996858a0a832bd473b9ac3e7c3e30ed7"
+        }
+      ],
+      "repositories": [
+        "github.com/deepspeedai/DeepSpeed"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/deepspeed.json",
+      "pypi_json_sha256": "697804aaf0aa1140eea74d008d58226f996858a0a832bd473b9ac3e7c3e30ed7",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "diffusers",
+      "version": "0.42.1",
+      "request": "diffusers==0.42.1",
+      "requires_python": ">=3.11.0",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/huggingface/diffusers",
+          "repository_commit": "f598e6e6a99528858b962c1399c45b59a6c25484",
+          "source_slot": "huggingface__diffusers",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/diffusers.json",
+          "pypi_json_sha256": "1cc5c01e13f1864963829da3622c2567d42467575fde23d17aa580a3200ed0c6"
+        }
+      ],
+      "repositories": [
+        "github.com/huggingface/diffusers"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/diffusers.json",
+      "pypi_json_sha256": "1cc5c01e13f1864963829da3622c2567d42467575fde23d17aa580a3200ed0c6",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "django",
+      "version": "6.1.3",
+      "request": "django==6.1.3",
+      "requires_python": ">=3.12",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/django/django",
+          "repository_commit": null,
+          "source_slot": "django",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/django.json",
+          "pypi_json_sha256": "cecf7f44732f04c313383b4c638021689af64242091cda4bafc07934f21740b2"
+        }
+      ],
+      "repositories": [
+        "github.com/django/django"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/django.json",
+      "pypi_json_sha256": "cecf7f44732f04c313383b4c638021689af64242091cda4bafc07934f21740b2",
+      "target_python": "3.14.4",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux-314/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.14.4",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.14.4",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.14",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "fastapi",
+      "version": "0.162.4",
+      "request": "fastapi==0.162.4",
+      "requires_python": ">=3.10",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/fastapi/fastapi",
+          "repository_commit": null,
+          "source_slot": "fastapi",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/fastapi.json",
+          "pypi_json_sha256": "2a856c698795aaad128802313068bcab5cc0dcc1f5a1dde3c2225ffcad22f619"
+        }
+      ],
+      "repositories": [
+        "github.com/fastapi/fastapi"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/fastapi.json",
+      "pypi_json_sha256": "2a856c698795aaad128802313068bcab5cc0dcc1f5a1dde3c2225ffcad22f619",
+      "target_python": "3.11.16",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "flask",
+      "version": "3.1.3",
+      "request": "flask==3.1.3",
+      "requires_python": ">=3.9",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/pallets/flask",
+          "repository_commit": null,
+          "source_slot": "flask",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/flask.json",
+          "pypi_json_sha256": "2bebc9ab169de02f525a8460feaedbb6f32960eb9125800d9afb83cd10c25a80"
+        }
+      ],
+      "repositories": [
+        "github.com/pallets/flask"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/flask.json",
+      "pypi_json_sha256": "2bebc9ab169de02f525a8460feaedbb6f32960eb9125800d9afb83cd10c25a80",
+      "target_python": "3.11.16",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "genesis-world",
+      "version": "1.4.6",
+      "request": "genesis-world==1.4.6",
+      "requires_python": "<3.15,>=3.12",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/Genesis-Embodied-AI/genesis-world",
+          "repository_commit": "1988cdb7df7eb25ee498d8351b10276ad4a1d1bf",
+          "source_slot": "Genesis-Embodied-AI__genesis-world",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/genesis-world.json",
+          "pypi_json_sha256": "90ef0743cf1536e67d3f83e4a51feb2eb4073c558ff6297c7b9df3140a439601"
+        }
+      ],
+      "repositories": [
+        "github.com/Genesis-Embodied-AI/genesis-world"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/genesis-world.json",
+      "pypi_json_sha256": "90ef0743cf1536e67d3f83e4a51feb2eb4073c558ff6297c7b9df3140a439601",
+      "target_python": "3.12.14",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux-312-1111/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.12.14",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.12.14",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.12",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "graphrag",
+      "version": "3.3.0",
+      "request": "graphrag==3.3.0",
+      "requires_python": "<3.14,>=3.11",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/microsoft/graphrag",
+          "repository_commit": "34b2b67ae4601ad0b47bcd179fbe3f2a23aa0857",
+          "source_slot": "microsoft__graphrag",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/graphrag.json",
+          "pypi_json_sha256": "a9ad3104e2e698c62660fcdb618db2220b5a18e63f9600c9af3b1478e86ea8ac"
+        }
+      ],
+      "repositories": [
+        "github.com/microsoft/graphrag"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/graphrag.json",
+      "pypi_json_sha256": "a9ad3104e2e698c62660fcdb618db2220b5a18e63f9600c9af3b1478e86ea8ac",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "homeassistant",
+      "version": "2026.11.1",
+      "request": "homeassistant==2026.11.1",
+      "requires_python": ">=3.14.2",
+      "provenance": [
+        {
+          "input_group": "published20",
+          "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+          "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+          "repository": "github.com/home-assistant/core",
+          "repository_commit": "29e7faceed8c139e4ced7a05336c88cc5660fb2a",
+          "source_slot": "home-assistant__core",
+          "prior_measurement_status": "unsupported_native_python",
+          "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-homeassistant.json",
+          "pypi_json_sha256": "bb9ce506e34fe405c47920372550437878ff5af06b05405f862a673b3c9e8c69"
+        }
+      ],
+      "repositories": [
+        "github.com/home-assistant/core"
+      ],
+      "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-homeassistant.json",
+      "pypi_json_sha256": "bb9ce506e34fe405c47920372550437878ff5af06b05405f862a673b3c9e8c69",
+      "target_python": "3.14.4",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux-314/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.14.4",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.14.4",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.14",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "httpx",
+      "version": "0.28.1",
+      "request": "httpx==0.28.1",
+      "requires_python": ">=3.8",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/encode/httpx",
+          "repository_commit": null,
+          "source_slot": "httpx",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/httpx.json",
+          "pypi_json_sha256": "bb69a37ba295d008ec1ae05b324c4f5e64fba48b7276189ebf2a2920dd2f1fc8"
+        }
+      ],
+      "repositories": [
+        "github.com/encode/httpx"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/httpx.json",
+      "pypi_json_sha256": "bb69a37ba295d008ec1ae05b324c4f5e64fba48b7276189ebf2a2920dd2f1fc8",
+      "target_python": "3.11.16",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "jax",
+      "version": "0.12.0.1",
+      "request": "jax==0.12.0.1",
+      "requires_python": ">=3.12",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/jax-ml/jax",
+          "repository_commit": "975a605928496876c99f8702dd996a309caab919",
+          "source_slot": "jax-ml__jax",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/jax.json",
+          "pypi_json_sha256": "6e60595cf7d6ccf50e7c64f42f44f803d12fb6f6ec9b19821d898b81013ad17e"
+        }
+      ],
+      "repositories": [
+        "github.com/jax-ml/jax"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/jax.json",
+      "pypi_json_sha256": "6e60595cf7d6ccf50e7c64f42f44f803d12fb6f6ec9b19821d898b81013ad17e",
+      "target_python": "3.12.14",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux-312-1111/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.12.14",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.12.14",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.12",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "khoj",
+      "version": "1.42.10",
+      "request": "khoj==1.42.10",
+      "requires_python": "<3.13,>=3.10",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/khoj-ai/khoj",
+          "repository_commit": "ae229ca894c0b80ad84664afcfdde523b5e87057",
+          "source_slot": "khoj-ai__khoj",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/khoj.json",
+          "pypi_json_sha256": "331236abe7fec410edc28a7decc1eb689b0a666beba041af61378f751367d885"
+        }
+      ],
+      "repositories": [
+        "github.com/khoj-ai/khoj"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/khoj.json",
+      "pypi_json_sha256": "331236abe7fec410edc28a7decc1eb689b0a666beba041af61378f751367d885",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "langchain-chatchat",
+      "version": "0.3.1.3",
+      "request": "langchain-chatchat==0.3.1.3",
+      "requires_python": "!=2.7.*,!=3.0.*,!=3.1.*,!=3.12.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,!=3.7.*,>=3.8",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/chatchat-space/Langchain-Chatchat",
+          "repository_commit": "49165d6af4438aa7e8a1f71ce276db55f4405151",
+          "source_slot": "chatchat-space__Langchain-Chatchat",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/langchain-chatchat.json",
+          "pypi_json_sha256": "19a79101943237c98f189416b02d11709630215b3ff283c905777cf23b1fab5d"
+        }
+      ],
+      "repositories": [
+        "github.com/chatchat-space/Langchain-Chatchat"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/langchain-chatchat.json",
+      "pypi_json_sha256": "19a79101943237c98f189416b02d11709630215b3ff283c905777cf23b1fab5d",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "llama-index",
+      "version": "0.14.25",
+      "request": "llama-index==0.14.25",
+      "requires_python": "<4.0,>=3.10",
+      "provenance": [
+        {
+          "input_group": "published20",
+          "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+          "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+          "repository": "github.com/run-llama/llama_index",
+          "repository_commit": "fe107aab65e46d1d07c80663182691970417bbd9",
+          "source_slot": "run-llama__llama_index",
+          "prior_measurement_status": "eligible_for_native_published_distribution_resolution",
+          "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-llama-index.json",
+          "pypi_json_sha256": "c8bb3870e822fefa88a5a66123e65f2a14a6194eb021c2a68c792c78bef12aaf"
+        }
+      ],
+      "repositories": [
+        "github.com/run-llama/llama_index"
+      ],
+      "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-llama-index.json",
+      "pypi_json_sha256": "c8bb3870e822fefa88a5a66123e65f2a14a6194eb021c2a68c792c78bef12aaf",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "llamafactory",
+      "version": "0.9.5",
+      "request": "llamafactory==0.9.5",
+      "requires_python": ">=3.11.0",
+      "provenance": [
+        {
+          "input_group": "published20",
+          "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+          "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+          "repository": "github.com/hiyouga/LlamaFactory",
+          "repository_commit": "dffd958edfd31671ff887f3fe7c042b281c48e20",
+          "source_slot": "hiyouga__LlamaFactory",
+          "prior_measurement_status": "eligible_for_native_published_distribution_resolution",
+          "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-llamafactory.json",
+          "pypi_json_sha256": "311baf4e617e9b3690ca53742c50f7f3de9f3faa9eb5a23c856d06eaaf60c6b8"
+        }
+      ],
+      "repositories": [
+        "github.com/hiyouga/LlamaFactory"
+      ],
+      "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-llamafactory.json",
+      "pypi_json_sha256": "311baf4e617e9b3690ca53742c50f7f3de9f3faa9eb5a23c856d06eaaf60c6b8",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "matplotlib",
+      "version": "3.11.2",
+      "request": "matplotlib==3.11.2",
+      "requires_python": ">=3.11",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/matplotlib/matplotlib",
+          "repository_commit": "4f28d437628a5d35649947a152b3f988d8e3751f",
+          "source_slot": "matplotlib__matplotlib",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/matplotlib.json",
+          "pypi_json_sha256": "6eb1ddeb8f868a44ee9017e2228f2adbf86c55080b43279f38b4b1ffde79891a"
+        }
+      ],
+      "repositories": [
+        "github.com/matplotlib/matplotlib"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/matplotlib.json",
+      "pypi_json_sha256": "6eb1ddeb8f868a44ee9017e2228f2adbf86c55080b43279f38b4b1ffde79891a",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "mineru",
+      "version": "4.1.7",
+      "request": "mineru==4.1.7",
+      "requires_python": "<3.15,>=3.11",
+      "provenance": [
+        {
+          "input_group": "published20",
+          "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+          "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+          "repository": "github.com/opendatalab/MinerU",
+          "repository_commit": "711a169320ceac04cf6da692c066764f55997656",
+          "source_slot": "opendatalab__MinerU",
+          "prior_measurement_status": "eligible_for_native_published_distribution_resolution",
+          "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-mineru.json",
+          "pypi_json_sha256": "c56d16e7209e666cd0243e9176de3a0b819f1d58f4ddf655fd0e5e7baa2cf13c"
+        }
+      ],
+      "repositories": [
+        "github.com/opendatalab/MinerU"
+      ],
+      "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-mineru.json",
+      "pypi_json_sha256": "c56d16e7209e666cd0243e9176de3a0b819f1d58f4ddf655fd0e5e7baa2cf13c",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "numpy",
+      "version": "2.5.4",
+      "request": "numpy==2.5.4",
+      "requires_python": ">=3.12",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/numpy/numpy",
+          "repository_commit": "af8b7d946061406ce769ab0a61e377e07b0a9685",
+          "source_slot": "numpy__numpy",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/numpy.json",
+          "pypi_json_sha256": "b433c2327cadf3d9872156b22061dfae8968bd1ee5e4768ac267e5411ad74620"
+        },
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/numpy/numpy",
+          "repository_commit": null,
+          "source_slot": "numpy",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/numpy.json",
+          "pypi_json_sha256": "b433c2327cadf3d9872156b22061dfae8968bd1ee5e4768ac267e5411ad74620"
+        }
+      ],
+      "repositories": [
+        "github.com/numpy/numpy"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/numpy.json",
+      "pypi_json_sha256": "b433c2327cadf3d9872156b22061dfae8968bd1ee5e4768ac267e5411ad74620",
+      "target_python": "3.14.4",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux-314/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.14.4",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.14.4",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.14",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "openai-whisper",
+      "version": "20250625",
+      "request": "openai-whisper==20250625",
+      "requires_python": ">=3.8",
+      "provenance": [
+        {
+          "input_group": "published20",
+          "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+          "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+          "repository": "github.com/openai/whisper",
+          "repository_commit": "86098128c0b4f24f0e2aa2994de830614b474227",
+          "source_slot": "openai__whisper",
+          "prior_measurement_status": "eligible_for_native_published_distribution_resolution",
+          "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-openai-whisper.json",
+          "pypi_json_sha256": "06152a206e7ee82226d54c9f58935a099556a1fc4cb39983ae159f5abc70f1ab"
+        }
+      ],
+      "repositories": [
+        "github.com/openai/whisper"
+      ],
+      "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-openai-whisper.json",
+      "pypi_json_sha256": "06152a206e7ee82226d54c9f58935a099556a1fc4cb39983ae159f5abc70f1ab",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "pandas",
+      "version": "3.1.1",
+      "request": "pandas==3.1.1",
+      "requires_python": ">=3.11",
+      "provenance": [
+        {
+          "input_group": "published20",
+          "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+          "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+          "repository": "github.com/pandas-dev/pandas",
+          "repository_commit": "0e93a6884748a269ead954a6acc731fe9c080993",
+          "source_slot": "pandas-dev__pandas",
+          "prior_measurement_status": "eligible_for_native_published_distribution_resolution",
+          "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-pandas.json",
+          "pypi_json_sha256": "fdc4efa1ffd6b3849a055b69ee1d220dcf367f3eb0ccb23c916180024b0c3cb0"
+        }
+      ],
+      "repositories": [
+        "github.com/pandas-dev/pandas"
+      ],
+      "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-pandas.json",
+      "pypi_json_sha256": "fdc4efa1ffd6b3849a055b69ee1d220dcf367f3eb0ccb23c916180024b0c3cb0",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "pillow",
+      "version": "13.0.0",
+      "request": "pillow==13.0.0",
+      "requires_python": ">=3.11",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/python-pillow/Pillow",
+          "repository_commit": null,
+          "source_slot": "pillow",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/pillow.json",
+          "pypi_json_sha256": "56cd02ba0c8d44417b3f5e6b5bff96861810d89a4f14ba2863a91f619f86a842"
+        }
+      ],
+      "repositories": [
+        "github.com/python-pillow/Pillow"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/pillow.json",
+      "pypi_json_sha256": "56cd02ba0c8d44417b3f5e6b5bff96861810d89a4f14ba2863a91f619f86a842",
+      "target_python": "3.11.16",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "pip",
+      "version": "26.3",
+      "request": "pip==26.3",
+      "requires_python": ">=3.10",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/pypa/pip",
+          "repository_commit": null,
+          "source_slot": "pip",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/pip.json",
+          "pypi_json_sha256": "2b634ed9b7d74d2dc52d9c579c0ee1d91fb15c2c53b23969c1eaa1b7173b209c"
+        }
+      ],
+      "repositories": [
+        "github.com/pypa/pip"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/pip.json",
+      "pypi_json_sha256": "2b634ed9b7d74d2dc52d9c579c0ee1d91fb15c2c53b23969c1eaa1b7173b209c",
+      "target_python": "3.11.16",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "pipenv",
+      "version": "2026.11.0",
+      "request": "pipenv==2026.11.0",
+      "requires_python": ">=3.11",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/pypa/pipenv",
+          "repository_commit": "3c34948686a487b2728fe1d007822a37cd656d8b",
+          "source_slot": "pypa__pipenv",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/pipenv.json",
+          "pypi_json_sha256": "3bb537dfffef3b3713723c6794e9bc441b18768b085d70affb2e7a5fc4444d9c"
+        }
+      ],
+      "repositories": [
+        "github.com/pypa/pipenv"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/pipenv.json",
+      "pypi_json_sha256": "3bb537dfffef3b3713723c6794e9bc441b18768b085d70affb2e7a5fc4444d9c",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "poetry",
+      "version": "2.5.1",
+      "request": "poetry==2.5.1",
+      "requires_python": "<4.0,>=3.10",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/python-poetry/poetry",
+          "repository_commit": "4acc75e19f128c8340c6f977a35e53b5f7f39071",
+          "source_slot": "python-poetry__poetry",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/poetry.json",
+          "pypi_json_sha256": "55c24be1ebf618d5617aed7f7f0c279f2ad736f262370ca5cf6e14045fa9a912"
+        }
+      ],
+      "repositories": [
+        "github.com/python-poetry/poetry"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/poetry.json",
+      "pypi_json_sha256": "55c24be1ebf618d5617aed7f7f0c279f2ad736f262370ca5cf6e14045fa9a912",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "pyarrow",
+      "version": "26.0.1",
+      "request": "pyarrow==26.0.1",
+      "requires_python": ">=3.11",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/apache/arrow",
+          "repository_commit": null,
+          "source_slot": "pyarrow",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/pyarrow.json",
+          "pypi_json_sha256": "16ee1b166d97ac64a8d9a5bbda967dbe01278513542f78bfd46eff4264a42d75"
+        }
+      ],
+      "repositories": [
+        "github.com/apache/arrow"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/pyarrow.json",
+      "pypi_json_sha256": "16ee1b166d97ac64a8d9a5bbda967dbe01278513542f78bfd46eff4264a42d75",
+      "target_python": "3.11.16",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "pyqlib",
+      "version": "0.9.7",
+      "request": "pyqlib==0.9.7",
+      "requires_python": ">=3.8.0",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/microsoft/qlib",
+          "repository_commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+          "source_slot": "microsoft__qlib",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/pyqlib.json",
+          "pypi_json_sha256": "ab52cf3ef958c809d125d2b711b09128d9e4b2a73c7ef46bc5447305c484da8a"
+        }
+      ],
+      "repositories": [
+        "github.com/microsoft/qlib"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/pyqlib.json",
+      "pypi_json_sha256": "ab52cf3ef958c809d125d2b711b09128d9e4b2a73c7ef46bc5447305c484da8a",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "pytest",
+      "version": "9.2.0",
+      "request": "pytest==9.2.0",
+      "requires_python": ">=3.10",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/pytest-dev/pytest",
+          "repository_commit": null,
+          "source_slot": "pytest",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/pytest.json",
+          "pypi_json_sha256": "57f548cb785c5d41f5292b34e956c60c7a44cfa06ab1fd17e6969b6208a3cb60"
+        }
+      ],
+      "repositories": [
+        "github.com/pytest-dev/pytest"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/pytest.json",
+      "pypi_json_sha256": "57f548cb785c5d41f5292b34e956c60c7a44cfa06ab1fd17e6969b6208a3cb60",
+      "target_python": "3.11.16",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "rasa",
+      "version": "3.6.21",
+      "request": "rasa==3.6.21",
+      "requires_python": "<3.11,>=3.8",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/RasaHQ/rasa",
+          "repository_commit": "60a3cff9c08183760355b07bd60f5223d8916d6b",
+          "source_slot": "RasaHQ__rasa",
+          "prior_measurement_status": "unsupported_latest_target",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/rasa.json",
+          "pypi_json_sha256": "06a959aa073c933b0da1abe3c928be1d17cfcbb4573644b0b38ea73acb3de258"
+        }
+      ],
+      "repositories": [
+        "github.com/RasaHQ/rasa"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/rasa.json",
+      "pypi_json_sha256": "06a959aa073c933b0da1abe3c928be1d17cfcbb4573644b0b38ea73acb3de258",
+      "target_python": "3.10.21",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux-310-1111/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.10.21",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.10.21",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.10",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "ray",
+      "version": "2.60.0",
+      "request": "ray==2.60.0",
+      "requires_python": ">=3.10",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/ray-project/ray",
+          "repository_commit": "a12e213059a050a5ad3f46e92a019ba5c85af315",
+          "source_slot": "ray-project__ray",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/ray.json",
+          "pypi_json_sha256": "af9cc745a00a39e1d493f956eb87f73bbf8a18440c148b29f064503fef0fd1fe"
+        }
+      ],
+      "repositories": [
+        "github.com/ray-project/ray"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/ray.json",
+      "pypi_json_sha256": "af9cc745a00a39e1d493f956eb87f73bbf8a18440c148b29f064503fef0fd1fe",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "requests",
+      "version": "2.34.2",
+      "request": "requests==2.34.2",
+      "requires_python": ">=3.10",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/psf/requests",
+          "repository_commit": null,
+          "source_slot": "requests",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/requests.json",
+          "pypi_json_sha256": "bcfc6a202592e4e90f5a28ff002694eaa7c58ba741b76077f432b8bee1480111"
+        }
+      ],
+      "repositories": [
+        "github.com/psf/requests"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/requests.json",
+      "pypi_json_sha256": "bcfc6a202592e4e90f5a28ff002694eaa7c58ba741b76077f432b8bee1480111",
+      "target_python": "3.11.16",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "scikit-learn",
+      "version": "1.9.1",
+      "request": "scikit-learn==1.9.1",
+      "requires_python": ">=3.11",
+      "provenance": [
+        {
+          "input_group": "published20",
+          "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+          "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+          "repository": "github.com/scikit-learn/scikit-learn",
+          "repository_commit": "bf434819bd98a894a772d68c3d69fffd88fbc6cb",
+          "source_slot": "scikit-learn__scikit-learn",
+          "prior_measurement_status": "eligible_for_native_published_distribution_resolution",
+          "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-scikit-learn.json",
+          "pypi_json_sha256": "7f2c77f9da0b1765ccd00fe236628488f1645a0e8d14e2f38bdcc85d2ea477dd"
+        }
+      ],
+      "repositories": [
+        "github.com/scikit-learn/scikit-learn"
+      ],
+      "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-scikit-learn.json",
+      "pypi_json_sha256": "7f2c77f9da0b1765ccd00fe236628488f1645a0e8d14e2f38bdcc85d2ea477dd",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "scipy",
+      "version": "1.18.1",
+      "request": "scipy==1.18.1",
+      "requires_python": ">=3.12",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/scipy/scipy",
+          "repository_commit": null,
+          "source_slot": "scipy",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/scipy.json",
+          "pypi_json_sha256": "afa4557864c507c15a932447e266d09551deb9a23bf8c451a6832b49e1fe3130"
+        }
+      ],
+      "repositories": [
+        "github.com/scipy/scipy"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/scipy.json",
+      "pypi_json_sha256": "afa4557864c507c15a932447e266d09551deb9a23bf8c451a6832b49e1fe3130",
+      "target_python": "3.14.4",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux-314/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.14.4",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.14.4",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.14",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "setuptools",
+      "version": "84.2.1",
+      "request": "setuptools==84.2.1",
+      "requires_python": ">=3.10",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/pypa/setuptools",
+          "repository_commit": null,
+          "source_slot": "setuptools",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/setuptools.json",
+          "pypi_json_sha256": "1b84d1a1e6d5469d9ac64f06e612b57d2d049b73df26f46e29771eaf34ed7006"
+        }
+      ],
+      "repositories": [
+        "github.com/pypa/setuptools"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/setuptools.json",
+      "pypi_json_sha256": "1b84d1a1e6d5469d9ac64f06e612b57d2d049b73df26f46e29771eaf34ed7006",
+      "target_python": "3.11.16",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "sqlalchemy",
+      "version": "2.1.8",
+      "request": "sqlalchemy==2.1.8",
+      "requires_python": ">=3.11",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/sqlalchemy/sqlalchemy",
+          "repository_commit": null,
+          "source_slot": "sqlalchemy",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/sqlalchemy.json",
+          "pypi_json_sha256": "2be5d4e53b7041be967319e8c4824b67d43935ab1770dbc0fd0c7050836c0724"
+        }
+      ],
+      "repositories": [
+        "github.com/sqlalchemy/sqlalchemy"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/sqlalchemy.json",
+      "pypi_json_sha256": "2be5d4e53b7041be967319e8c4824b67d43935ab1770dbc0fd0c7050836c0724",
+      "target_python": "3.11.16",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "starlette",
+      "version": "1.10.0",
+      "request": "starlette==1.10.0",
+      "requires_python": ">=3.11",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/Kludex/starlette",
+          "repository_commit": null,
+          "source_slot": "starlette",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/starlette.json",
+          "pypi_json_sha256": "b8a932130ab9a2412b94771b15dc841b1e1115d628451ecff87de551b78d373f"
+        }
+      ],
+      "repositories": [
+        "github.com/Kludex/starlette"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/starlette.json",
+      "pypi_json_sha256": "b8a932130ab9a2412b94771b15dc841b1e1115d628451ecff87de551b78d373f",
+      "target_python": "3.11.16",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "superclaude",
+      "version": "4.3.0",
+      "request": "superclaude==4.3.0",
+      "requires_python": ">=3.10",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/SuperClaude-Org/SuperClaude_Framework",
+          "repository_commit": "fe68862c8ed9e2afb8120c2d9e27d0c3a7ce73a2",
+          "source_slot": "SuperClaude-Org__SuperClaude_Framework",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/superclaude.json",
+          "pypi_json_sha256": "0d3afea874bb752be75e8218e3e8fa3a82fda7fc1ed2a8e8a22bf4eb607ecad2"
+        }
+      ],
+      "repositories": [
+        "github.com/SuperClaude-Org/SuperClaude_Framework"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/superclaude.json",
+      "pypi_json_sha256": "0d3afea874bb752be75e8218e3e8fa3a82fda7fc1ed2a8e8a22bf4eb607ecad2",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "timm",
+      "version": "1.0.31",
+      "request": "timm==1.0.31",
+      "requires_python": ">=3.10",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/huggingface/pytorch-image-models",
+          "repository_commit": "43b549bfe9d680bc94284cfd0b611152d18e97d7",
+          "source_slot": "huggingface__pytorch-image-models",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/timm.json",
+          "pypi_json_sha256": "effc04530fd2d37e56dd95d345f68d4d0d42e9a587e15fc5b7e588c394db0863"
+        }
+      ],
+      "repositories": [
+        "github.com/huggingface/pytorch-image-models"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/timm.json",
+      "pypi_json_sha256": "effc04530fd2d37e56dd95d345f68d4d0d42e9a587e15fc5b7e588c394db0863",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "torch",
+      "version": "2.15.0",
+      "request": "torch==2.15.0",
+      "requires_python": ">=3.11",
+      "provenance": [
+        {
+          "input_group": "published20",
+          "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+          "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+          "repository": "github.com/pytorch/pytorch",
+          "repository_commit": "500c6606e46ae107a69deb006bde5e90d578660b",
+          "source_slot": "pytorch__pytorch",
+          "prior_measurement_status": "eligible_for_native_published_distribution_resolution",
+          "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-torch.json",
+          "pypi_json_sha256": "d701ff3e0226814ef0fcdf5a4e8f8cb6167aead26ae304a90631bb5bad9b3289"
+        }
+      ],
+      "repositories": [
+        "github.com/pytorch/pytorch"
+      ],
+      "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-torch.json",
+      "pypi_json_sha256": "d701ff3e0226814ef0fcdf5a4e8f8cb6167aead26ae304a90631bb5bad9b3289",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "torch-geometric",
+      "version": "2.8.1",
+      "request": "torch-geometric==2.8.1",
+      "requires_python": ">=3.10",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/pyg-team/pytorch_geometric",
+          "repository_commit": "d1f2f8642387b6e0563d6aee227c39130746c738",
+          "source_slot": "pyg-team__pytorch_geometric",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/torch-geometric.json",
+          "pypi_json_sha256": "81d851398fa37ef25ceace8f20f4fd6105c28be70aa6f1352633593197d3c44a"
+        }
+      ],
+      "repositories": [
+        "github.com/pyg-team/pytorch_geometric"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/torch-geometric.json",
+      "pypi_json_sha256": "81d851398fa37ef25ceace8f20f4fd6105c28be70aa6f1352633593197d3c44a",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "transformers",
+      "version": "5.22.2",
+      "request": "transformers==5.22.2",
+      "requires_python": ">=3.11.0",
+      "provenance": [
+        {
+          "input_group": "published20",
+          "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+          "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+          "repository": "github.com/huggingface/transformers",
+          "repository_commit": "9e7f5cd1870a3c69166ce1abd18ff8bd74ed45a8",
+          "source_slot": "huggingface__transformers",
+          "prior_measurement_status": "eligible_for_native_published_distribution_resolution",
+          "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-transformers.json",
+          "pypi_json_sha256": "512cd0072b539b78bd7fa4b0198766bf14c2bb5f44df817791ab1ecacff6fac6"
+        }
+      ],
+      "repositories": [
+        "github.com/huggingface/transformers"
+      ],
+      "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-transformers.json",
+      "pypi_json_sha256": "512cd0072b539b78bd7fa4b0198766bf14c2bb5f44df817791ab1ecacff6fac6",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "ultralytics",
+      "version": "8.4.208",
+      "request": "ultralytics==8.4.208",
+      "requires_python": ">=3.8",
+      "provenance": [
+        {
+          "input_group": "published20",
+          "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+          "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+          "repository": "github.com/ultralytics/ultralytics",
+          "repository_commit": "b9e811560aeeaa0fa3e777cdf8d09025ae12e3ae",
+          "source_slot": "ultralytics__ultralytics",
+          "prior_measurement_status": "eligible_for_native_published_distribution_resolution",
+          "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-ultralytics.json",
+          "pypi_json_sha256": "66b9fda219dc2a46e6d0b08e4790a46f16034268ac7d446a9fe444c6de35734d"
+        }
+      ],
+      "repositories": [
+        "github.com/ultralytics/ultralytics"
+      ],
+      "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-ultralytics.json",
+      "pypi_json_sha256": "66b9fda219dc2a46e6d0b08e4790a46f16034268ac7d446a9fe444c6de35734d",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "unsloth",
+      "version": "2026.11.3",
+      "request": "unsloth==2026.11.3",
+      "requires_python": "<3.15,>=3.9",
+      "provenance": [
+        {
+          "input_group": "published20",
+          "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+          "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+          "repository": "github.com/unslothai/unsloth",
+          "repository_commit": "d2a69e49ea2c4cdefaa27f0ba3acf3ab9ad77684",
+          "source_slot": "unslothai__unsloth",
+          "prior_measurement_status": "eligible_for_native_published_distribution_resolution",
+          "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-unsloth.json",
+          "pypi_json_sha256": "c31cf05cfd2ce8c6625955435d15591c21fce64f6277b2abd9f43c23dda3cf53"
+        }
+      ],
+      "repositories": [
+        "github.com/unslothai/unsloth"
+      ],
+      "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-unsloth.json",
+      "pypi_json_sha256": "c31cf05cfd2ce8c6625955435d15591c21fce64f6277b2abd9f43c23dda3cf53",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "urllib3",
+      "version": "2.8.0",
+      "request": "urllib3==2.8.0",
+      "requires_python": ">=3.10",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/urllib3/urllib3",
+          "repository_commit": null,
+          "source_slot": "urllib3",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/urllib3.json",
+          "pypi_json_sha256": "fe033abdf4e116777f2062304b5442660092498d27f55f0ff6968f86d064bb5c"
+        }
+      ],
+      "repositories": [
+        "github.com/urllib3/urllib3"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/urllib3.json",
+      "pypi_json_sha256": "fe033abdf4e116777f2062304b5442660092498d27f55f0ff6968f86d064bb5c",
+      "target_python": "3.11.16",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "verl",
+      "version": "0.9.1",
+      "request": "verl==0.9.1",
+      "requires_python": "<3.13,>=3.10",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/verl-project/verl",
+          "repository_commit": "63913d1d5fef4d028658c330f397c0bd2a909213",
+          "source_slot": "verl-project__verl",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/verl.json",
+          "pypi_json_sha256": "105c278adafc1fea8925e92ce6bc0e231122100ae8f4f7834f52572cba67f5e5"
+        }
+      ],
+      "repositories": [
+        "github.com/verl-project/verl"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/verl.json",
+      "pypi_json_sha256": "105c278adafc1fea8925e92ce6bc0e231122100ae8f4f7834f52572cba67f5e5",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "virtualenv",
+      "version": "21.15.6",
+      "request": "virtualenv==21.15.6",
+      "requires_python": ">=3.9",
+      "provenance": [
+        {
+          "input_group": "foundational20",
+          "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+          "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+          "repository": "github.com/pypa/virtualenv",
+          "repository_commit": null,
+          "source_slot": "virtualenv",
+          "prior_measurement_status": null,
+          "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/virtualenv.json",
+          "pypi_json_sha256": "acde64ff83f323bdb0367b4e661be47efbc3ac1afb31d4832ea90e2328c533c5"
+        }
+      ],
+      "repositories": [
+        "github.com/pypa/virtualenv"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/foundational-installs/sources/virtualenv.json",
+      "pypi_json_sha256": "acde64ff83f323bdb0367b4e661be47efbc3ac1afb31d4832ea90e2328c533c5",
+      "target_python": "3.11.16",
+      "target_basis": "Preserved foundational layer registered runtime; no result-based target substitution.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "vllm",
+      "version": "0.33.0",
+      "request": "vllm==0.33.0",
+      "requires_python": "<3.15,>=3.11",
+      "provenance": [
+        {
+          "input_group": "published20",
+          "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+          "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+          "repository": "github.com/vllm-project/vllm",
+          "repository_commit": "d6b696d60df12b034537a4f7aa014bba4fa4ab9b",
+          "source_slot": "vllm-project__vllm",
+          "prior_measurement_status": "eligible_for_native_published_distribution_resolution",
+          "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-vllm.json",
+          "pypi_json_sha256": "c19a21455ed4efc7ed8745c8f5c069accbe962b5346614ef1af8150ebda4c5d4"
+        }
+      ],
+      "repositories": [
+        "github.com/vllm-project/vllm"
+      ],
+      "pypi_json_path": "work/fp-fixes-20261110/expanded/published/sources/pypi-vllm.json",
+      "pypi_json_sha256": "c19a21455ed4efc7ed8745c8f5c069accbe962b5346614ef1af8150ebda4c5d4",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    },
+    {
+      "canonical_name": "whisperx",
+      "version": "3.8.6",
+      "request": "whisperx==3.8.6",
+      "requires_python": "<3.14,>=3.10",
+      "provenance": [
+        {
+          "input_group": "new30",
+          "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+          "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+          "repository": "github.com/m-bain/whisperX",
+          "repository_commit": "5d3678b8535698a2826a5db9eb3e4105aef85dd9",
+          "source_slot": "m-bain__whisperX",
+          "prior_measurement_status": "eligible",
+          "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/whisperx.json",
+          "pypi_json_sha256": "ca15efa5fc7ae3112475117e396b2bee6552622a79125a87b6ce6e761628c869"
+        }
+      ],
+      "repositories": [
+        "github.com/m-bain/whisperX"
+      ],
+      "pypi_json_path": "work/expanded-validation-20261111/new-packages/sources/pypi/whisperx.json",
+      "pypi_json_sha256": "ca15efa5fc7ae3112475117e396b2bee6552622a79125a87b6ce6e761628c869",
+      "target_python": "3.11.16",
+      "target_basis": "First compatible native runtime in preregistered order.",
+      "runtime": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+      "marker_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "unit": "canonical distribution name plus fixed public version; package roots are not repository installations"
+    }
+  ],
+  "excluded_coverage_slots": [
+    {
+      "input_group": "new30",
+      "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+      "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+      "repository": "github.com/exo-explore/exo",
+      "repository_commit": "a60b95698ca81737d367443674dd5563cbc9559b",
+      "source_slot": "exo-explore__exo",
+      "prior_measurement_status": "unsupported_correspondence",
+      "canonical_name": null,
+      "included": false,
+      "reason": "Root static name exo resolves to PyPI exo whose Homepage is CEGRcode/exo, a different project; no verified primary distribution for selected exo-explore/exo."
+    },
+    {
+      "input_group": "new30",
+      "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+      "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+      "repository": "github.com/Pythagora-io/gpt-pilot",
+      "repository_commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+      "source_slot": "Pythagora-io__gpt-pilot",
+      "prior_measurement_status": "unsupported_correspondence",
+      "canonical_name": null,
+      "included": false,
+      "reason": "Root primary metadata name pythagora-core returns PyPI404; no alternative primary distribution substituted."
+    },
+    {
+      "input_group": "new30",
+      "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+      "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+      "repository": "github.com/rohitg00/ai-engineering-from-scratch",
+      "repository_commit": "8c09d890956fdef7d75d888aa8efecc16ff3846c",
+      "source_slot": "rohitg00__ai-engineering-from-scratch",
+      "prior_measurement_status": "unsupported_correspondence",
+      "canonical_name": null,
+      "included": false,
+      "reason": "Educational multi-project repository has no static root main distribution or explicit official main-distribution PyPI identity in captured root sources."
+    },
+    {
+      "input_group": "new30",
+      "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+      "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+      "repository": "github.com/deepseek-ai/DeepSeek-OCR",
+      "repository_commit": "09eaf526153e7a01ed16c9dea8c96282aaea29c0",
+      "source_slot": "deepseek-ai__DeepSeek-OCR",
+      "prior_measurement_status": "unsupported_correspondence",
+      "canonical_name": null,
+      "included": false,
+      "reason": "Model repository has no static root main distribution or explicit official main-distribution PyPI identity in captured root sources; transformers/vllm would be dependencies rather than its own distribution."
+    },
+    {
+      "input_group": "new30",
+      "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+      "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+      "repository": "github.com/mlc-ai/mlc-llm",
+      "repository_commit": "44fd06d04f22c87820e205b0f2b2e5e6a1f6ca85",
+      "source_slot": "mlc-ai__mlc-llm",
+      "prior_measurement_status": "unsupported_correspondence",
+      "canonical_name": null,
+      "included": false,
+      "reason": "Root primary distribution mlc_llm returns PyPI404; non-PyPI/nightly wheel services are outside this public PyPI layer."
+    },
+    {
+      "input_group": "new30",
+      "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+      "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+      "repository": "github.com/microsoft/unilm",
+      "repository_commit": "31c5b904ca1bf2afb4c234a6675c683a4e5fc7cd",
+      "source_slot": "microsoft__unilm",
+      "prior_measurement_status": "unsupported_correspondence",
+      "canonical_name": null,
+      "included": false,
+      "reason": "Multi-model monorepo has no identified single primary distribution in captured root packaging/README; subprojects do not substitute for whole repo."
+    },
+    {
+      "input_group": "new30",
+      "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+      "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+      "repository": "github.com/QwenAudio/CosyVoice",
+      "repository_commit": "074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc",
+      "source_slot": "QwenAudio__CosyVoice",
+      "prior_measurement_status": "unsupported_correspondence",
+      "canonical_name": null,
+      "included": false,
+      "reason": "Captured root sources provide source/requirements installation and no verified official primary PyPI distribution; no name guessed."
+    },
+    {
+      "input_group": "new30",
+      "input_selection": "work/expanded-validation-20261111/new-packages/distribution-selection.json",
+      "input_selection_sha256": "34beaf1855dba13cb2166d5a9c42c98f49053120960a3081656568913b0bd74c",
+      "repository": "github.com/QwenLM/Qwen",
+      "repository_commit": "2df8e8ac450fa185c421a08b0090ef81826caa6e",
+      "source_slot": "QwenLM__Qwen",
+      "prior_measurement_status": "unsupported_correspondence",
+      "canonical_name": null,
+      "included": false,
+      "reason": "Model repository has no identified official primary PyPI distribution in captured root sources; model dependencies are not substituted."
+    },
+    {
+      "input_group": "foundational20",
+      "input_selection": "work/expanded-validation-20261111/foundational-installs/selection.json",
+      "input_selection_sha256": "5de4933a387d368536dbd641a21907392c682b1a802a9050a1a7a036da90f364",
+      "repository": "github.com/pypa/build",
+      "repository_commit": null,
+      "source_slot": "build",
+      "prior_measurement_status": null,
+      "canonical_name": "build",
+      "included": false,
+      "reason": "importance_not_verified"
+    },
+    {
+      "input_group": "published20",
+      "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+      "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+      "repository": "github.com/AUTOMATIC1111/stable-diffusion-webui",
+      "repository_commit": "82a973c04367123ae98bd9abdf80d9eda9b910e2",
+      "source_slot": "AUTOMATIC1111__stable-diffusion-webui",
+      "prior_measurement_status": "unsupported_official_distribution_mapping",
+      "canonical_name": null,
+      "included": false,
+      "reason": "根pyproject仅工具配置，没有静态主发行包名或官方README主发行包PyPI链接/安装命令；不猜测PyPI名称。"
+    },
+    {
+      "input_group": "published20",
+      "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+      "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+      "repository": "github.com/Comfy-Org/ComfyUI",
+      "repository_commit": "bbd810e647c64da8212b0d4ab94f1354c9d523f6",
+      "source_slot": "Comfy-Org__ComfyUI",
+      "prior_measurement_status": "unsupported_official_distribution_mapping",
+      "canonical_name": null,
+      "included": false,
+      "reason": "静态名称ComfyUI的同名PyPI条目0.0.1没有project_urls，官方源未发现该主包的明确PyPI链接或pip install comfyui证据。README的comfy-cli和comfyui-frontend-package分别是其他仓库CLI/前端依赖，不能代替ComfyUI主发行包。"
+    },
+    {
+      "input_group": "published20",
+      "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+      "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+      "repository": "github.com/NanmiCoder/MediaCrawler",
+      "repository_commit": "306ab4ca26c0e44fb87ede0e40e98748752815a6",
+      "source_slot": "NanmiCoder__MediaCrawler",
+      "prior_measurement_status": "unsupported_official_distribution_mapping",
+      "canonical_name": null,
+      "included": false,
+      "reason": "根pyproject名称mediacrawler对应的官方PyPI JSON返回404，不能改用同名近似包。"
+    },
+    {
+      "input_group": "published20",
+      "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+      "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+      "repository": "github.com/bytedance/deer-flow",
+      "repository_commit": "42da64a25cf7983eff7b67b636d9f81c46bb6895",
+      "source_slot": "bytedance__deer-flow",
+      "prior_measurement_status": "unsupported_official_distribution_mapping",
+      "canonical_name": null,
+      "included": false,
+      "reason": "backend主项目deer-flow和官方README安装命令提及的核心子包deerflow-harness，两者官方PyPI JSON均404。保留本repo但没有可验证当前PyPI主发行包。"
+    },
+    {
+      "input_group": "published20",
+      "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+      "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+      "repository": "github.com/deepfakes/faceswap",
+      "repository_commit": "f530cb7508ae670f6474f8a7d9c4df94705cf96b",
+      "source_slot": "deepfakes__faceswap",
+      "prior_measurement_status": "unsupported_official_distribution_mapping",
+      "canonical_name": null,
+      "included": false,
+      "reason": "根pyproject没有project.name，setup.py为交互式依赖/系统安装程序而非可静态识别的setuptools主发行包声明；未发现官方主包PyPI安装依据。"
+    },
+    {
+      "input_group": "published20",
+      "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+      "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+      "repository": "github.com/karpathy/nanochat",
+      "repository_commit": "92d63d4e8bb4df75c3b71618f31ddde2378b2bcd",
+      "source_slot": "karpathy__nanochat",
+      "prior_measurement_status": "unsupported_official_distribution_mapping",
+      "canonical_name": null,
+      "included": false,
+      "reason": "根项目name=nanochat，同名PyPI0.1.2虽署名Andrej Karpathy但project_urls为空；源仓库未发现明确的nanochat PyPI链接或pip安装命令。名称和署名不能单独验证该PyPI发布归属。"
+    },
+    {
+      "input_group": "published20",
+      "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+      "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+      "repository": "github.com/krahets/hello-algo",
+      "repository_commit": "82da772c48f1bf7fda080c6edb87d8c2ea9e8886",
+      "source_slot": "krahets__hello-algo",
+      "prior_measurement_status": "unsupported_official_distribution_mapping",
+      "canonical_name": null,
+      "included": false,
+      "reason": "算法书多语言源仓库没有可识别的官方Python主发行包声明或README PyPI安装依据，不猜测名称。"
+    },
+    {
+      "input_group": "published20",
+      "input_selection": "work/fp-fixes-20261110/expanded/published/selection.json",
+      "input_selection_sha256": "24e785dd6f4705302881cd45a0ef5f71f779f24878a124ce619fcecf605dbef0",
+      "repository": "github.com/ultralytics/yolov5",
+      "repository_commit": "cb2f17fd5d790cfdd0c07c25351904df9affbe6e",
+      "source_slot": "ultralytics__yolov5",
+      "prior_measurement_status": "unsupported_official_distribution_mapping",
+      "canonical_name": null,
+      "included": false,
+      "reason": "同名yolov5==7.0.14的PyPI Homepage明确为fcakyon/yolov5-pip，描述为packaged ultralytics/yolov5，是第三方wrapper。官方README的pip install ultralytics对应另一个已入样本仓库ultralytics/ultralytics，不能替代或重复计作本repo主发行包。"
+    }
+  ]
+}

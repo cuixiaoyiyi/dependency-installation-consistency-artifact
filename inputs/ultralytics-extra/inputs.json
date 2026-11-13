@@ -1,0 +1,52 @@
+{
+  "schema": "ultralytics-frozen-official-extra-reproduction-inputs-v1",
+  "scope": "Exact manifests and generated locks copied from actual complete official native CPU request. No lock or upstream metadata edited; these are reproduction attachments, not an additional experiment.",
+  "target": "CPython3.11.16 Linux x86_64",
+  "uv": "0.13.7",
+  "files": [
+    {
+      "stage": "base",
+      "file": "pyproject.toml",
+      "source": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base/pyproject.toml",
+      "sha256": "577a33fa107e91eca991c1c7f02e125994de5dc2f28a108b7c0eb5c4ea5b17b3",
+      "copy": "1110ISSUEs/02-ultralytics-extra-inputs/base/pyproject.toml"
+    },
+    {
+      "stage": "base",
+      "file": "uv.lock",
+      "source": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base/uv.lock",
+      "sha256": "6ddaab7950c19485fd95936daafd3f226c606384168d8279786d4f51272041e1",
+      "copy": "1110ISSUEs/02-ultralytics-extra-inputs/base/uv.lock"
+    },
+    {
+      "stage": "extra",
+      "file": "pyproject.toml",
+      "source": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/pyproject.toml",
+      "sha256": "83d1282b28cdb88d120f2ad15ef32a2114e45e6c7e3f51119ffb299f83aa9bef",
+      "copy": "1110ISSUEs/02-ultralytics-extra-inputs/extra/pyproject.toml"
+    },
+    {
+      "stage": "extra",
+      "file": "uv.lock",
+      "source": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/uv.lock",
+      "sha256": "4945d6f5f646d6f354690e35c0ed95e8e94ec76a1e7875792f5155a6b66bcece",
+      "copy": "1110ISSUEs/02-ultralytics-extra-inputs/extra/uv.lock"
+    },
+    {
+      "stage": "base-restored",
+      "file": "pyproject.toml",
+      "source": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base-restored/pyproject.toml",
+      "sha256": "577a33fa107e91eca991c1c7f02e125994de5dc2f28a108b7c0eb5c4ea5b17b3",
+      "copy": "1110ISSUEs/02-ultralytics-extra-inputs/base-restored/pyproject.toml"
+    },
+    {
+      "stage": "base-restored",
+      "file": "uv.lock",
+      "source": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base-restored/uv.lock",
+      "sha256": "6ddaab7950c19485fd95936daafd3f226c606384168d8279786d4f51272041e1",
+      "copy": "1110ISSUEs/02-ultralytics-extra-inputs/base-restored/uv.lock"
+    }
+  ],
+  "actual_protocol_path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/protocol.json",
+  "actual_protocol_sha256": "a14bc985631728c13fd5a6e5e01b2245e88eeeaa0b63da3f377312d7fa6eb5d7"
+}

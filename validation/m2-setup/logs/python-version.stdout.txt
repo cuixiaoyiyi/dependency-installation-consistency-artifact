@@ -1,0 +1,1 @@
+{"version": "3.11.16", "machine": "x86_64", "implementation": "cpython", "base_prefix": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/python/cpython-3.11.16-linux-x86_64-gnu", "executable": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/venv/bin/python"}

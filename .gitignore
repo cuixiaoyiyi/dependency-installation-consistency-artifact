@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.venv-m2/
+venv/
+runs/
+downloads/
+*.extracting
+.env
+.env.*
+*.pem
+*.key
+# Restored evidence is already supplied in data archives.
+work/
+results/
+reports/
+0910issues/
+0909ISSUEs/
+1110ISSUEs/
+paper/
+!docs/

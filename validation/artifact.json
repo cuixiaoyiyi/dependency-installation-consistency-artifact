@@ -1,0 +1,34 @@
+{
+  "schema": "public-artifact-validation-v1",
+  "checked_at_utc": "2026-11-13T05:19:16.856812+00:00",
+  "status": "passed",
+  "unit_tests": {
+    "count": 192,
+    "passed": true,
+    "skipped": 0
+  },
+  "m1_replay": {
+    "passed": 19,
+    "total": 19,
+    "reproduced_closure_violation": true
+  },
+  "original_implementation_sources": {
+    "checked": 87,
+    "mismatches": []
+  },
+  "evidence": {
+    "original_files": 36076,
+    "original_bytes": 789362891,
+    "archive_members": 36003,
+    "archive_bytes": 209914826
+  },
+  "download_links": {
+    "unique_urls_checked": 551,
+    "successful": 551,
+    "full_small_wheel_hash_checks": 3
+  },
+  "limits": [
+    "The full M2 installation and main cohort were not rerun for this repository update.",
+    "Link availability and response sizes do not replace full archive SHA-256 checks; downloads are verified by the supplied downloader."
+  ]
+}

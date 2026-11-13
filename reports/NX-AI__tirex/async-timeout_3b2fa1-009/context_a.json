@@ -1,0 +1,30 @@
+{
+ "id": "reqfile-inference-requirements-txt|pip|declared",
+ "resolver": "pip",
+ "requirements": [
+  "fastapi[standard]==0.113.0",
+  "fastmcp==2.14.0",
+  "paho-mqtt==2.1.0",
+  "pydantic-settings==2.11.0",
+  "pydantic==2.11.7",
+  "requests==2.32.5",
+  "tirex-ts"
+ ],
+ "index_url": null,
+ "extra_index_urls": [],
+ "find_links": [],
+ "no_index": false,
+ "pre": false,
+ "index_strategy": null,
+ "sources": {},
+ "named_indexes": [],
+ "constraints": [],
+ "platform": "linux-x86_64",
+ "python_version": "3.11",
+ "derived_from": "declared",
+ "factors": {
+  "resolver": "pip",
+  "indexes": "declared"
+ },
+ "description": "pip with the project's declared index configuration"
+}

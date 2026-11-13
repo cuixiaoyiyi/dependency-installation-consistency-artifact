@@ -1,0 +1,24 @@
+{
+ "id": "ip-ci-utils-run-notebooks-sh-2|pip|declared",
+ "resolver": "pip",
+ "requirements": [
+  "papermill"
+ ],
+ "index_url": null,
+ "extra_index_urls": [],
+ "find_links": [],
+ "no_index": false,
+ "pre": false,
+ "index_strategy": null,
+ "sources": {},
+ "named_indexes": [],
+ "constraints": [],
+ "platform": "linux-x86_64",
+ "python_version": "3.11",
+ "derived_from": "declared",
+ "factors": {
+  "resolver": "pip",
+  "indexes": "declared"
+ },
+ "description": "pip with the project's declared index configuration"
+}

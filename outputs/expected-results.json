@@ -1,0 +1,28 @@
+{
+  "schema": "dependency-installation-expected-results-v1",
+  "scope": "Expected values for recomputing the included saved experimental observations; this file contains no manuscript or report description.",
+  "numbers": {
+    "MainRoots": 52,
+    "LogicalSlots": 156,
+    "ApplicableWorkflows": 133,
+    "CompletedWorkflows": 82,
+    "CoverageGaps": 51,
+    "CompleteRoots": 34,
+    "FullyCompleteRoots": 28,
+    "HistoricalReports": 29,
+    "HistoricalCases": 61,
+    "RefutedReports": 7,
+    "MismatchedReports": 21,
+    "SupportedReports": 1,
+    "MechanismCount": 2,
+    "RealRootCount": 1,
+    "ChangedUpdates": 33,
+    "ExtraOccurrences": 65,
+    "ChangedRelocks": 2,
+    "UnchangedRelocks": 32,
+    "BaseDists": 39,
+    "ExtraDists": 66,
+    "SharedPaths": 39,
+    "DifferentSharedBytes": 3
+  }
+}

@@ -1,0 +1,2782 @@
+{
+  "schema": "dependency-issue-validity-review-v1",
+  "checked_at_utc": "2026-11-10T09:35:58.968793+00:00",
+  "date_timezone": "Asia/Shanghai",
+  "issue_count": 29,
+  "submitted_package_case_count": 61,
+  "report_verdict_counts": {
+    "原报告证据失配": 21,
+    "部分问题有修复支持": 1,
+    "原报告已证误报": 7
+  },
+  "fully_verified_original_reports": 0,
+  "related_narrower_documentation_fixes_merged": 1,
+  "issue_state_counts": {
+    "open": 22,
+    "closed": 7
+  },
+  "original_case_triage": {
+    "NEEDS_EXPLANATION": 61
+  },
+  "marker_false_positive_case_count": 7,
+  "scope": "29 submitted issues and 61 cited cases, original revisions and artifacts, live issues/comments/timelines/linked PRs. All 29 checked-out source revisions match draft commits and have clean tracked files.",
+  "limits": [
+    "Full original installations were not rerun for all projects. Findings distinguish direct counterevidence from mismatched or incomplete experimental evidence.",
+    "The old 451-case audit was read for context, not replaced with a full fresh corpus run.",
+    "Report-level labels must not be multiplied by case counts. Mixed reports 05 and 09 contain directly refuted individual marker cases.",
+    "A concrete active declaration/source/lock breach can establish a defect without an application crash.",
+    "Absence of human feedback and automated closure do not establish either truth or falsehood.",
+    "The later local uv warm-environment reuse experiments are separate evidence from these submitted September reports."
+  ],
+  "issues": [
+    {
+      "number": 1,
+      "repo": "HKUDS/VideoAgent",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 5,
+      "reason": "五个差异都来自仅安装 huggingface_hub 的派生请求，报告却称完整 pip/uv install .。原 tools/fish-speech/dockerfile 第10行没有额外索引，rtos 给它注入了其他文件中的 cu121/ONNX 索引。certifi/idna/packaging/tqdm 的 direct 标签还引用其他子项目的精确 pin。三角内容比较已说明旧版本 wheel 是对应 PyPI 官方文件，未证明来源替换或项目调用失败。",
+      "evidence_paths": [
+        "corpus/repos/HKUDS__VideoAgent/tools/fish-speech/dockerfile:10",
+        "corpus/repos/HKUDS__VideoAgent/pyproject.toml:9",
+        "reports/HKUDS__VideoAgent/certifi_0ff0f4-001/context_a.json:8",
+        "reports/HKUDS__VideoAgent/certifi_0ff0f4-001/minimal.json:3",
+        "results/projects/HKUDS__VideoAgent/cases_triaged.json:78"
+      ],
+      "corrective_action": "更正对完整安装、直接依赖和实际影响的表述，保留为跨文件索引污染后的解析差异记录。按同一子项目真实命令及其原索引复验后再判断。",
+      "case_findings": [
+        {
+          "packages": [
+            "certifi",
+            "filelock",
+            "idna",
+            "packaging",
+            "tqdm"
+          ],
+          "finding": "派生请求解析差异存在，支持项目缺陷的安装入口和索引范围未保持。"
+        }
+      ],
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:01.805984+00:00",
+        "issue_url": "https://github.com/HKUDS/VideoAgent/issues/16",
+        "state": "open",
+        "state_reason": null,
+        "closed_at_utc": null,
+        "comments": [],
+        "pull_requests": [
+          {
+            "url": "https://github.com/HKUDS/VideoAgent/pull/18",
+            "state": "closed",
+            "merged_at_utc": null,
+            "merged_by": null,
+            "title": "Scope CUDA index to PyTorch wheels",
+            "changed_files": [
+              "readme.md",
+              "readme_zh.md",
+              "requirements.txt"
+            ]
+          }
+        ],
+        "evidence_path": "work/issue-audit-20261110/live/01.json:1",
+        "interpretation": "Issue 仍 open、零评论。PR #18 已由其作者因缺少受支持失败调用证据而撤回并关闭，未合并。撤回是提案作者判断，维护者未确认或否定。"
+      },
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/HKUDS/VideoAgent/issues/16",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\01-HKUDS__VideoAgent.md",
+      "case_records": [
+        {
+          "issue": "01",
+          "project": "HKUDS__VideoAgent",
+          "case_id": "certifi_0ff0f4-001",
+          "package": "certifi",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing between registries, but the file served by pytorch:cu121 (certifi 2022.12.7) is byte-identical to PyPI's official file of that version; pypi serves newer 2026.7.22 vs pytorch:cu121 2022.12.7",
+          "requested": [
+            false,
+            false
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "01",
+          "project": "HKUDS__VideoAgent",
+          "case_id": "idna_99b738-004",
+          "package": "idna",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing between registries, but the file served by pytorch:cu121 (idna 3.4) is byte-identical to PyPI's official file of that version; pypi serves newer 3.19 vs pytorch:cu121 3.4",
+          "requested": [
+            false,
+            false
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "01",
+          "project": "HKUDS__VideoAgent",
+          "case_id": "packaging_8f3d75-007",
+          "package": "packaging",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing between registries, but the file served by pytorch:cu121 (packaging 24.1) is byte-identical to PyPI's official file of that version; pypi serves newer 26.3 vs pytorch:cu121 24.1",
+          "requested": [
+            false,
+            false
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "01",
+          "project": "HKUDS__VideoAgent",
+          "case_id": "tqdm_662d6c-010",
+          "package": "tqdm",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing between registries, but the file served by pytorch:cu121 (tqdm 4.66.5) is byte-identical to PyPI's official file of that version; pypi serves newer 4.70.0 vs pytorch:cu121 4.66.5",
+          "requested": [
+            false,
+            false
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "01",
+          "project": "HKUDS__VideoAgent",
+          "case_id": "filelock_f9eb10-003",
+          "package": "filelock",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing between registries, but the file served by pytorch:cu121 (filelock 3.32.3) is byte-identical to PyPI's official file of that version; pypi serves newer 3.32.5 vs pytorch:cu121 3.32.3",
+          "requested": [
+            false,
+            false
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "repo": "denizsafak/abogen",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 6,
+      "reason": "对比把为 AMD ROCm 6.4 明确准备的夜间安装命令与普通 PyPI/CUDA 12.8 派生上下文混在一起。pyproject 中 torch 索引带 extra 条件，rtos 却把来源列表压成 pytorch-cuda-128，未保留 rocm/cuda 等选择。README 分别说明 NVIDIA、AMD 和不同驱动场景，硬件版本差异具有配置依据。未完整执行 abogen 安装、卸载 torch、再安装 ROCm 的分步流程。",
+      "evidence_paths": [
+        "corpus/repos/denizsafak__abogen/README.md:127",
+        "corpus/repos/denizsafak__abogen/README.md:153",
+        "corpus/repos/denizsafak__abogen/pyproject.toml:137",
+        "results/projects/denizsafak__abogen/rtos.json:373",
+        "reports/denizsafak__abogen/torch_e7de9e-023/context_b.json:15"
+      ],
+      "corrective_action": "固定相同硬件、Python 与 extra，保留 torch 来源 marker 和分步安装状态。分别复验 AMD 和 NVIDIA 文档支持的完整入口，避免将其要求输出同一 wheel。",
+      "case_findings": [
+        {
+          "case_ids": [
+            "torch_e7de9e-014",
+            "torchaudio_0f261b-015",
+            "torchvision_cc3e96-017",
+            "torchvision_cc3e96-018"
+          ],
+          "finding": "普通/CUDA 与 AMD ROCm nightly 不是相同硬件配置的等价安装入口。"
+        },
+        {
+          "case_ids": [
+            "torch_e7de9e-023",
+            "torch_e7de9e-024"
+          ],
+          "finding": "torch 来源 extra 条件被压平，C-IntentViolation 标签未建立同一活动配置下的违反。"
+        }
+      ],
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:34:49.707794+00:00",
+        "issue_url": "https://github.com/denizsafak/abogen/issues/204",
+        "state": "open",
+        "state_reason": null,
+        "closed_at_utc": null,
+        "comments": [],
+        "pull_requests": [],
+        "evidence_path": "work/issue-audit-20261110/live/02.json:1",
+        "interpretation": "Issue open、零评论，无维护者确认或否定，也无相关已合并修复。"
+      },
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/denizsafak/abogen/issues/204",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\02-denizsafak__abogen.md",
+      "case_records": [
+        {
+          "issue": "02",
+          "project": "denizsafak__abogen",
+          "case_id": "torch_e7de9e-014",
+          "package": "torch",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "DIFF_VERSION_DIFF_REGISTRY: artifact too large or size unknown (limit 400 MB); pytorch:cu128 serves newer 2.11.0+cu128 vs pytorch:nightly/rocm6.4 2.10.0.dev20251031+rocm6.4",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "install-path:README.md@L135#2"
+          ]
+        },
+        {
+          "issue": "02",
+          "project": "denizsafak__abogen",
+          "case_id": "torch_e7de9e-023",
+          "package": "torch",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "C-IntentViolation",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "DIFF_VERSION_DIFF_REGISTRY: artifact too large or size unknown (limit 400 MB); pypi serves newer 2.14.0 vs pytorch:cu128 2.11.0+cu128",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "02",
+          "project": "denizsafak__abogen",
+          "case_id": "torch_e7de9e-024",
+          "package": "torch",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "C-IntentViolation",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "DIFF_VERSION_DIFF_REGISTRY: artifact too large or size unknown (limit 400 MB); pypi serves newer 2.14.0 vs pytorch:nightly/rocm6.4 2.10.0.dev20251031+rocm6.4",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "install-path:README.md@L135#2"
+          ]
+        },
+        {
+          "issue": "02",
+          "project": "denizsafak__abogen",
+          "case_id": "torchaudio_0f261b-015",
+          "package": "torchaudio",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: pypi serves newer 2.11.0 vs pytorch:nightly/rocm6.4 2.10.0.dev20251113+rocm6.4 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "install-path:README.md@L135#2"
+          ]
+        },
+        {
+          "issue": "02",
+          "project": "denizsafak__abogen",
+          "case_id": "torchvision_cc3e96-017",
+          "package": "torchvision",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: pypi serves newer 0.29.0 vs pytorch:nightly/rocm6.4 0.25.0.dev20251113+rocm6.4 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "install-path:README.md@L135#2"
+          ]
+        },
+        {
+          "issue": "02",
+          "project": "denizsafak__abogen",
+          "case_id": "torchvision_cc3e96-018",
+          "package": "torchvision",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: pypi serves newer 0.26.0 vs pytorch:nightly/rocm6.4 0.25.0.dev20251113+rocm6.4 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "install-path:README.md@L135#2"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "repo": "wladradchenko/wunjo.wladradchenko.ru",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 4,
+      "reason": "README 的裸 torch/torchaudio/torchvision 与 xformers 升级确实存在于 AMD/ZLUDA 专用步骤，使用 rocm6.1 并在 requirements_zluda.txt 安装之后执行。报告对比却使用跨文件合并的 cu118/cu124/rocm6.2 索引，并把模型化裸名解析称作 pip/uv install .。tqdm 来自 CI 的 briefcase/insightface，而该 CI 命令没有上述额外索引。GPU requirements 另有平台精确 pin，Linux/Windows/Python 条件没有完整保留。",
+      "evidence_paths": [
+        "corpus/repos/wladradchenko__wunjo.wladradchenko.ru/README.md:162",
+        "corpus/repos/wladradchenko__wunjo.wladradchenko.ru/README.md:175",
+        "corpus/repos/wladradchenko__wunjo.wladradchenko.ru/requirements_gpu.txt:10",
+        "corpus/repos/wladradchenko__wunjo.wladradchenko.ru/.github/workflows/package.linux.yml:58",
+        "reports/wladradchenko__wunjo.wladradchenko.ru/torchaudio_0f261b-041/context_a.json:10"
+      ],
+      "corrective_action": "以 README 的 AMD 实际命令和前置环境单独复验，另按 requirements_cpu/gpu/zluda 与平台条件分别复验。修正原报告将所有路径等同且混入索引的说明。",
+      "case_findings": [
+        {
+          "packages": [
+            "torchaudio",
+            "torchvision",
+            "xformers"
+          ],
+          "finding": "AMD 文档命令是有效审计对象，但原报告使用的合并索引、uv 替代和默认安装标签均未忠实对应它。"
+        },
+        {
+          "packages": [
+            "tqdm"
+          ],
+          "finding": "CI briefcase/insightface 请求被注入其他文件的索引，PyTorch 旧 wheel 为同版本 PyPI 官方副本。"
+        }
+      ],
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:34:48.453828+00:00",
+        "issue_url": "https://github.com/wladradchenko/wunjo.wladradchenko.ru/issues/82",
+        "state": "closed",
+        "state_reason": "not_planned",
+        "closed_at_utc": "2026-09-13T10:37:47Z",
+        "comments": [
+          {
+            "user": "wladradchenko",
+            "association": "OWNER",
+            "created_at_utc": "2026-09-11T09:18:44Z",
+            "url": "https://github.com/wladradchenko/wunjo.wladradchenko.ru/issues/82#issuecomment-5632302375",
+            "body": "Hi, @cuiliaomei-beep. Thank you for issue. I’d like to clarify that is this the main branch or a different one?  If the issue was found in the current main branch, but I am currently preparing a completely new version of the program that will replace the existing codebase soon. The installation process and dependencies will be completely redesigned there, so fixing this in the current state doesn't make much sense. Thanks for the report anyway"
+          },
+          {
+            "user": "cuiliaomei-beep",
+            "association": "NONE",
+            "created_at_utc": "2026-09-13T10:08:24Z",
+            "url": "https://github.com/wladradchenko/wunjo.wladradchenko.ru/issues/82#issuecomment-5652621085",
+            "body": "Thank you for yr answer. Looking forward to the new version without this issue."
+          }
+        ],
+        "pull_requests": [],
+        "evidence_path": "work/issue-audit-20261110/live/03.json:1",
+        "interpretation": "Owner 表示正在完全重写安装和依赖，不打算修旧版本，随后以 not_planned 关闭。其回复承认收到报告，没有明确确认具体技术缺陷，也没有明确否定观察。不能将该关闭计作误报承认或已修复。"
+      },
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/wladradchenko/wunjo.wladradchenko.ru/issues/82",
+      "latest_state": "closed",
+      "latest_state_reason": "not_planned",
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\03-wladradchenko__wunjo.wladradchenko.ru.md",
+      "case_records": [
+        {
+          "issue": "03",
+          "project": "wladradchenko__wunjo.wladradchenko.ru",
+          "case_id": "torchaudio_0f261b-041",
+          "package": "torchaudio",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: pypi serves newer 2.11.0 vs pytorch:cu118 2.7.1+cu118 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "03",
+          "project": "wladradchenko__wunjo.wladradchenko.ru",
+          "case_id": "torchvision_cc3e96-044",
+          "package": "torchvision",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: pypi serves newer 0.29.0 vs pytorch:cu118 0.22.1+cu118 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "03",
+          "project": "wladradchenko__wunjo.wladradchenko.ru",
+          "case_id": "xformers_9ba09a-068",
+          "package": "xformers",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: pypi serves newer 0.0.35 vs pytorch:cu118 0.0.31.post1 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "03",
+          "project": "wladradchenko__wunjo.wladradchenko.ru",
+          "case_id": "tqdm_662d6c-047",
+          "package": "tqdm",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing between registries, but the file served by pytorch:cu118 (tqdm 4.66.5) is byte-identical to PyPI's official file of that version; pypi serves newer 4.70.0 vs pytorch:cu118 4.66.5",
+          "requested": [
+            false,
+            false
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "repo": "Vchitect/Evaluation-Agent",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 3,
+      "reason": "三个包的差异来自 show1/requirements.txt 的四项请求，但 show1 文件没有额外索引。cu113 来自独立 VC09 模型的 requirements，rtos 将其作为全项目声明注入 show1。filelock/packaging/tqdm 被标 direct 的依据还在其他模型/评测工具的精确 pin 文件。测到的是跨模型拼接输入下的镜像版本差异。",
+      "evidence_paths": [
+        "corpus/repos/Vchitect__Evaluation-Agent/eval_agent/eval_models/show1/requirements.txt:1",
+        "corpus/repos/Vchitect__Evaluation-Agent/eval_agent/eval_models/VC09/requirements.txt:1",
+        "reports/Vchitect__Evaluation-Agent/filelock_f9eb10-003/context_a.json:11",
+        "results/projects/Vchitect__Evaluation-Agent/cases_triaged.json:71"
+      ],
+      "corrective_action": "按 show1、VC09、t2i_comp 等独立安装单元隔离约束和索引，重算 direct 标签与解析结果。",
+      "case_findings": [
+        {
+          "packages": [
+            "filelock",
+            "packaging",
+            "tqdm"
+          ],
+          "finding": "索引范围和直接依赖归属均跨安装单元混合。旧 wheel 是同版本官方 PyPI 文件，未证实项目缺陷。"
+        }
+      ],
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:34:47.086570+00:00",
+        "issue_url": "https://github.com/Vchitect/Evaluation-Agent/issues/5",
+        "state": "open",
+        "state_reason": null,
+        "closed_at_utc": null,
+        "comments": [],
+        "pull_requests": [],
+        "evidence_path": "work/issue-audit-20261110/live/04.json:1",
+        "interpretation": "Issue open、零评论，无维护者确认或否定，也无相关已合并修复。"
+      },
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/Vchitect/Evaluation-Agent/issues/5",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\04-Vchitect__Evaluation-Agent.md",
+      "case_records": [
+        {
+          "issue": "04",
+          "project": "Vchitect__Evaluation-Agent",
+          "case_id": "filelock_f9eb10-003",
+          "package": "filelock",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing between registries, but the file served by pytorch:cu113 (filelock 3.32.3) is byte-identical to PyPI's official file of that version; pypi serves newer 3.32.5 vs pytorch:cu113 3.32.3",
+          "requested": [
+            false,
+            false
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "04",
+          "project": "Vchitect__Evaluation-Agent",
+          "case_id": "packaging_8f3d75-007",
+          "package": "packaging",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing between registries, but the file served by pytorch:cu113 (packaging 24.1) is byte-identical to PyPI's official file of that version; pypi serves newer 26.3 vs pytorch:cu113 24.1",
+          "requested": [
+            false,
+            false
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "04",
+          "project": "Vchitect__Evaluation-Agent",
+          "case_id": "tqdm_662d6c-009",
+          "package": "tqdm",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing between registries, but the file served by pytorch:cu113 (tqdm 4.66.5) is byte-identical to PyPI's official file of that version; pypi serves newer 4.70.0 vs pytorch:cu113 4.66.5",
+          "requested": [
+            false,
+            false
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "repo": "wandahangFY/YOLOv11-RGBT",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 3,
+      "reason": "requests/tqdm 在常规 PyPI 与真实 HUB CI 的 CPU 额外索引下选择不同且都满足版本下界，旧文件经比对与同版本 PyPI 官方文件相同，缺少错误版本或应用失败证据。tomli 的“多装”来自将 uv universal lock 的带条件可选依赖压平成当前解释器安装集合，原 lock 为 coverage[toml] 保留 python_full_version 条件。Benchmarks 的真实命令还含 -e .[export]，该部分被抽取请求遗漏。整体含已定位测量错误的子案例，不能将三个包统称为确认缺陷。",
+      "evidence_paths": [
+        "corpus/repos/wandahangFY__YOLOv11-RGBT/.github/workflows/ci.yml:59",
+        "corpus/repos/wandahangFY__YOLOv11-RGBT/.github/workflows/ci.yml:114",
+        "results/projects/wandahangFY__YOLOv11-RGBT/runs/ip--github-workflows-ci-yml-Benchmarks-3-1_uv_ip-github-work_4fd09c/uv.lock:24",
+        "results/projects/wandahangFY__YOLOv11-RGBT/runs/ip--github-workflows-ci-yml-Benchmarks-3-1_uv_ip-github-work_4fd09c/resolution.json:22",
+        "results/projects/wandahangFY__YOLOv11-RGBT/cases_triaged.json:87"
+      ],
+      "corrective_action": "撤下 tomli 实际多装的断言，保留 marker、完整 extra 和 Python 补丁版本后投影 lock 或实装验证。requests/tqdm 需同等支持入口的约束违反或失败见证。",
+      "case_findings": [
+        {
+          "packages": [
+            "requests",
+            "tqdm"
+          ],
+          "finding": "真实解析差异已记录，两个版本满足声明下界，项目错误尚未证实。"
+        },
+        {
+          "packages": [
+            "tomli"
+          ],
+          "finding": "uv.lock 条件边被抹除造成安装集合误读，可明确排除该“多装”证据。"
+        }
+      ],
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:34:55.568384+00:00",
+        "issue_url": "https://github.com/wandahangFY/YOLOv11-RGBT/issues/27",
+        "state": "open",
+        "state_reason": null,
+        "closed_at_utc": null,
+        "comments": [],
+        "pull_requests": [],
+        "evidence_path": "work/issue-audit-20261110/live/05.json:1",
+        "interpretation": "Issue open、零评论，无维护者确认或否定，也无相关已合并修复。"
+      },
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/wandahangFY/YOLOv11-RGBT/issues/27",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\05-wandahangFY__YOLOv11-RGBT.md",
+      "case_records": [
+        {
+          "issue": "05",
+          "project": "wandahangFY__YOLOv11-RGBT",
+          "case_id": "requests_54faec-008",
+          "package": "requests",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing between registries, but the file served by pytorch:cpu (requests 2.28.1) is byte-identical to PyPI's official file of that version; pypi serves newer 2.34.2 vs pytorch:cpu 2.28.1",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "install-path:.github/workflows/ci.yml::HUB[3]#1"
+          ]
+        },
+        {
+          "issue": "05",
+          "project": "wandahangFY__YOLOv11-RGBT",
+          "case_id": "tqdm_662d6c-010",
+          "package": "tqdm",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing between registries, but the file served by pytorch:cpu (tqdm 4.66.5) is byte-identical to PyPI's official file of that version; pypi serves newer 4.70.0 vs pytorch:cpu 4.66.5",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "install-path:.github/workflows/ci.yml::HUB[3]#1"
+          ]
+        },
+        {
+          "issue": "05",
+          "project": "wandahangFY__YOLOv11-RGBT",
+          "case_id": "tomli_b3bca2-030",
+          "package": "tomli",
+          "class": "ONLY_IN_B",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            null,
+            false
+          ],
+          "derived": [
+            "declared",
+            "install-path:.github/workflows/ci.yml::Benchmarks[3]#1"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "repo": "mitkox/vllm-turboquant",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 3,
+      "reason": "pyelftools/tqdm 的 A 侧向 Docker 中普通 uv 命令注入了来自其他文件的 rocm7.1/xpu 全项目索引，B 侧才是命令本身策略。ray 真实兼容性脚本读取五份文件、-c vllm-constraints、Python3.12/指定平台，抽取后只剩裸 ray 且把 --unsafe-package ray 误当需求名，未保持脚本约束及目标。两个 uv 同 PyPI 版本差异未给出冻结快照、候选及约束排除链。",
+      "evidence_paths": [
+        "corpus/repos/mitkox__vllm-turboquant/docker/Dockerfile.rocm:144",
+        "corpus/repos/mitkox__vllm-turboquant/docker/Dockerfile.rocm:410",
+        "corpus/repos/mitkox__vllm-turboquant/.buildkite/scripts/check-ray-compatibility.sh:142",
+        "corpus/repos/mitkox__vllm-turboquant/.buildkite/scripts/check-ray-compatibility.sh:154",
+        "reports/mitkox__vllm-turboquant/ray_7f5251-019/context_b.json:4",
+        "reports/mitkox__vllm-turboquant/pyelftools_3b9058-011/context_a.json:11",
+        "results/projects/mitkox__vllm-turboquant/ir.json:10397"
+      ],
+      "corrective_action": "修复 --unsafe-package 的参数解析，保留 requirements/constraints、目标 Python 和平台，按 Docker 的命令局部配置复验。",
+      "case_findings": [
+        {
+          "packages": [
+            "ray"
+          ],
+          "finding": "真实命令的五份 requirements 未读取（ir.req_files=[]），--unsafe-package setuptools/ray 和重定向 2>&1 被误当 packages（[setuptools,ray,2>&1]），RTO最终只剩裸ray；约束、Python/平台也未保持。"
+        },
+        {
+          "packages": [
+            "pyelftools",
+            "tqdm"
+          ],
+          "finding": "跨文件索引污染产生策略差异，旧 wheel 为同版本官方副本，未证实真实 Docker 命令违反合同。"
+        }
+      ],
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:34:59.454986+00:00",
+        "issue_url": "https://github.com/mitkox/vllm-turboquant/issues/16",
+        "state": "open",
+        "state_reason": null,
+        "closed_at_utc": null,
+        "comments": [],
+        "pull_requests": [],
+        "evidence_path": "work/issue-audit-20261110/live/06.json:1",
+        "interpretation": "Issue open、零评论，无维护者确认或否定，也无相关已合并修复。"
+      },
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/mitkox/vllm-turboquant/issues/16",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\06-mitkox__vllm-turboquant.md",
+      "case_records": [
+        {
+          "issue": "06",
+          "project": "mitkox__vllm-turboquant",
+          "case_id": "ray_7f5251-019",
+          "package": "ray",
+          "class": "DIFF_VERSION_SAME_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: pypi serves newer 2.58.0 vs pypi 2.52.1 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "install-path:.buildkite/scripts/check-ray-compatibility.sh#2"
+          ]
+        },
+        {
+          "issue": "06",
+          "project": "mitkox__vllm-turboquant",
+          "case_id": "tqdm_662d6c-015",
+          "package": "tqdm",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing between registries, but the file served by pytorch:rocm7.1 (tqdm 4.66.5) is byte-identical to PyPI's official file of that version; pypi serves newer 4.70.0 vs pytorch:rocm7.1 4.66.5",
+          "requested": [
+            false,
+            false
+          ],
+          "derived": [
+            "declared",
+            "install-path:docker/Dockerfile.rocm#16"
+          ]
+        },
+        {
+          "issue": "06",
+          "project": "mitkox__vllm-turboquant",
+          "case_id": "pyelftools_3b9058-011",
+          "package": "pyelftools",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing between registries, but the file served by pytorch:rocm7.1 (pyelftools 0.32) is byte-identical to PyPI's official file of that version; pypi serves newer 0.33 vs pytorch:rocm7.1 0.32",
+          "requested": [
+            false,
+            false
+          ],
+          "derived": [
+            "declared",
+            "install-path:docker/Dockerfile.rocm#3"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "repo": "ruvnet/agentic-flow",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 3,
+      "reason": "真实 GPU Dockerfile 明确使用单一 cu121 index，另一个 GPU Dockerfile还精确 pin PyTorch2.2。报告将这一路径与对同一裸 torch/torchaudio/torchvision 请求删除 index 后的 PyPI 基线相比，后者被标成 pip install .。观察说明配置变化会换版本，尚未说明同一受支持 GPU 安装选择了违反其配置的来源或实际失败。",
+      "evidence_paths": [
+        "corpus/repos/ruvnet__agentic-flow/packages/agentic-llm/Dockerfile:29",
+        "corpus/repos/ruvnet__agentic-flow/packages/agentic-llm/cloudrun/Dockerfile.gpu:26",
+        "reports/ruvnet__agentic-flow/torch_e7de9e-014/context_a.json:9",
+        "reports/ruvnet__agentic-flow/torch_e7de9e-014/context_b.json:9"
+      ],
+      "corrective_action": "将默认 PyPI 与专用 GPU 路径区别表述，按真实 Docker 完整安装链查找后续步骤是否破坏 CUDA 选择，再提供失败见证。",
+      "case_findings": [
+        {
+          "packages": [
+            "torch",
+            "torchaudio",
+            "torchvision"
+          ],
+          "finding": "两侧索引集合不同，GPU 命令按其明确 index 选中 cu121；C-IntentViolation 标签缺少同一目标合同。"
+        }
+      ],
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:01.085281+00:00",
+        "issue_url": "https://github.com/ruvnet/agentic-flow/issues/229",
+        "state": "open",
+        "state_reason": null,
+        "closed_at_utc": null,
+        "comments": [],
+        "pull_requests": [],
+        "evidence_path": "work/issue-audit-20261110/live/07.json:1",
+        "interpretation": "Issue open、零评论，无维护者确认或否定，也无相关已合并修复。"
+      },
+      "reviewer_original_verdict": "仅差异缺陷未证实",
+      "classification_note": "派生请求中的差异可以保留，但所测输入没有忠实代表原报告声称的完整支持安装入口。",
+      "issue_url": "https://github.com/ruvnet/agentic-flow/issues/229",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\07-ruvnet__agentic-flow.md",
+      "case_records": [
+        {
+          "issue": "07",
+          "project": "ruvnet__agentic-flow",
+          "case_id": "torch_e7de9e-014",
+          "package": "torch",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "C-IntentViolation",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "DIFF_VERSION_DIFF_REGISTRY: artifact too large or size unknown (limit 400 MB); pypi serves newer 2.14.0 vs pytorch:cu121 2.5.1+cu121",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "install-path:packages/agentic-llm/Dockerfile#2"
+          ]
+        },
+        {
+          "issue": "07",
+          "project": "ruvnet__agentic-flow",
+          "case_id": "torchaudio_0f261b-015",
+          "package": "torchaudio",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "C-IntentViolation",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: pypi serves newer 2.11.0 vs pytorch:cu121 2.5.1+cu121 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "install-path:packages/agentic-llm/Dockerfile#2"
+          ]
+        },
+        {
+          "issue": "07",
+          "project": "ruvnet__agentic-flow",
+          "case_id": "torchvision_cc3e96-016",
+          "package": "torchvision",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "C-IntentViolation",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: pypi serves newer 0.29.0 vs pytorch:cu121 0.20.1+cu121 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "install-path:packages/agentic-llm/Dockerfile#2"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "repo": "AdaptiveMotorControlLab/CEBRA",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 2,
+      "reason": "Dockerfile 明确以 CUDA12.4 基础镜像并单独从 cu124 安装 torch/torchvision，普通 setup.cfg 仅要求 torch>=2.4.0。报告把 Docker 命令的单索引输出与无索引裸名基线对比，两个 torch 版本都满足下界。CPU/GPU 支持路径采用不同构建有配置依据，未提供适用约束被违反、安装后 GPU 失败或库不兼容证据。",
+      "evidence_paths": [
+        "corpus/repos/AdaptiveMotorControlLab__CEBRA/Dockerfile:2",
+        "corpus/repos/AdaptiveMotorControlLab__CEBRA/Dockerfile:9",
+        "corpus/repos/AdaptiveMotorControlLab__CEBRA/setup.cfg:36",
+        "reports/AdaptiveMotorControlLab__CEBRA/torch_e7de9e-008/context_a.json:8",
+        "reports/AdaptiveMotorControlLab__CEBRA/torch_e7de9e-008/context_b.json:8"
+      ],
+      "corrective_action": "保留为通用安装与 CUDA 专用安装的差异。若要认定缺陷，须在同一目标条件下证明依赖选择违反声明或影响受支持调用。",
+      "case_findings": [
+        {
+          "packages": [
+            "torch",
+            "torchvision"
+          ],
+          "finding": "专用 CUDA index 与默认 PyPI 输出不同不构成现有证据下的项目缺陷。"
+        }
+      ],
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:04.335330+00:00",
+        "issue_url": "https://github.com/AdaptiveMotorControlLab/CEBRA/issues/310",
+        "state": "open",
+        "state_reason": null,
+        "closed_at_utc": null,
+        "comments": [],
+        "pull_requests": [],
+        "evidence_path": "work/issue-audit-20261110/live/08.json:1",
+        "interpretation": "Issue open、零评论，无维护者确认或否定，也无相关已合并修复。"
+      },
+      "reviewer_original_verdict": "仅差异缺陷未证实",
+      "classification_note": "派生请求中的差异可以保留，但所测输入没有忠实代表原报告声称的完整支持安装入口。",
+      "issue_url": "https://github.com/AdaptiveMotorControlLab/CEBRA/issues/310",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\08-AdaptiveMotorControlLab__CEBRA.md",
+      "case_records": [
+        {
+          "issue": "08",
+          "project": "AdaptiveMotorControlLab__CEBRA",
+          "case_id": "torch_e7de9e-008",
+          "package": "torch",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "C-IntentViolation",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "DIFF_VERSION_DIFF_REGISTRY: artifact too large or size unknown (limit 400 MB); pypi serves newer 2.14.0 vs pytorch:cu124 2.6.0+cu124",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "install-path:Dockerfile#1"
+          ]
+        },
+        {
+          "issue": "08",
+          "project": "AdaptiveMotorControlLab__CEBRA",
+          "case_id": "torchvision_cc3e96-005",
+          "package": "torchvision",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: pypi serves newer 0.29.0 vs pytorch:cu124 0.21.0+cu124 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "install-path:Dockerfile#1"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "repo": "NVlabs/RoboLab",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 2,
+      "reason": "torch 存在 pip 默认来源与 uv 显式 cu128 绑定差异，但 README 要求 uv 且以互斥 isaac50/51 extra 安装，报告未证明无 extra 的 pip install . 是等价支持入口。cffi的“多装”来自锁解析丢失条件造成的测量错误，uv.lock 中 pyzmq→cffi 带 implementation_name==pypy，解析器把它压平成无条件依赖，而报告目标是 CPython。",
+      "evidence_paths": [
+        "corpus/repos/NVlabs__RoboLab/README.md:30",
+        "corpus/repos/NVlabs__RoboLab/README.md:40",
+        "corpus/repos/NVlabs__RoboLab/pyproject.toml:117",
+        "results/projects/NVlabs__RoboLab/runs/declared-runtime_uv_declared_13017a/uv.lock:756",
+        "results/projects/NVlabs__RoboLab/runs/declared-runtime_uv_declared_13017a/resolution.json:63"
+      ],
+      "corrective_action": "更正CPython安装cffi的断言。依据README真实uv sync命令和活动extra投影锁文件，并核对实际安装结果。pip路径的缺陷认定还需要先证明该入口受到支持，并指明被违反的适用约束。",
+      "case_findings": [
+        {
+          "packages": [
+            "cffi"
+          ],
+          "finding": "明确的 marker 丢失导致 universal lock 被误读为 CPython 实装集合。"
+        },
+        {
+          "packages": [
+            "torch"
+          ],
+          "finding": "工具特定来源绑定差异已记录，同等支持入口和受支持调用的实际影响未建立。"
+        }
+      ],
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:06.979273+00:00",
+        "issue_url": "https://github.com/NVlabs/RoboLab/issues/32",
+        "state": "open",
+        "state_reason": null,
+        "closed_at_utc": null,
+        "comments": [],
+        "pull_requests": [],
+        "evidence_path": "work/issue-audit-20261110/live/09.json:1",
+        "interpretation": "Issue open、零评论，无维护者确认或否定，也无相关已合并修复。"
+      },
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/NVlabs/RoboLab/issues/32",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\09-NVlabs__RoboLab.md",
+      "case_records": [
+        {
+          "issue": "09",
+          "project": "NVlabs__RoboLab",
+          "case_id": "torch_e7de9e-006",
+          "package": "torch",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "C-IntentViolation",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "DIFF_VERSION_DIFF_REGISTRY: artifact too large or size unknown (limit 400 MB); pypi serves newer 2.14.0 vs pytorch:cu128 2.11.0+cu128",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "09",
+          "project": "NVlabs__RoboLab",
+          "case_id": "cffi_ee8bb3-007",
+          "package": "cffi",
+          "class": "ONLY_IN_B",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            null,
+            false
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "repo": "fishaudio/fish-speech",
+      "technical_verdict": "部分问题有修复支持",
+      "original_case_count": 1,
+      "reason": "PR1342已被维护者合并，支持的具体问题是文档中的pip CPU或CUDA extra命令需要显式传入匹配索引。真实项目已固定torch和torchaudio为2.8.0，PR对照为2.8.0与2.8.0+cu129。原issue的2.14.0对2.13.0+cu129来自独立XPU裸名请求，且extra来源被压成cu129。修复支持的文档来源问题范围更窄，原具体版本叙述及所有路径必须相同的主张仍待有效证据支持。",
+      "evidence_paths": [
+        "corpus/repos/fishaudio__fish-speech/pyproject.toml:17",
+        "corpus/repos/fishaudio__fish-speech/pyproject.toml:82",
+        "corpus/repos/fishaudio__fish-speech/docs/en/install.md:22",
+        "corpus/repos/fishaudio__fish-speech/docs/en/install.md:58",
+        "reports/fishaudio__fish-speech/torch_e7de9e-006/context_a.json:4",
+        "reports/fishaudio__fish-speech/torch_e7de9e-006/context_b.json:15",
+        "work/issue-audit-20261110/live/10.json:1"
+      ],
+      "corrective_action": "以 PR1342 的命令、目标Python3.12和2.8.0/+cu129作为已获修复支持的文档问题记录。更正原错误版本比较，核对CPU/CUDA对应命令。",
+      "case_findings": [
+        {
+          "packages": [
+            "torch"
+          ],
+          "finding": "原具体版本比较失配。明确选择 CUDA/CPU extra 的 pip 文档遗漏来源参数已获合并修复支持。"
+        }
+      ],
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:23.518284+00:00",
+        "issue_url": "https://github.com/fishaudio/fish-speech/issues/1334",
+        "state": "closed",
+        "state_reason": "not_planned",
+        "closed_at_utc": "2026-11-05T00:23:45Z",
+        "comments": [
+          {
+            "user": "KashmirAwana",
+            "association": "NONE",
+            "created_at_utc": "2026-09-20T20:01:20Z",
+            "url": "https://github.com/fishaudio/fish-speech/issues/1334#issuecomment-5752299471",
+            "body": "It looks like there's a version mismatch for `torch` depending on the installation method. I'd check the pyproject and `uv` configurations to see why they're pulling different versions.\n"
+          },
+          {
+            "user": "github-actions[bot]",
+            "association": "CONTRIBUTOR",
+            "created_at_utc": "2026-10-21T00:35:57Z",
+            "url": "https://github.com/fishaudio/fish-speech/issues/1334#issuecomment-6305024184",
+            "body": "This issue is stale because it has been open for 30 days with no activity."
+          },
+          {
+            "user": "github-actions[bot]",
+            "association": "CONTRIBUTOR",
+            "created_at_utc": "2026-11-05T00:23:44Z",
+            "url": "https://github.com/fishaudio/fish-speech/issues/1334#issuecomment-6646049080",
+            "body": "This issue was closed because it has been inactive for 14 days since being marked as stale."
+          }
+        ],
+        "pull_requests": [
+          {
+            "url": "https://github.com/fishaudio/fish-speech/pull/1342",
+            "state": "closed",
+            "merged_at_utc": "2026-10-10T07:43:45Z",
+            "merged_by": "Whale-Dolphin",
+            "title": "docs: make pip CUDA installs use PyTorch indexes",
+            "changed_files": [
+              "docs/ar/install.md",
+              "docs/en/install.md",
+              "docs/es/install.md",
+              "docs/ja/install.md",
+              "docs/ko/install.md",
+              "docs/pt/install.md",
+              "docs/zh/install.md"
+            ]
+          }
+        ],
+        "evidence_path": "work/issue-audit-20261110/live/10.json:1",
+        "interpretation": "PR #1342 于2026-10-10合并，只改七份本地化安装指南的显式 CPU/CUDA 命令并加引号，未改默认 pip 命令和依赖声明。Issue #1334 已于2026-11-05因 stale 自动关闭，非维护者拒绝。普通外部用户评论也不能作为独立缺陷确认。",
+        "fix_scope": "七份指南中的 pip CPU/CUDA extra 命令补充对应 PyTorch index。原报告声称的2.14.0/2.13.0版本漂移与默认入口并未获验证。"
+      },
+      "reviewer_original_verdict": "部分问题有修复支持",
+      "support_scope": "相关的明确CPU或CUDA extra安装文档问题得到合并修复支持。原报告具体版本比较仍失配。",
+      "issue_url": "https://github.com/fishaudio/fish-speech/issues/1334",
+      "latest_state": "closed",
+      "latest_state_reason": "not_planned",
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\10-fishaudio__fish-speech.md",
+      "case_records": [
+        {
+          "issue": "10",
+          "project": "fishaudio__fish-speech",
+          "case_id": "torch_e7de9e-006",
+          "package": "torch",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "C-IntentViolation",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "DIFF_VERSION_DIFF_REGISTRY: artifact too large or size unknown (limit 400 MB); pypi serves newer 2.14.0 vs pytorch:cu129 2.13.0+cu129",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "repo": "jamiepine/voicebox",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 1,
+      "reason": "原报告将Windows CUDA发布任务与合成Linux3.11请求比较。保存的A上下文把backend/requirements-rocm.txt的Windows ROCm索引及其他文件的find-links混入无版本torch请求，B则把runs-on windows-latest的CUDA任务改为Linux。仓库已有CPU、CUDA和ROCm独立发布路径，不能据此要求全部相同工件。原证据没有证明支持的Windows安装错误。CUDA发布任务还存在一个待独立核实的版本范围问题，CUDA任务未固定torch版本，却写入>=2.7.0,<2.11.0兼容范围。针对这一风险，第三方PR1191提出2.10.0+cu128固定方案，尚未合并。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/jamiepine__voicebox/.github/workflows/release.yml:272",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/jamiepine__voicebox/.github/workflows/release.yml:273",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/jamiepine__voicebox/.github/workflows/release.yml:296",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/jamiepine__voicebox/.github/workflows/release.yml:321",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/jamiepine__voicebox/backend/requirements-rocm.txt:2",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/jamiepine__voicebox/torch_e7de9e-014/context_a.json:4",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/jamiepine__voicebox/torch_e7de9e-014/context_a.json:20",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/jamiepine__voicebox/torch_e7de9e-014/context_b.json:16",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/work/issue-audit-20261110/live/11.json:12"
+      ],
+      "corrective_action": "更正原跨路径和跨硬件结论，保留CUDA版本上限风险为独立候选。按原commit的Windows任务、Python版本、依赖安装顺序和最终CUDA封装结果验证后再判断。PR1191仍处于未合并状态。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:23.766517+00:00",
+        "issue_url": "https://github.com/jamiepine/voicebox/issues/1099",
+        "state": "open",
+        "state_reason": null,
+        "comment_count": 0,
+        "comments": [],
+        "pull_requests": [
+          {
+            "url": "https://github.com/jamiepine/voicebox/pull/1191",
+            "state": "open",
+            "merged": false,
+            "merged_at": null,
+            "author": "Ha1baraA11",
+            "author_association": "NONE",
+            "title": "Pin CUDA 12.8 PyTorch wheels to a compatible version",
+            "comments": [],
+            "reviews": [],
+            "changed_files": [
+              {
+                "path": ".github/workflows/release.yml",
+                "patch": "@@ -298,8 +298,9 @@ jobs:\n \n       - name: Install PyTorch with CUDA 12.8\n         run: |\n-          pip install torch --index-url https://download.pytorch.org/whl/cu128 --force-reinstall --no-deps\n-          pip install torchaudio --index-url https://download.pytorch.org/whl/cu128 --force-reinstall --no-deps\n+          # Keep both wheels inside the CUDA runtime compatibility range below.\n+          pip install \"torch==2.10.0+cu128\" --index-url https://download.pytorch.org/whl/cu128 --force-reinstall --no-deps\n+          pip install \"torchaudio==2.10.0+cu128\" --index-url https://download.pytorch.org/whl/cu128 --force-reinstall --no-deps\n \n       - name: Verify CUDA support in torch\n         run: |"
+              }
+            ]
+          }
+        ],
+        "interpretation": "issue仍开放且无评论。PR1191由外部贡献者提出，仍开放、merged=false，无评论或评审，不能当作维护者确认或已修复。"
+      },
+      "universal_marker_false_positive_established": false,
+      "analyzed_commit": "51f49dea198384b4eb6087b72c17057c6eb1c1cd",
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/jamiepine/voicebox/issues/1099",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\11-jamiepine__voicebox.md",
+      "case_records": [
+        {
+          "issue": "11",
+          "project": "jamiepine__voicebox",
+          "case_id": "torch_e7de9e-014",
+          "package": "torch",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "DIFF_VERSION_DIFF_REGISTRY: artifact too large or size unknown (limit 400 MB); pypi serves newer 2.14.0 vs pytorch:cu128 2.11.0+cu128",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "install-path:.github/workflows/release.yml::build-cuda-windows[3]#1"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "repo": "bmaltais/kohya_ss",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 1,
+      "reason": "XPU和CUDA的差异来自报告合成的请求，该请求把相互独立的XPU、ROCm、CUDA和nightly requirements索引全部合并，且把标为Dockerfile来源的torch==2.7.0+cu128改成无约束torch。真实Dockerfile先固定CUDA wheel并uv sync --frozen，Linux和Intel requirements也分别固定CUDA及XPU构建。保存的uv探针重新解析无约束torch，没有复用仓库冻结锁，所以2.14.0+xpu和2.9.1+cu128不代表文档完整安装路径的最终结果。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/bmaltais__kohya_ss/Dockerfile:61",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/bmaltais__kohya_ss/Dockerfile:77",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/bmaltais__kohya_ss/Dockerfile:90",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/bmaltais__kohya_ss/requirements_ipex_xpu.txt:4",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/bmaltais__kohya_ss/requirements_linux.txt:4",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/bmaltais__kohya_ss/docs/Installation/pip_linux.md:54",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/bmaltais__kohya_ss/torch_e7de9e-012/context_a.json:4",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/bmaltais__kohya_ss/torch_e7de9e-012/context_a.json:9",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/bmaltais__kohya_ss/torch_e7de9e-012/context_b.json:21",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/work/issue-audit-20261110/live/12.json:12"
+      ],
+      "corrective_action": "撤回该版本/硬件切换结论，按用户选择的setup选项分别读取requirements并保持版本约束。冻结锁路径使用原uv.lock，独立XPU/ROCm选择作为允许差异。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:16.274913+00:00",
+        "issue_url": "https://github.com/bmaltais/kohya_ss/issues/3605",
+        "state": "open",
+        "state_reason": null,
+        "comment_count": 0,
+        "comments": [],
+        "pull_requests": [],
+        "interpretation": "issue仍开放且无评论，没有相关PR、维护者确认或修复证据。"
+      },
+      "universal_marker_false_positive_established": false,
+      "analyzed_commit": "45088f04af78e11cec5407ff4652ea3ed2c14422",
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/bmaltais/kohya_ss/issues/3605",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\12-bmaltais__kohya_ss.md",
+      "case_records": [
+        {
+          "issue": "12",
+          "project": "bmaltais__kohya_ss",
+          "case_id": "torch_e7de9e-012",
+          "package": "torch",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "DIFF_VERSION_DIFF_REGISTRY: artifact too large or size unknown (limit 400 MB); pytorch:xpu serves newer 2.14.0+xpu vs pytorch:cu128 2.9.1+cu128",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "repo": "k2-fsa/OmniVoice",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 1,
+      "reason": "README明确将pip安装分成Step1先装与硬件匹配的PyTorch、Step2再装OmniVoice，分别列出NVIDIA的2.8.0+cu128、Apple和Intel XPU选项。报告却用干净环境中仅安装无约束torch的请求替代完整pip步骤，并将README74的Intel XPU路径重标成PyPI默认路径。uv一侧又由生成的探针重解析，未执行仓库uv sync的锁路径。观察到不同版本成立，但“文档没有说明预期构建、GPU将静默失效”的原断言没有对应完整安装证据。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/k2-fsa__OmniVoice/README.md:42",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/k2-fsa__OmniVoice/README.md:49",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/k2-fsa__OmniVoice/README.md:74",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/k2-fsa__OmniVoice/README.md:92",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/k2-fsa__OmniVoice/README.md:114",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/k2-fsa__OmniVoice/pyproject.toml:82",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/k2-fsa__OmniVoice/torch_e7de9e-006/case.json:109",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/k2-fsa__OmniVoice/torch_e7de9e-006/context_a.json:4",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/work/issue-audit-20261110/live/13.json:12"
+      ],
+      "corrective_action": "更正报告中省略预安装步骤和硬件意图的复现，按某一硬件分支执行完整pip顺序及原uv锁路径后比较。将下游分发的锁定说明单列，不计为上游修复。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:18.573478+00:00",
+        "issue_url": "https://github.com/k2-fsa/OmniVoice/issues/267",
+        "state": "open",
+        "state_reason": null,
+        "comment_count": 1,
+        "comments": [
+          {
+            "url": "https://github.com/k2-fsa/OmniVoice/issues/267#issuecomment-6005656215",
+            "author": "TheMasterOfDisasters",
+            "association": "NONE",
+            "body": "@cuiliaomei-beep \n\nThe maintained [Hangry Labs OmniVoiceTTS](https://github.com/Hangry-Labs/OmniVoiceTTS) distribution uses a Python 3.13 dependency lock and compiled Docker requirements with an explicit CUDA 12.8 PyTorch build, validates the lock during task validate, and publishes complete full/tiny images so deployment does not depend on ambient index ordering. Upstream OmniVoice remains the model foundation; this reproducible packaging is maintained downstream."
+          }
+        ],
+        "pull_requests": [],
+        "interpretation": "issue仍开放，仅TheMasterOfDisasters一条author_association=NONE评论，介绍Hangry-Labs/OmniVoiceTTS下游的锁和Docker打包，没有确认或修复上游OmniVoice。"
+      },
+      "universal_marker_false_positive_established": false,
+      "analyzed_commit": "08be0b4ccbac3e13e374e86fbfead4b4cac343e2",
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/k2-fsa/OmniVoice/issues/267",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\13-k2-fsa__OmniVoice.md",
+      "case_records": [
+        {
+          "issue": "13",
+          "project": "k2-fsa__OmniVoice",
+          "case_id": "torch_e7de9e-006",
+          "package": "torch",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "C-IntentViolation",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "DIFF_VERSION_DIFF_REGISTRY: artifact too large or size unknown (limit 400 MB); pypi serves newer 2.14.0 vs pytorch:cu128 2.11.0+cu128",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "repo": "stepfun-ai/Step-3.5-Flash",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 1,
+      "reason": "根目录翻译README工作流实际使用Python3.10并仅pip install openai。报告标为该工作流来源，却运行Linux3.11、加入vendored llama.cpp转换工具requirements里的CPU/nightly索引，再将根目录pip工作流改成uv。openai没有依赖专属来源绑定，case意图tier5也写明只有项目汇总索引。由这些拼接配置得到的3.8.0与1.107.3差异不能证明原翻译任务下载了错误openai。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/stepfun-ai__Step-3.5-Flash/.github/workflows/translate_readme_proposal.yml:14",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/stepfun-ai__Step-3.5-Flash/.github/workflows/translate_readme_proposal.yml:17",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/stepfun-ai__Step-3.5-Flash/llama.cpp/requirements/requirements-convert_hf_to_gguf.txt:2",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/stepfun-ai__Step-3.5-Flash/llama.cpp/requirements/requirements-convert_hf_to_gguf.txt:8",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/stepfun-ai__Step-3.5-Flash/openai_7d3bbb-021/context_b.json:8",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/stepfun-ai__Step-3.5-Flash/openai_7d3bbb-021/case.json:81",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/work/issue-audit-20261110/live/14.json:12"
+      ],
+      "corrective_action": "更正原缺陷报告，按根工作流的实际Python和pip命令复核。将llama.cpp子项目和独立requirements中的索引限于对应命令作用域。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:23.909801+00:00",
+        "issue_url": "https://github.com/stepfun-ai/Step-3.5-Flash/issues/52",
+        "state": "open",
+        "state_reason": null,
+        "comment_count": 0,
+        "comments": [],
+        "pull_requests": [],
+        "interpretation": "issue仍开放，无评论或相关PR，没有维护者确认或修复证据。"
+      },
+      "universal_marker_false_positive_established": false,
+      "analyzed_commit": "21d85a5f6c291f3f138da0bc09979af43345251a",
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/stepfun-ai/Step-3.5-Flash/issues/52",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\14-stepfun-ai__Step-3.5-Flash.md",
+      "case_records": [
+        {
+          "issue": "14",
+          "project": "stepfun-ai__Step-3.5-Flash",
+          "case_id": "openai_7d3bbb-021",
+          "package": "openai",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: pypi serves newer 3.8.0 vs pytorch:nightly 1.107.3 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "repo": "guqiong96/Lvllm",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 1,
+      "reason": "实际check-ray-compatibility脚本是在已安装vllm环境提取约束后，合并Ray的五份requirements，传-c vllm-constraints.txt，指定Python3.12及x86_64-manylinux_2_31，用unsafe-best-match测试可兼容性。报告删去这些输入与约束，改成Linux3.11无约束ray，又在A拼入XPU和flashinfer索引。两次无约束ray的2.52.1/2.58.0差异不能证明该兼容性检查有问题。issue完成关闭无说明，不能证明已修复或被认可。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/guqiong96__Lvllm/.buildkite/scripts/check-ray-compatibility.sh:146",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/guqiong96__Lvllm/.buildkite/scripts/check-ray-compatibility.sh:152",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/guqiong96__Lvllm/.buildkite/scripts/check-ray-compatibility.sh:153",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/guqiong96__Lvllm/.buildkite/scripts/check-ray-compatibility.sh:154",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/guqiong96__Lvllm/.buildkite/scripts/check-ray-compatibility.sh:156",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/guqiong96__Lvllm/ray_7f5251-142/context_a.json:4",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/guqiong96__Lvllm/ray_7f5251-142/context_b.json:15",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/work/issue-audit-20261110/live/15.json:12"
+      ],
+      "corrective_action": "更正原“安装路径不一致”报告，按脚本完整requirements、已安装环境约束及目标复核。把closed/completed保留为流程状态，不计入修复、确认或拒绝数量。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:26.937968+00:00",
+        "issue_url": "https://github.com/guqiong96/Lvllm/issues/107",
+        "state": "closed",
+        "state_reason": "completed",
+        "comment_count": 0,
+        "comments": [],
+        "pull_requests": [],
+        "interpretation": "issue已于2026-09-13由owner无评论关闭，state_reason=completed。最新无评论、相关提交或PR，技术确认和修复均未建立。"
+      },
+      "universal_marker_false_positive_established": false,
+      "analyzed_commit": "30b0f47031fb7885676f1da132a001a16cfb73fb",
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/guqiong96/Lvllm/issues/107",
+      "latest_state": "closed",
+      "latest_state_reason": "completed",
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\15-guqiong96__Lvllm.md",
+      "case_records": [
+        {
+          "issue": "15",
+          "project": "guqiong96__Lvllm",
+          "case_id": "ray_7f5251-142",
+          "package": "ray",
+          "class": "DIFF_VERSION_SAME_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: pypi serves newer 2.58.0 vs pypi 2.52.1 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "install-path:.buildkite/scripts/check-ray-compatibility.sh#2"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "repo": "wagtail/Willow",
+      "technical_verdict": "原报告已证误报",
+      "original_case_count": 1,
+      "reason": "workflow开头明确说明要用Pillow nightly提前发现未来版本兼容问题，任务名也是Nightly test against nightly Pillow build。命令显式--pre、--force-reinstall，并记录nightly构建信息和年龄。普通发布版与nightly版本不同正是声明的测试意图，原报告“文档没说明意图、所有路径应同工件”的预期被源码直接反驳。维护者明确判为false positive，技术证据与反馈一致。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/wagtail__Willow/.github/workflows/nightly-test.yml:3",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/wagtail__Willow/.github/workflows/nightly-test.yml:5",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/wagtail__Willow/.github/workflows/nightly-test.yml:36",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/wagtail__Willow/.github/workflows/nightly-test.yml:63",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/wagtail__Willow/pillow_81cebb-001/context_b.json:13",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/work/issue-audit-20261110/live/16.json:12"
+      ],
+      "corrective_action": "更正为误报并移出缺陷计数。将测试未来依赖版本的nightly工作流作为显式允许差异的阴性样本，保留维护者原话及依据。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:31.398163+00:00",
+        "issue_url": "https://github.com/wagtail/Willow/issues/191",
+        "state": "closed",
+        "state_reason": "not_planned",
+        "comment_count": 1,
+        "comments": [
+          {
+            "url": "https://github.com/wagtail/Willow/issues/191#issuecomment-5644728246",
+            "author": "Stormheg",
+            "association": "MEMBER",
+            "body": "False positive, this is very much intentional.\n\nPlease scrutinize the output of your tool closely before making reports because this is unwanted noise. Thank you."
+          }
+        ],
+        "pull_requests": [],
+        "interpretation": "issue closed/not_planned。Stormheg为MEMBER，明确写False positive, this is very much intentional，并要求工具输出严格复核。这是明确维护者拒绝，非沉默推断。"
+      },
+      "universal_marker_false_positive_established": false,
+      "analyzed_commit": "91c9176046836aa4698d6448a259e80f096108c6",
+      "reviewer_original_verdict": "原报告已证误报",
+      "issue_url": "https://github.com/wagtail/Willow/issues/191",
+      "latest_state": "closed",
+      "latest_state_reason": "not_planned",
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\16-wagtail__Willow.md",
+      "case_records": [
+        {
+          "issue": "16",
+          "project": "wagtail__Willow",
+          "case_id": "pillow_81cebb-001",
+          "package": "pillow",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: anaconda:scientific-python-nightly-wheels serves newer 13.0.0.dev0 vs pypi 12.3.0 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "install-path:.github/workflows/nightly-test.yml::test-nightly[4]#1"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "repo": "tc-mb/llama.cpp-omni",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 1,
+      "reason": "保存case源自UI发布workflow的pip install -U huggingface_hub。该独立任务没有CPU/nightly额外索引，也没有uv安装命令。报告把转换脚本requirements里的CPU/nightly索引及pyproject仅对torch的来源绑定拼入huggingface_hub探针，造成uv优先取旧镜像0.34.4。报告声称的pip install .与uv sync安装路径不是其留存证据的真实入口，未证明UI发布命令选中错误版本。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/tc-mb__llama.cpp-omni/.github/workflows/ui-publish.yml:43",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/tc-mb__llama.cpp-omni/.github/workflows/ui-publish.yml:44",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/tc-mb__llama.cpp-omni/requirements/requirements-convert_hf_to_gguf.txt:2",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/tc-mb__llama.cpp-omni/requirements/requirements-convert_hf_to_gguf.txt:8",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/tc-mb__llama.cpp-omni/pyproject.toml:58",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/tc-mb__llama.cpp-omni/huggingface-hub_fe7f-021/context_a.json:8",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/tc-mb__llama.cpp-omni/huggingface-hub_fe7f-021/case.json:195",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/work/issue-audit-20261110/live/17.json:12"
+      ],
+      "corrective_action": "更正合成上下文对应真实项目路径的说法，使用UI发布任务实际pip命令复核。独立requirements索引及torch绑定不得扩大为huggingface_hub来源规则。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:32.358409+00:00",
+        "issue_url": "https://github.com/tc-mb/llama.cpp-omni/issues/113",
+        "state": "closed",
+        "state_reason": "not_planned",
+        "comment_count": 1,
+        "comments": [
+          {
+            "url": "https://github.com/tc-mb/llama.cpp-omni/issues/113#issuecomment-6462144502",
+            "author": "github-actions[bot]",
+            "association": "NONE",
+            "body": "This issue was closed because it has been inactive for 14 days since being marked as stale."
+          }
+        ],
+        "pull_requests": [],
+        "interpretation": "issue由github-actions机器人因stale于2026-10-28关闭，closed/not_planned。唯一评论为机器人通知，没有人工拒绝、确认或修复证据。"
+      },
+      "universal_marker_false_positive_established": false,
+      "analyzed_commit": "64d092c60db4b4ee45768476bd752f03fdcc98ea",
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/tc-mb/llama.cpp-omni/issues/113",
+      "latest_state": "closed",
+      "latest_state_reason": "not_planned",
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\17-tc-mb__llama.cpp-omni.md",
+      "case_records": [
+        {
+          "issue": "17",
+          "project": "tc-mb__llama.cpp-omni",
+          "case_id": "huggingface-hub_fe7f-021",
+          "package": "huggingface-hub",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "C-IntentViolation",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: pypi serves newer 1.30.0 vs pytorch:nightly 0.34.4 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "repo": "NVIDIA/TensorRT-Incubator",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 1,
+      "reason": "case来源为mlir-tensorrt/integrations/python/requirements.txt，其中cuda-python明确允许>=12.1.0,<=13.0.0，12.9.0和13.0.0均满足约束。报告上下文为该文件加入了原文件未配置的索引，其中包括其dev requirements的CPU索引、tripy独立示例cu130索引及另一pyproject的lit/torch/flashinfer绑定。这样得到的pip/uv版本差异没有证明实际受支持安装使用了违约cuda-python。artifact没有发布hash，留存uv.lock候选也不能证明实际安装文件身份。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/NVIDIA__TensorRT-Incubator/mlir-tensorrt/integrations/python/requirements.txt:6",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/NVIDIA__TensorRT-Incubator/mlir-tensorrt/integrations/python/requirements-dev.txt:4",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/NVIDIA__TensorRT-Incubator/tripy/examples/diffusion/requirements.txt:2",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/NVIDIA__TensorRT-Incubator/mlir-tensorrt/pyproject.toml:78",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/NVIDIA__TensorRT-Incubator/cuda-python_876800-011/context_a.json:13",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/NVIDIA__TensorRT-Incubator/cuda-python_876800-011/context_b.json:25",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/NVIDIA__TensorRT-Incubator/cuda-python_876800-011/case.json:69",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/work/issue-audit-20261110/live/18.json:12"
+      ],
+      "corrective_action": "更正原报告的安装入口及来源约束主张，保留差异为候选。按某一实际base或dev安装路径、完整约束和目标单独复核，补齐实际工件证据后再判缺陷。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:31.146011+00:00",
+        "issue_url": "https://github.com/NVIDIA/TensorRT-Incubator/issues/844",
+        "state": "open",
+        "state_reason": null,
+        "comment_count": 0,
+        "comments": [],
+        "pull_requests": [],
+        "interpretation": "issue仍开放，无评论或相关PR，未见维护者确认、拒绝或修复。"
+      },
+      "universal_marker_false_positive_established": false,
+      "analyzed_commit": "e5b2b59572155f4259cf8bc8a9d220600f054949",
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/NVIDIA/TensorRT-Incubator/issues/844",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\18-NVIDIA__TensorRT-Incubator.md",
+      "case_records": [
+        {
+          "issue": "18",
+          "project": "NVIDIA__TensorRT-Incubator",
+          "case_id": "cuda-python_876800-011",
+          "package": "cuda-python",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: pypi serves newer 13.0.0 vs pytorch:cpu 12.9.0 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            true,
+            true
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "repo": "shenyangHuang/TGB",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 11,
+      "reason": "11个nvidia和triton差异来自README225的torch安装步骤。原命令明确使用cu117索引，报告A和B都删除了该索引并替换为PyPI探针。保存的pip报告与uv.lock记录同一torch 2.0.0 cp311 Linux wheel，完整SHA同为09651bff72e439d004c991f15add0c397c66f98ab36fe60d5514b44e4da722e8，反驳了原报告提出的不同顶层构建根因。pip METADATA中的CUDA和triton边带Linux及x86_64条件，原始uv.lock则只记录五个通用依赖。这个元数据图差异仍待检查解析输入和元数据来源。原证据停留在计划阶段，尚需按原uv pip命令核对实际安装结果。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/shenyangHuang__TGB/README.md:130",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/shenyangHuang__TGB/README.md:57",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/shenyangHuang__TGB/runs/ip-README-md-L225-1_pip_declared_6295ac/resolution.json:18",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/shenyangHuang__TGB/runs/ip-README-md-L225-1_uv_declared_cdea06/uv.lock:16",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/shenyangHuang__TGB/runs/ip-README-md-L225-1_uv_declared_cdea06/uv.lock:95",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/shenyangHuang__TGB/runs/ip-README-md-L225-1_pip_declared_6295ac/resolution.json:29",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/0910issues/19-shenyangHuang__TGB.md:110",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/work/issue-audit-20261110/live/19.json:12"
+      ],
+      "corrective_action": "更正11个已安装/未安装断言及不同顶层build根因，按1个待归因图差异保留。先用原cu117步骤和完整marker环境检查元数据来源，再执行等价真实安装并按最终已安装METADATA核对。该组不计入已证universal-marker误报数。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:34.163692+00:00",
+        "issue_url": "https://github.com/shenyangHuang/TGB/issues/132",
+        "state": "open",
+        "state_reason": null,
+        "comment_count": 0,
+        "comments": [],
+        "pull_requests": [],
+        "interpretation": "issue仍开放、无评论及相关PR。没有维护者确认或修复证据。"
+      },
+      "universal_marker_false_positive_established": false,
+      "analyzed_commit": "3b83e5cfb2010743fd4f7a80a01b0e19dfcf78cb",
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/shenyangHuang/TGB/issues/132",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\19-shenyangHuang__TGB.md",
+      "case_records": [
+        {
+          "issue": "19",
+          "project": "shenyangHuang__TGB",
+          "case_id": "nvidia-cuda-cupti-cu-029",
+          "package": "nvidia-cuda-cupti-cu11",
+          "class": "ONLY_IN_A",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            false,
+            null
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "19",
+          "project": "shenyangHuang__TGB",
+          "case_id": "nvidia-cuda-nvrtc-cu-035",
+          "package": "nvidia-cuda-nvrtc-cu11",
+          "class": "ONLY_IN_A",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            false,
+            null
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "19",
+          "project": "shenyangHuang__TGB",
+          "case_id": "nvidia-cuda-runtime--041",
+          "package": "nvidia-cuda-runtime-cu11",
+          "class": "ONLY_IN_A",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            false,
+            null
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "19",
+          "project": "shenyangHuang__TGB",
+          "case_id": "nvidia-cudnn-cu11_f1-044",
+          "package": "nvidia-cudnn-cu11",
+          "class": "ONLY_IN_A",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            false,
+            null
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "19",
+          "project": "shenyangHuang__TGB",
+          "case_id": "nvidia-cufft-cu11_e6-053",
+          "package": "nvidia-cufft-cu11",
+          "class": "ONLY_IN_A",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            false,
+            null
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "19",
+          "project": "shenyangHuang__TGB",
+          "case_id": "nvidia-curand-cu11_c-062",
+          "package": "nvidia-curand-cu11",
+          "class": "ONLY_IN_A",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            false,
+            null
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "19",
+          "project": "shenyangHuang__TGB",
+          "case_id": "nvidia-cusolver-cu11-068",
+          "package": "nvidia-cusolver-cu11",
+          "class": "ONLY_IN_A",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            false,
+            null
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "19",
+          "project": "shenyangHuang__TGB",
+          "case_id": "nvidia-cusparse-cu11-074",
+          "package": "nvidia-cusparse-cu11",
+          "class": "ONLY_IN_A",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            false,
+            null
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "19",
+          "project": "shenyangHuang__TGB",
+          "case_id": "nvidia-nccl-cu11_3a1-080",
+          "package": "nvidia-nccl-cu11",
+          "class": "ONLY_IN_A",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            false,
+            null
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "19",
+          "project": "shenyangHuang__TGB",
+          "case_id": "nvidia-nvtx-cu11_c09-095",
+          "package": "nvidia-nvtx-cu11",
+          "class": "ONLY_IN_A",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            false,
+            null
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        },
+        {
+          "issue": "19",
+          "project": "shenyangHuang__TGB",
+          "case_id": "triton_1f86e5-100",
+          "package": "triton",
+          "class": "ONLY_IN_A",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            false,
+            null
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "repo": "TencentARC/ColorFlow",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 1,
+      "reason": "报告采用仓库内附带的diffusers CPU ONNXRuntime Dockerfile作为证据。该文件明确固定Python3.10及uv0.1.11，报告改用Python3.11和uv0.12.10，并用无索引pip请求构造另一条所谓pip install .路径。ColorFlow README实际要求Python3.8.5、pip install -r requirements.txt，固定torch2.0.0。探针使用torch2.1.2，无法代表该项目入口。packaging24.1在PyTorch索引的副本与PyPI同版本官方文件具有相同哈希，旧版文件的存在尚未建立原报告声称的安装约束违反和功能影响。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/TencentARC__ColorFlow/README.md:53",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/TencentARC__ColorFlow/README.md:55",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/TencentARC__ColorFlow/requirements.txt:2",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/TencentARC__ColorFlow/diffusers/docker/diffusers-onnxruntime-cpu/Dockerfile:25",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/TencentARC__ColorFlow/diffusers/docker/diffusers-onnxruntime-cpu/Dockerfile:29",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/TencentARC__ColorFlow/diffusers/docker/diffusers-onnxruntime-cpu/Dockerfile:31",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/TencentARC__ColorFlow/packaging_8f3d75-009/context_b.json:22",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/TencentARC__ColorFlow/packaging_8f3d75-009/triage.json:3",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/work/issue-audit-20261110/live/20.json:12"
+      ],
+      "corrective_action": "更正报告对ColorFlow安装入口及工具版本的对应关系。研究附带Dockerfile时，先界定维护范围，再使用其Python3.10和uv0.1.11原步骤复验。版本滞后的缺陷认定需要独立兼容性或明确来源约束证据。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:37.607700+00:00",
+        "issue_url": "https://github.com/TencentARC/ColorFlow/issues/22",
+        "state": "open",
+        "state_reason": null,
+        "comment_count": 0,
+        "comments": [],
+        "pull_requests": [],
+        "interpretation": "issue仍开放，无评论或相关PR，没有维护者确认、拒绝或修复证据。"
+      },
+      "universal_marker_false_positive_established": false,
+      "analyzed_commit": "09d9e1941403e7828bf5af7b5ecb286e9fdcb134",
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/TencentARC/ColorFlow/issues/22",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\20-TencentARC__ColorFlow.md",
+      "case_records": [
+        {
+          "issue": "20",
+          "project": "TencentARC__ColorFlow",
+          "case_id": "packaging_8f3d75-009",
+          "package": "packaging",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing between registries, but the file served by pytorch:cpu (packaging 24.1) is byte-identical to PyPI's official file of that version; pypi serves newer 26.3 vs pytorch:cpu 24.1",
+          "requested": [
+            false,
+            false
+          ],
+          "derived": [
+            "declared",
+            "install-path:diffusers/docker/diffusers-onnxruntime-cpu/Dockerfile#2"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "repo": "rllm-team/rllm",
+      "technical_verdict": "原报告已证误报",
+      "original_case_count": 1,
+      "reason": "原报告把uv.lock中的cffi节点称为CPython3.11下已安装依赖。原始锁中唯一引入cffi的pyzmq边带implementation_name == pypy条件，pip报告环境明确为CPython3.11.16，该条件不成立。锁覆盖其他解释器时保存该节点符合记录内容，扁平化成当前安装集合才制造ONLY_IN_B。原始case也无意图证据，报告里的GPU构建根因和依赖混淆后果未获得本案例支持。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/rllm-team__rllm/runs/reqfile-docs-requirements-txt_uv_declared_d2c703/uv.lock:1283",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/rllm-team__rllm/runs/reqfile-docs-requirements-txt_pip_declared_ed933d/pip-report.json:10025",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/rllm-team__rllm/runs/reqfile-docs-requirements-txt_pip_declared_ed933d/pip-report.json:10018",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/rllm-team__rllm/cffi_ee8bb3-003/case.json:3"
+      ],
+      "corrective_action": "更正该报告为条件锁节点误判并移出确认缺陷计数。按目标解释器计算生效依赖闭包后重新比较安装计划，公开更正需由用户决定。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:41.650990+00:00",
+        "issue_url": "https://github.com/rllm-team/rllm/issues/310",
+        "state": "open",
+        "state_reason": null,
+        "comment_count": 0,
+        "comments": [],
+        "pull_requests": [],
+        "interpretation": "仍开放且没有评论，未见维护者确认、否认或修复依据。"
+      },
+      "reviewer_original_verdict": "原报告已证误报",
+      "issue_url": "https://github.com/rllm-team/rllm/issues/310",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\21-rllm-team__rllm.md",
+      "case_records": [
+        {
+          "issue": "21",
+          "project": "rllm-team__rllm",
+          "case_id": "cffi_ee8bb3-003",
+          "package": "cffi",
+          "class": "ONLY_IN_B",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            null,
+            false
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "repo": "AOT-Technologies/forms-flow-ai",
+      "technical_verdict": "原报告已证误报",
+      "original_case_count": 1,
+      "reason": "原报告async-timeout仅在uv一侧出现，实际来自redis 8.1.0的python_full_version < 3.11.3条件边。uv生成的探针项目要求==3.11.*，锁需要覆盖3.11.0到3.11.2，pip单次报告环境却是3.11.16。将跨补丁版本锁集合与3.11.16安装集合直接比较造成误报，记录没有显示目标环境安装了不需要的async-timeout。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/AOT-Technologies__forms-flow-ai/runs/reqfile-forms-flow-api-utils-requirements-txt_uv_declared_d86adf/uv.lock:818",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/AOT-Technologies__forms-flow-ai/runs/reqfile-forms-flow-api-utils-requirements-txt_pip_declared_73428c/pip-report.json:5080",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/AOT-Technologies__forms-flow-ai/runs/reqfile-forms-flow-api-utils-requirements-txt_uv_declared_d86adf/pyproject.toml:4"
+      ],
+      "corrective_action": "更正为Python补丁版本条件未投影造成的误报。比较相同完整Python版本的生效闭包，移出确认缺陷计数。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:40.133264+00:00",
+        "issue_url": "https://github.com/AOT-Technologies/forms-flow-ai/issues/3370",
+        "state": "open",
+        "state_reason": null,
+        "comment_count": 0,
+        "comments": [],
+        "pull_requests": [],
+        "interpretation": "仍开放且没有评论，未见维护者确认、否认或修复依据。"
+      },
+      "reviewer_original_verdict": "原报告已证误报",
+      "issue_url": "https://github.com/AOT-Technologies/forms-flow-ai/issues/3370",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\22-AOT-Technologies__forms-flow-ai.md",
+      "case_records": [
+        {
+          "issue": "22",
+          "project": "AOT-Technologies__forms-flow-ai",
+          "case_id": "async-timeout_3b2fa1-010",
+          "package": "async-timeout",
+          "class": "ONLY_IN_B",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            null,
+            false
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "repo": "NVIDIA-AI-Blueprints/portfolio-optimization",
+      "technical_verdict": "原报告已证误报",
+      "original_case_count": 1,
+      "reason": "旧仓库名cuFOLIO已转到portfolio-optimization，当前issue #78是同一报告。papermill依赖链中的pyzmq仅在implementation_name == pypy时引入cffi，原始pip环境为CPython3.11.16。uv锁记录PyPy条件分支，被适配器扁平化为CPython的实际安装集合，造成cffi ONLY_IN_B。NVIDIA索引配置与这条条件依赖差异没有因果证据。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/NVIDIA-AI-Blueprints__cuFOLIO/runs/ip-ci-utils-run-notebooks-sh-2_uv_declared_797c92/uv.lock:253",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/NVIDIA-AI-Blueprints__cuFOLIO/runs/ip-ci-utils-run-notebooks-sh-2_pip_declared_ea7b08/pip-report.json:1941",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/work/issue-audit-20261110/live/23.json:12"
+      ],
+      "corrective_action": "将仓库别名和实际issue地址合并归档，更正条件锁节点误判，移出确认缺陷计数。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:44.606129+00:00",
+        "issue_url": "https://github.com/NVIDIA-AI-Blueprints/portfolio-optimization/issues/78",
+        "state": "open",
+        "state_reason": null,
+        "comment_count": 0,
+        "comments": [],
+        "pull_requests": [],
+        "interpretation": "仍开放且没有评论，未见维护者确认、否认或修复依据。"
+      },
+      "original_repo": "NVIDIA-AI-Blueprints/cuFOLIO",
+      "reviewer_original_verdict": "原报告已证误报",
+      "issue_url": "https://github.com/NVIDIA-AI-Blueprints/portfolio-optimization/issues/78",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\23-NVIDIA-AI-Blueprints__cuFOLIO.md",
+      "case_records": [
+        {
+          "issue": "23",
+          "project": "NVIDIA-AI-Blueprints__cuFOLIO",
+          "case_id": "cffi_ee8bb3-001",
+          "package": "cffi",
+          "class": "ONLY_IN_B",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            null,
+            false
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "repo": "styler00dollar/VSGAN-tensorrt-docker",
+      "technical_verdict": "原报告已证误报",
+      "original_case_count": 1,
+      "reason": "Dockerfile:582真实命令使用pip install torchvision --index-url CU130 --force-reinstall --no-deps。报告复现命令删除了--no-deps，才解析torchvision的传递依赖cuda-pathfinder并比较1.8.1/1.6.0。原调用禁止解析这些传递依赖，因此无法由这条命令产生报告所说的cuda-pathfinder选择。仓库Docker还使用Python3.12，报告统一成3.11。建议固定cuda-pathfinder==<ver>+cu130也没有证明该包存在这种CUDA本地版本。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/styler00dollar__VSGAN-tensorrt-docker/Dockerfile:582",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/0910issues/24-styler00dollar__VSGAN-tensorrt-docker.md:42",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/styler00dollar__VSGAN-tensorrt-docker/cuda-pathfinder_8169-007/context_b.json:4",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/styler00dollar__VSGAN-tensorrt-docker/Dockerfile:193"
+      ],
+      "corrective_action": "更正原报告并移出确认缺陷计数。安装路径提取保留--no-deps和顺序安装语义，用原始Docker步骤校验传递依赖是否实际被请求。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:45.007375+00:00",
+        "issue_url": "https://github.com/styler00dollar/VSGAN-tensorrt-docker/issues/91",
+        "state": "open",
+        "state_reason": null,
+        "comment_count": 0,
+        "comments": [],
+        "pull_requests": [],
+        "interpretation": "仍开放且没有评论，未见维护者确认、否认或修复依据。"
+      },
+      "reviewer_original_verdict": "原报告已证误报",
+      "issue_url": "https://github.com/styler00dollar/VSGAN-tensorrt-docker/issues/91",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\24-styler00dollar__VSGAN-tensorrt-docker.md",
+      "case_records": [
+        {
+          "issue": "24",
+          "project": "styler00dollar__VSGAN-tensorrt-docker",
+          "case_id": "cuda-pathfinder_8169-007",
+          "package": "cuda-pathfinder",
+          "class": "DIFF_VERSION_SAME_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: pypi serves newer 1.8.1 vs pypi 1.6.0 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            false,
+            false
+          ],
+          "derived": [
+            "declared",
+            "install-path:Dockerfile#20"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "repo": "antirez/llama.cpp-deepseek-v4-flash",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 1,
+      "reason": "所报case来自scripts/jinja/requirements.txt，该文件只有PySide6和jinja2，无索引选项。保存的context却加入其他模型转换requirements文件中的CPU和nightly索引，又把Poetry的显式torch来源转成uv探针配置。根目录requirements包含各个转换脚本requirements，未包含scripts/jinja/requirements.txt，也未证明文档要求用这套索引装Jinja脚本。报告中的MarkupSafe3.0.3/3.0.2差异发生在构造上下文，未对应已证明的支持安装入口。真实根pyproject反而给torch设置priority=explicit。stale自动关闭不能用作维护者否认。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/antirez__llama.cpp-deepseek-v4-flash/scripts/jinja/requirements.txt:1",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/antirez__llama.cpp-deepseek-v4-flash/markupsafe_2f781f-021/context_a.json:11",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/antirez__llama.cpp-deepseek-v4-flash/requirements/requirements-convert_hf_to_gguf.txt:8",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/antirez__llama.cpp-deepseek-v4-flash/pyproject.toml:35",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/antirez__llama.cpp-deepseek-v4-flash/requirements.txt:9"
+      ],
+      "corrective_action": "移出确认缺陷计数。先按真实入口恢复requirements的递归引用和文件作用域，保留Poetry显式来源语义，再验证是否仍有可报告的项目配置问题。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:50.027964+00:00",
+        "issue_url": "https://github.com/antirez/llama.cpp-deepseek-v4-flash/issues/14",
+        "state": "closed",
+        "state_reason": "not_planned",
+        "comment_count": 1,
+        "comments": [
+          {
+            "author": "github-actions[bot]",
+            "association": "CONTRIBUTOR",
+            "body": "This issue was closed because it has been inactive for 14 days since being marked as stale.",
+            "url": "https://github.com/antirez/llama.cpp-deepseek-v4-flash/issues/14#issuecomment-6457759428"
+          }
+        ],
+        "pull_requests": [],
+        "interpretation": "自动stale关闭，未见人工确认、否认或修复依据。"
+      },
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/antirez/llama.cpp-deepseek-v4-flash/issues/14",
+      "latest_state": "closed",
+      "latest_state_reason": "not_planned",
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\25-antirez__llama.cpp-deepseek-v4-flash.md",
+      "case_records": [
+        {
+          "issue": "25",
+          "project": "antirez__llama.cpp-deepseek-v4-flash",
+          "case_id": "markupsafe_2f781f-021",
+          "package": "markupsafe",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "C-IntentViolation",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: pytorch:default serves newer 3.0.3 vs pytorch:nightly 3.0.2 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            false,
+            false
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "repo": "NX-AI/tirex",
+      "technical_verdict": "原报告已证误报",
+      "original_case_count": 1,
+      "reason": "async-timeout5.0.1来自redis8.1.0的python_full_version < 3.11.3条件边。保存的uv探针项目锁==3.11.*，pip报告却在CPython3.11.16运行，条件不成立。原报告把跨补丁版本锁内节点解释为实际安装差异。报告者后续评论仍重复GPU构建和依赖图变化的模板解释，未提供async-timeout生效或实际安装的证据。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/NX-AI__tirex/runs/reqfile-inference-requirements-txt_uv_declared_40bb72/uv.lock:1252",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/NX-AI__tirex/runs/reqfile-inference-requirements-txt_pip_declared_b1caf2/pip-report.json:9218",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/NX-AI__tirex/runs/reqfile-inference-requirements-txt_uv_declared_40bb72/pyproject.toml:4"
+      ],
+      "corrective_action": "更正为Python补丁版本条件未投影造成的误报，并移出确认缺陷计数。报告者的后续补充属于原报告内容，独立认可需要另行依据。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:49.827271+00:00",
+        "issue_url": "https://github.com/NX-AI/tirex/issues/36",
+        "state": "open",
+        "state_reason": null,
+        "comment_count": 1,
+        "comments": [
+          {
+            "author": "cuiliaomei-beep",
+            "association": "NONE",
+            "body": "\n**Root cause**\n\nThe two paths select different top-level builds whose metadata pulls in different transitive packages (e.g. `nvidia-*-cu12` vs `nvidia-*-cu13`, `triton` present or absent).\n\n**Proposed fix**\n\n1. Commit a lock (`uv.lock`, or `pip-compile`/`pip lock` output with hashes) and make the README/Dockerfile/CI install from it, so every documented path resolves identical files.\n\n**Selected files**\n\n| case | install path | package | version | index | file | sha256 |\n|---|---|---|---|---|---|---|\n| 1 | `pip install .` (pyproject/requirements only, PyPI) | `async-timeout` | – | – | not installed | – |\n| 1 | `uv pip install .` (pyproject/requirements only, PyPI) | `async-timeout` | 5.0.1 | PyPI | [async_timeout-5.0.1-py3-none-any.whl](https://files.pythonhosted.org/packages/fe/ba/e2081de779ca30d473f21f5b30e0e737c438205440784c7dfc81efc2b029/async_timeout-5.0.1-py3-none-any.whl) | `39e3809566ff8535` |\n\nFound by an automated check that resolves the declared dependencies under each documented install path and diffs the selected files. File URLs and sha256 hashes are listed above so the result can be re-checked independently.\n",
+            "url": "https://github.com/NX-AI/tirex/issues/36#issuecomment-5644879737"
+          }
+        ],
+        "pull_requests": [],
+        "interpretation": "仅报告者补充模板化根因说明，未见维护者确认或修复依据。"
+      },
+      "reviewer_original_verdict": "原报告已证误报",
+      "issue_url": "https://github.com/NX-AI/tirex/issues/36",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\26-NX-AI__tirex.md",
+      "case_records": [
+        {
+          "issue": "26",
+          "project": "NX-AI__tirex",
+          "case_id": "async-timeout_3b2fa1-009",
+          "package": "async-timeout",
+          "class": "ONLY_IN_B",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            null,
+            false
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "repo": "zhuang2002/Cobra",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 1,
+      "reason": "差异定位在仓库内附带的diffusers/docker/diffusers-onnxruntime-cpu/Dockerfile。该文件明确使用Python3.10、uv==0.1.11，注释声明预装重依赖并允许setup.py后续覆盖。原报告改用Python3.11和uv0.12.10，并与构造的无CPU索引pip基线比较。该观察不能证明Cobra支持的两条等价安装路径违约。packaging24.1也已在旧triage中确认与PyPI同版本官方工件字节一致，版本落后本身未证明不兼容、恶意替换或功能故障。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/zhuang2002__Cobra/diffusers/docker/diffusers-onnxruntime-cpu/Dockerfile:25",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/zhuang2002__Cobra/diffusers/docker/diffusers-onnxruntime-cpu/Dockerfile:29",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/zhuang2002__Cobra/diffusers/docker/diffusers-onnxruntime-cpu/Dockerfile:28",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/0910issues/27-zhuang2002__Cobra.md:34",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/zhuang2002__Cobra/packaging_8f3d75-009/triage.json:3"
+      ],
+      "corrective_action": "移出确认缺陷计数，保留原始版本差异为候选。先核定附带Dockerfile是否属于Cobra支持入口，再按Python3.10及uv0.1.11恢复顺序安装过程并判定。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:51.182553+00:00",
+        "issue_url": "https://github.com/zhuang2002/Cobra/issues/13",
+        "state": "open",
+        "state_reason": null,
+        "comment_count": 0,
+        "comments": [],
+        "pull_requests": [],
+        "interpretation": "仍开放且没有评论，未见维护者确认、否认或修复依据。"
+      },
+      "reviewer_original_verdict": "原报告证据失配",
+      "issue_url": "https://github.com/zhuang2002/Cobra/issues/13",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\27-zhuang2002__Cobra.md",
+      "case_records": [
+        {
+          "issue": "27",
+          "project": "zhuang2002__Cobra",
+          "case_id": "packaging_8f3d75-009",
+          "package": "packaging",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing between registries, but the file served by pytorch:cpu (packaging 24.1) is byte-identical to PyPI's official file of that version; pypi serves newer 26.3 vs pytorch:cpu 24.1",
+          "requested": [
+            false,
+            false
+          ],
+          "derived": [
+            "declared",
+            "install-path:diffusers/docker/diffusers-onnxruntime-cpu/Dockerfile#2"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "repo": "zerothi/sisl",
+      "technical_verdict": "原报告证据失配",
+      "original_case_count": 1,
+      "reason": "同一pip、同一抽取依赖集在PyPI和TestPyPI+PyPI下选择dateutil2.9.0.post0和3.9.0的记录成立，且旧triage记录两归档内容有差异。真实CI意图是测试上传TestPyPI的sisl版本，但完整命令含sisl[test,viz]==SISL_VERSION，报告抽取时丢掉该直接请求并最小化为xarray==2022.*，尚未证明完整CI最终选择该dateutil或发生行为故障。TestPyPI外溢到传递依赖是可审查配置风险，维护者以第三方依赖、不适合在本项目修复为由关闭，未否认取包差异。报告也未证明任意账户能上传已占用名称、3.9.0有恶意性或项目声明禁止TestPyPI依赖。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/zerothi__sisl/.github/workflows/wheels.yaml:194",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/corpus/repos/zerothi__sisl/.github/workflows/wheels.yaml:226",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/zerothi__sisl/python-dateutil_fcda-001/context_b.json:4",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/zerothi__sisl/python-dateutil_fcda-001/case.json:39",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/zerothi__sisl/python-dateutil_fcda-001/triage.json:44",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/work/issue-audit-20261110/live/28.json:130"
+      ],
+      "corrective_action": "保留已观察的TestPyPI来源外溢候选。恢复准确sisl发布版本、extras和完整CI请求，验证最终安装及来源边界，再决定配置问题归属。维护者关闭记录为范围拒绝，确认缺陷计数暂不纳入。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:58.967120+00:00",
+        "issue_url": "https://github.com/zerothi/sisl/issues/1018",
+        "state": "closed",
+        "state_reason": "completed",
+        "comment_count": 1,
+        "comments": [
+          {
+            "author": "zerothi",
+            "association": "OWNER",
+            "body": "I am not too worried about this, dateutil is a 3rd party requirement, I'll close this as not applicable to fix here. I am not testing dateutil, but rather some fixed versions. ",
+            "url": "https://github.com/zerothi/sisl/issues/1018#issuecomment-5662723917"
+          }
+        ],
+        "pull_requests": [],
+        "interpretation": "维护者以第三方依赖、不适合在本项目修复为由关闭。该意见涉及责任归属，不能否定已记录的取包差异，也没有证明项目功能故障。"
+      },
+      "reviewer_original_verdict": "仅差异缺陷未证实",
+      "classification_note": "派生请求中的差异可以保留，但所测输入没有忠实代表原报告声称的完整支持安装入口。",
+      "observation_status": "派生请求中的TestPyPI差异成立，完整项目CI的缺陷未证实。",
+      "issue_url": "https://github.com/zerothi/sisl/issues/1018",
+      "latest_state": "closed",
+      "latest_state_reason": "completed",
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\28-zerothi__sisl.md",
+      "case_records": [
+        {
+          "issue": "28",
+          "project": "zerothi__sisl",
+          "case_id": "python-dateutil_fcda-001",
+          "package": "python-dateutil",
+          "class": "DIFF_VERSION_DIFF_REGISTRY",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "version shadowing: test-files.pythonhosted.org/packages/e0 serves newer 3.9.0 vs pypi 2.9.0.post0 (same project on both registries; versions on the custom index lag/lead the public index)",
+          "requested": [
+            false,
+            false
+          ],
+          "derived": [
+            "declared",
+            "install-path:.github/workflows/wheels.yaml::test_testpypi[2]#1"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "repo": "lee101/stock-prediction",
+      "technical_verdict": "原报告已证误报",
+      "original_case_count": 1,
+      "reason": "该case只请求pytest-cov。uv锁通过coverage[toml]的python_full_version <= 3.11条件边保存tomli，pip同工件METADATA记录更精确的<=3.11.0a6条件，另有pytest的python_version < 3.11条件。原pip报告的CPython3.11.16环境均不满足这些条件。将锁内旧Python分支的节点当成当前目标必安装依赖，制造了ONLY_IN_B差异。PyTorch索引和源码绑定与该条件差异之间缺少因果证据。",
+      "evidence_paths": [
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/lee101__stock-prediction/runs/ip--github-workflows-ci-fast-yml-fast-unit-tests-3-2_uv_decl_c9d77f/uv.lock:24",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/lee101__stock-prediction/runs/ip--github-workflows-ci-fast-yml-fast-unit-tests-3-2_pip_dec_494a7c/pip-report.json:487",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/results/projects/lee101__stock-prediction/runs/ip--github-workflows-ci-fast-yml-fast-unit-tests-3-2_pip_dec_494a7c/pip-report.json:151",
+        "D:/wsl/personal/dr/paper/FSE2027DependencyResolution/reports/lee101__stock-prediction/tomli_b3bca2-002/context_a.json:5"
+      ],
+      "corrective_action": "更正为条件锁节点误判并移出确认缺陷计数。以同一完整Python目标的活动依赖闭包复核pytest-cov，同时更正无依据的CUDA和依赖混淆根因宣称。",
+      "feedback": {
+        "checked_at_utc": "2026-11-10T09:35:57.981305+00:00",
+        "issue_url": "https://github.com/lee101/stock-prediction/issues/88",
+        "state": "open",
+        "state_reason": null,
+        "comment_count": 0,
+        "comments": [],
+        "pull_requests": [],
+        "interpretation": "仍开放且没有评论，未见维护者确认、否认或修复依据。"
+      },
+      "reviewer_original_verdict": "原报告已证误报",
+      "issue_url": "https://github.com/lee101/stock-prediction/issues/88",
+      "latest_state": "open",
+      "latest_state_reason": null,
+      "original_draft": "D:\\wsl\\personal\\dr\\paper\\FSE2027DependencyResolution\\0910issues\\29-lee101__stock-prediction.md",
+      "case_records": [
+        {
+          "issue": "29",
+          "project": "lee101__stock-prediction",
+          "case_id": "tomli_b3bca2-002",
+          "package": "tomli",
+          "class": "ONLY_IN_B",
+          "type": "B-ResolutionAmbiguity",
+          "triage": "NEEDS_EXPLANATION",
+          "reason": "package present in only one context (dependency-graph difference); requires reading both graphs",
+          "requested": [
+            null,
+            false
+          ],
+          "derived": [
+            "declared",
+            "declared"
+          ]
+        }
+      ]
+    }
+  ],
+  "marker_checks": [
+    {
+      "issue": "05",
+      "project": "wandahangFY__YOLOv11-RGBT",
+      "package": "tomli",
+      "case_id": "tomli_b3bca2-030",
+      "raw_lock": "results\\projects\\wandahangFY__YOLOv11-RGBT\\runs\\ip--github-workflows-ci-yml-Benchmarks-3-1_uv_ip-github-work_4fd09c\\uv.lock",
+      "incoming_edges": [
+        {
+          "parent": "coverage",
+          "kind": "extra:toml",
+          "dep": "tomli",
+          "marker": "python_full_version <= '3.11'",
+          "active_cpython31116": false
+        }
+      ]
+    },
+    {
+      "issue": "09",
+      "project": "NVlabs__RoboLab",
+      "package": "cffi",
+      "case_id": "cffi_ee8bb3-007",
+      "raw_lock": "results\\projects\\NVlabs__RoboLab\\runs\\declared-runtime_uv_declared_13017a\\uv.lock",
+      "incoming_edges": [
+        {
+          "parent": "pyzmq",
+          "kind": "dependencies",
+          "dep": "cffi",
+          "marker": "implementation_name == 'pypy'",
+          "active_cpython31116": false
+        }
+      ]
+    },
+    {
+      "issue": "21",
+      "project": "rllm-team__rllm",
+      "package": "cffi",
+      "case_id": "cffi_ee8bb3-003",
+      "raw_lock": "results\\projects\\rllm-team__rllm\\runs\\reqfile-docs-requirements-txt_uv_declared_d2c703\\uv.lock",
+      "incoming_edges": [
+        {
+          "parent": "pyzmq",
+          "kind": "dependencies",
+          "dep": "cffi",
+          "marker": "implementation_name == 'pypy'",
+          "active_cpython31116": false
+        }
+      ]
+    },
+    {
+      "issue": "22",
+      "project": "AOT-Technologies__forms-flow-ai",
+      "package": "async-timeout",
+      "case_id": "async-timeout_3b2fa1-010",
+      "raw_lock": "results\\projects\\AOT-Technologies__forms-flow-ai\\runs\\reqfile-forms-flow-api-utils-requirements-txt_uv_declared_d86adf\\uv.lock",
+      "incoming_edges": [
+        {
+          "parent": "redis",
+          "kind": "dependencies",
+          "dep": "async-timeout",
+          "marker": "python_full_version < '3.11.3'",
+          "active_cpython31116": false
+        }
+      ]
+    },
+    {
+      "issue": "23",
+      "project": "NVIDIA-AI-Blueprints__cuFOLIO",
+      "package": "cffi",
+      "case_id": "cffi_ee8bb3-001",
+      "raw_lock": "results\\projects\\NVIDIA-AI-Blueprints__cuFOLIO\\runs\\ip-ci-utils-run-notebooks-sh-2_uv_declared_797c92\\uv.lock",
+      "incoming_edges": [
+        {
+          "parent": "pyzmq",
+          "kind": "dependencies",
+          "dep": "cffi",
+          "marker": "implementation_name == 'pypy'",
+          "active_cpython31116": false
+        }
+      ]
+    },
+    {
+      "issue": "26",
+      "project": "NX-AI__tirex",
+      "package": "async-timeout",
+      "case_id": "async-timeout_3b2fa1-009",
+      "raw_lock": "results\\projects\\NX-AI__tirex\\runs\\reqfile-inference-requirements-txt_uv_declared_40bb72\\uv.lock",
+      "incoming_edges": [
+        {
+          "parent": "redis",
+          "kind": "dependencies",
+          "dep": "async-timeout",
+          "marker": "python_full_version < '3.11.3'",
+          "active_cpython31116": false
+        }
+      ]
+    },
+    {
+      "issue": "29",
+      "project": "lee101__stock-prediction",
+      "package": "tomli",
+      "case_id": "tomli_b3bca2-002",
+      "raw_lock": "results\\projects\\lee101__stock-prediction\\runs\\ip--github-workflows-ci-fast-yml-fast-unit-tests-3-2_uv_decl_c9d77f\\uv.lock",
+      "incoming_edges": [
+        {
+          "parent": "coverage",
+          "kind": "extra:toml",
+          "dep": "tomli",
+          "marker": "python_full_version <= '3.11'",
+          "active_cpython31116": false
+        }
+      ]
+    }
+  ],
+  "source_revisions": [
+    {
+      "issue": 1,
+      "draft": "0910issues\\01-HKUDS__VideoAgent.md",
+      "repository": "corpus\\repos\\HKUDS__VideoAgent",
+      "expected_commit": "f207987e3cffb554aaa6ffdbe733efb30f4b51ed",
+      "current_commit": "f207987e3cffb554aaa6ffdbe733efb30f4b51ed",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 2,
+      "draft": "0910issues\\02-denizsafak__abogen.md",
+      "repository": "corpus\\repos\\denizsafak__abogen",
+      "expected_commit": "be74c695075e1561df20f00b79512e2b502faf11",
+      "current_commit": "be74c695075e1561df20f00b79512e2b502faf11",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 3,
+      "draft": "0910issues\\03-wladradchenko__wunjo.wladradchenko.ru.md",
+      "repository": "corpus\\repos\\wladradchenko__wunjo.wladradchenko.ru",
+      "expected_commit": "23e163816d2522d5305a6958149223c36531aa43",
+      "current_commit": "23e163816d2522d5305a6958149223c36531aa43",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 4,
+      "draft": "0910issues\\04-Vchitect__Evaluation-Agent.md",
+      "repository": "corpus\\repos\\Vchitect__Evaluation-Agent",
+      "expected_commit": "ff16975655a5852647ab2ebb542291a3031dd29f",
+      "current_commit": "ff16975655a5852647ab2ebb542291a3031dd29f",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 5,
+      "draft": "0910issues\\05-wandahangFY__YOLOv11-RGBT.md",
+      "repository": "corpus\\repos\\wandahangFY__YOLOv11-RGBT",
+      "expected_commit": "9cc2e208a3d3e8452e15b5ef47e1c536766aa1f7",
+      "current_commit": "9cc2e208a3d3e8452e15b5ef47e1c536766aa1f7",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 6,
+      "draft": "0910issues\\06-mitkox__vllm-turboquant.md",
+      "repository": "corpus\\repos\\mitkox__vllm-turboquant",
+      "expected_commit": "c6b2ee90d17eecb43c0afa273ae5ef8ecc8a1a3d",
+      "current_commit": "c6b2ee90d17eecb43c0afa273ae5ef8ecc8a1a3d",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 7,
+      "draft": "0910issues\\07-ruvnet__agentic-flow.md",
+      "repository": "corpus\\repos\\ruvnet__agentic-flow",
+      "expected_commit": "d3735a33533da2e12a68439177a791bf1c5c91e1",
+      "current_commit": "d3735a33533da2e12a68439177a791bf1c5c91e1",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 8,
+      "draft": "0910issues\\08-AdaptiveMotorControlLab__CEBRA.md",
+      "repository": "corpus\\repos\\AdaptiveMotorControlLab__CEBRA",
+      "expected_commit": "d1842ccc659bdf2d458ab31784ae029b9d48d21f",
+      "current_commit": "d1842ccc659bdf2d458ab31784ae029b9d48d21f",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 9,
+      "draft": "0910issues\\09-NVlabs__RoboLab.md",
+      "repository": "corpus\\repos\\NVlabs__RoboLab",
+      "expected_commit": "9db0aaf09d9fe5d4f37b168320788258c7012463",
+      "current_commit": "9db0aaf09d9fe5d4f37b168320788258c7012463",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 10,
+      "draft": "0910issues\\10-fishaudio__fish-speech.md",
+      "repository": "corpus\\repos\\fishaudio__fish-speech",
+      "expected_commit": "befe4001745417f8c42131739d862b8a6fdbd15a",
+      "current_commit": "befe4001745417f8c42131739d862b8a6fdbd15a",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 11,
+      "draft": "0910issues\\11-jamiepine__voicebox.md",
+      "repository": "corpus\\repos\\jamiepine__voicebox",
+      "expected_commit": "51f49dea198384b4eb6087b72c17057c6eb1c1cd",
+      "current_commit": "51f49dea198384b4eb6087b72c17057c6eb1c1cd",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 12,
+      "draft": "0910issues\\12-bmaltais__kohya_ss.md",
+      "repository": "corpus\\repos\\bmaltais__kohya_ss",
+      "expected_commit": "45088f04af78e11cec5407ff4652ea3ed2c14422",
+      "current_commit": "45088f04af78e11cec5407ff4652ea3ed2c14422",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 13,
+      "draft": "0910issues\\13-k2-fsa__OmniVoice.md",
+      "repository": "corpus\\repos\\k2-fsa__OmniVoice",
+      "expected_commit": "08be0b4ccbac3e13e374e86fbfead4b4cac343e2",
+      "current_commit": "08be0b4ccbac3e13e374e86fbfead4b4cac343e2",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 14,
+      "draft": "0910issues\\14-stepfun-ai__Step-3.5-Flash.md",
+      "repository": "corpus\\repos\\stepfun-ai__Step-3.5-Flash",
+      "expected_commit": "21d85a5f6c291f3f138da0bc09979af43345251a",
+      "current_commit": "21d85a5f6c291f3f138da0bc09979af43345251a",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 15,
+      "draft": "0910issues\\15-guqiong96__Lvllm.md",
+      "repository": "corpus\\repos\\guqiong96__Lvllm",
+      "expected_commit": "30b0f47031fb7885676f1da132a001a16cfb73fb",
+      "current_commit": "30b0f47031fb7885676f1da132a001a16cfb73fb",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 16,
+      "draft": "0910issues\\16-wagtail__Willow.md",
+      "repository": "corpus\\repos\\wagtail__Willow",
+      "expected_commit": "91c9176046836aa4698d6448a259e80f096108c6",
+      "current_commit": "91c9176046836aa4698d6448a259e80f096108c6",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 17,
+      "draft": "0910issues\\17-tc-mb__llama.cpp-omni.md",
+      "repository": "corpus\\repos\\tc-mb__llama.cpp-omni",
+      "expected_commit": "64d092c60db4b4ee45768476bd752f03fdcc98ea",
+      "current_commit": "64d092c60db4b4ee45768476bd752f03fdcc98ea",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 18,
+      "draft": "0910issues\\18-NVIDIA__TensorRT-Incubator.md",
+      "repository": "corpus\\repos\\NVIDIA__TensorRT-Incubator",
+      "expected_commit": "e5b2b59572155f4259cf8bc8a9d220600f054949",
+      "current_commit": "e5b2b59572155f4259cf8bc8a9d220600f054949",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 19,
+      "draft": "0910issues\\19-shenyangHuang__TGB.md",
+      "repository": "corpus\\repos\\shenyangHuang__TGB",
+      "expected_commit": "3b83e5cfb2010743fd4f7a80a01b0e19dfcf78cb",
+      "current_commit": "3b83e5cfb2010743fd4f7a80a01b0e19dfcf78cb",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 20,
+      "draft": "0910issues\\20-TencentARC__ColorFlow.md",
+      "repository": "corpus\\repos\\TencentARC__ColorFlow",
+      "expected_commit": "09d9e1941403e7828bf5af7b5ecb286e9fdcb134",
+      "current_commit": "09d9e1941403e7828bf5af7b5ecb286e9fdcb134",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 21,
+      "draft": "0910issues\\21-rllm-team__rllm.md",
+      "repository": "corpus\\repos\\rllm-team__rllm",
+      "expected_commit": "7421bf22491516119d7d57fcb67019d9ef02164a",
+      "current_commit": "7421bf22491516119d7d57fcb67019d9ef02164a",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 22,
+      "draft": "0910issues\\22-AOT-Technologies__forms-flow-ai.md",
+      "repository": "corpus\\repos\\AOT-Technologies__forms-flow-ai",
+      "expected_commit": "9631e43f806010ba1f7e57de86cb1b9158ced683",
+      "current_commit": "9631e43f806010ba1f7e57de86cb1b9158ced683",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 23,
+      "draft": "0910issues\\23-NVIDIA-AI-Blueprints__cuFOLIO.md",
+      "repository": "corpus\\repos\\NVIDIA-AI-Blueprints__cuFOLIO",
+      "expected_commit": "424fbae7bff585142beeb30150e76a70352bde84",
+      "current_commit": "424fbae7bff585142beeb30150e76a70352bde84",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 24,
+      "draft": "0910issues\\24-styler00dollar__VSGAN-tensorrt-docker.md",
+      "repository": "corpus\\repos\\styler00dollar__VSGAN-tensorrt-docker",
+      "expected_commit": "f4c06ed08e0d09952cf8671ec453f53c029c2158",
+      "current_commit": "f4c06ed08e0d09952cf8671ec453f53c029c2158",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 25,
+      "draft": "0910issues\\25-antirez__llama.cpp-deepseek-v4-flash.md",
+      "repository": "corpus\\repos\\antirez__llama.cpp-deepseek-v4-flash",
+      "expected_commit": "2f2d44052b7d15c9c4dd6610f6e14a5f7b2d5f3f",
+      "current_commit": "2f2d44052b7d15c9c4dd6610f6e14a5f7b2d5f3f",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 26,
+      "draft": "0910issues\\26-NX-AI__tirex.md",
+      "repository": "corpus\\repos\\NX-AI__tirex",
+      "expected_commit": "2226da4c9fa298ff34ad5af05369851674d622e5",
+      "current_commit": "2226da4c9fa298ff34ad5af05369851674d622e5",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 27,
+      "draft": "0910issues\\27-zhuang2002__Cobra.md",
+      "repository": "corpus\\repos\\zhuang2002__Cobra",
+      "expected_commit": "48d6168838e05fbb707f393441219069aa33733b",
+      "current_commit": "48d6168838e05fbb707f393441219069aa33733b",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 28,
+      "draft": "0910issues\\28-zerothi__sisl.md",
+      "repository": "corpus\\repos\\zerothi__sisl",
+      "expected_commit": "4a784283e9e2333392b5104e009c55a2b788fce3",
+      "current_commit": "4a784283e9e2333392b5104e009c55a2b788fce3",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    },
+    {
+      "issue": 29,
+      "draft": "0910issues\\29-lee101__stock-prediction.md",
+      "repository": "corpus\\repos\\lee101__stock-prediction",
+      "expected_commit": "114e49092bf2cd29e2d3cb89bedc604dae1bd66f",
+      "current_commit": "114e49092bf2cd29e2d3cb89bedc604dae1bd66f",
+      "matches": true,
+      "tracked_status": [],
+      "status_checked": true
+    }
+  ]
+}

@@ -1,0 +1,1209 @@
+{
+  "schema": "ultralytics-extra-manual-actual-admission-v1",
+  "reviewed_at_utc": "2026-11-11T06:45:41.334608+00:00",
+  "admission_tool": {
+    "path": "work/stateful-workflows-20261111/review/admit_ultralytics_extra_actual.py",
+    "sha256": "12d427daab39bc5ef56507be5ed3782ef18fa3f9ab313e577b2a3a8bb4f4cda8"
+  },
+  "independent_fixed_point_checker": {
+    "path": "work/stateful-workflows-20261111/review/review_saved_partial_stages.py",
+    "sha256": "f644cbb5b88fbd6bf2e9e24139b354928428b1fbce12eee2b766bf2c5d1851c7"
+  },
+  "status": "confirmed_real_project_incompatible_provider_declaration_and_extra_removal_failure",
+  "canonical_root": "ultralytics",
+  "repo": "ultralytics/ultralytics",
+  "tested_version": "8.4.208",
+  "runtime_extra": "extra",
+  "native_target": "CPython3.11.16 Linux x86_64",
+  "failure_mode": "Metadata/version closure is valid, but jointly required mutually exclusive distributions overwrite shared original payloads; removing the extra deletes files still required by the retained base provider.",
+  "selection_provenance": {
+    "supplemental_targeted_extra": true,
+    "replaces_original_min_extra_sample": false,
+    "risk_candidate": {
+      "path": "work/stateful-workflows-20261111/review/namespace-exclusivity-addendum/candidate-ultralytics-extra.json",
+      "sha256": "12a7353c051317c9db0fe4074fc135ec4468a017194a0154253819b8291724db"
+    }
+  },
+  "attribution": "Ultralytics base requires opencv-python while its published extra selects Albumentations2.0.8 requiring opencv-python-headless. The two publishers' cv2 payloads conflict. Removing extra deletes retained base provider files. This is a real upstream dependency-declaration/workflow instance of a known shared-file ownership limitation, not a new uv resolver mechanism.",
+  "actual_request_scope": "Repeat original active torch>=1.8.0 and torchvision>=0.9.0 directly to activate official named CPU source. Main exact pin and runtime extra unchanged; no dependency deletion, metadata edit, old Albumentations pin or no-deps.",
+  "pure_pypi_difference": "Torch and torchvision come from their official CPU index instead of default PyPI GPU builds. All other packages use official PyPI; complete unmodified upstream artifacts only.",
+  "protocol": {
+    "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/protocol.json",
+    "sha256": "a14bc985631728c13fd5a6e5e01b2245e88eeeaa0b63da3f377312d7fa6eb5d7"
+  },
+  "actual_result": {
+    "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/results.json",
+    "sha256": "348c18ffeb20885fdbaab59e7fe09c931e7e8028c4aa3fd240047d75bd1d798e"
+  },
+  "actual_driver": {
+    "path": "work/stateful-workflows-20261111/review/ultralytics_extra_actual.py",
+    "sha256": "5f314a5b4f9c9c6890399cda1eef06b903b71b0d153217ffe7748e105f10619c"
+  },
+  "official_artifact_proof": {
+    "complete_original_archives_rehashed_again_at_admission": 66,
+    "compressed_union_bytes": 509176390,
+    "metadata_own_wheel_verified": 66,
+    "preparations": [
+      {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/preparation/base.json",
+        "sha256": "af8540f6415b323e0a5c4ad3d528f745db3fd7186e90774125453e66c239f756"
+      },
+      {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/preparation/extra.json",
+        "sha256": "5e0d4923ae2e04b86f11d2e3f36bb34211df428af49f639afd456a052fa30f43"
+      },
+      {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/preparation/base-restored.json",
+        "sha256": "0acd817d75b1c8b69dd8acf31030d66fe40698a5542c846db86202b00276e6dc"
+      }
+    ]
+  },
+  "stages": [
+    {
+      "label": "base",
+      "installed_distributions": 39,
+      "actual_command": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/base-sync/command.json",
+        "sha256": "2f99d5a558b11fe70a22c132c5d5c25b2b95a28c0aeaa2f80148165b398acab4",
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+          "--no-config",
+          "sync",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+          "--no-python-downloads",
+          "--no-build",
+          "--locked",
+          "--no-install-project",
+          "--no-default-groups",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 437.542
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base/installed.json",
+        "sha256": "51eb25d79b4b26403dc1ec49bf602b103c5a9f4b5453ef9377aa66af6653fb63"
+      },
+      "saved_result": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base/results.json",
+        "sha256": "41de40f82680e1e74a2c090a0e0b852ed6d6110cc6508dec980f1ef944357414"
+      },
+      "file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base/file-audit.json",
+        "sha256": "800bebbc7a11407414702f37bdfad512f9ef7a05d273b7b8c943c929c1c712e5"
+      },
+      "metadata_matches_own_exact_original_wheel": 39,
+      "independent_root_closure": {
+        "active_roots": 3,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "independent_all_base_closure": {
+        "active_roots": 42,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "check_and_inspect_commands": {
+        "pip-check": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/base-pip-check/command.json",
+          "sha256": "574a3120719e0fa1d21332a494eb0a8e8e63ee449c8c14cbd0b2c0eee2ae9e77",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-B",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/warm/bin/python",
+            "check"
+          ],
+          "exit": 0,
+          "seconds": 7.449
+        },
+        "uv-check": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/base-uv-check/command.json",
+          "sha256": "36a49bdde02d2a1589df2b909c722e23d3480a17bc12d63c014f93b53a1950f6",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+            "--no-config",
+            "pip",
+            "check",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/warm/bin/python"
+          ],
+          "exit": 0,
+          "seconds": 1.328
+        },
+        "pip-inspect": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/base-pip-inspect/command.json",
+          "sha256": "c01cf330cb3359b2200b8279b876acfa338caf81b703a865668ae5dbb4b6e54a",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-B",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/warm/bin/python",
+            "inspect",
+            "--local"
+          ],
+          "exit": 0,
+          "seconds": 18.42
+        }
+      },
+      "all_original_payload_checks": 19378,
+      "all_installed_record_hash_checks": 19485,
+      "original_auditor_unknown_count_retained": 2,
+      "file_violation_entries": 0,
+      "unique_file_paths_violating": 0,
+      "normal_cv2_missing": [],
+      "normal_cv2_mismatches": [],
+      "cv2_smoke_exit": 0,
+      "cv2_smoke_command": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/base-cv2-smoke/command.json",
+        "sha256": "d2e2bcbd6559b8822014b12de896b5fa3426277acf6d9553b4271a5a94aafd33",
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/warm/bin/python",
+          "-B",
+          "-I",
+          "-c",
+          "import cv2,numpy as np,json; a=cv2.cvtColor(np.zeros((2,2,3),dtype=np.uint8),cv2.COLOR_BGR2GRAY); assert a.shape==(2,2); print(json.dumps({'cv2_version':cv2.__version__,'cv2_file':cv2.__file__,'cvtColor_shape':list(a.shape)}))"
+        ],
+        "exit": 0,
+        "seconds": 12.311
+      },
+      "manifest_sha256": "577a33fa107e91eca991c1c7f02e125994de5dc2f28a108b7c0eb5c4ea5b17b3",
+      "lock_sha256": "6ddaab7950c19485fd95936daafd3f226c606384168d8279786d4f51272041e1",
+      "headless_installed": false
+    },
+    {
+      "label": "extra",
+      "installed_distributions": 66,
+      "actual_command": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/extra-sync/command.json",
+        "sha256": "2c9f5ebc00d4c7455ff6a16156845ce85a30359fbaa6bf4f58008e7941646c37",
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+          "--no-config",
+          "sync",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+          "--no-python-downloads",
+          "--no-build",
+          "--locked",
+          "--no-install-project",
+          "--no-default-groups",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 375.108
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/installed.json",
+        "sha256": "bb5609d2711e152264034aa20ef49e942ad3bc0d057e05c9012c82856718325e"
+      },
+      "saved_result": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/results.json",
+        "sha256": "7a1da5f36903e3ed1e6a814d5aea103237e6f787b403cb509f3c2ccb301af9b8"
+      },
+      "file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/extra/file-audit.json",
+        "sha256": "598553eb94e02e30e133b10ec6c5e2bb8f362969b98fc9195d098c40788b722d"
+      },
+      "metadata_matches_own_exact_original_wheel": 66,
+      "independent_root_closure": {
+        "active_roots": 3,
+        "reachable_nodes": 66,
+        "active_edges": 92,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "independent_all_base_closure": {
+        "active_roots": 69,
+        "reachable_nodes": 66,
+        "active_edges": 92,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "check_and_inspect_commands": {
+        "pip-check": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/extra-pip-check/command.json",
+          "sha256": "21f6ce7e30b7ba18e781122e0393bd7a558255f5fa5412fb18f12e0e08892832",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-B",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/warm/bin/python",
+            "check"
+          ],
+          "exit": 0,
+          "seconds": 12.617
+        },
+        "uv-check": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/extra-uv-check/command.json",
+          "sha256": "21b65899e3c2f74cd9acd0833b7a60863cd34b949c363286616d4118ef89969d",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+            "--no-config",
+            "pip",
+            "check",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/warm/bin/python"
+          ],
+          "exit": 0,
+          "seconds": 2.687
+        },
+        "pip-inspect": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/extra-pip-inspect/command.json",
+          "sha256": "4cbf49c1310273ffee51fd2a6b8661b3ffca427017d891af35134b4e0e31f1bf",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-B",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/warm/bin/python",
+            "inspect",
+            "--local"
+          ],
+          "exit": 0,
+          "seconds": 18.236
+        }
+      },
+      "all_original_payload_checks": 27653,
+      "all_installed_record_hash_checks": 27822,
+      "original_auditor_unknown_count_retained": 7,
+      "file_violation_entries": 6,
+      "unique_file_paths_violating": 3,
+      "normal_cv2_missing": [],
+      "normal_cv2_mismatches": [
+        "cv2/cv2.abi3.so",
+        "cv2/version.py",
+        "cv2/typing/__init__.py"
+      ],
+      "cv2_smoke_exit": 0,
+      "cv2_smoke_command": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/extra-cv2-smoke/command.json",
+        "sha256": "a522006f3fdf893034cd296692fc46185652ef6f89a1b4af220e2941e930d543",
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/warm/bin/python",
+          "-B",
+          "-I",
+          "-c",
+          "import cv2,numpy as np,json; a=cv2.cvtColor(np.zeros((2,2,3),dtype=np.uint8),cv2.COLOR_BGR2GRAY); assert a.shape==(2,2); print(json.dumps({'cv2_version':cv2.__version__,'cv2_file':cv2.__file__,'cvtColor_shape':list(a.shape)}))"
+        ],
+        "exit": 0,
+        "seconds": 2.942
+      },
+      "manifest_sha256": "83d1282b28cdb88d120f2ad15ef32a2114e45e6c7e3f51119ffb299f83aa9bef",
+      "lock_sha256": "4945d6f5f646d6f354690e35c0ed95e8e94ec76a1e7875792f5155a6b66bcece",
+      "headless_installed": true
+    },
+    {
+      "label": "base-restored",
+      "installed_distributions": 39,
+      "actual_command": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/base-restored-sync/command.json",
+        "sha256": "8a7fa0da0be13e6d79adb9eb8f7d3918f8cf8848001ec3707ae27bf33cc1e1b3",
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+          "--no-config",
+          "sync",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+          "--no-python-downloads",
+          "--no-build",
+          "--locked",
+          "--no-install-project",
+          "--no-default-groups",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 171.147
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base-restored/installed.json",
+        "sha256": "51eb25d79b4b26403dc1ec49bf602b103c5a9f4b5453ef9377aa66af6653fb63"
+      },
+      "saved_result": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base-restored/results.json",
+        "sha256": "d22b3bb98c457f124063f563c2e974e81f77ddab5e7a284a704ed0c289bfee1d"
+      },
+      "file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/base-restored/file-audit.json",
+        "sha256": "c63c8d37b0334be161cd0fc9629dd61d42dac8c1154cf68c7c90ea5fed85f445"
+      },
+      "metadata_matches_own_exact_original_wheel": 39,
+      "independent_root_closure": {
+        "active_roots": 3,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "independent_all_base_closure": {
+        "active_roots": 42,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "check_and_inspect_commands": {
+        "pip-check": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/base-restored-pip-check/command.json",
+          "sha256": "6f1d95fe3d58fb6262d385c517dc28cc6a64c3213b1252dfe005f558b5df86c5",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-B",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/warm/bin/python",
+            "check"
+          ],
+          "exit": 0,
+          "seconds": 10.858
+        },
+        "uv-check": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/base-restored-uv-check/command.json",
+          "sha256": "a30ffbaf8ae023629e23be8d8512f48b4cc4e461cfb3917a4f30cd9b2e8b47d0",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+            "--no-config",
+            "pip",
+            "check",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/warm/bin/python"
+          ],
+          "exit": 0,
+          "seconds": 1.38
+        },
+        "pip-inspect": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/base-restored-pip-inspect/command.json",
+          "sha256": "f6b059f1ed7a102c4661e9703d8eb06b0730441ddcaf082d4048ce10000963c8",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-B",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/warm/bin/python",
+            "inspect",
+            "--local"
+          ],
+          "exit": 0,
+          "seconds": 16.626
+        }
+      },
+      "all_original_payload_checks": 19378,
+      "all_installed_record_hash_checks": 19485,
+      "original_auditor_unknown_count_retained": 2,
+      "file_violation_entries": 78,
+      "unique_file_paths_violating": 39,
+      "normal_cv2_missing": [
+        "cv2/LICENSE-3RD-PARTY.txt",
+        "cv2/LICENSE.txt",
+        "cv2/__init__.py",
+        "cv2/__init__.pyi",
+        "cv2/config-3.py",
+        "cv2/config.py",
+        "cv2/cv2.abi3.so",
+        "cv2/load_config_py2.py",
+        "cv2/load_config_py3.py",
+        "cv2/py.typed",
+        "cv2/version.py",
+        "cv2/Error/__init__.pyi",
+        "cv2/aruco/__init__.pyi",
+        "cv2/barcode/__init__.pyi",
+        "cv2/ccm/__init__.pyi",
+        "cv2/cuda/__init__.pyi",
+        "cv2/data/__init__.py",
+        "cv2/detail/__init__.pyi",
+        "cv2/dnn/__init__.pyi",
+        "cv2/fisheye/__init__.pyi",
+        "cv2/flann/__init__.pyi",
+        "cv2/instr/__init__.pyi",
+        "cv2/ipp/__init__.pyi",
+        "cv2/mat_wrapper/__init__.py",
+        "cv2/mcc/__init__.pyi",
+        "cv2/misc/__init__.py",
+        "cv2/misc/version.py",
+        "cv2/ocl/__init__.pyi",
+        "cv2/ogl/__init__.pyi",
+        "cv2/parallel/__init__.pyi",
+        "cv2/samples/__init__.pyi",
+        "cv2/segmentation/__init__.pyi",
+        "cv2/typing/__init__.py",
+        "cv2/utils/__init__.py",
+        "cv2/utils/__init__.pyi",
+        "cv2/utils/fs/__init__.pyi",
+        "cv2/utils/logging/__init__.pyi",
+        "cv2/utils/nested/__init__.pyi",
+        "cv2/videoio_registry/__init__.pyi"
+      ],
+      "normal_cv2_mismatches": [
+        "cv2/LICENSE-3RD-PARTY.txt",
+        "cv2/LICENSE.txt",
+        "cv2/__init__.py",
+        "cv2/__init__.pyi",
+        "cv2/config-3.py",
+        "cv2/config.py",
+        "cv2/cv2.abi3.so",
+        "cv2/load_config_py2.py",
+        "cv2/load_config_py3.py",
+        "cv2/py.typed",
+        "cv2/version.py",
+        "cv2/Error/__init__.pyi",
+        "cv2/aruco/__init__.pyi",
+        "cv2/barcode/__init__.pyi",
+        "cv2/ccm/__init__.pyi",
+        "cv2/cuda/__init__.pyi",
+        "cv2/data/__init__.py",
+        "cv2/detail/__init__.pyi",
+        "cv2/dnn/__init__.pyi",
+        "cv2/fisheye/__init__.pyi",
+        "cv2/flann/__init__.pyi",
+        "cv2/instr/__init__.pyi",
+        "cv2/ipp/__init__.pyi",
+        "cv2/mat_wrapper/__init__.py",
+        "cv2/mcc/__init__.pyi",
+        "cv2/misc/__init__.py",
+        "cv2/misc/version.py",
+        "cv2/ocl/__init__.pyi",
+        "cv2/ogl/__init__.pyi",
+        "cv2/parallel/__init__.pyi",
+        "cv2/samples/__init__.pyi",
+        "cv2/segmentation/__init__.pyi",
+        "cv2/typing/__init__.py",
+        "cv2/utils/__init__.py",
+        "cv2/utils/__init__.pyi",
+        "cv2/utils/fs/__init__.pyi",
+        "cv2/utils/logging/__init__.pyi",
+        "cv2/utils/nested/__init__.pyi",
+        "cv2/videoio_registry/__init__.pyi"
+      ],
+      "cv2_smoke_exit": 1,
+      "cv2_smoke_command": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/base-restored-cv2-smoke/command.json",
+        "sha256": "a04d7421a3ca8667ce34031aba9575a0b99c3cb5354e4afda504ed45dd9a8bc4",
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/warm/bin/python",
+          "-B",
+          "-I",
+          "-c",
+          "import cv2,numpy as np,json; a=cv2.cvtColor(np.zeros((2,2,3),dtype=np.uint8),cv2.COLOR_BGR2GRAY); assert a.shape==(2,2); print(json.dumps({'cv2_version':cv2.__version__,'cv2_file':cv2.__file__,'cvtColor_shape':list(a.shape)}))"
+        ],
+        "exit": 1,
+        "seconds": 1.937
+      },
+      "manifest_sha256": "577a33fa107e91eca991c1c7f02e125994de5dc2f28a108b7c0eb5c4ea5b17b3",
+      "lock_sha256": "6ddaab7950c19485fd95936daafd3f226c606384168d8279786d4f51272041e1",
+      "headless_installed": false
+    },
+    {
+      "label": "fresh-final",
+      "installed_distributions": 39,
+      "actual_command": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/fresh-final-sync/command.json",
+        "sha256": "1039153e85713589bfcada323e00d4c7fd9c096de1cd7cc1863924d3747a3ed6",
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+          "--no-config",
+          "sync",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+          "--no-python-downloads",
+          "--no-build",
+          "--locked",
+          "--no-install-project",
+          "--no-default-groups",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 655.637
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/fresh-final/installed.json",
+        "sha256": "fbffbfdb89e77a31f7062015002aceb84e86bf5329366f4a0e7cc141c18eb571"
+      },
+      "saved_result": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/fresh-final/results.json",
+        "sha256": "d63d959defc99a2c306959da50d697af16072eeb2f36175c88fb946cf14d01cc"
+      },
+      "file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/fresh-final/file-audit.json",
+        "sha256": "800bebbc7a11407414702f37bdfad512f9ef7a05d273b7b8c943c929c1c712e5"
+      },
+      "metadata_matches_own_exact_original_wheel": 39,
+      "independent_root_closure": {
+        "active_roots": 3,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "independent_all_base_closure": {
+        "active_roots": 42,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "check_and_inspect_commands": {
+        "pip-check": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/fresh-final-pip-check/command.json",
+          "sha256": "0604878059347638c617bfff96f850c87bfe9cf3bd29cd01957256d79b77d85a",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-B",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/fresh/bin/python",
+            "check"
+          ],
+          "exit": 0,
+          "seconds": 6.893
+        },
+        "uv-check": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/fresh-final-uv-check/command.json",
+          "sha256": "c6ac9d69794b736b63892f06a4b11b98c6833e96e816aaf2ea31a90afaeb6bf5",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+            "--no-config",
+            "pip",
+            "check",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/fresh/bin/python"
+          ],
+          "exit": 0,
+          "seconds": 1.126
+        },
+        "pip-inspect": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/fresh-final-pip-inspect/command.json",
+          "sha256": "5a038de14f743adcc103f9a721ef78c53d2a7a5b537e365fc5655686d139bce0",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-B",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/fresh/bin/python",
+            "inspect",
+            "--local"
+          ],
+          "exit": 0,
+          "seconds": 11.108
+        }
+      },
+      "all_original_payload_checks": 19378,
+      "all_installed_record_hash_checks": 19485,
+      "original_auditor_unknown_count_retained": 2,
+      "file_violation_entries": 0,
+      "unique_file_paths_violating": 0,
+      "normal_cv2_missing": [],
+      "normal_cv2_mismatches": [],
+      "cv2_smoke_exit": 0,
+      "cv2_smoke_command": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/fresh-final-cv2-smoke/command.json",
+        "sha256": "f600eb2e766d1f987baa27538bf28e61e9ffbf5a62c1a87c64fd5d437717e6c8",
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/fresh/bin/python",
+          "-B",
+          "-I",
+          "-c",
+          "import cv2,numpy as np,json; a=cv2.cvtColor(np.zeros((2,2,3),dtype=np.uint8),cv2.COLOR_BGR2GRAY); assert a.shape==(2,2); print(json.dumps({'cv2_version':cv2.__version__,'cv2_file':cv2.__file__,'cvtColor_shape':list(a.shape)}))"
+        ],
+        "exit": 0,
+        "seconds": 2.34
+      },
+      "manifest_sha256": "577a33fa107e91eca991c1c7f02e125994de5dc2f28a108b7c0eb5c4ea5b17b3",
+      "lock_sha256": "6ddaab7950c19485fd95936daafd3f226c606384168d8279786d4f51272041e1",
+      "headless_installed": false
+    },
+    {
+      "label": "forced-reinstall-final",
+      "installed_distributions": 39,
+      "actual_command": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/forced-reinstall-final-sync/command.json",
+        "sha256": "86cec5f3a20af05a377b945b64f5a87a6ea60261dd11bf090af6efaee7e42048",
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+          "--no-config",
+          "sync",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+          "--no-python-downloads",
+          "--no-build",
+          "--locked",
+          "--no-install-project",
+          "--no-default-groups",
+          "--verbose",
+          "--reinstall"
+        ],
+        "exit": 0,
+        "seconds": 479.826
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/forced-reinstall-final/installed.json",
+        "sha256": "51eb25d79b4b26403dc1ec49bf602b103c5a9f4b5453ef9377aa66af6653fb63"
+      },
+      "saved_result": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/forced-reinstall-final/results.json",
+        "sha256": "4b8e6174417fd68be19b49d245caf137ad41f789eb5af87f83ed73d15097f1d2"
+      },
+      "file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/forced-reinstall-final/file-audit.json",
+        "sha256": "800bebbc7a11407414702f37bdfad512f9ef7a05d273b7b8c943c929c1c712e5"
+      },
+      "metadata_matches_own_exact_original_wheel": 39,
+      "independent_root_closure": {
+        "active_roots": 3,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "independent_all_base_closure": {
+        "active_roots": 42,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "check_and_inspect_commands": {
+        "pip-check": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/forced-reinstall-final-pip-check/command.json",
+          "sha256": "43da50cc99f1d8bbc194c727bfc6045e3cc477507a3b413de2b52696670154d5",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-B",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/warm/bin/python",
+            "check"
+          ],
+          "exit": 0,
+          "seconds": 11.407
+        },
+        "uv-check": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/forced-reinstall-final-uv-check/command.json",
+          "sha256": "246fdeb5cc9b1977ee72d61cb1def069102a895af999b0fe89e6cd70ca196028",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+            "--no-config",
+            "pip",
+            "check",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/warm/bin/python"
+          ],
+          "exit": 0,
+          "seconds": 1.534
+        },
+        "pip-inspect": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/forced-reinstall-final-pip-inspect/command.json",
+          "sha256": "f1bec24133d1db69ce861efdd0a9ca265776db6c65b5f5395b56dac5b5ff324c",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-B",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/warm/bin/python",
+            "inspect",
+            "--local"
+          ],
+          "exit": 0,
+          "seconds": 6.396
+        }
+      },
+      "all_original_payload_checks": 19378,
+      "all_installed_record_hash_checks": 19485,
+      "original_auditor_unknown_count_retained": 2,
+      "file_violation_entries": 0,
+      "unique_file_paths_violating": 0,
+      "normal_cv2_missing": [],
+      "normal_cv2_mismatches": [],
+      "cv2_smoke_exit": 0,
+      "cv2_smoke_command": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/forced-reinstall-final-cv2-smoke/command.json",
+        "sha256": "d1fa849ac638c36cc79287348c3a8107fc9b927cca65fba5a0ddd97d6c714102",
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/warm/bin/python",
+          "-B",
+          "-I",
+          "-c",
+          "import cv2,numpy as np,json; a=cv2.cvtColor(np.zeros((2,2,3),dtype=np.uint8),cv2.COLOR_BGR2GRAY); assert a.shape==(2,2); print(json.dumps({'cv2_version':cv2.__version__,'cv2_file':cv2.__file__,'cvtColor_shape':list(a.shape)}))"
+        ],
+        "exit": 0,
+        "seconds": 2.192
+      },
+      "manifest_sha256": "577a33fa107e91eca991c1c7f02e125994de5dc2f28a108b7c0eb5c4ea5b17b3",
+      "lock_sha256": "6ddaab7950c19485fd95936daafd3f226c606384168d8279786d4f51272041e1",
+      "headless_installed": false
+    },
+    {
+      "label": "pip-base",
+      "installed_distributions": 39,
+      "actual_command": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/pip-base-install/command.json",
+        "sha256": "554855a803c23d1417123a127790e4ad58175e922e40b4402161ed658e1876d8",
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+          "-B",
+          "-m",
+          "pip",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/pip-incremental/bin/python",
+          "install",
+          "--no-index",
+          "--find-links",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/artifacts",
+          "--no-compile",
+          "--report",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/pip-base-report.json",
+          "ultralytics==8.4.208",
+          "torch>=1.8.0",
+          "torchvision>=0.9.0"
+        ],
+        "exit": 0,
+        "seconds": 467.062
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base/installed.json",
+        "sha256": "d462faf448e097d9881051f35ee3a4270cef07f554d1fa9aeb114a619d4f2b2f"
+      },
+      "saved_result": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base/results.json",
+        "sha256": "8d6728c551a332d01b46fb3f43b201628b8904ae5bc0c7eb6ef5f5bcca32f3db"
+      },
+      "file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base/file-audit.json",
+        "sha256": "18f4ee50383a0ebaa73770085a759e21a1048caaa93142c43ab2e1e5da96065c"
+      },
+      "metadata_matches_own_exact_original_wheel": 39,
+      "independent_root_closure": {
+        "active_roots": 3,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "independent_all_base_closure": {
+        "active_roots": 42,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "check_and_inspect_commands": {
+        "pip-check": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/pip-base-pip-check/command.json",
+          "sha256": "744146b51a21adf35cee3e0099293cfbe72d10cac18f4bf6a04323299e66d032",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-B",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/pip-incremental/bin/python",
+            "check"
+          ],
+          "exit": 0,
+          "seconds": 11.708
+        },
+        "uv-check": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/pip-base-uv-check/command.json",
+          "sha256": "5a50af6f88c351d3c44162da7a9fe3b16cc2ead6667a9564624afa887ce0317d",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+            "--no-config",
+            "pip",
+            "check",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/pip-incremental/bin/python"
+          ],
+          "exit": 0,
+          "seconds": 1.629
+        },
+        "pip-inspect": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/pip-base-pip-inspect/command.json",
+          "sha256": "d580d49cc362cc76a1214197b5c9369fd4fab9193d381372ea75e466f81c819b",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-B",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/pip-incremental/bin/python",
+            "inspect",
+            "--local"
+          ],
+          "exit": 0,
+          "seconds": 10.054
+        }
+      },
+      "all_original_payload_checks": 19378,
+      "all_installed_record_hash_checks": 19449,
+      "original_auditor_unknown_count_retained": 2,
+      "file_violation_entries": 0,
+      "unique_file_paths_violating": 0,
+      "normal_cv2_missing": [],
+      "normal_cv2_mismatches": [],
+      "cv2_smoke_exit": 0,
+      "cv2_smoke_command": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/pip-base-cv2-smoke/command.json",
+        "sha256": "ae7a465cc05c62f3f231492d0546baeb61f9774f6ef1c50b62c59041c0ea06de",
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/pip-incremental/bin/python",
+          "-B",
+          "-I",
+          "-c",
+          "import cv2,numpy as np,json; a=cv2.cvtColor(np.zeros((2,2,3),dtype=np.uint8),cv2.COLOR_BGR2GRAY); assert a.shape==(2,2); print(json.dumps({'cv2_version':cv2.__version__,'cv2_file':cv2.__file__,'cvtColor_shape':list(a.shape)}))"
+        ],
+        "exit": 0,
+        "seconds": 2.339
+      },
+      "manifest_sha256": null,
+      "lock_sha256": null,
+      "headless_installed": false
+    },
+    {
+      "label": "pip-extra",
+      "installed_distributions": 66,
+      "actual_command": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/pip-extra-install/command.json",
+        "sha256": "9687374ea45bdec56f88c25032080c33a6860c8f5b9367f7d5f932aa009a8864",
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+          "-B",
+          "-m",
+          "pip",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/pip-incremental/bin/python",
+          "install",
+          "--no-index",
+          "--find-links",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/artifacts",
+          "--no-compile",
+          "--report",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/pip-extra-report.json",
+          "ultralytics[extra]==8.4.208",
+          "torch>=1.8.0",
+          "torchvision>=0.9.0"
+        ],
+        "exit": 0,
+        "seconds": 196.521
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/installed.json",
+        "sha256": "fcce140e182df7f8f984ef24bcb4963e2d3dc39d9af727108b428ed391bc508f"
+      },
+      "saved_result": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/results.json",
+        "sha256": "fc7080e6fe401d78301dc42b471b68f60ef4abf5a040cb0e3861758b6b6629a5"
+      },
+      "file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-extra/file-audit.json",
+        "sha256": "31a62df74c47663ec4f5318152a78df2955e98403034a08a14dbef9764adca0f"
+      },
+      "metadata_matches_own_exact_original_wheel": 66,
+      "independent_root_closure": {
+        "active_roots": 3,
+        "reachable_nodes": 66,
+        "active_edges": 92,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "independent_all_base_closure": {
+        "active_roots": 69,
+        "reachable_nodes": 66,
+        "active_edges": 92,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "check_and_inspect_commands": {
+        "pip-check": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/pip-extra-pip-check/command.json",
+          "sha256": "b79ea20dd312e4d162bbcbe88dde3100409de75b1c27f47a765f123c0ed13b35",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-B",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/pip-incremental/bin/python",
+            "check"
+          ],
+          "exit": 0,
+          "seconds": 11.006
+        },
+        "uv-check": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/pip-extra-uv-check/command.json",
+          "sha256": "ac49a66527cee1d12be1f86e98674dbe1418f790aa5d80d0d7ff8e4d393d1e2e",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+            "--no-config",
+            "pip",
+            "check",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/pip-incremental/bin/python"
+          ],
+          "exit": 0,
+          "seconds": 1.831
+        },
+        "pip-inspect": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/pip-extra-pip-inspect/command.json",
+          "sha256": "3fbae3ec6909efb5dfe7c4aad1eb771c09e6f364de7df62d78263db2077257fc",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-B",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/pip-incremental/bin/python",
+            "inspect",
+            "--local"
+          ],
+          "exit": 0,
+          "seconds": 10.857
+        }
+      },
+      "all_original_payload_checks": 27653,
+      "all_installed_record_hash_checks": 27759,
+      "original_auditor_unknown_count_retained": 7,
+      "file_violation_entries": 6,
+      "unique_file_paths_violating": 3,
+      "normal_cv2_missing": [],
+      "normal_cv2_mismatches": [
+        "cv2/cv2.abi3.so",
+        "cv2/version.py",
+        "cv2/typing/__init__.py"
+      ],
+      "cv2_smoke_exit": 0,
+      "cv2_smoke_command": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/pip-extra-cv2-smoke/command.json",
+        "sha256": "4205aec09f4cc4edf394eb2e8536f80ac220c8a47f34e57d05e69c2dbe5fcd5f",
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/pip-incremental/bin/python",
+          "-B",
+          "-I",
+          "-c",
+          "import cv2,numpy as np,json; a=cv2.cvtColor(np.zeros((2,2,3),dtype=np.uint8),cv2.COLOR_BGR2GRAY); assert a.shape==(2,2); print(json.dumps({'cv2_version':cv2.__version__,'cv2_file':cv2.__file__,'cvtColor_shape':list(a.shape)}))"
+        ],
+        "exit": 0,
+        "seconds": 1.985
+      },
+      "manifest_sha256": null,
+      "lock_sha256": null,
+      "headless_installed": true
+    },
+    {
+      "label": "pip-base-request-again",
+      "installed_distributions": 66,
+      "actual_command": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/pip-base-request-again-install/command.json",
+        "sha256": "4fc4bdf4030865e22a86082f9a49b8428ea47cb7c193bc93dba865b4a691f3ea",
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+          "-B",
+          "-m",
+          "pip",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/pip-incremental/bin/python",
+          "install",
+          "--no-index",
+          "--find-links",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/artifacts",
+          "--no-compile",
+          "--report",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/pip-base-request-again-report.json",
+          "ultralytics==8.4.208",
+          "torch>=1.8.0",
+          "torchvision>=0.9.0"
+        ],
+        "exit": 0,
+        "seconds": 47.1
+      },
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/installed.json",
+        "sha256": "fcce140e182df7f8f984ef24bcb4963e2d3dc39d9af727108b428ed391bc508f"
+      },
+      "saved_result": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/results.json",
+        "sha256": "3a57166d5bd25ddecd8fdfe7849cf800f1c52c66735fa557fdf1b669ca8d4e1b"
+      },
+      "file_audit": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/stages/pip-base-request-again/file-audit.json",
+        "sha256": "31a62df74c47663ec4f5318152a78df2955e98403034a08a14dbef9764adca0f"
+      },
+      "metadata_matches_own_exact_original_wheel": 66,
+      "independent_root_closure": {
+        "active_roots": 3,
+        "reachable_nodes": 39,
+        "active_edges": 52,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "independent_all_base_closure": {
+        "active_roots": 69,
+        "reachable_nodes": 66,
+        "active_edges": 89,
+        "violations": [],
+        "source_unknowns": []
+      },
+      "check_and_inspect_commands": {
+        "pip-check": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/pip-base-request-again-pip-check/command.json",
+          "sha256": "76a04d10d5fe61e6c4b7a237c6c6b62dbb022a7591d8cdca71920e78862b7609",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-B",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/pip-incremental/bin/python",
+            "check"
+          ],
+          "exit": 0,
+          "seconds": 7.845
+        },
+        "uv-check": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/pip-base-request-again-uv-check/command.json",
+          "sha256": "c7a646644246d409f4190a7d26b3b37bcbc87b0d4595e67145e363dba3eeb452",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+            "--no-config",
+            "pip",
+            "check",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/pip-incremental/bin/python"
+          ],
+          "exit": 0,
+          "seconds": 1.729
+        },
+        "pip-inspect": {
+          "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/pip-base-request-again-pip-inspect/command.json",
+          "sha256": "e673caad2aca1d7c627a0af99222ca3ec95c1cee000c0f263779944661b81df3",
+          "argv": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-B",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/pip-incremental/bin/python",
+            "inspect",
+            "--local"
+          ],
+          "exit": 0,
+          "seconds": 13.815
+        }
+      },
+      "all_original_payload_checks": 27653,
+      "all_installed_record_hash_checks": 27759,
+      "original_auditor_unknown_count_retained": 7,
+      "file_violation_entries": 6,
+      "unique_file_paths_violating": 3,
+      "normal_cv2_missing": [],
+      "normal_cv2_mismatches": [
+        "cv2/cv2.abi3.so",
+        "cv2/version.py",
+        "cv2/typing/__init__.py"
+      ],
+      "cv2_smoke_exit": 0,
+      "cv2_smoke_command": {
+        "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/commands/pip-base-request-again-cv2-smoke/command.json",
+        "sha256": "a0783c623e07f8a52636ee9c616fd11e1d433a2eec45da0fa8f5a697021c46bf",
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/environments/pip-incremental/bin/python",
+          "-B",
+          "-I",
+          "-c",
+          "import cv2,numpy as np,json; a=cv2.cvtColor(np.zeros((2,2,3),dtype=np.uint8),cv2.COLOR_BGR2GRAY); assert a.shape==(2,2); print(json.dumps({'cv2_version':cv2.__version__,'cv2_file':cv2.__file__,'cvtColor_shape':list(a.shape)}))"
+        ],
+        "exit": 0,
+        "seconds": 2.94
+      },
+      "manifest_sha256": null,
+      "lock_sha256": null,
+      "headless_installed": true
+    }
+  ],
+  "same_final_manifest_and_lock": {
+    "verified": true,
+    "manifest_sha256": "577a33fa107e91eca991c1c7f02e125994de5dc2f28a108b7c0eb5c4ea5b17b3",
+    "lock_sha256": "6ddaab7950c19485fd95936daafd3f226c606384168d8279786d4f51272041e1"
+  },
+  "cold_fresh_control": "Separate empty native environment and distinct initially empty cache; complete locked request, not a no-deps import check.",
+  "independent_actual_repetition": {
+    "result": {
+      "path": "work/stateful-workflows-20261111/review/ultralytics-extra-independent-root-01/results.json",
+      "sha256": "724f121c7b7229cd5701e91d58faca9d455a1a182ffe33a7b780eab326497f46"
+    },
+    "protocol": {
+      "path": "work/stateful-workflows-20261111/review/ultralytics-extra-independent-root-01/protocol.json",
+      "sha256": "448272018853367d0161c8d7a9d76d158cc38a0993aa23026c56f66952a5ce05"
+    },
+    "different_empty_environment": true,
+    "cold_cache": false,
+    "scope": "Second actual full base -> extra -> remove transition, shared previously verified cache, exact official namespace payload and all installed METADATA/checkers. Own targeted opencv-python reinstall restores the same final input. Other dependency payloads are not represented as a second full rehash."
+  },
+  "yolo_import_controls": {
+    "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/supplemental-yolo-class-imports/results.json",
+    "sha256": "00d403b640ee13d98aac04e55206a8fc5c6d18e0d259eb2f9bdda91da586db12"
+  },
+  "original_data_mapping_addendum": {
+    "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/original-data-path-addendum.json",
+    "sha256": "0ff1e809dd377489335c1dcc3f066d1e285ac4483e56954b74ea3ff6609eda19"
+  },
+  "resource_footprint_observation": {
+    "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/resource-footprint-observation.json",
+    "sha256": "76b11cca9c565d5c29a6099c60d6a0886d83f44d5204a020da2c4ca93511cd3d"
+  },
+  "namespace_overlap": {
+    "path": "work/stateful-workflows-20261111/review/ultralytics-extra-actual-01/namespace-provider-overlap.json",
+    "sha256": "95a647ee7a68b9564448f9324d8220caed0547d9c231f6b896fea626d2748f21"
+  },
+  "upstream_review": {
+    "path": "work/stateful-workflows-20261111/review/ultralytics-extra-upstream/final-review.json",
+    "sha256": "914affe56cdee16ed0e4649ce75b4b0e5bc066d0c58353a9e460ade8ce28a08d"
+  },
+  "interpretation": {
+    "pip_base_request_retains_extra_dependencies": "Expected ordinary pip incremental behavior; not a pip defect or second trigger.",
+    "metadata_checkers_all_pass_while_cv2_is_broken": true,
+    "bare_import_cv2": "Succeeds as an empty namespace after removal. The minimal cvtColor call and from ultralytics import YOLO fail; do not claim ModuleNotFoundError.",
+    "file_error_count": "78 audit entries are two checks of39 unique missing paths, not78 defects.",
+    "novelty": "uv #19412 already reports the shared-provider removal mechanism. Ultralytics #16939 already has uv/cv2.imshow failure and reinstall recovery symptoms. The exact official extra -> Alb2.0.8 entry is supplementary bounded evidence; ecosystem-wide novelty and first discovery are not claimed."
+  },
+  "counts": {
+    "independent_real_trigger_repetitions": 2,
+    "new_real_affected_canonical_root_projects": 1,
+    "dependency_chain_nodes_counted_as_additional_roots": 0,
+    "locally_confirmed_failure_families_in_this_case": 1,
+    "new_upstream_uv_mechanisms": 0,
+    "novel_upstream_issues_established": 0,
+    "public_messages_sent": 0
+  },
+  "issue_admission": {
+    "local_issue_description_ready": true,
+    "correct_target": "ultralytics/ultralytics",
+    "role": "Confirmed declaration/workflow supplement for a known incompatibility family; linked prior project reports and uv issue required.",
+    "do_not_duplicate_issue01": true,
+    "public_submission_authorized_or_done": false
+  },
+  "limits": [
+    "Only the exact8.4.208 nativeCPU consumer configuration was actually installed;8.4.210/currentHEAD were checked statically only.",
+    "The targeted extra was separately preregistered after a risk screen; it does not replace the original fixed min-extra sample or turn missing static transitive metadata into negative results.",
+    "No model instantiation, weights download, inference, GPU or multi-platform execution is claimed.",
+    "The complete pip comparison is a controlled identical official-wheel union, not a new full-public-candidate-universe comparison.",
+    "Original automatic raw confirmed counters remain0/admissionpending; this separate manually reviewed certificate is the counting authority for this case.",
+    "Other unobserved extras, package versions, applications and all ecosystem reports remain outside this result."
+  ]
+}

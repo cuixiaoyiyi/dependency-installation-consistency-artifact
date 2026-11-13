@@ -1,0 +1,1063 @@
+{
+  "root": "torch",
+  "version": "2.15.0",
+  "protocol_sha256": "51fdc913d8687c6c5d2bcb1976b1375fcb70cd4d81829356c3792ce3941e97fb",
+  "started_at_utc": "2026-11-11T05:26:42.073228+00:00",
+  "steps": [
+    {
+      "stage": "01-cpu-lock",
+      "cpu": true,
+      "command": {
+        "command": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+          "--no-config",
+          "lock",
+          "--project",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/source-switch/torch-adaptive-control/project",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+          "--no-python-downloads",
+          "--no-build"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 8.103,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "92737a5889498709df07ebb6342757a07a5b66d917245c4f410013b19dfbf8da"
+      },
+      "environment_path": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/source-switch/torch-adaptive-control/environments/shared",
+      "pyproject.toml_sha256": "9febe6b7e06175d88ad34b268d90f173d46944a2b2a13df2887d76f25b2474de",
+      "uv.lock_sha256": "9ad6d719db955b4948ce75b5ab3eaffc317d3421d6088d3be2254f7a66422212",
+      "budget": {
+        "lock_sha256": "9ad6d719db955b4948ce75b5ab3eaffc317d3421d6088d3be2254f7a66422212",
+        "native_candidate_size_sum": 219926184,
+        "limit": 17179869184,
+        "unknown": [],
+        "candidates": [
+          {
+            "name": "filelock",
+            "version": "4.2.10",
+            "url": "https://files.pythonhosted.org/packages/ef/90/5d0096a325aa0f83ba7a3968bfb485b67e32c947bdf9cd0fcb4b485be718/filelock-4.2.10-py3-none-any.whl",
+            "size": 218040,
+            "hash": "sha256:9479aaeb4db20b5a53e3da28493edd24720b66b8a0b84030aa56ccdf243d6857",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "fsspec",
+            "version": "2026.9.0",
+            "url": "https://files.pythonhosted.org/packages/6c/c0/a98505f18594f1bce828bb159cec0fcf9860562f1a2c85913409fc8f3d9e/fsspec-2026.9.0-py3-none-any.whl",
+            "size": 221738,
+            "hash": "sha256:8dd6e646e99ea382bd85f97a45e6b526a442d79423a7dc673f1e2756d05fcb5f",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "jinja2",
+            "version": "3.1.6",
+            "url": "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl",
+            "size": 134899,
+            "hash": "sha256:85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "markupsafe",
+            "version": "3.0.4",
+            "url": "https://files.pythonhosted.org/packages/81/a5/a513b76c139a3915b43404324e55c0b7979ae4f0d39eb6f075b0282e90a8/markupsafe-3.0.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+            "size": 22961,
+            "hash": "sha256:6da83a088f8ef93b2d483a8232a4dbf4d69d3d8496b568a03c56becac43e1808",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "mpmath",
+            "version": "1.3.0",
+            "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl",
+            "size": 536198,
+            "hash": "sha256:a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "networkx",
+            "version": "3.6.1",
+            "url": "https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl",
+            "size": 2068504,
+            "hash": "sha256:d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "setuptools",
+            "version": "84.2.1",
+            "url": "https://files.pythonhosted.org/packages/ef/55/6dc6d6bb953bdfc52519a0059592c52b6e3b8ad51cf8256dffceb55b0610/setuptools-84.2.1-py3-none-any.whl",
+            "size": 876263,
+            "hash": "sha256:ca140b45d5325a9478f880e351484f62fef15f336462e449ca0c03c873d589c2",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "sympy",
+            "version": "1.14.0",
+            "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl",
+            "size": 6299353,
+            "hash": "sha256:e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "torch",
+            "version": "2.15.0+cpu",
+            "url": "https://download-r2.pytorch.org/whl/cpu/torch-2.15.0%2Bcpu-cp311-cp311-manylinux_2_28_x86_64.whl",
+            "size": 209502657,
+            "hash": "sha256:cee15855a32ad89a9bb27b8a9d6e07a859dcd2e11ed1b5561f3d6206e31a103b",
+            "source": {
+              "registry": "https://download.pytorch.org/whl/cpu"
+            }
+          },
+          {
+            "name": "typing-extensions",
+            "version": "4.16.0",
+            "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+            "size": 45571,
+            "hash": "sha256:481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          }
+        ],
+        "eligible": true,
+        "interpretation": "Size uses best native tag candidate per lock node as a preflight bound; actual installer file choice is separately observed. No dependencies omitted to meet budget."
+      }
+    },
+    {
+      "stage": "02-cpu-install",
+      "cpu": true,
+      "command": {
+        "command": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+          "--no-config",
+          "sync",
+          "--project",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/source-switch/torch-adaptive-control/project",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+          "--no-python-downloads",
+          "--no-build",
+          "--locked",
+          "--no-install-project",
+          "--no-default-groups",
+          "--verbose"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 607.132,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "9a2716d91b58b04f0ca66e62a828b6e73352f0d14c32be32bcdf120c6caf978b"
+      },
+      "environment_path": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/source-switch/torch-adaptive-control/environments/shared",
+      "pyproject.toml_sha256": "9febe6b7e06175d88ad34b268d90f173d46944a2b2a13df2887d76f25b2474de",
+      "uv.lock_sha256": "9ad6d719db955b4948ce75b5ab3eaffc317d3421d6088d3be2254f7a66422212",
+      "installed": {
+        "installed_count": 10,
+        "root": {
+          "name": "torch",
+          "version": "2.15.0+cpu",
+          "requires_dist": [
+            "filelock",
+            "typing-extensions>=4.13.0",
+            "setuptools>=77.0.3",
+            "sympy>=1.13.3",
+            "networkx>=2.5.1",
+            "jinja2",
+            "fsspec>=0.8.5",
+            "optree>=0.13.0; extra == \"optree\"",
+            "opt-einsum>=3.3; extra == \"opt-einsum\"",
+            "pyyaml; extra == \"pyyaml\""
+          ],
+          "dist_info": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/source-switch/torch-adaptive-control/environments/shared/lib/python3.11/site-packages/torch-2.15.0+cpu.dist-info",
+          "metadata": "Metadata-Version: 2.4\nName: torch\nVersion: 2.15.0+cpu\nSummary: Tensors and Dynamic neural networks in Python with strong GPU acceleration\nKeywords: pytorch,machine learning\nAuthor-Email: PyTorch Team <packages@pytorch.org>\nLicense-Expression: Apache-2.0 AND Apache-2.0 WITH LLVM-exception AND BSD-2-Clause AND BSD-3-Clause AND BSL-1.0 AND ISC AND MIT AND Zlib\nLicense-File: LICENSE\nLicense-File: third_party/FP16/LICENSE\nLicense-File: third_party/FXdiv/LICENSE\nLicense-File: third_party/NNPACK/LICENSE\nLicense-File: third_party/NVTX/LICENSE.txt\nLicense-File: third_party/VulkanMemoryAllocator/LICENSE.txt\nLicense-File: third_party/XNNPACK/LICENSE\nLicense-File: third_party/aiter/3rdparty/composable_kernel/LICENSE\nLicense-File: third_party/aiter/LICENSE\nLicense-File: third_party/composable_kernel/LICENSE\nLicense-File: third_party/concurrentqueue/moodycamel/LICENSE.md\nLicense-File: third_party/cpp-httplib/LICENSE\nLicense-File: third_party/cpuinfo/LICENSE\nLicense-File: third_party/cpuinfo/deps/clog/LICENSE\nLicense-File: third_party/cudnn_frontend/LICENSE-MIT.txt\nLicense-File: third_party/cudnn_frontend/LICENSE.txt\nLicense-File: third_party/cudnn_frontend/python/cudnn/moe_ep/_megamoe_backend/cutedsl_src/LICENSE.Apache-2.0\nLicense-File: third_party/cutlass/LICENSE.txt\nLicense-File: third_party/fbgemm/LICENSE\nLicense-File: third_party/fbgemm/external/asmjit/LICENSE.md\nLicense-File: third_party/fbgemm/external/composable_kernel/LICENSE\nLicense-File: third_party/fbgemm/external/cpuinfo/LICENSE\nLicense-File: third_party/fbgemm/external/cpuinfo/deps/clog/LICENSE\nLicense-File: third_party/fbgemm/external/cutlass/LICENSE.txt\nLicense-File: third_party/flash-attention/LICENSE\nLicense-File: third_party/flash-attention/csrc/composable_kernel/LICENSE\nLicense-File: third_party/flash-attention/csrc/cutlass/LICENSE.txt\nLicense-File: third_party/flash-attention/flash_attn/cute/LICENSE\nLicense-File: third_party/flash-attention/third_party/aiter/3rdparty/composable_kernel/LICENSE\nLicense-File: third_party/flash-attention/third_party/aiter/LICENSE\nLicense-File: third_party/flatbuffers/LICENSE\nLicense-File: third_party/fmt/LICENSE\nLicense-File: third_party/gemmlowp/gemmlowp/LICENSE\nLicense-File: third_party/gloo/LICENSE\nLicense-File: third_party/gloo/gloo/transport/uv/LICENSE.uvw\nLicense-File: third_party/ideep/LICENSE\nLicense-File: third_party/ideep/mkl-dnn/LICENSE\nLicense-File: third_party/ideep/mkl-dnn/third_party/ittnotify/LICENSE.BSD\nLicense-File: third_party/ideep/mkl-dnn/third_party/opencl/LICENSE\nLicense-File: third_party/kineto/LICENSE\nLicense-File: third_party/kineto/libkineto/third_party/dynolog_headers/LICENSE\nLicense-File: third_party/llvm-openmp/LICENSE.txt\nLicense-File: third_party/mimalloc/LICENSE\nLicense-File: third_party/miniz-3.0.2/LICENSE\nLicense-File: third_party/mslk/LICENSE\nLicense-File: third_party/mslk/external/composable_kernel/LICENSE\nLicense-File: third_party/mslk/external/cutlass/LICENSE.txt\nLicense-File: third_party/mslk/mslk/attention/flash_attn/LICENSE\nLicense-File: third_party/nlohmann/LICENSE.MIT\nLicense-File: third_party/onnx/LICENSE\nLicense-File: third_party/perfetto/LICENSE\nLicense-File: third_party/pocketfft/LICENSE.md\nLicense-File: third_party/protobuf/LICENSE\nLicense-File: third_party/psimd/LICENSE\nLicense-File: third_party/pthreadpool/LICENSE\nLicense-File: third_party/pybind11/LICENSE\nLicense-File: third_party/sleef/LICENSE.txt\nLicense-File: third_party/tensorpipe/LICENSE.txt\nLicense-File: third_party/tensorpipe/third_party/libnop/LICENSE\nLicense-File: third_party/tensorpipe/third_party/libuv/LICENSE\nLicense-File: third_party/tensorpipe/third_party/libuv/LICENSE-extra\nClassifier: Development Status :: 5 - Production/Stable\nClassifier: Intended Audience :: Developers\nClassifier: Intended Audience :: Education\nClassifier: Intended Audience :: Science/Research\nClassifier: Topic :: Scientific/Engineering\nClassifier: Topic :: Scientific/Engineering :: Mathematics\nClassifier: Topic :: Scientific/Engineering :: Artificial Intelligence\nClassifier: Topic :: Software Development\nClassifier: Topic :: Software Development :: Libraries\nClassifier: Topic :: Software Development :: Libraries :: Python Modules\nClassifier: Programming Language :: C++\nClassifier: Programming Language :: Python :: 3 :: Only\nClassifier: Programming Language :: Python :: 3.11\nClassifier: Programming Language :: Python :: 3.12\nClassifier: Programming Language :: Python :: 3.13\nClassifier: Programming Language :: Python :: 3.14\nClassifier: Programming Language :: Python :: 3.15\nProject-URL: Homepage, https://pytorch.org\nProject-URL: Repository, https://github.com/pytorch/pytorch\nProject-URL: Documentation, https://pytorch.org/docs\nProject-URL: Issue Tracker, https://github.com/pytorch/pytorch/issues\nProject-URL: Forum, https://discuss.pytorch.org\nRequires-Python: >=3.11\nRequires-Dist: filelock\nRequires-Dist: typing-extensions>=4.13.0\nRequires-Dist: setuptools>=77.0.3\nRequires-Dist: sympy>=1.13.3\nRequires-Dist: networkx>=2.5.1\nRequires-Dist: jinja2\nRequires-Dist: fsspec>=0.8.5\nProvides-Extra: optree\nRequires-Dist: optree>=0.13.0; extra == \"optree\"\nProvides-Extra: opt-einsum\nRequires-Dist: opt-einsum>=3.3; extra == \"opt-einsum\"\nProvides-Extra: pyyaml\nRequires-Dist: pyyaml; extra == \"pyyaml\"\nDescription-Content-Type: text/markdown\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/pytorch-logo-light.png\" />\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/pytorch-logo-dark.png\" />\n  <img src=\"https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/pytorch-logo-dark.png\" alt=\"PyTorch logo\" />\n</picture>\n\n--------------------------------------------------------------------------------\n\nPyTorch is a Python package that provides two high-level features:\n- Tensor computation (like NumPy) with strong GPU acceleration\n- Deep neural networks built on a tape-based autograd system\n\nYou can reuse your favorite Python packages such as NumPy, SciPy, and Cython to extend PyTorch when needed.\n\nOur trunk health (Continuous Integration signals) can be found at [hud.pytorch.org](https://hud.pytorch.org/ci/pytorch/pytorch/main).\n\n<!-- toc -->\n\n- [More About PyTorch](#more-about-pytorch)\n  - [A GPU-Ready Tensor Library](#a-gpu-ready-tensor-library)\n  - [Dynamic Neural Networks: Tape-Based Autograd](#dynamic-neural-networks-tape-based-autograd)\n  - [Python First](#python-first)\n  - [Imperative Experiences](#imperative-experiences)\n  - [Fast and Lean](#fast-and-lean)\n  - [Extensions Without Pain](#extensions-without-pain)\n- [Installation](#installation)\n  - [Binaries](#binaries)\n    - [NVIDIA Jetson Platforms](#nvidia-jetson-platforms)\n  - [From Source](#from-source)\n    - [Prerequisites](#prerequisites)\n      - [NVIDIA CUDA Support](#nvidia-cuda-support)\n      - [AMD ROCm Support](#amd-rocm-support)\n      - [Intel GPU Support](#intel-gpu-support)\n    - [Get the PyTorch Source](#get-the-pytorch-source)\n    - [Install Dependencies](#install-dependencies)\n    - [Install PyTorch](#install-pytorch)\n      - [Adjust Build Options (Optional)](#adjust-build-options-optional)\n  - [Docker Image](#docker-image)\n    - [Using pre-built images](#using-pre-built-images)\n    - [Building the image yourself](#building-the-image-yourself)\n  - [Building the Documentation](#building-the-documentation)\n    - [Troubleshooting CI Errors](#troubleshooting-ci-errors)\n    - [Building a PDF](#building-a-pdf)\n  - [Previous Versions](#previous-versions)\n- [Getting Started](#getting-started)\n- [Resources](#resources)\n- [Communication](#communication)\n- [Releases and Contributing](#releases-and-contributing)\n- [The Team](#the-team)\n- [License](#license)\n\n<!-- tocstop -->\n\n## More About PyTorch\n\n[Learn the basics of PyTorch](https://pytorch.org/tutorials/beginner/basics/intro.html)\n\nAt a granular level, PyTorch is a library that consists of the following components:\n\n| Component | Description |\n| ---- | --- |\n| [**torch**](https://pytorch.org/docs/stable/torch.html) | A Tensor library like NumPy, with strong GPU support |\n| [**torch.autograd**](https://pytorch.org/docs/stable/autograd.html) | A tape-based automatic differentiation library that supports all differentiable Tensor operations in torch |\n| [**torch.jit**](https://pytorch.org/docs/stable/jit.html) | A compilation stack (TorchScript) to create serializable and optimizable models from PyTorch code  |\n| [**torch.nn**](https://pytorch.org/docs/stable/nn.html) | A neural networks library deeply integrated with autograd designed for maximum flexibility |\n| [**torch.multiprocessing**](https://pytorch.org/docs/stable/multiprocessing.html) | Python multiprocessing, but with magical memory sharing of torch Tensors across processes. Useful for data loading and Hogwild training |\n| [**torch.utils**](https://pytorch.org/docs/stable/data.html) | DataLoader and other utility functions for convenience |\n\nUsually, PyTorch is used either as:\n\n- A replacement for NumPy to use the power of GPUs.\n- A deep learning research platform that provides maximum flexibility and speed.\n\nElaborating Further:\n\n### A GPU-Ready Tensor Library\n\nIf you use NumPy, then you have used Tensors (a.k.a. ndarray).\n\n![Tensor illustration](https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/tensor_illustration.png)\n\nPyTorch provides Tensors that can live either on the CPU or the GPU and accelerates the\ncomputation by a huge amount.\n\nWe provide a wide variety of tensor routines to accelerate and fit your scientific computation needs\nsuch as slicing, indexing, mathematical operations, linear algebra, reductions.\nAnd they are fast!\n\n### Dynamic Neural Networks: Tape-Based Autograd\n\nPyTorch has a unique way of building neural networks: using and replaying a tape recorder.\n\nMost frameworks such as TensorFlow, Theano, Caffe, and CNTK have a static view of the world.\nOne has to build a neural network and reuse the same structure again and again.\nChanging the way the network behaves means that one has to start from scratch.\n\nWith PyTorch, we use a technique called reverse-mode auto-differentiation, which allows you to\nchange the way your network behaves arbitrarily with zero lag or overhead. Our inspiration comes\nfrom several research papers on this topic, as well as current and past work such as\n[torch-autograd](https://github.com/twitter/torch-autograd),\n[autograd](https://github.com/HIPS/autograd),\n[Chainer](https://chainer.org), etc.\n\nWhile this technique is not unique to PyTorch, it's one of the fastest implementations of it to date.\nYou get the best of speed and flexibility for your crazy research.\n\n![Dynamic graph](https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/dynamic_graph.gif)\n\n### Python First\n\nPyTorch is not a Python binding into a monolithic C++ framework.\nIt is built to be deeply integrated into Python.\nYou can use it naturally like you would use [NumPy](https://www.numpy.org/) / [SciPy](https://www.scipy.org/) / [scikit-learn](https://scikit-learn.org) etc.\nYou can write your new neural network layers in Python itself, using your favorite libraries\nand use packages such as [Cython](https://cython.org/) and [Numba](https://numba.pydata.org/).\nOur goal is to not reinvent the wheel where appropriate.\n\n### Imperative Experiences\n\nPyTorch is designed to be intuitive, linear in thought, and easy to use.\nWhen you execute a line of code, it gets executed. There isn't an asynchronous view of the world.\nWhen you drop into a debugger or receive error messages and stack traces, understanding them is straightforward.\nThe stack trace points to exactly where your code was defined.\nWe hope you never spend hours debugging your code because of bad stack traces or asynchronous and opaque execution engines.\n\n### Fast and Lean\n\nPyTorch has minimal framework overhead. We integrate acceleration libraries\nsuch as [Intel MKL](https://software.intel.com/mkl) and NVIDIA ([cuDNN](https://developer.nvidia.com/cudnn), [NCCL](https://developer.nvidia.com/nccl)) to maximize speed.\nAt the core, its CPU and GPU Tensor and neural network backends\nare mature and have been tested for years.\n\nHence, PyTorch is quite fast — whether you run small or large neural networks.\n\nThe memory usage in PyTorch is extremely efficient compared to Torch or some of the alternatives.\nWe've written custom memory allocators for the GPU to make sure that\nyour deep learning models are maximally memory efficient.\nThis enables you to train bigger deep learning models than before.\n\n### Extensions Without Pain\n\nWriting new neural network modules, or interfacing with PyTorch's Tensor API, was designed to be straightforward\nand with minimal abstractions.\n\nYou can write new neural network layers in Python using the torch API\n[or your favorite NumPy-based libraries such as SciPy](https://pytorch.org/tutorials/advanced/numpy_extensions_tutorial.html).\n\nIf you want to write your layers in C/C++, we provide a convenient extension API that is efficient and with minimal boilerplate.\nNo wrapper code needs to be written. You can see [a tutorial here](https://pytorch.org/tutorials/advanced/cpp_extension.html) and [an example here](https://github.com/pytorch/extension-cpp).\n\n\n## Installation\n\n### Binaries\nCommands to install binaries via Conda or pip wheels are on our website: [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)\n\n\n#### NVIDIA Jetson Platforms\n\nPython wheels for NVIDIA's Jetson Nano, Jetson TX1/TX2, Jetson Xavier NX/AGX, and Jetson AGX Orin are provided [here](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-10-now-available/72048) and the L4T container is published [here](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/l4t-pytorch)\n\nThey require JetPack 4.2 and above, and [@dusty-nv](https://github.com/dusty-nv) and [@ptrblck](https://github.com/ptrblck) are maintaining them.\n\n\n### From Source\n\n#### Prerequisites\nIf you are installing from source, you will need:\n- Python 3.11 or later\n- A compiler that fully supports C++20, such as clang or gcc (gcc 11.3.0 or newer is required, on Linux)\n- Visual Studio or Visual Studio Build Tool (Windows only)\n- At least 10 GB of free disk space\n- 30-60 minutes for the initial build (subsequent rebuilds are much faster)\n\n\\* PyTorch CI uses Visual C++ BuildTools, which come with Visual Studio Enterprise,\nProfessional, or Community Editions. You can also install the build tools from\nhttps://visualstudio.microsoft.com/visual-cpp-build-tools/. The build tools *do not*\ncome with Visual Studio Code by default.\n\nAn example of environment setup is shown below:\n\n* Linux:\n\n```bash\n$ source <CONDA_INSTALL_DIR>/bin/activate\n$ conda create -y -n <CONDA_NAME>\n$ conda activate <CONDA_NAME>\n```\n* Windows:\n\n```bash\n$ source <CONDA_INSTALL_DIR>\\Scripts\\activate.bat\n$ conda create -y -n <CONDA_NAME>\n$ conda activate <CONDA_NAME>\n$ call \"C:\\Program Files\\Microsoft Visual Studio\\<VERSION>\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x64\n```\n\nA conda environment is not required.  You can also do a PyTorch build in a\nstandard virtual environment, e.g., created with tools like `uv`, provided\nyour system has installed all the necessary dependencies unavailable as pip\npackages (e.g., CUDA, MKL.)\n\n##### NVIDIA CUDA Support\nIf you want to compile with CUDA support, [select a supported version of CUDA from our support matrix](https://pytorch.org/get-started/locally/), then install the following:\n- [NVIDIA CUDA](https://developer.nvidia.com/cuda-downloads)\n- [NVIDIA cuDNN](https://developer.nvidia.com/cudnn) v9.0 or above\n- [Compiler](https://gist.github.com/ax3l/9489132) compatible with CUDA\n\nNote: You could refer to the [cuDNN Support Matrix](https://docs.nvidia.com/deeplearning/cudnn/backend/latest/reference/support-matrix.html) for cuDNN versions with the various supported CUDA, CUDA driver, and NVIDIA hardware.\n\nIf you want to disable CUDA support, export the environment variable `USE_CUDA=0`.\nOther potentially useful environment variables are documented in [`cmake/EnvVarForwarding.cmake`](./cmake/EnvVarForwarding.cmake).  If\nCUDA is installed in a non-standard location, set PATH so that the nvcc you\nwant to use can be found (e.g., `export PATH=/usr/local/cuda-12.8/bin:$PATH`).\n\nIf you are building for NVIDIA's Jetson platforms (Jetson Nano, TX1, TX2, AGX Xavier), Instructions to install PyTorch for Jetson Nano are [available here](https://devtalk.nvidia.com/default/topic/1049071/jetson-nano/pytorch-for-jetson-nano/)\n\n##### AMD ROCm Support\nIf you want to compile with ROCm support, install\n- [AMD ROCm](https://rocm.docs.amd.com/en/latest/deploy/linux/quick_start.html) 4.0 and above installation\n- ROCm is currently supported only for Linux systems.\n\nBy default the build system expects ROCm to be installed in `/opt/rocm`. If ROCm is installed in a different directory, the `ROCM_PATH` environment variable must be set to the ROCm installation directory. The build system automatically detects the AMD GPU architecture. Optionally, the AMD GPU architecture can be explicitly set with the `PYTORCH_ROCM_ARCH` environment variable [AMD GPU architecture](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/reference/system-requirements.html#supported-gpus)\n\nIf you want to disable ROCm support, export the environment variable `USE_ROCM=0`.\nOther potentially useful environment variables are documented in [`cmake/EnvVarForwarding.cmake`](./cmake/EnvVarForwarding.cmake).\n\n##### Intel GPU Support\nIf you want to compile with Intel GPU support, follow these\n- [PyTorch Prerequisites for Intel GPUs](https://www.intel.com/content/www/us/en/developer/articles/tool/pytorch-prerequisites-for-intel-gpu.html) instructions.\n- Intel GPU is supported for Linux and Windows.\n\nIf you want to disable Intel GPU support, export the environment variable `USE_XPU=0`.\nOther potentially useful environment variables are documented in [`cmake/EnvVarForwarding.cmake`](./cmake/EnvVarForwarding.cmake).\n\n#### Get the PyTorch Source\n\n```bash\ngit clone https://github.com/pytorch/pytorch\ncd pytorch\n# if you are updating an existing checkout\ngit submodule sync\ngit submodule update --init --recursive\n```\n\n#### Install Dependencies\n\n**Common**\n\n```bash\n# Run this command from the PyTorch directory after cloning the source code using the “Get the PyTorch Source“ section above\npip install --group dev\n```\n\n**On Linux**\n\n```bash\npip install mkl-static mkl-include\n# CUDA only: Add LAPACK support for the GPU if needed\n# magma installation: run with active conda environment. specify CUDA version to install\n.ci/docker/common/install_magma_conda.sh 12.4\n\n# (optional) If using torch.compile with inductor/triton, install the matching version of triton\n# Run from the pytorch directory after cloning\n# For Intel GPU support, please explicitly `export USE_XPU=1` before running command.\nmake triton\n```\n\n**On Windows**\n\n```bash\npip install mkl-static mkl-include\n# Add these packages if torch.distributed is needed.\n# Distributed package support on Windows is a prototype feature and is subject to changes.\nconda install -c conda-forge libuv=1.51\n```\n\n#### Install PyTorch\n\n**On Linux**\n\nIf you're compiling for AMD ROCm then first run this command:\n\n```bash\n# Only run this if you're compiling for ROCm\npython tools/amd_build/build_amd.py\n```\n\nInstall PyTorch\n\n```bash\n# the CMake prefix for conda environment\nexport CMAKE_PREFIX_PATH=\"${CONDA_PREFIX:-'$(dirname $(which conda))/../'}:${CMAKE_PREFIX_PATH}\"\npython -m pip install --no-build-isolation -v -e .\n\n# the CMake prefix for non-conda environment, e.g. Python venv\n# call following after activating the venv\nexport CMAKE_PREFIX_PATH=\"${VIRTUAL_ENV}:${CMAKE_PREFIX_PATH}\"\n```\n\n**On macOS**\n\n```bash\npython -m pip install --no-build-isolation -v -e .\n```\n\n**On Windows**\n\nIf you want to build legacy python code, please refer to [Building on legacy code and CUDA](https://github.com/pytorch/pytorch/blob/main/CONTRIBUTING.md#building-on-legacy-code-and-cuda)\n\n**CPU-only builds**\n\nIn this mode PyTorch computations will run on your CPU, not your GPU.\n\n```cmd\npython -m pip install --no-build-isolation -v -e .\n```\n\nNote on OpenMP: The desired OpenMP implementation is Intel OpenMP (iomp). In order to link against iomp, you'll need to manually download the library and set up the building environment by tweaking `CMAKE_INCLUDE_PATH` and `LIB`. The instruction [here](https://docs.pytorch.org/docs/main/notes/windows.html#building-from-source) is an example for setting up both MKL and Intel OpenMP. Without these configurations for CMake, Microsoft Visual C OpenMP runtime (vcomp) will be used.\n\n**CUDA based build**\n\nIn this mode PyTorch computations will leverage your GPU via CUDA for faster number crunching\n\n[NVTX](https://docs.nvidia.com/gameworks/content/gameworkslibrary/nvtx/nvidia_tools_extension_library_nvtx.htm) is needed to build PyTorch with CUDA.\nNVTX is a part of CUDA distributive, where it is called \"Nsight Compute\". To install it onto an already installed CUDA run CUDA installation once again and check the corresponding checkbox.\nMake sure that CUDA with Nsight Compute is installed after Visual Studio.\n\nCurrently, VS 2017 / 2019, and Ninja are supported as the generator of CMake. If `ninja.exe` is detected in `PATH`, then Ninja will be used as the default generator, otherwise, it will use VS 2017 / 2019.\n<br/> If Ninja is selected as the generator, the latest MSVC will get selected as the underlying toolchain.\n\nAdditional libraries such as\n[Magma](https://developer.nvidia.com/magma), [oneDNN, a.k.a. MKLDNN or DNNL](https://github.com/oneapi-src/oneDNN), and [Sccache](https://github.com/mozilla/sccache) are often needed. Please refer to the [installation-helper](https://github.com/pytorch/pytorch/tree/main/.ci/pytorch/win-test-helpers/installation-helpers) to install them.\n\nYou can refer to the [build_pytorch.bat](https://github.com/pytorch/pytorch/blob/main/.ci/pytorch/win-test-helpers/build_pytorch.bat) script for some other environment variables configurations\n\n```cmd\ncmd\n\n:: Set the environment variables after you have downloaded and unzipped the mkl package,\n:: else CMake would throw an error as `Could NOT find OpenMP`.\nset CMAKE_INCLUDE_PATH={Your directory}\\mkl\\include\nset LIB={Your directory}\\mkl\\lib;%LIB%\n\n:: Read the content in the previous section carefully before you proceed.\n:: [Optional] If you want to override the underlying toolset used by Ninja and Visual Studio with CUDA, please run the following script block.\n:: \"Visual Studio 2019 Developer Command Prompt\" will be run automatically.\n:: Make sure you have CMake >= 3.12 before you do this when you use the Visual Studio generator.\nset CMAKE_GENERATOR_TOOLSET_VERSION=14.27\nset DISTUTILS_USE_SDK=1\nfor /f \"usebackq tokens=*\" %i in (`\"%ProgramFiles(x86)%\\Microsoft Visual Studio\\Installer\\vswhere.exe\" -version [15^,17^) -products * -latest -property installationPath`) do call \"%i\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x64 -vcvars_ver=%CMAKE_GENERATOR_TOOLSET_VERSION%\n\n:: [Optional] If you want to override the CUDA host compiler\nset CUDAHOSTCXX=C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX64\\x64\\cl.exe\n\npython -m pip install --no-build-isolation -v -e .\n```\n\n**Intel GPU builds**\n\nIn this mode PyTorch with Intel GPU support will be built.\n\nPlease make sure [the common prerequisites](#prerequisites) as well as [the prerequisites for Intel GPU](#intel-gpu-support) are properly installed and the environment variables are configured prior to starting the build. For build tool support, `Visual Studio 2022` is required.\n\nThen PyTorch can be built with the command:\n\n```cmd\n:: CMD Commands:\n:: Set the CMAKE_PREFIX_PATH to help find corresponding packages\n:: %CONDA_PREFIX% only works after `conda activate custom_env`\n\nif defined CMAKE_PREFIX_PATH (\n    set \"CMAKE_PREFIX_PATH=%CONDA_PREFIX%\\Library;%CMAKE_PREFIX_PATH%\"\n) else (\n    set \"CMAKE_PREFIX_PATH=%CONDA_PREFIX%\\Library\"\n)\n\npython -m pip install --no-build-isolation -v -e .\n```\n\n##### Adjust Build Options (Optional)\n\nYou can adjust the configuration of CMake variables through environment variables, which the\nbuild forwards to CMake (see [`cmake/EnvVarForwarding.cmake`](./cmake/EnvVarForwarding.cmake) for\nthe full list). For example, pointing the build at a specific Conda prefix, CuDNN, or BLAS:\n\nOn Linux\n\n```bash\nexport CMAKE_PREFIX_PATH=\"${CONDA_PREFIX:-'$(dirname $(which conda))/../'}:${CMAKE_PREFIX_PATH}\"\nspin develop\n```\n\nOn macOS\n\n```bash\nexport CMAKE_PREFIX_PATH=\"${CONDA_PREFIX:-'$(dirname $(which conda))/../'}:${CMAKE_PREFIX_PATH}\"\nMACOSX_DEPLOYMENT_TARGET=11.0 spin develop\n```\n\nAfter a first `spin develop`, you can inspect or adjust the CMake cache interactively with\n`ccmake build` (or `cmake-gui build`) and rebuild with `spin develop`; your edits persist, because\nreconfiguration does not use `--fresh` and environment variables only seed cache entries that are\nnot already set. The corollary: once a variable is in the cache, changing its environment variable\nno longer affects it -- edit the cache directly (or delete `build/CMakeCache.txt`) to change it.\nThe build type and compiler are the exception; the build always re-applies them.\n\n### Docker Image\n\n#### Using pre-built images\n\nYou can also pull a pre-built docker image from Docker Hub and run with docker v23.0+\n\n```bash\ndocker run --gpus all --rm -ti --ipc=host pytorch/pytorch:latest\n```\n\nPlease note that PyTorch uses shared memory to share data between processes, so if torch multiprocessing is used (e.g.\nfor multithreaded data loaders) the default shared memory segment size that container runs with is not enough, and you\nshould increase shared memory size either with `--ipc=host` or `--shm-size` command line options to `nvidia-docker run`.\n\n#### Building the image yourself\n\n**NOTE:** Must be built with a Docker version >= 23.0\n\nThe Dockerfile is supplied to build images with CUDA 12.6 support and cuDNN v9.\nYou can pass `PYTHON_VERSION=x.y` make variable to specify which Python version is to be used by Miniconda, or leave it\nunset to use the default, as the Dockerfile uses system Python.\n\n```bash\nmake -f docker.Makefile\n# images are tagged as docker.io/${your_docker_username}/pytorch\n```\n\nYou can also pass the `CMAKE_VARS=\"...\"` environment variable to specify additional CMake variables to be passed to CMake during the build.\nSee [`cmake/EnvVarForwarding.cmake`](./cmake/EnvVarForwarding.cmake) for the list of available variables.\n\n```bash\nmake -f docker.Makefile\n```\n\n### Building the Documentation\n\nTo build documentation in various formats, you will need [Sphinx](https://www.sphinx-doc.org)\nand the `pytorch_sphinx_theme2`.\n\nBefore you build the documentation locally, ensure `torch` is\ninstalled in your environment. For small fixes, you can install the\nnightly version as described in [Getting Started](https://pytorch.org/get-started/locally/).\n\nFor more complex fixes, such as adding a new module and docstrings for\nthe new module, you might need to install torch [from source](#from-source).\nSee [Docstring Guidelines](https://github.com/pytorch/pytorch/wiki/Docstring-Guidelines)\nfor docstring conventions.\n\n```bash\ncd docs/\npip install -r requirements.txt\nmake html\nmake serve\n```\n\nRun `make` to get a list of all available output formats.\n\nIf you get a katex error run `npm install katex`.  If it persists, try\n`npm install -g katex`\n\n> [!NOTE]\n> If you see a numpy incompatibility error, run:\n> ```\n> pip install 'numpy<2'\n> ```\n\n\n#### Troubleshooting CI Errors\nYour build may show errors you didn't have locally - here's how to find the errors relevant to the docs.\n\nIf the build has any errors, you will see something like this on the PR:\n\n<img width=\"781\" height=\"400\" alt=\"Monosnap Update installation instructions for doc build · Pull Request #169534 · pytorch:pytorch 2025-12-18 18-22-53\" src=\"https://github.com/user-attachments/assets/49a3dfe7-81c2-4246-852b-bc3f807e95af\" />\n\nAny doc-related errors will occur in jobs that include \"doc\" somewhere in the title. It doesn't look like any of these jobs are relevant to our docs.\n\n\nLet's take a look anyway. Click on the job to see the logs:\n\n<img width=\"1187\" height=\"668\" alt=\"Monosnap Update installation instructions for doc build · pytorch:pytorch@7380336 2025-12-18 18-24-15\" src=\"https://github.com/user-attachments/assets/117df543-8356-4323-8e1c-ef02a95554ba\" />\n\nAnd we can be sure that this job does not involve docs.\n\nLooking at this build, we can see these jobs are relevant to our docs - and they didn't have any errors:\n\n<img width=\"777\" height=\"395\" alt=\"Check the docs jobs\" src=\"https://github.com/user-attachments/assets/5d7c196b-2d40-49ad-87e3-f57de6e14a5b\" />\n\nYou might also see a comment on the PR like this:\n\n<img width=\"651\" height=\"246\" alt=\"PR Comment\" src=\"https://github.com/user-attachments/assets/27e0120a-ba33-4b1c-b4a5-bf3064520586\" />\n\nWe can see that some of these issues are relevant to our docs.\n\nOpen the logs by clicking on the `gh` link:\n\n<img width=\"873\" height=\"360\" alt=\"View Logs\" src=\"https://github.com/user-attachments/assets/ab5b862f-8026-489c-b95e-a6cd4257e4b7\" />\n\nAnd here we can see there is a doc-related error:\n\n<img width=\"1117\" height=\"433\" alt=\"Doc Error\" src=\"https://github.com/user-attachments/assets/0a275921-736d-43a7-ab0f-3e8854d43280\" />\n\nYou can always find the relevant doc builds by going to the `Checks` tab on your PR, and scrolling down to `pull`.\n\n<img width=\"481\" height=\"561\" alt=\"checks\" src=\"https://github.com/user-attachments/assets/eef18f2b-7134-4e2e-bd90-bcdc12800132\" />\n\nYou can either click through or toggle the accordion to see all of the jobs here, where you can see the docs jobs highlighted:\n\n<img width=\"570\" height=\"611\" alt=\"jobs\" src=\"https://github.com/user-attachments/assets/f62812ca-caee-421b-863c-54f38fd28d46\" />\n\nIf you click through, you'll see the doc jobs at the bottom, like this:\n\n<img width=\"354\" height=\"312\" alt=\"View Docs jobs\" src=\"https://github.com/user-attachments/assets/8fadb935-5314-4c4b-a1b5-133781754f03\" />\n\n\n#### Building a PDF\n\nTo compile a PDF of all PyTorch documentation, ensure you have\n`texlive` and LaTeX installed. On macOS, you can install them using:\n\n```\nbrew install --cask mactex\n```\n\nTo create the PDF:\n\n1. Run:\n\n   ```\n   make latexpdf\n   ```\n\n   This will generate the necessary files in the `build/latex` directory.\n\n2. Navigate to this directory and execute:\n\n   ```\n   make LATEXOPTS=\"-interaction=nonstopmode\"\n   ```\n\n   This will produce a `pytorch.pdf` with the desired content. Run this\n   command one more time so that it generates the correct table\n   of contents and index.\n\n> [!NOTE]\n> To view the Table of Contents, switch to the **Table of Contents**\n> view in your PDF viewer.\n\n\n### Previous Versions\n\nInstallation instructions and binaries for previous PyTorch versions may be found\non [our website](https://pytorch.org/get-started/previous-versions).\n\n\n## Getting Started\n\nPointers to get you started:\n- [Tutorials: get you started with understanding and using PyTorch](https://pytorch.org/tutorials/)\n- [Examples: easy to understand PyTorch code across all domains](https://github.com/pytorch/examples)\n- [The API Reference](https://pytorch.org/docs/)\n- [Glossary](https://github.com/pytorch/pytorch/blob/main/GLOSSARY.md)\n\n## Resources\n\n* [PyTorch.org](https://pytorch.org/)\n* [PyTorch Tutorials](https://pytorch.org/tutorials/)\n* [PyTorch Examples](https://github.com/pytorch/examples)\n* [PyTorch Models](https://pytorch.org/hub/)\n* [Intro to Deep Learning with PyTorch from Udacity](https://www.udacity.com/course/deep-learning-pytorch--ud188)\n* [Intro to Machine Learning with PyTorch from Udacity](https://www.udacity.com/course/intro-to-machine-learning-nanodegree--nd229)\n* [Deep Neural Networks with PyTorch from Coursera](https://www.coursera.org/learn/deep-neural-networks-with-pytorch)\n* [PyTorch Twitter](https://twitter.com/PyTorch)\n* [PyTorch Blog](https://pytorch.org/blog/)\n* [PyTorch YouTube](https://www.youtube.com/channel/UCWXI5YeOsh03QvJ59PMaXFw)\n\n## Communication\n* Forums: Discuss implementations, research, etc. https://discuss.pytorch.org\n* GitHub Issues: Bug reports, feature requests, install issues, RFCs, thoughts, etc. See the [issue lifecycle](CONTRIBUTING.md#issue-lifecycle) for how they are handled.\n* Slack: The [PyTorch Slack](https://pytorch.slack.com/) hosts a primary audience of moderate to experienced PyTorch users and developers for general chat, online discussions, collaboration, etc.\n* Facebook Page: Important announcements about PyTorch. https://www.facebook.com/pytorch\n* For brand guidelines, please visit our website at [pytorch.org](https://pytorch.org/)\n\n## Releases and Contributing\n\nTypically, PyTorch has three minor releases a year. Please let us know if you encounter a bug by [filing an issue](https://github.com/pytorch/pytorch/issues).\n\nWe appreciate all contributions. Whether you plan to contribute a bug-fix or a new feature, please first open an issue (or find an existing one) and discuss it with us.\nOnce a maintainer marks the issue \"actionable\", you can send a PR for it.\nSending a PR without an actionable issue will result in the PR being automatically closed.\nSee the [Issue and PR Workflow](CONTRIBUTING.md#issue-and-pr-workflow) for details.\n\nTo learn more about making a contribution to PyTorch, please see our [Contribution page](CONTRIBUTING.md). For more information about PyTorch releases, see [Release page](RELEASE.md).\n\n## The Team\n\nPyTorch is a community-driven project with several skillful engineers and researchers contributing to it.\n\nPyTorch is currently maintained by [Soumith Chintala](https://soumith.ch), [Gregory Chanan](https://github.com/gchanan), [Dmytro Dzhulgakov](https://github.com/dzhulgakov), [Edward Yang](https://github.com/ezyang), [Alban Desmaison](https://github.com/albanD), [Piotr Bialecki](https://github.com/ptrblck) and [Nikita Shulga](https://github.com/malfet) with major contributions coming from hundreds of talented individuals in various forms and means.\nA non-exhaustive but growing list needs to mention: [Trevor Killeen](https://github.com/killeent), [Sasank Chilamkurthy](https://github.com/chsasank), [Sergey Zagoruyko](https://github.com/szagoruyko), [Adam Lerer](https://github.com/adamlerer), [Francisco Massa](https://github.com/fmassa), [Alykhan Tejani](https://github.com/alykhantejani), [Luca Antiga](https://github.com/lantiga), [Alban Desmaison](https://github.com/albanD), [Andreas Koepf](https://github.com/andreaskoepf), [James Bradbury](https://github.com/jekbradbury), [Zeming Lin](https://github.com/ebetica), [Yuandong Tian](https://github.com/yuandong-tian), [Guillaume Lample](https://github.com/glample), [Marat Dukhan](https://github.com/Maratyszcza), [Natalia Gimelshein](https://github.com/ngimel), [Christian Sarofeen](https://github.com/csarofeen), [Martin Raison](https://github.com/martinraison), [Edward Yang](https://github.com/ezyang), [Zachary Devito](https://github.com/zdevito). <!-- codespell:ignore -->\n\nNote: This project is unrelated to [hughperkins/pytorch](https://github.com/hughperkins/pytorch) with the same name. Hugh is a valuable contributor to the Torch community and has helped with many things Torch and PyTorch.\n\n## License\n\nPyTorch has a BSD-style license, as found in the [LICENSE](LICENSE) file.\n",
+          "direct_url": null,
+          "saved_metadata_sha256": "8bbf94c86c3be6cf586385861d476b78cb66d19b67fef49ece4f7d68ca428cc3"
+        },
+        "target": {
+          "implementation_name": "cpython",
+          "implementation_version": "3.11.16",
+          "os_name": "posix",
+          "platform_machine": "x86_64",
+          "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+          "platform_system": "Linux",
+          "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+          "python_full_version": "3.11.16",
+          "platform_python_implementation": "CPython",
+          "python_version": "3.11",
+          "sys_platform": "linux"
+        },
+        "audit": {
+          "reachable_names": [
+            "filelock",
+            "fsspec",
+            "jinja2",
+            "markupsafe",
+            "mpmath",
+            "networkx",
+            "setuptools",
+            "sympy",
+            "torch",
+            "typing-extensions"
+          ],
+          "active_edges": [
+            {
+              "parent": "torch",
+              "requirement": "filelock",
+              "target": "filelock",
+              "installed_version": "4.2.10"
+            },
+            {
+              "parent": "torch",
+              "requirement": "typing-extensions>=4.13.0",
+              "target": "typing-extensions",
+              "installed_version": "4.16.0"
+            },
+            {
+              "parent": "torch",
+              "requirement": "setuptools>=77.0.3",
+              "target": "setuptools",
+              "installed_version": "84.2.1"
+            },
+            {
+              "parent": "torch",
+              "requirement": "sympy>=1.13.3",
+              "target": "sympy",
+              "installed_version": "1.14.0"
+            },
+            {
+              "parent": "torch",
+              "requirement": "networkx>=2.5.1",
+              "target": "networkx",
+              "installed_version": "3.6.1"
+            },
+            {
+              "parent": "torch",
+              "requirement": "jinja2",
+              "target": "jinja2",
+              "installed_version": "3.1.6"
+            },
+            {
+              "parent": "torch",
+              "requirement": "fsspec>=0.8.5",
+              "target": "fsspec",
+              "installed_version": "2026.9.0"
+            },
+            {
+              "parent": "sympy",
+              "requirement": "mpmath<1.4,>=1.1.0",
+              "target": "mpmath",
+              "installed_version": "1.3.0"
+            },
+            {
+              "parent": "jinja2",
+              "requirement": "MarkupSafe>=2.0",
+              "target": "markupsafe",
+              "installed_version": "3.0.4"
+            }
+          ],
+          "violations": [],
+          "unknown": []
+        },
+        "pip_check": {
+          "command": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/source-switch/torch-adaptive-control/environments/shared/bin/python",
+            "check"
+          ],
+          "returncode": 0,
+          "timeout": false,
+          "seconds": 18.642,
+          "stdout_sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "uv_check": {
+          "command": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+            "--no-config",
+            "pip",
+            "check",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/source-switch/torch-adaptive-control/environments/shared/bin/python"
+          ],
+          "returncode": 0,
+          "timeout": false,
+          "seconds": 1.337,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "9377577742701d4fd2f3e482df1166df1786b2e3c1622b6e89796291d82f9d28"
+        },
+        "inspect": {
+          "command": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/source-switch/torch-adaptive-control/environments/shared/bin/python",
+            "inspect",
+            "--local"
+          ],
+          "returncode": 0,
+          "timeout": false,
+          "seconds": 11.918,
+          "stdout_sha256": "670dd145760d2bb175485ce3c428ee98a2caaec36d275f835afb7edf7573309b",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "locked_root_full_version": "2.15.0+cpu",
+      "actual_root_matches_locked_full_version": true,
+      "root_metadata_matches_official_source": true
+    },
+    {
+      "stage": "03-pypi-lock",
+      "cpu": false,
+      "command": {
+        "command": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+          "--no-config",
+          "lock",
+          "--project",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/source-switch/torch-adaptive-control/project",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+          "--no-python-downloads",
+          "--no-build"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 7.147,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "c60b9cce7b991b18a25cb23365ca1e43b6b8e634abd092cc5744f13da7225c7e"
+      },
+      "environment_path": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/source-switch/torch-adaptive-control/environments/shared",
+      "pyproject.toml_sha256": "9adf6596ea29f764b6e082269b7fa393979b356c22ed77506e6796fb79aada5a",
+      "uv.lock_sha256": "86a2f1a6172dc39e69125d5aeca693424dd12aff7b24a4ed1cfe6ec0d9f5e313",
+      "budget": {
+        "lock_sha256": "86a2f1a6172dc39e69125d5aeca693424dd12aff7b24a4ed1cfe6ec0d9f5e313",
+        "native_candidate_size_sum": 3000124544,
+        "limit": 17179869184,
+        "unknown": [],
+        "candidates": [
+          {
+            "name": "cuda-bindings",
+            "version": "13.5.0",
+            "url": "https://files.pythonhosted.org/packages/f6/0d/ca24317a31118b90fd60126aec5c0a92a191a7fdd39524032d43328b49b5/cuda_bindings-13.5.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+            "size": 8390178,
+            "hash": "sha256:08b7e8d674c3266facb00453a7e34ea7d3ea965c2f594bb728f269f45f39fbe2",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "cuda-pathfinder",
+            "version": "1.8.6",
+            "url": "https://files.pythonhosted.org/packages/6a/9e/08555797c979322def080814686417ea93f66d38f5c48ebab6867a85a21e/cuda_pathfinder-1.8.6-py3-none-any.whl",
+            "size": 62603,
+            "hash": "sha256:bf6b3b06323cf95a11d671818392da5da23ddbbb4dfc4b77ca10622783c25980",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "cuda-toolkit",
+            "version": "13.2.2",
+            "url": "https://files.pythonhosted.org/packages/3d/62/854e4a141f5e87e5425513bad2a742a6260acfe06ef148001b5362148f31/cuda_toolkit-13.2.2-py2.py3-none-any.whl",
+            "size": 2607,
+            "hash": "sha256:d12edc1aad1356236a2ee10c0d794b1aff5d3e79bfeca54867c3bb8e5afd87b0",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "filelock",
+            "version": "4.2.10",
+            "url": "https://files.pythonhosted.org/packages/ef/90/5d0096a325aa0f83ba7a3968bfb485b67e32c947bdf9cd0fcb4b485be718/filelock-4.2.10-py3-none-any.whl",
+            "size": 218040,
+            "hash": "sha256:9479aaeb4db20b5a53e3da28493edd24720b66b8a0b84030aa56ccdf243d6857",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "fsspec",
+            "version": "2026.9.0",
+            "url": "https://files.pythonhosted.org/packages/6c/c0/a98505f18594f1bce828bb159cec0fcf9860562f1a2c85913409fc8f3d9e/fsspec-2026.9.0-py3-none-any.whl",
+            "size": 221738,
+            "hash": "sha256:8dd6e646e99ea382bd85f97a45e6b526a442d79423a7dc673f1e2756d05fcb5f",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "jinja2",
+            "version": "3.1.6",
+            "url": "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl",
+            "size": 134899,
+            "hash": "sha256:85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "markupsafe",
+            "version": "3.0.4",
+            "url": "https://files.pythonhosted.org/packages/81/a5/a513b76c139a3915b43404324e55c0b7979ae4f0d39eb6f075b0282e90a8/markupsafe-3.0.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+            "size": 22961,
+            "hash": "sha256:6da83a088f8ef93b2d483a8232a4dbf4d69d3d8496b568a03c56becac43e1808",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "mpmath",
+            "version": "1.3.0",
+            "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl",
+            "size": 536198,
+            "hash": "sha256:a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "networkx",
+            "version": "3.6.1",
+            "url": "https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl",
+            "size": 2068504,
+            "hash": "sha256:d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "nvidia-cublas",
+            "version": "13.4.1.3",
+            "url": "https://files.pythonhosted.org/packages/e1/97/d483a41da34df5c88727c57319576967f6d7befba5028d70928d2999635e/nvidia_cublas-13.4.1.3-py3-none-manylinux_2_27_x86_64.whl",
+            "size": 404870805,
+            "hash": "sha256:a5917cb642cfb07f4a0231ee16aec7e2e0357d8cb8b1b78a0c9c68dba3e6afc7",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "nvidia-cuda-cccl",
+            "version": "13.3.5.0.6",
+            "url": "https://files.pythonhosted.org/packages/a7/7e/4aa67cca14e0558b5a151a692f5ffe609930cdfc20d16c7a584de68424d4/nvidia_cuda_cccl-13.3.5.0.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+            "size": 4113651,
+            "hash": "sha256:d5230098fa2df5021e1a00c0c4eee41797671a91119d31e892463e5ccf3ee326",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "nvidia-cuda-cupti",
+            "version": "13.2.86",
+            "url": "https://files.pythonhosted.org/packages/b4/76/a10d9fb5d9a0e46d5f95e5520bd1b2d8ad22a9c0a09d2f8c20c5ee842a96/nvidia_cuda_cupti-13.2.86-py3-none-manylinux_2_25_x86_64.whl",
+            "size": 11988600,
+            "hash": "sha256:8fa29f15dd8336181f961764d9d95236fc6b931dd0c8fcf8cd70aab0c310b586",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "nvidia-cuda-nvrtc",
+            "version": "13.2.86",
+            "url": "https://files.pythonhosted.org/packages/1e/39/c58835ec8392a91b8d7bad83760eafc3085f64788b722ec2b44a27b3ca3e/nvidia_cuda_nvrtc-13.2.86-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl",
+            "size": 47018468,
+            "hash": "sha256:8111c5130e967b78222ea2124145f8efe9ce201b752b2579a2513100a53be1c5",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "nvidia-cuda-runtime",
+            "version": "13.2.86",
+            "url": "https://files.pythonhosted.org/packages/70/c6/8f8c5e893d183082ea78f973aebc7ebc845ee219d68bddac73b0f62490fe/nvidia_cuda_runtime-13.2.86-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+            "size": 2323576,
+            "hash": "sha256:3498247680dfddce31bad102af7e3e26fc795342a3cac64722bb0fa95e7f60f0",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "nvidia-cudnn-cu13",
+            "version": "9.26.0.51",
+            "url": "https://files.pythonhosted.org/packages/ac/1b/ea72dd62f26ce3e0a7870b85148b75a5987507629b712deebeb87f7cce9a/nvidia_cudnn_cu13-9.26.0.51-py3-none-manylinux_2_27_x86_64.whl",
+            "size": 519150073,
+            "hash": "sha256:9c976d539786698c71d6bcdbe2053b7485fae062ff7e1215d2f2ff67b1a2149a",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "nvidia-cufft",
+            "version": "12.2.0.57",
+            "url": "https://files.pythonhosted.org/packages/41/28/868ed0c6ade5e6a75b25166b3cf191f4a2ff58ad618c1e40befb776c97c5/nvidia_cufft-12.2.0.57-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+            "size": 218258101,
+            "hash": "sha256:34da27fadf3979b0b042c43823f0530be8408b86df31ee0108e1ca0b621d4ef6",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "nvidia-cufile",
+            "version": "1.17.1.22",
+            "url": "https://files.pythonhosted.org/packages/23/c5/661a73a9042fc5f81cdd5fe6e89f4170b3b33f7962e709987e2b5e5f1381/nvidia_cufile-1.17.1.22-py3-none-manylinux_2_27_x86_64.whl",
+            "size": 1387670,
+            "hash": "sha256:87feaf8c3ad20d3d03a01933181801ff6892bace5c8f0b1e4b48f319d3e62d36",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "nvidia-cusolver",
+            "version": "12.2.0.11",
+            "url": "https://files.pythonhosted.org/packages/e4/a4/90f7ade9992190788658c3c285f196fdb9bcc3a5bb93a325c245121d22fd/nvidia_cusolver-12.2.0.11-py3-none-manylinux_2_27_x86_64.whl",
+            "size": 227913465,
+            "hash": "sha256:fab5778f6769947389a1a6abc07e635576825a08c0ffc68c3ae7f1392c794b42",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "nvidia-cusparse",
+            "version": "12.7.10.12",
+            "url": "https://files.pythonhosted.org/packages/bc/46/3a9700cc13f30c9279af9a862363535c814fa27597199b21fd93cad66237/nvidia_cusparse-12.7.10.12-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+            "size": 150999307,
+            "hash": "sha256:25907c75e4db1581685f06f61cc6cdecc04611765516a52373e0a18ebd69fa00",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "nvidia-cusparselt-cu13",
+            "version": "0.8.1",
+            "url": "https://files.pythonhosted.org/packages/34/7d/2661f2fb3ac4302f3a246f5fc030213ac60c1fe0bce84f9783dbd831dbb7/nvidia_cusparselt_cu13-0.8.1-py3-none-manylinux2014_x86_64.whl",
+            "size": 170148586,
+            "hash": "sha256:786ce87568c303fadb5afcc7102d454cd3040d75f6f8626f5db460d1871f4dd0",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "nvidia-nccl-cu13",
+            "version": "2.30.7",
+            "url": "https://files.pythonhosted.org/packages/3f/34/c500f90c7ae641b8e0f98965b36b8a7ac79cc8b296e8d251fe3eb592ee54/nvidia_nccl_cu13-2.30.7-py3-none-manylinux_2_18_x86_64.whl",
+            "size": 215965170,
+            "hash": "sha256:cefa7fdb9710efd0f39c5f1be1d61ff6fc9a996c451265bd7fbdcf9455ed4b50",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "nvidia-nvjitlink",
+            "version": "13.5.37",
+            "url": "https://files.pythonhosted.org/packages/cc/1f/2321702b8d60b4b4dd18b957f61612dbac9cb1c07e940cf6582106b7c8b8/nvidia_nvjitlink-13.5.37-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl",
+            "size": 46642491,
+            "hash": "sha256:280d7cb9649704145f074b8dbde500de04ce02d0872e066e20a83c17bcaa93eb",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "nvidia-nvshmem-cu13",
+            "version": "3.7.2",
+            "url": "https://files.pythonhosted.org/packages/4f/4a/037dfbbafc96ad1828ef62326f27970cae2c0eb271cf5b8e6922f32a7427/nvidia_nvshmem_cu13-3.7.2-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+            "size": 135397797,
+            "hash": "sha256:b9a4f843c62b5dded8ad33fd6d220e007dcd39f06cee549292f5ba14ce4c235c",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "nvidia-nvtx",
+            "version": "13.2.86",
+            "url": "https://files.pythonhosted.org/packages/49/ee/16bde09927e7ffacd50b117cd7d1dc764d145f03249fc41fdf6dfba3301f/nvidia_nvtx-13.2.86-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl",
+            "size": 153463,
+            "hash": "sha256:968ce72baee2a01791c7d3254000eac81f24677b0b91c62d21b449a1f309c245",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "setuptools",
+            "version": "84.2.1",
+            "url": "https://files.pythonhosted.org/packages/ef/55/6dc6d6bb953bdfc52519a0059592c52b6e3b8ad51cf8256dffceb55b0610/setuptools-84.2.1-py3-none-any.whl",
+            "size": 876263,
+            "hash": "sha256:ca140b45d5325a9478f880e351484f62fef15f336462e449ca0c03c873d589c2",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "sympy",
+            "version": "1.14.0",
+            "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl",
+            "size": 6299353,
+            "hash": "sha256:e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "torch",
+            "version": "2.15.0",
+            "url": "https://files.pythonhosted.org/packages/06/7d/57b7f46934e1148b436889e385693bfcb94ae047b3fe0b6015922e3b66f7/torch-2.15.0-cp311-cp311-manylinux_2_28_x86_64.whl",
+            "size": 539136850,
+            "hash": "sha256:48c2d861134c0b5697c7602cb5ffa68f62a2989fdcd1717e593356f67996ca1e",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "triton",
+            "version": "3.9.0",
+            "url": "https://files.pythonhosted.org/packages/05/73/51e1466f2941ed36dbe57d1f88f772ba6afe669e5ba1e24eaf148b7ec0e1/triton-3.9.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+            "size": 285777556,
+            "hash": "sha256:1622118a038b0c6e16fa4a0305da62c8b3c15904ee1cc4d4e65846a25969e41e",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          },
+          {
+            "name": "typing-extensions",
+            "version": "4.16.0",
+            "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+            "size": 45571,
+            "hash": "sha256:481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+            "source": {
+              "registry": "https://pypi.org/simple"
+            }
+          }
+        ],
+        "eligible": true,
+        "interpretation": "Size uses best native tag candidate per lock node as a preflight bound; actual installer file choice is separately observed. No dependencies omitted to meet budget."
+      }
+    },
+    {
+      "stage": "04-warm-pypi-sync",
+      "cpu": false,
+      "command": {
+        "command": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+          "--no-config",
+          "sync",
+          "--project",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/source-switch/torch-adaptive-control/project",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+          "--no-python-downloads",
+          "--no-build",
+          "--locked",
+          "--no-install-project",
+          "--no-default-groups",
+          "--verbose"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 1620.441,
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "54a75f00c6b6e2ed9996a86dfd21c0226a049b59ed882fc0d9007291945d191c"
+      },
+      "environment_path": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/source-switch/torch-adaptive-control/environments/shared",
+      "pyproject.toml_sha256": "9adf6596ea29f764b6e082269b7fa393979b356c22ed77506e6796fb79aada5a",
+      "uv.lock_sha256": "86a2f1a6172dc39e69125d5aeca693424dd12aff7b24a4ed1cfe6ec0d9f5e313",
+      "installed": {
+        "installed_count": 29,
+        "root": {
+          "name": "torch",
+          "version": "2.15.0",
+          "requires_dist": [
+            "filelock",
+            "typing-extensions>=4.13.0",
+            "setuptools>=77.0.3",
+            "sympy>=1.13.3",
+            "networkx>=2.5.1",
+            "jinja2",
+            "fsspec>=0.8.5",
+            "cuda-toolkit[cublas,cudart,cufft,cufile,cupti,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.2.2; platform_system == \"Linux\"",
+            "cuda-bindings<14,>=13.0.3; platform_system == \"Linux\" and python_version < \"3.15\"",
+            "nvidia-cudnn-cu13==9.26.0.51; platform_system == \"Linux\"",
+            "nvidia-cusparselt-cu13==0.8.1; platform_system == \"Linux\"",
+            "nvidia-nccl-cu13==2.30.7; platform_system == \"Linux\"",
+            "nvidia-nvshmem-cu13==3.7.2; platform_system == \"Linux\"",
+            "triton~=3.9.0; platform_system == \"Linux\" and python_version < \"3.16\"",
+            "optree>=0.13.0; extra == \"optree\"",
+            "opt-einsum>=3.3; extra == \"opt-einsum\"",
+            "pyyaml; extra == \"pyyaml\""
+          ],
+          "dist_info": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/source-switch/torch-adaptive-control/environments/shared/lib/python3.11/site-packages/torch-2.15.0.dist-info",
+          "metadata": "Metadata-Version: 2.4\nName: torch\nVersion: 2.15.0\nSummary: Tensors and Dynamic neural networks in Python with strong GPU acceleration\nKeywords: pytorch,machine learning\nAuthor-Email: PyTorch Team <packages@pytorch.org>\nLicense-Expression: Apache-2.0 AND Apache-2.0 WITH LLVM-exception AND BSD-2-Clause AND BSD-3-Clause AND BSL-1.0 AND ISC AND MIT AND Zlib\nLicense-File: LICENSE\nLicense-File: third_party/FP16/LICENSE\nLicense-File: third_party/FXdiv/LICENSE\nLicense-File: third_party/NNPACK/LICENSE\nLicense-File: third_party/NVTX/LICENSE.txt\nLicense-File: third_party/VulkanMemoryAllocator/LICENSE.txt\nLicense-File: third_party/XNNPACK/LICENSE\nLicense-File: third_party/aiter/3rdparty/composable_kernel/LICENSE\nLicense-File: third_party/aiter/LICENSE\nLicense-File: third_party/composable_kernel/LICENSE\nLicense-File: third_party/concurrentqueue/moodycamel/LICENSE.md\nLicense-File: third_party/cpp-httplib/LICENSE\nLicense-File: third_party/cpuinfo/LICENSE\nLicense-File: third_party/cpuinfo/deps/clog/LICENSE\nLicense-File: third_party/cudnn_frontend/LICENSE-MIT.txt\nLicense-File: third_party/cudnn_frontend/LICENSE.txt\nLicense-File: third_party/cudnn_frontend/python/cudnn/moe_ep/_megamoe_backend/cutedsl_src/LICENSE.Apache-2.0\nLicense-File: third_party/cutlass/LICENSE.txt\nLicense-File: third_party/fbgemm/LICENSE\nLicense-File: third_party/fbgemm/external/asmjit/LICENSE.md\nLicense-File: third_party/fbgemm/external/composable_kernel/LICENSE\nLicense-File: third_party/fbgemm/external/cpuinfo/LICENSE\nLicense-File: third_party/fbgemm/external/cpuinfo/deps/clog/LICENSE\nLicense-File: third_party/fbgemm/external/cutlass/LICENSE.txt\nLicense-File: third_party/flash-attention/LICENSE\nLicense-File: third_party/flash-attention/csrc/composable_kernel/LICENSE\nLicense-File: third_party/flash-attention/csrc/cutlass/LICENSE.txt\nLicense-File: third_party/flash-attention/flash_attn/cute/LICENSE\nLicense-File: third_party/flash-attention/third_party/aiter/3rdparty/composable_kernel/LICENSE\nLicense-File: third_party/flash-attention/third_party/aiter/LICENSE\nLicense-File: third_party/flatbuffers/LICENSE\nLicense-File: third_party/fmt/LICENSE\nLicense-File: third_party/gemmlowp/gemmlowp/LICENSE\nLicense-File: third_party/gloo/LICENSE\nLicense-File: third_party/gloo/gloo/transport/uv/LICENSE.uvw\nLicense-File: third_party/ideep/LICENSE\nLicense-File: third_party/ideep/mkl-dnn/LICENSE\nLicense-File: third_party/ideep/mkl-dnn/third_party/ittnotify/LICENSE.BSD\nLicense-File: third_party/ideep/mkl-dnn/third_party/opencl/LICENSE\nLicense-File: third_party/kineto/LICENSE\nLicense-File: third_party/kineto/libkineto/third_party/dynolog_headers/LICENSE\nLicense-File: third_party/llvm-openmp/LICENSE.txt\nLicense-File: third_party/mimalloc/LICENSE\nLicense-File: third_party/miniz-3.0.2/LICENSE\nLicense-File: third_party/mslk/LICENSE\nLicense-File: third_party/mslk/external/composable_kernel/LICENSE\nLicense-File: third_party/mslk/external/cutlass/LICENSE.txt\nLicense-File: third_party/mslk/mslk/attention/flash_attn/LICENSE\nLicense-File: third_party/nlohmann/LICENSE.MIT\nLicense-File: third_party/onnx/LICENSE\nLicense-File: third_party/perfetto/LICENSE\nLicense-File: third_party/pocketfft/LICENSE.md\nLicense-File: third_party/protobuf/LICENSE\nLicense-File: third_party/psimd/LICENSE\nLicense-File: third_party/pthreadpool/LICENSE\nLicense-File: third_party/pybind11/LICENSE\nLicense-File: third_party/sleef/LICENSE.txt\nLicense-File: third_party/tensorpipe/LICENSE.txt\nLicense-File: third_party/tensorpipe/third_party/libnop/LICENSE\nLicense-File: third_party/tensorpipe/third_party/libuv/LICENSE\nLicense-File: third_party/tensorpipe/third_party/libuv/LICENSE-extra\nClassifier: Development Status :: 5 - Production/Stable\nClassifier: Intended Audience :: Developers\nClassifier: Intended Audience :: Education\nClassifier: Intended Audience :: Science/Research\nClassifier: Topic :: Scientific/Engineering\nClassifier: Topic :: Scientific/Engineering :: Mathematics\nClassifier: Topic :: Scientific/Engineering :: Artificial Intelligence\nClassifier: Topic :: Software Development\nClassifier: Topic :: Software Development :: Libraries\nClassifier: Topic :: Software Development :: Libraries :: Python Modules\nClassifier: Programming Language :: C++\nClassifier: Programming Language :: Python :: 3 :: Only\nClassifier: Programming Language :: Python :: 3.11\nClassifier: Programming Language :: Python :: 3.12\nClassifier: Programming Language :: Python :: 3.13\nClassifier: Programming Language :: Python :: 3.14\nClassifier: Programming Language :: Python :: 3.15\nProject-URL: Homepage, https://pytorch.org\nProject-URL: Repository, https://github.com/pytorch/pytorch\nProject-URL: Documentation, https://pytorch.org/docs\nProject-URL: Issue Tracker, https://github.com/pytorch/pytorch/issues\nProject-URL: Forum, https://discuss.pytorch.org\nRequires-Python: >=3.11\nRequires-Dist: filelock\nRequires-Dist: typing-extensions>=4.13.0\nRequires-Dist: setuptools>=77.0.3\nRequires-Dist: sympy>=1.13.3\nRequires-Dist: networkx>=2.5.1\nRequires-Dist: jinja2\nRequires-Dist: fsspec>=0.8.5\nRequires-Dist: cuda-toolkit[cublas,cudart,cufft,cufile,cupti,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.2.2; platform_system == \"Linux\"\nRequires-Dist: cuda-bindings<14,>=13.0.3; platform_system == \"Linux\" and python_version < \"3.15\"\nRequires-Dist: nvidia-cudnn-cu13==9.26.0.51; platform_system == \"Linux\"\nRequires-Dist: nvidia-cusparselt-cu13==0.8.1; platform_system == \"Linux\"\nRequires-Dist: nvidia-nccl-cu13==2.30.7; platform_system == \"Linux\"\nRequires-Dist: nvidia-nvshmem-cu13==3.7.2; platform_system == \"Linux\"\nRequires-Dist: triton~=3.9.0; platform_system == \"Linux\" and python_version < \"3.16\"\nProvides-Extra: optree\nRequires-Dist: optree>=0.13.0; extra == \"optree\"\nProvides-Extra: opt-einsum\nRequires-Dist: opt-einsum>=3.3; extra == \"opt-einsum\"\nProvides-Extra: pyyaml\nRequires-Dist: pyyaml; extra == \"pyyaml\"\nDescription-Content-Type: text/markdown\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/pytorch-logo-light.png\" />\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/pytorch-logo-dark.png\" />\n  <img src=\"https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/pytorch-logo-dark.png\" alt=\"PyTorch logo\" />\n</picture>\n\n--------------------------------------------------------------------------------\n\nPyTorch is a Python package that provides two high-level features:\n- Tensor computation (like NumPy) with strong GPU acceleration\n- Deep neural networks built on a tape-based autograd system\n\nYou can reuse your favorite Python packages such as NumPy, SciPy, and Cython to extend PyTorch when needed.\n\nOur trunk health (Continuous Integration signals) can be found at [hud.pytorch.org](https://hud.pytorch.org/ci/pytorch/pytorch/main).\n\n<!-- toc -->\n\n- [More About PyTorch](#more-about-pytorch)\n  - [A GPU-Ready Tensor Library](#a-gpu-ready-tensor-library)\n  - [Dynamic Neural Networks: Tape-Based Autograd](#dynamic-neural-networks-tape-based-autograd)\n  - [Python First](#python-first)\n  - [Imperative Experiences](#imperative-experiences)\n  - [Fast and Lean](#fast-and-lean)\n  - [Extensions Without Pain](#extensions-without-pain)\n- [Installation](#installation)\n  - [Binaries](#binaries)\n    - [NVIDIA Jetson Platforms](#nvidia-jetson-platforms)\n  - [From Source](#from-source)\n    - [Prerequisites](#prerequisites)\n      - [NVIDIA CUDA Support](#nvidia-cuda-support)\n      - [AMD ROCm Support](#amd-rocm-support)\n      - [Intel GPU Support](#intel-gpu-support)\n    - [Get the PyTorch Source](#get-the-pytorch-source)\n    - [Install Dependencies](#install-dependencies)\n    - [Install PyTorch](#install-pytorch)\n      - [Adjust Build Options (Optional)](#adjust-build-options-optional)\n  - [Docker Image](#docker-image)\n    - [Using pre-built images](#using-pre-built-images)\n    - [Building the image yourself](#building-the-image-yourself)\n  - [Building the Documentation](#building-the-documentation)\n    - [Troubleshooting CI Errors](#troubleshooting-ci-errors)\n    - [Building a PDF](#building-a-pdf)\n  - [Previous Versions](#previous-versions)\n- [Getting Started](#getting-started)\n- [Resources](#resources)\n- [Communication](#communication)\n- [Releases and Contributing](#releases-and-contributing)\n- [The Team](#the-team)\n- [License](#license)\n\n<!-- tocstop -->\n\n## More About PyTorch\n\n[Learn the basics of PyTorch](https://pytorch.org/tutorials/beginner/basics/intro.html)\n\nAt a granular level, PyTorch is a library that consists of the following components:\n\n| Component | Description |\n| ---- | --- |\n| [**torch**](https://pytorch.org/docs/stable/torch.html) | A Tensor library like NumPy, with strong GPU support |\n| [**torch.autograd**](https://pytorch.org/docs/stable/autograd.html) | A tape-based automatic differentiation library that supports all differentiable Tensor operations in torch |\n| [**torch.jit**](https://pytorch.org/docs/stable/jit.html) | A compilation stack (TorchScript) to create serializable and optimizable models from PyTorch code  |\n| [**torch.nn**](https://pytorch.org/docs/stable/nn.html) | A neural networks library deeply integrated with autograd designed for maximum flexibility |\n| [**torch.multiprocessing**](https://pytorch.org/docs/stable/multiprocessing.html) | Python multiprocessing, but with magical memory sharing of torch Tensors across processes. Useful for data loading and Hogwild training |\n| [**torch.utils**](https://pytorch.org/docs/stable/data.html) | DataLoader and other utility functions for convenience |\n\nUsually, PyTorch is used either as:\n\n- A replacement for NumPy to use the power of GPUs.\n- A deep learning research platform that provides maximum flexibility and speed.\n\nElaborating Further:\n\n### A GPU-Ready Tensor Library\n\nIf you use NumPy, then you have used Tensors (a.k.a. ndarray).\n\n![Tensor illustration](https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/tensor_illustration.png)\n\nPyTorch provides Tensors that can live either on the CPU or the GPU and accelerates the\ncomputation by a huge amount.\n\nWe provide a wide variety of tensor routines to accelerate and fit your scientific computation needs\nsuch as slicing, indexing, mathematical operations, linear algebra, reductions.\nAnd they are fast!\n\n### Dynamic Neural Networks: Tape-Based Autograd\n\nPyTorch has a unique way of building neural networks: using and replaying a tape recorder.\n\nMost frameworks such as TensorFlow, Theano, Caffe, and CNTK have a static view of the world.\nOne has to build a neural network and reuse the same structure again and again.\nChanging the way the network behaves means that one has to start from scratch.\n\nWith PyTorch, we use a technique called reverse-mode auto-differentiation, which allows you to\nchange the way your network behaves arbitrarily with zero lag or overhead. Our inspiration comes\nfrom several research papers on this topic, as well as current and past work such as\n[torch-autograd](https://github.com/twitter/torch-autograd),\n[autograd](https://github.com/HIPS/autograd),\n[Chainer](https://chainer.org), etc.\n\nWhile this technique is not unique to PyTorch, it's one of the fastest implementations of it to date.\nYou get the best of speed and flexibility for your crazy research.\n\n![Dynamic graph](https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/dynamic_graph.gif)\n\n### Python First\n\nPyTorch is not a Python binding into a monolithic C++ framework.\nIt is built to be deeply integrated into Python.\nYou can use it naturally like you would use [NumPy](https://www.numpy.org/) / [SciPy](https://www.scipy.org/) / [scikit-learn](https://scikit-learn.org) etc.\nYou can write your new neural network layers in Python itself, using your favorite libraries\nand use packages such as [Cython](https://cython.org/) and [Numba](https://numba.pydata.org/).\nOur goal is to not reinvent the wheel where appropriate.\n\n### Imperative Experiences\n\nPyTorch is designed to be intuitive, linear in thought, and easy to use.\nWhen you execute a line of code, it gets executed. There isn't an asynchronous view of the world.\nWhen you drop into a debugger or receive error messages and stack traces, understanding them is straightforward.\nThe stack trace points to exactly where your code was defined.\nWe hope you never spend hours debugging your code because of bad stack traces or asynchronous and opaque execution engines.\n\n### Fast and Lean\n\nPyTorch has minimal framework overhead. We integrate acceleration libraries\nsuch as [Intel MKL](https://software.intel.com/mkl) and NVIDIA ([cuDNN](https://developer.nvidia.com/cudnn), [NCCL](https://developer.nvidia.com/nccl)) to maximize speed.\nAt the core, its CPU and GPU Tensor and neural network backends\nare mature and have been tested for years.\n\nHence, PyTorch is quite fast — whether you run small or large neural networks.\n\nThe memory usage in PyTorch is extremely efficient compared to Torch or some of the alternatives.\nWe've written custom memory allocators for the GPU to make sure that\nyour deep learning models are maximally memory efficient.\nThis enables you to train bigger deep learning models than before.\n\n### Extensions Without Pain\n\nWriting new neural network modules, or interfacing with PyTorch's Tensor API, was designed to be straightforward\nand with minimal abstractions.\n\nYou can write new neural network layers in Python using the torch API\n[or your favorite NumPy-based libraries such as SciPy](https://pytorch.org/tutorials/advanced/numpy_extensions_tutorial.html).\n\nIf you want to write your layers in C/C++, we provide a convenient extension API that is efficient and with minimal boilerplate.\nNo wrapper code needs to be written. You can see [a tutorial here](https://pytorch.org/tutorials/advanced/cpp_extension.html) and [an example here](https://github.com/pytorch/extension-cpp).\n\n\n## Installation\n\n### Binaries\nCommands to install binaries via Conda or pip wheels are on our website: [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)\n\n\n#### NVIDIA Jetson Platforms\n\nPython wheels for NVIDIA's Jetson Nano, Jetson TX1/TX2, Jetson Xavier NX/AGX, and Jetson AGX Orin are provided [here](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-10-now-available/72048) and the L4T container is published [here](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/l4t-pytorch)\n\nThey require JetPack 4.2 and above, and [@dusty-nv](https://github.com/dusty-nv) and [@ptrblck](https://github.com/ptrblck) are maintaining them.\n\n\n### From Source\n\n#### Prerequisites\nIf you are installing from source, you will need:\n- Python 3.11 or later\n- A compiler that fully supports C++20, such as clang or gcc (gcc 11.3.0 or newer is required, on Linux)\n- Visual Studio or Visual Studio Build Tool (Windows only)\n- At least 10 GB of free disk space\n- 30-60 minutes for the initial build (subsequent rebuilds are much faster)\n\n\\* PyTorch CI uses Visual C++ BuildTools, which come with Visual Studio Enterprise,\nProfessional, or Community Editions. You can also install the build tools from\nhttps://visualstudio.microsoft.com/visual-cpp-build-tools/. The build tools *do not*\ncome with Visual Studio Code by default.\n\nAn example of environment setup is shown below:\n\n* Linux:\n\n```bash\n$ source <CONDA_INSTALL_DIR>/bin/activate\n$ conda create -y -n <CONDA_NAME>\n$ conda activate <CONDA_NAME>\n```\n* Windows:\n\n```bash\n$ source <CONDA_INSTALL_DIR>\\Scripts\\activate.bat\n$ conda create -y -n <CONDA_NAME>\n$ conda activate <CONDA_NAME>\n$ call \"C:\\Program Files\\Microsoft Visual Studio\\<VERSION>\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x64\n```\n\nA conda environment is not required.  You can also do a PyTorch build in a\nstandard virtual environment, e.g., created with tools like `uv`, provided\nyour system has installed all the necessary dependencies unavailable as pip\npackages (e.g., CUDA, MKL.)\n\n##### NVIDIA CUDA Support\nIf you want to compile with CUDA support, [select a supported version of CUDA from our support matrix](https://pytorch.org/get-started/locally/), then install the following:\n- [NVIDIA CUDA](https://developer.nvidia.com/cuda-downloads)\n- [NVIDIA cuDNN](https://developer.nvidia.com/cudnn) v9.0 or above\n- [Compiler](https://gist.github.com/ax3l/9489132) compatible with CUDA\n\nNote: You could refer to the [cuDNN Support Matrix](https://docs.nvidia.com/deeplearning/cudnn/backend/latest/reference/support-matrix.html) for cuDNN versions with the various supported CUDA, CUDA driver, and NVIDIA hardware.\n\nIf you want to disable CUDA support, export the environment variable `USE_CUDA=0`.\nOther potentially useful environment variables are documented in [`cmake/EnvVarForwarding.cmake`](./cmake/EnvVarForwarding.cmake).  If\nCUDA is installed in a non-standard location, set PATH so that the nvcc you\nwant to use can be found (e.g., `export PATH=/usr/local/cuda-12.8/bin:$PATH`).\n\nIf you are building for NVIDIA's Jetson platforms (Jetson Nano, TX1, TX2, AGX Xavier), Instructions to install PyTorch for Jetson Nano are [available here](https://devtalk.nvidia.com/default/topic/1049071/jetson-nano/pytorch-for-jetson-nano/)\n\n##### AMD ROCm Support\nIf you want to compile with ROCm support, install\n- [AMD ROCm](https://rocm.docs.amd.com/en/latest/deploy/linux/quick_start.html) 4.0 and above installation\n- ROCm is currently supported only for Linux systems.\n\nBy default the build system expects ROCm to be installed in `/opt/rocm`. If ROCm is installed in a different directory, the `ROCM_PATH` environment variable must be set to the ROCm installation directory. The build system automatically detects the AMD GPU architecture. Optionally, the AMD GPU architecture can be explicitly set with the `PYTORCH_ROCM_ARCH` environment variable [AMD GPU architecture](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/reference/system-requirements.html#supported-gpus)\n\nIf you want to disable ROCm support, export the environment variable `USE_ROCM=0`.\nOther potentially useful environment variables are documented in [`cmake/EnvVarForwarding.cmake`](./cmake/EnvVarForwarding.cmake).\n\n##### Intel GPU Support\nIf you want to compile with Intel GPU support, follow these\n- [PyTorch Prerequisites for Intel GPUs](https://www.intel.com/content/www/us/en/developer/articles/tool/pytorch-prerequisites-for-intel-gpu.html) instructions.\n- Intel GPU is supported for Linux and Windows.\n\nIf you want to disable Intel GPU support, export the environment variable `USE_XPU=0`.\nOther potentially useful environment variables are documented in [`cmake/EnvVarForwarding.cmake`](./cmake/EnvVarForwarding.cmake).\n\n#### Get the PyTorch Source\n\n```bash\ngit clone https://github.com/pytorch/pytorch\ncd pytorch\n# if you are updating an existing checkout\ngit submodule sync\ngit submodule update --init --recursive\n```\n\n#### Install Dependencies\n\n**Common**\n\n```bash\n# Run this command from the PyTorch directory after cloning the source code using the “Get the PyTorch Source“ section above\npip install --group dev\n```\n\n**On Linux**\n\n```bash\npip install mkl-static mkl-include\n# CUDA only: Add LAPACK support for the GPU if needed\n# magma installation: run with active conda environment. specify CUDA version to install\n.ci/docker/common/install_magma_conda.sh 12.4\n\n# (optional) If using torch.compile with inductor/triton, install the matching version of triton\n# Run from the pytorch directory after cloning\n# For Intel GPU support, please explicitly `export USE_XPU=1` before running command.\nmake triton\n```\n\n**On Windows**\n\n```bash\npip install mkl-static mkl-include\n# Add these packages if torch.distributed is needed.\n# Distributed package support on Windows is a prototype feature and is subject to changes.\nconda install -c conda-forge libuv=1.51\n```\n\n#### Install PyTorch\n\n**On Linux**\n\nIf you're compiling for AMD ROCm then first run this command:\n\n```bash\n# Only run this if you're compiling for ROCm\npython tools/amd_build/build_amd.py\n```\n\nInstall PyTorch\n\n```bash\n# the CMake prefix for conda environment\nexport CMAKE_PREFIX_PATH=\"${CONDA_PREFIX:-'$(dirname $(which conda))/../'}:${CMAKE_PREFIX_PATH}\"\npython -m pip install --no-build-isolation -v -e .\n\n# the CMake prefix for non-conda environment, e.g. Python venv\n# call following after activating the venv\nexport CMAKE_PREFIX_PATH=\"${VIRTUAL_ENV}:${CMAKE_PREFIX_PATH}\"\n```\n\n**On macOS**\n\n```bash\npython -m pip install --no-build-isolation -v -e .\n```\n\n**On Windows**\n\nIf you want to build legacy python code, please refer to [Building on legacy code and CUDA](https://github.com/pytorch/pytorch/blob/main/CONTRIBUTING.md#building-on-legacy-code-and-cuda)\n\n**CPU-only builds**\n\nIn this mode PyTorch computations will run on your CPU, not your GPU.\n\n```cmd\npython -m pip install --no-build-isolation -v -e .\n```\n\nNote on OpenMP: The desired OpenMP implementation is Intel OpenMP (iomp). In order to link against iomp, you'll need to manually download the library and set up the building environment by tweaking `CMAKE_INCLUDE_PATH` and `LIB`. The instruction [here](https://docs.pytorch.org/docs/main/notes/windows.html#building-from-source) is an example for setting up both MKL and Intel OpenMP. Without these configurations for CMake, Microsoft Visual C OpenMP runtime (vcomp) will be used.\n\n**CUDA based build**\n\nIn this mode PyTorch computations will leverage your GPU via CUDA for faster number crunching\n\n[NVTX](https://docs.nvidia.com/gameworks/content/gameworkslibrary/nvtx/nvidia_tools_extension_library_nvtx.htm) is needed to build PyTorch with CUDA.\nNVTX is a part of CUDA distributive, where it is called \"Nsight Compute\". To install it onto an already installed CUDA run CUDA installation once again and check the corresponding checkbox.\nMake sure that CUDA with Nsight Compute is installed after Visual Studio.\n\nCurrently, VS 2017 / 2019, and Ninja are supported as the generator of CMake. If `ninja.exe` is detected in `PATH`, then Ninja will be used as the default generator, otherwise, it will use VS 2017 / 2019.\n<br/> If Ninja is selected as the generator, the latest MSVC will get selected as the underlying toolchain.\n\nAdditional libraries such as\n[Magma](https://developer.nvidia.com/magma), [oneDNN, a.k.a. MKLDNN or DNNL](https://github.com/oneapi-src/oneDNN), and [Sccache](https://github.com/mozilla/sccache) are often needed. Please refer to the [installation-helper](https://github.com/pytorch/pytorch/tree/main/.ci/pytorch/win-test-helpers/installation-helpers) to install them.\n\nYou can refer to the [build_pytorch.bat](https://github.com/pytorch/pytorch/blob/main/.ci/pytorch/win-test-helpers/build_pytorch.bat) script for some other environment variables configurations\n\n```cmd\ncmd\n\n:: Set the environment variables after you have downloaded and unzipped the mkl package,\n:: else CMake would throw an error as `Could NOT find OpenMP`.\nset CMAKE_INCLUDE_PATH={Your directory}\\mkl\\include\nset LIB={Your directory}\\mkl\\lib;%LIB%\n\n:: Read the content in the previous section carefully before you proceed.\n:: [Optional] If you want to override the underlying toolset used by Ninja and Visual Studio with CUDA, please run the following script block.\n:: \"Visual Studio 2019 Developer Command Prompt\" will be run automatically.\n:: Make sure you have CMake >= 3.12 before you do this when you use the Visual Studio generator.\nset CMAKE_GENERATOR_TOOLSET_VERSION=14.27\nset DISTUTILS_USE_SDK=1\nfor /f \"usebackq tokens=*\" %i in (`\"%ProgramFiles(x86)%\\Microsoft Visual Studio\\Installer\\vswhere.exe\" -version [15^,17^) -products * -latest -property installationPath`) do call \"%i\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x64 -vcvars_ver=%CMAKE_GENERATOR_TOOLSET_VERSION%\n\n:: [Optional] If you want to override the CUDA host compiler\nset CUDAHOSTCXX=C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX64\\x64\\cl.exe\n\npython -m pip install --no-build-isolation -v -e .\n```\n\n**Intel GPU builds**\n\nIn this mode PyTorch with Intel GPU support will be built.\n\nPlease make sure [the common prerequisites](#prerequisites) as well as [the prerequisites for Intel GPU](#intel-gpu-support) are properly installed and the environment variables are configured prior to starting the build. For build tool support, `Visual Studio 2022` is required.\n\nThen PyTorch can be built with the command:\n\n```cmd\n:: CMD Commands:\n:: Set the CMAKE_PREFIX_PATH to help find corresponding packages\n:: %CONDA_PREFIX% only works after `conda activate custom_env`\n\nif defined CMAKE_PREFIX_PATH (\n    set \"CMAKE_PREFIX_PATH=%CONDA_PREFIX%\\Library;%CMAKE_PREFIX_PATH%\"\n) else (\n    set \"CMAKE_PREFIX_PATH=%CONDA_PREFIX%\\Library\"\n)\n\npython -m pip install --no-build-isolation -v -e .\n```\n\n##### Adjust Build Options (Optional)\n\nYou can adjust the configuration of CMake variables through environment variables, which the\nbuild forwards to CMake (see [`cmake/EnvVarForwarding.cmake`](./cmake/EnvVarForwarding.cmake) for\nthe full list). For example, pointing the build at a specific Conda prefix, CuDNN, or BLAS:\n\nOn Linux\n\n```bash\nexport CMAKE_PREFIX_PATH=\"${CONDA_PREFIX:-'$(dirname $(which conda))/../'}:${CMAKE_PREFIX_PATH}\"\nspin develop\n```\n\nOn macOS\n\n```bash\nexport CMAKE_PREFIX_PATH=\"${CONDA_PREFIX:-'$(dirname $(which conda))/../'}:${CMAKE_PREFIX_PATH}\"\nMACOSX_DEPLOYMENT_TARGET=11.0 spin develop\n```\n\nAfter a first `spin develop`, you can inspect or adjust the CMake cache interactively with\n`ccmake build` (or `cmake-gui build`) and rebuild with `spin develop`; your edits persist, because\nreconfiguration does not use `--fresh` and environment variables only seed cache entries that are\nnot already set. The corollary: once a variable is in the cache, changing its environment variable\nno longer affects it -- edit the cache directly (or delete `build/CMakeCache.txt`) to change it.\nThe build type and compiler are the exception; the build always re-applies them.\n\n### Docker Image\n\n#### Using pre-built images\n\nYou can also pull a pre-built docker image from Docker Hub and run with docker v23.0+\n\n```bash\ndocker run --gpus all --rm -ti --ipc=host pytorch/pytorch:latest\n```\n\nPlease note that PyTorch uses shared memory to share data between processes, so if torch multiprocessing is used (e.g.\nfor multithreaded data loaders) the default shared memory segment size that container runs with is not enough, and you\nshould increase shared memory size either with `--ipc=host` or `--shm-size` command line options to `nvidia-docker run`.\n\n#### Building the image yourself\n\n**NOTE:** Must be built with a Docker version >= 23.0\n\nThe Dockerfile is supplied to build images with CUDA 12.6 support and cuDNN v9.\nYou can pass `PYTHON_VERSION=x.y` make variable to specify which Python version is to be used by Miniconda, or leave it\nunset to use the default, as the Dockerfile uses system Python.\n\n```bash\nmake -f docker.Makefile\n# images are tagged as docker.io/${your_docker_username}/pytorch\n```\n\nYou can also pass the `CMAKE_VARS=\"...\"` environment variable to specify additional CMake variables to be passed to CMake during the build.\nSee [`cmake/EnvVarForwarding.cmake`](./cmake/EnvVarForwarding.cmake) for the list of available variables.\n\n```bash\nmake -f docker.Makefile\n```\n\n### Building the Documentation\n\nTo build documentation in various formats, you will need [Sphinx](https://www.sphinx-doc.org)\nand the `pytorch_sphinx_theme2`.\n\nBefore you build the documentation locally, ensure `torch` is\ninstalled in your environment. For small fixes, you can install the\nnightly version as described in [Getting Started](https://pytorch.org/get-started/locally/).\n\nFor more complex fixes, such as adding a new module and docstrings for\nthe new module, you might need to install torch [from source](#from-source).\nSee [Docstring Guidelines](https://github.com/pytorch/pytorch/wiki/Docstring-Guidelines)\nfor docstring conventions.\n\n```bash\ncd docs/\npip install -r requirements.txt\nmake html\nmake serve\n```\n\nRun `make` to get a list of all available output formats.\n\nIf you get a katex error run `npm install katex`.  If it persists, try\n`npm install -g katex`\n\n> [!NOTE]\n> If you see a numpy incompatibility error, run:\n> ```\n> pip install 'numpy<2'\n> ```\n\n\n#### Troubleshooting CI Errors\nYour build may show errors you didn't have locally - here's how to find the errors relevant to the docs.\n\nIf the build has any errors, you will see something like this on the PR:\n\n<img width=\"781\" height=\"400\" alt=\"Monosnap Update installation instructions for doc build · Pull Request #169534 · pytorch:pytorch 2025-12-18 18-22-53\" src=\"https://github.com/user-attachments/assets/49a3dfe7-81c2-4246-852b-bc3f807e95af\" />\n\nAny doc-related errors will occur in jobs that include \"doc\" somewhere in the title. It doesn't look like any of these jobs are relevant to our docs.\n\n\nLet's take a look anyway. Click on the job to see the logs:\n\n<img width=\"1187\" height=\"668\" alt=\"Monosnap Update installation instructions for doc build · pytorch:pytorch@7380336 2025-12-18 18-24-15\" src=\"https://github.com/user-attachments/assets/117df543-8356-4323-8e1c-ef02a95554ba\" />\n\nAnd we can be sure that this job does not involve docs.\n\nLooking at this build, we can see these jobs are relevant to our docs - and they didn't have any errors:\n\n<img width=\"777\" height=\"395\" alt=\"Check the docs jobs\" src=\"https://github.com/user-attachments/assets/5d7c196b-2d40-49ad-87e3-f57de6e14a5b\" />\n\nYou might also see a comment on the PR like this:\n\n<img width=\"651\" height=\"246\" alt=\"PR Comment\" src=\"https://github.com/user-attachments/assets/27e0120a-ba33-4b1c-b4a5-bf3064520586\" />\n\nWe can see that some of these issues are relevant to our docs.\n\nOpen the logs by clicking on the `gh` link:\n\n<img width=\"873\" height=\"360\" alt=\"View Logs\" src=\"https://github.com/user-attachments/assets/ab5b862f-8026-489c-b95e-a6cd4257e4b7\" />\n\nAnd here we can see there is a doc-related error:\n\n<img width=\"1117\" height=\"433\" alt=\"Doc Error\" src=\"https://github.com/user-attachments/assets/0a275921-736d-43a7-ab0f-3e8854d43280\" />\n\nYou can always find the relevant doc builds by going to the `Checks` tab on your PR, and scrolling down to `pull`.\n\n<img width=\"481\" height=\"561\" alt=\"checks\" src=\"https://github.com/user-attachments/assets/eef18f2b-7134-4e2e-bd90-bcdc12800132\" />\n\nYou can either click through or toggle the accordion to see all of the jobs here, where you can see the docs jobs highlighted:\n\n<img width=\"570\" height=\"611\" alt=\"jobs\" src=\"https://github.com/user-attachments/assets/f62812ca-caee-421b-863c-54f38fd28d46\" />\n\nIf you click through, you'll see the doc jobs at the bottom, like this:\n\n<img width=\"354\" height=\"312\" alt=\"View Docs jobs\" src=\"https://github.com/user-attachments/assets/8fadb935-5314-4c4b-a1b5-133781754f03\" />\n\n\n#### Building a PDF\n\nTo compile a PDF of all PyTorch documentation, ensure you have\n`texlive` and LaTeX installed. On macOS, you can install them using:\n\n```\nbrew install --cask mactex\n```\n\nTo create the PDF:\n\n1. Run:\n\n   ```\n   make latexpdf\n   ```\n\n   This will generate the necessary files in the `build/latex` directory.\n\n2. Navigate to this directory and execute:\n\n   ```\n   make LATEXOPTS=\"-interaction=nonstopmode\"\n   ```\n\n   This will produce a `pytorch.pdf` with the desired content. Run this\n   command one more time so that it generates the correct table\n   of contents and index.\n\n> [!NOTE]\n> To view the Table of Contents, switch to the **Table of Contents**\n> view in your PDF viewer.\n\n\n### Previous Versions\n\nInstallation instructions and binaries for previous PyTorch versions may be found\non [our website](https://pytorch.org/get-started/previous-versions).\n\n\n## Getting Started\n\nPointers to get you started:\n- [Tutorials: get you started with understanding and using PyTorch](https://pytorch.org/tutorials/)\n- [Examples: easy to understand PyTorch code across all domains](https://github.com/pytorch/examples)\n- [The API Reference](https://pytorch.org/docs/)\n- [Glossary](https://github.com/pytorch/pytorch/blob/main/GLOSSARY.md)\n\n## Resources\n\n* [PyTorch.org](https://pytorch.org/)\n* [PyTorch Tutorials](https://pytorch.org/tutorials/)\n* [PyTorch Examples](https://github.com/pytorch/examples)\n* [PyTorch Models](https://pytorch.org/hub/)\n* [Intro to Deep Learning with PyTorch from Udacity](https://www.udacity.com/course/deep-learning-pytorch--ud188)\n* [Intro to Machine Learning with PyTorch from Udacity](https://www.udacity.com/course/intro-to-machine-learning-nanodegree--nd229)\n* [Deep Neural Networks with PyTorch from Coursera](https://www.coursera.org/learn/deep-neural-networks-with-pytorch)\n* [PyTorch Twitter](https://twitter.com/PyTorch)\n* [PyTorch Blog](https://pytorch.org/blog/)\n* [PyTorch YouTube](https://www.youtube.com/channel/UCWXI5YeOsh03QvJ59PMaXFw)\n\n## Communication\n* Forums: Discuss implementations, research, etc. https://discuss.pytorch.org\n* GitHub Issues: Bug reports, feature requests, install issues, RFCs, thoughts, etc. See the [issue lifecycle](CONTRIBUTING.md#issue-lifecycle) for how they are handled.\n* Slack: The [PyTorch Slack](https://pytorch.slack.com/) hosts a primary audience of moderate to experienced PyTorch users and developers for general chat, online discussions, collaboration, etc.\n* Facebook Page: Important announcements about PyTorch. https://www.facebook.com/pytorch\n* For brand guidelines, please visit our website at [pytorch.org](https://pytorch.org/)\n\n## Releases and Contributing\n\nTypically, PyTorch has three minor releases a year. Please let us know if you encounter a bug by [filing an issue](https://github.com/pytorch/pytorch/issues).\n\nWe appreciate all contributions. Whether you plan to contribute a bug-fix or a new feature, please first open an issue (or find an existing one) and discuss it with us.\nOnce a maintainer marks the issue \"actionable\", you can send a PR for it.\nSending a PR without an actionable issue will result in the PR being automatically closed.\nSee the [Issue and PR Workflow](CONTRIBUTING.md#issue-and-pr-workflow) for details.\n\nTo learn more about making a contribution to PyTorch, please see our [Contribution page](CONTRIBUTING.md). For more information about PyTorch releases, see [Release page](RELEASE.md).\n\n## The Team\n\nPyTorch is a community-driven project with several skillful engineers and researchers contributing to it.\n\nPyTorch is currently maintained by [Soumith Chintala](https://soumith.ch), [Gregory Chanan](https://github.com/gchanan), [Dmytro Dzhulgakov](https://github.com/dzhulgakov), [Edward Yang](https://github.com/ezyang), [Alban Desmaison](https://github.com/albanD), [Piotr Bialecki](https://github.com/ptrblck) and [Nikita Shulga](https://github.com/malfet) with major contributions coming from hundreds of talented individuals in various forms and means.\nA non-exhaustive but growing list needs to mention: [Trevor Killeen](https://github.com/killeent), [Sasank Chilamkurthy](https://github.com/chsasank), [Sergey Zagoruyko](https://github.com/szagoruyko), [Adam Lerer](https://github.com/adamlerer), [Francisco Massa](https://github.com/fmassa), [Alykhan Tejani](https://github.com/alykhantejani), [Luca Antiga](https://github.com/lantiga), [Alban Desmaison](https://github.com/albanD), [Andreas Koepf](https://github.com/andreaskoepf), [James Bradbury](https://github.com/jekbradbury), [Zeming Lin](https://github.com/ebetica), [Yuandong Tian](https://github.com/yuandong-tian), [Guillaume Lample](https://github.com/glample), [Marat Dukhan](https://github.com/Maratyszcza), [Natalia Gimelshein](https://github.com/ngimel), [Christian Sarofeen](https://github.com/csarofeen), [Martin Raison](https://github.com/martinraison), [Edward Yang](https://github.com/ezyang), [Zachary Devito](https://github.com/zdevito). <!-- codespell:ignore -->\n\nNote: This project is unrelated to [hughperkins/pytorch](https://github.com/hughperkins/pytorch) with the same name. Hugh is a valuable contributor to the Torch community and has helped with many things Torch and PyTorch.\n\n## License\n\nPyTorch has a BSD-style license, as found in the [LICENSE](LICENSE) file.\n",
+          "direct_url": null,
+          "saved_metadata_sha256": "d62a4b24197d91c72e2ced62213f5dd9356f008e8c454f969c70ac11cb82417e"
+        },
+        "target": {
+          "implementation_name": "cpython",
+          "implementation_version": "3.11.16",
+          "os_name": "posix",
+          "platform_machine": "x86_64",
+          "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+          "platform_system": "Linux",
+          "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+          "python_full_version": "3.11.16",
+          "platform_python_implementation": "CPython",
+          "python_version": "3.11",
+          "sys_platform": "linux"
+        },
+        "audit": {
+          "reachable_names": [
+            "cuda-bindings",
+            "cuda-pathfinder",
+            "cuda-toolkit",
+            "filelock",
+            "fsspec",
+            "jinja2",
+            "markupsafe",
+            "mpmath",
+            "networkx",
+            "nvidia-cublas",
+            "nvidia-cuda-cccl",
+            "nvidia-cuda-cupti",
+            "nvidia-cuda-nvrtc",
+            "nvidia-cuda-runtime",
+            "nvidia-cudnn-cu13",
+            "nvidia-cufft",
+            "nvidia-cufile",
+            "nvidia-cusolver",
+            "nvidia-cusparse",
+            "nvidia-cusparselt-cu13",
+            "nvidia-nccl-cu13",
+            "nvidia-nvjitlink",
+            "nvidia-nvshmem-cu13",
+            "nvidia-nvtx",
+            "setuptools",
+            "sympy",
+            "torch",
+            "triton",
+            "typing-extensions"
+          ],
+          "active_edges": [
+            {
+              "parent": "torch",
+              "requirement": "filelock",
+              "target": "filelock",
+              "installed_version": "4.2.10"
+            },
+            {
+              "parent": "torch",
+              "requirement": "typing-extensions>=4.13.0",
+              "target": "typing-extensions",
+              "installed_version": "4.16.0"
+            },
+            {
+              "parent": "torch",
+              "requirement": "setuptools>=77.0.3",
+              "target": "setuptools",
+              "installed_version": "84.2.1"
+            },
+            {
+              "parent": "torch",
+              "requirement": "sympy>=1.13.3",
+              "target": "sympy",
+              "installed_version": "1.14.0"
+            },
+            {
+              "parent": "torch",
+              "requirement": "networkx>=2.5.1",
+              "target": "networkx",
+              "installed_version": "3.6.1"
+            },
+            {
+              "parent": "torch",
+              "requirement": "jinja2",
+              "target": "jinja2",
+              "installed_version": "3.1.6"
+            },
+            {
+              "parent": "torch",
+              "requirement": "fsspec>=0.8.5",
+              "target": "fsspec",
+              "installed_version": "2026.9.0"
+            },
+            {
+              "parent": "torch",
+              "requirement": "cuda-toolkit[cublas,cudart,cufft,cufile,cupti,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.2.2; platform_system == \"Linux\"",
+              "target": "cuda-toolkit",
+              "installed_version": "13.2.2"
+            },
+            {
+              "parent": "torch",
+              "requirement": "cuda-bindings<14,>=13.0.3; platform_system == \"Linux\" and python_version < \"3.15\"",
+              "target": "cuda-bindings",
+              "installed_version": "13.5.0"
+            },
+            {
+              "parent": "torch",
+              "requirement": "nvidia-cudnn-cu13==9.26.0.51; platform_system == \"Linux\"",
+              "target": "nvidia-cudnn-cu13",
+              "installed_version": "9.26.0.51"
+            },
+            {
+              "parent": "torch",
+              "requirement": "nvidia-cusparselt-cu13==0.8.1; platform_system == \"Linux\"",
+              "target": "nvidia-cusparselt-cu13",
+              "installed_version": "0.8.1"
+            },
+            {
+              "parent": "torch",
+              "requirement": "nvidia-nccl-cu13==2.30.7; platform_system == \"Linux\"",
+              "target": "nvidia-nccl-cu13",
+              "installed_version": "2.30.7"
+            },
+            {
+              "parent": "torch",
+              "requirement": "nvidia-nvshmem-cu13==3.7.2; platform_system == \"Linux\"",
+              "target": "nvidia-nvshmem-cu13",
+              "installed_version": "3.7.2"
+            },
+            {
+              "parent": "torch",
+              "requirement": "triton~=3.9.0; platform_system == \"Linux\" and python_version < \"3.16\"",
+              "target": "triton",
+              "installed_version": "3.9.0"
+            },
+            {
+              "parent": "sympy",
+              "requirement": "mpmath<1.4,>=1.1.0",
+              "target": "mpmath",
+              "installed_version": "1.3.0"
+            },
+            {
+              "parent": "jinja2",
+              "requirement": "MarkupSafe>=2.0",
+              "target": "markupsafe",
+              "installed_version": "3.0.4"
+            },
+            {
+              "parent": "cuda-toolkit",
+              "requirement": "nvidia-cublas==13.4.1.3.*; (sys_platform == 'linux' and platform_machine == 'aarch64' or sys_platform == 'linux' and platform_machine == 'x86_64' or sys_platform == 'win32' and platform_machine == 'AMD64') and extra == 'cublas'",
+              "target": "nvidia-cublas",
+              "installed_version": "13.4.1.3"
+            },
+            {
+              "parent": "cuda-toolkit",
+              "requirement": "nvidia-cuda-nvrtc==13.2.86.*; (sys_platform == 'linux' and platform_machine == 'aarch64' or sys_platform == 'linux' and platform_machine == 'x86_64' or sys_platform == 'win32' and platform_machine == 'AMD64') and extra == 'cublas'",
+              "target": "nvidia-cuda-nvrtc",
+              "installed_version": "13.2.86"
+            },
+            {
+              "parent": "cuda-toolkit",
+              "requirement": "nvidia-cuda-runtime==13.2.86.*; (sys_platform == 'linux' and platform_machine == 'aarch64' or sys_platform == 'linux' and platform_machine == 'x86_64' or sys_platform == 'win32' and platform_machine == 'AMD64') and extra == 'cudart'",
+              "target": "nvidia-cuda-runtime",
+              "installed_version": "13.2.86"
+            },
+            {
+              "parent": "cuda-toolkit",
+              "requirement": "nvidia-cufft==12.2.0.57.*; (sys_platform == 'linux' and platform_machine == 'aarch64' or sys_platform == 'linux' and platform_machine == 'x86_64' or sys_platform == 'win32' and platform_machine == 'AMD64') and extra == 'cufft'",
+              "target": "nvidia-cufft",
+              "installed_version": "12.2.0.57"
+            },
+            {
+              "parent": "cuda-toolkit",
+              "requirement": "nvidia-nvjitlink<14,>=13.2.86; (sys_platform == 'linux' and platform_machine == 'aarch64' or sys_platform == 'linux' and platform_machine == 'x86_64' or sys_platform == 'win32' and platform_machine == 'AMD64') and extra == 'cufft'",
+              "target": "nvidia-nvjitlink",
+              "installed_version": "13.5.37"
+            },
+            {
+              "parent": "cuda-toolkit",
+              "requirement": "nvidia-cufile==1.17.1.22.*; (sys_platform == 'linux' and platform_machine == 'aarch64' or sys_platform == 'linux' and platform_machine == 'x86_64') and extra == 'cufile'",
+              "target": "nvidia-cufile",
+              "installed_version": "1.17.1.22"
+            },
+            {
+              "parent": "cuda-toolkit",
+              "requirement": "nvidia-cuda-cupti==13.2.86.*; (sys_platform == 'linux' and platform_machine == 'aarch64' or sys_platform == 'linux' and platform_machine == 'x86_64' or sys_platform == 'win32' and platform_machine == 'AMD64') and extra == 'cupti'",
+              "target": "nvidia-cuda-cupti",
+              "installed_version": "13.2.86"
+            },
+            {
+              "parent": "cuda-toolkit",
+              "requirement": "nvidia-cublas==13.4.1.3.*; (sys_platform == 'linux' and platform_machine == 'aarch64' or sys_platform == 'linux' and platform_machine == 'x86_64' or sys_platform == 'win32' and platform_machine == 'AMD64') and extra == 'cusolver'",
+              "target": "nvidia-cublas",
+              "installed_version": "13.4.1.3"
+            },
+            {
+              "parent": "cuda-toolkit",
+              "requirement": "nvidia-cusolver==12.2.0.11.*; (sys_platform == 'linux' and platform_machine == 'aarch64' or sys_platform == 'linux' and platform_machine == 'x86_64' or sys_platform == 'win32' and platform_machine == 'AMD64') and extra == 'cusolver'",
+              "target": "nvidia-cusolver",
+              "installed_version": "12.2.0.11"
+            },
+            {
+              "parent": "cuda-toolkit",
+              "requirement": "nvidia-cusparse==12.7.10.12.*; (sys_platform == 'linux' and platform_machine == 'aarch64' or sys_platform == 'linux' and platform_machine == 'x86_64' or sys_platform == 'win32' and platform_machine == 'AMD64') and extra == 'cusolver'",
+              "target": "nvidia-cusparse",
+              "installed_version": "12.7.10.12"
+            },
+            {
+              "parent": "cuda-toolkit",
+              "requirement": "nvidia-nvjitlink<14,>=13.2.86; (sys_platform == 'linux' and platform_machine == 'aarch64' or sys_platform == 'linux' and platform_machine == 'x86_64' or sys_platform == 'win32' and platform_machine == 'AMD64') and extra == 'cusolver'",
+              "target": "nvidia-nvjitlink",
+              "installed_version": "13.5.37"
+            },
+            {
+              "parent": "cuda-toolkit",
+              "requirement": "nvidia-cusparse==12.7.10.12.*; (sys_platform == 'linux' and platform_machine == 'aarch64' or sys_platform == 'linux' and platform_machine == 'x86_64' or sys_platform == 'win32' and platform_machine == 'AMD64') and extra == 'cusparse'",
+              "target": "nvidia-cusparse",
+              "installed_version": "12.7.10.12"
+            },
+            {
+              "parent": "cuda-toolkit",
+              "requirement": "nvidia-nvjitlink<14,>=13.2.86; (sys_platform == 'linux' and platform_machine == 'aarch64' or sys_platform == 'linux' and platform_machine == 'x86_64' or sys_platform == 'win32' and platform_machine == 'AMD64') and extra == 'cusparse'",
+              "target": "nvidia-nvjitlink",
+              "installed_version": "13.5.37"
+            },
+            {
+              "parent": "cuda-toolkit",
+              "requirement": "nvidia-nvjitlink<14,>=13.2.86; (sys_platform == 'linux' and platform_machine == 'aarch64' or sys_platform == 'linux' and platform_machine == 'x86_64' or sys_platform == 'win32' and platform_machine == 'AMD64') and extra == 'nvjitlink'",
+              "target": "nvidia-nvjitlink",
+              "installed_version": "13.5.37"
+            },
+            {
+              "parent": "cuda-toolkit",
+              "requirement": "nvidia-cuda-nvrtc==13.2.86.*; (sys_platform == 'linux' and platform_machine == 'aarch64' or sys_platform == 'linux' and platform_machine == 'x86_64' or sys_platform == 'win32' and platform_machine == 'AMD64') and extra == 'nvrtc'",
+              "target": "nvidia-cuda-nvrtc",
+              "installed_version": "13.2.86"
+            },
+            {
+              "parent": "cuda-toolkit",
+              "requirement": "nvidia-nvtx==13.2.86.*; (sys_platform == 'linux' and platform_machine == 'aarch64' or sys_platform == 'linux' and platform_machine == 'x86_64' or sys_platform == 'win32' and platform_machine == 'AMD64') and extra == 'nvtx'",
+              "target": "nvidia-nvtx",
+              "installed_version": "13.2.86"
+            },
+            {
+              "parent": "cuda-bindings",
+              "requirement": "cuda-pathfinder>=1.4.2",
+              "target": "cuda-pathfinder",
+              "installed_version": "1.8.6"
+            },
+            {
+              "parent": "nvidia-cudnn-cu13",
+              "requirement": "nvidia-cublas",
+              "target": "nvidia-cublas",
+              "installed_version": "13.4.1.3"
+            },
+            {
+              "parent": "nvidia-nvshmem-cu13",
+              "requirement": "nvidia-cuda-cccl",
+              "target": "nvidia-cuda-cccl",
+              "installed_version": "13.3.5.0.6"
+            },
+            {
+              "parent": "nvidia-cublas",
+              "requirement": "nvidia-cuda-nvrtc",
+              "target": "nvidia-cuda-nvrtc",
+              "installed_version": "13.2.86"
+            },
+            {
+              "parent": "nvidia-cufft",
+              "requirement": "nvidia-nvjitlink",
+              "target": "nvidia-nvjitlink",
+              "installed_version": "13.5.37"
+            },
+            {
+              "parent": "nvidia-cusolver",
+              "requirement": "nvidia-cublas",
+              "target": "nvidia-cublas",
+              "installed_version": "13.4.1.3"
+            },
+            {
+              "parent": "nvidia-cusolver",
+              "requirement": "nvidia-nvjitlink",
+              "target": "nvidia-nvjitlink",
+              "installed_version": "13.5.37"
+            },
+            {
+              "parent": "nvidia-cusolver",
+              "requirement": "nvidia-cusparse",
+              "target": "nvidia-cusparse",
+              "installed_version": "12.7.10.12"
+            },
+            {
+              "parent": "nvidia-cusparse",
+              "requirement": "nvidia-nvjitlink",
+              "target": "nvidia-nvjitlink",
+              "installed_version": "13.5.37"
+            }
+          ],
+          "violations": [],
+          "unknown": []
+        },
+        "pip_check": {
+          "command": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/source-switch/torch-adaptive-control/environments/shared/bin/python",
+            "check"
+          ],
+          "returncode": 0,
+          "timeout": false,
+          "seconds": 8.056,
+          "stdout_sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "uv_check": {
+          "command": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/uv",
+            "--no-config",
+            "pip",
+            "check",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/source-switch/torch-adaptive-control/environments/shared/bin/python"
+          ],
+          "returncode": 0,
+          "timeout": false,
+          "seconds": 2.142,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "1af45f7980bdc6fa1d102107888ebbcea1d9ca4724e4e364ffc24362a8c05c3b"
+        },
+        "inspect": {
+          "command": [
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/runtime-linux/bin/python",
+            "-m",
+            "pip",
+            "--python",
+            "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/source-switch/torch-adaptive-control/environments/shared/bin/python",
+            "inspect",
+            "--local"
+          ],
+          "returncode": 0,
+          "timeout": false,
+          "seconds": 10.77,
+          "stdout_sha256": "c70dfe181f349bea5b9706166a90f908c7f76c2b5ac32916d1cc2fe023e75d01",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "locked_root_full_version": "2.15.0",
+      "actual_root_matches_locked_full_version": true,
+      "root_metadata_matches_official_source": true
+    }
+  ],
+  "status": "completed_real_source_transition_negative",
+  "confirmed_defects": 0,
+  "affected_projects": [],
+  "reproduction_controls": "not_required_by_preregistered_negative_rule",
+  "finished_at_utc": "2026-11-11T06:05:04.268112+00:00"
+}

@@ -1,0 +1,3 @@
+Using CPython 3.11.16
+Creating virtual environment at: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/venv
+Activate with: source /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/venv/bin/activate

@@ -1,0 +1,1432 @@
+{
+  "schema": "drc-audited-case-revalidation-v1",
+  "checked_at_utc": "2026-11-10T10:26:33.332424+00:00",
+  "scope": "Captured plans re-evaluated with current native graph projection and oracle; current source contexts regenerated. Full historical project installations remain unobserved.",
+  "projects": 120,
+  "cases": 451,
+  "submitted_cases": 61,
+  "all_case_outcomes": {
+    "graph_or_selection_difference_retained": 409,
+    "absent_from_both_target_graphs": 15,
+    "insufficient_evidence": 27
+  },
+  "submitted_case_outcomes": {
+    "absent_from_both_target_graphs": 7,
+    "graph_or_selection_difference_retained": 54
+  },
+  "developer_ready": 0,
+  "errors": [],
+  "implementation_sha256": {
+    "drc/__init__.py": "a01fe38b5096bcaf899f0068b4f6ff2dc7b06d2044c85d5370dfa2dbe1d37751",
+    "drc/__main__.py": "cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3",
+    "drc/artifact_identity.py": "b158958fe0d326779b3d4d8adfa43c72867e0c6d41d6bf7a7e575ad6c6894f16",
+    "drc/cli.py": "4a5d963ceee4961348abef6a5400f8ad0383ec22688e0f5e6da18f61ec3037b6",
+    "drc/contexts/__init__.py": "9ade88033c1ed3899f78967f55ec0d58139df4376f6290c50b814a8f44965eda",
+    "drc/contracts.py": "5a3c567057ae681dee6fae420debb459dfc5a2994bb8da45e3279b54dbe51ed8",
+    "drc/frontend/__init__.py": "0ec98d005212a7c8fb238b4232fc80be605243191490f340ed35d96766bc32ed",
+    "drc/frontend/ci.py": "ea9667ddf171813aa277231a481a16304d02a82f1508d63841f436a9c3c8e0e3",
+    "drc/frontend/lockfile.py": "cafd376c1595c1060ba4667ab6d238a1fa0b0d27bd8a54117fcede08aae2fe2b",
+    "drc/frontend/pipconf.py": "0342625d28eaac780f98eccdfaa9c03478881daedf43f75692ccdef126e88433",
+    "drc/frontend/pyproject.py": "e9b6d8da793d7ec87b887f338f164943a204133ed17e5dcdca4ce06f97ebc996",
+    "drc/frontend/requirements.py": "86cae56715238bb30813455d13f077bc281fbb96c937f7114f6ed8f4809ea708",
+    "drc/frontend/shell.py": "22eacc627776f2cb880f2f5a13e3ed2d2dcb89e8bf29716154cc99cead706eef",
+    "drc/intent/__init__.py": "c786839ebdeaa0f1963fb7c4081542f3ccc22736e0a2ccdbd2fc802cbc59e614",
+    "drc/intent/evidence_graph.py": "ce569e97c7f375b8f536a4a1c156fbbf86d450a70a30a85d88ba9d786c16b77a",
+    "drc/intent/llm_miner.py": "5c922a3a2ba6c56f4fdbf22bc741f8a01187d079a4af420af0325aa2de23f869",
+    "drc/intent/structured_evidence.py": "9345b8dd7ac093123bbd50c88a6e73fca42ab3abfb4779e389254f71b61309cb",
+    "drc/minimize/__init__.py": "cc33859a7ac471a786e02652bd7579127250111b790d21b448fabd2e25d2b3c3",
+    "drc/model.py": "4a4dd03eb749c50f8a15c067020625c77e519dc9cfaedb052e4c0689187348eb",
+    "drc/oracle/__init__.py": "80ace54fc9feb6e2554a57eea7a53ce38d98aca6abf12fba0ded370fb1aba709",
+    "drc/pipeline.py": "47d8fdbf0b4923c3240ef453bd28f0e3d074d6f7a5270ee503a3112ccbed8907",
+    "drc/proxy.py": "7d7f1e3f1fc0ac76b88f4faf81751dbc15f7f2a3694d82051d54e4d379c9d3b6",
+    "drc/report/__init__.py": "5d09a17844ab944728b0c9b4c82962757325ad484d49d34717f2a3c6a6379f2e",
+    "drc/report/reliability.py": "513acb3fb9a53cae5fa58f923ee97b2f0d96c65a2c5adfe3c45ad41ee34d04b0",
+    "drc/resolvers/__init__.py": "a1ae6e8c2e7e93f519c1a798ccc9f6dc0d8c642a15dd322859295e52f190fe25",
+    "drc/resolvers/lock_projection.py": "9fa1f97ce84e4caaba552831c7f55783a9bc6e8df466f82fca992e8a973f47f9",
+    "drc/stats.py": "4d81f76f8824e6f541e2acfd4c706c46a4c1c1031fcad0b513c39bc11c7fa980",
+    "drc/triage/__init__.py": "9c688d2c80dadc9d9a222ec00743bb0f75d0b205bd7d5da149c40d12ce8284e7",
+    "scripts/revalidate_audited_cases.py": "dca227c03b9644f2101e818f879c9cf40c816b7be82df4e6777c0e639e7715a6"
+  },
+  "implementation_unchanged": true,
+  "project_summaries": [
+    {
+      "project": "AOT-Technologies__forms-flow-ai",
+      "cases": 11,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 6,
+        "absent_from_both_target_graphs": 2,
+        "insufficient_evidence": 3
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 84,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "ATOMScience-org__AMPL",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 129,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "AdaptiveMotorControlLab__CEBRA",
+      "cases": 4,
+      "submitted": 2,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 3,
+        "insufficient_evidence": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 164,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "AlibabaResearch__DAMO-ConvAI",
+      "cases": 1,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 384,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "BioinfoMachineLearning__PoseBench",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 103,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "BraveGroup__DriveVLA-W0",
+      "cases": 25,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 23,
+        "insufficient_evidence": 2
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 496,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "Comfy-Org__desktop",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 0,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "CycloneDX__cyclonedx-python",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 66,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "Dao-AILab__flash-attention",
+      "cases": 4,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 4
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 143,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "EinAeffchen__Omoide",
+      "cases": 5,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 5
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 142,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "FutureMLS-Lab__OSCAR",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 393,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "HKUDS__VideoAgent",
+      "cases": 11,
+      "submitted": 5,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 11
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 53,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "HKUSTDial__flash-sparse-attention",
+      "cases": 3,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 3
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 183,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "InternLM__InternLM",
+      "cases": 10,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 10
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 80,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "JJLibra__CC-Pan",
+      "cases": 5,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 5
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 116,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "ML-TANGO__TANGO",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 1092,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "McCloudS__subgen",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 56,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "NKI-AI__direct",
+      "cases": 2,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 2
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 200,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "NVIDIA-AI-Blueprints__cuFOLIO",
+      "cases": 3,
+      "submitted": 1,
+      "outcomes": {
+        "absent_from_both_target_graphs": 2,
+        "insufficient_evidence": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 416,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "NVIDIA__TensorRT",
+      "cases": 1,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 336,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "NVIDIA__TensorRT-Incubator",
+      "cases": 6,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 6
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 248,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "NVIDIA__accelerated-computing-hub",
+      "cases": 1,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 72,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "NVIDIA__cuopt-examples",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 16,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "NVlabs__Fast-dLLM",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 30,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "NVlabs__RoboLab",
+      "cases": 6,
+      "submitted": 2,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 3,
+        "absent_from_both_target_graphs": 2,
+        "insufficient_evidence": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 175,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "NX-AI__tirex",
+      "cases": 9,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 6,
+        "absent_from_both_target_graphs": 2,
+        "insufficient_evidence": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 92,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "OpenDCAI__OpenWorldLib",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 292,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "PINTO0309__onnx2tf",
+      "cases": 3,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 2,
+        "insufficient_evidence": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 357,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "PatBall1__detectree2",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 252,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "RosettaCommons__RFdiffusion",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 44,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "RosettaCommons__RFdiffusion2",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 54,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "Sandermage__genesis-vllm-patches",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 156,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "StanfordVL__BEHAVIOR-1K",
+      "cases": 4,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 3,
+        "insufficient_evidence": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 180,
+      "verified_original_contexts": 0,
+      "parse_notes": [
+        "unresolved index variable: https://data.pyg.org/whl/torch-$TorchVersion.html (setup.ps1:483)",
+        "placeholder/local index skipped: https://data.pyg.org/whl/torch-__SUBST__.html (setup.sh:463)"
+      ]
+    },
+    {
+      "project": "TencentARC__ColorFlow",
+      "cases": 6,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 6
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 132,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "Tiiny-AI__PowerInfer",
+      "cases": 6,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 6
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 81,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "Vchitect__Evaluation-Agent",
+      "cases": 5,
+      "submitted": 3,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 5
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 11,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "YanWenKun__ComfyUI-Docker",
+      "cases": 6,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 6
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 2628,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "Yuan-lab-LLM__Yuan3.0",
+      "cases": 10,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 10
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 2028,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "Yuan-lab-LLM__Yuan3.0-Ultra",
+      "cases": 10,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 10
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 2028,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "a-r-j__graphein",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 172,
+      "verified_original_contexts": 0,
+      "parse_notes": [
+        "placeholder/local index skipped: https://data.pyg.org/whl/torch-__SUBST__+cpu.html (.github/workflows/build.yaml:67)",
+        "placeholder/local index skipped: https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html (Dockerfile:52)",
+        "placeholder/local index skipped: https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html (Dockerfile:52)",
+        "placeholder/local index skipped: https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html (Dockerfile:52)",
+        "placeholder/local index skipped: https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html (Dockerfile:52)"
+      ]
+    },
+    {
+      "project": "ace-step__ACE-Step-1.5",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 1440,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "ai4protein__VenusFactory2",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 172,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "alibaba__Logics-Parsing",
+      "cases": 10,
+      "submitted": 0,
+      "outcomes": {
+        "insufficient_evidence": 2,
+        "graph_or_selection_difference_retained": 8
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 472,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "alibaba__ROLL",
+      "cases": 1,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 739,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "allenai__molmoact2",
+      "cases": 3,
+      "submitted": 0,
+      "outcomes": {
+        "insufficient_evidence": 1,
+        "graph_or_selection_difference_retained": 2
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 319,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "allenai__vla-evaluation-harness",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 468,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "amap-cvlab__OmniNav",
+      "cases": 10,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 10
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 452,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "amazon-far__fpo-control",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 20,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "antirez__llama.cpp-deepseek-v4-flash",
+      "cases": 10,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 10
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 113,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "bmaltais__kohya_ss",
+      "cases": 10,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 10
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 313,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "borglab__gtsfm",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 608,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "bytedance__Sa2VA",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 47,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "bytedance__Video-As-Prompt",
+      "cases": 5,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 5
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 144,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "cocktailpeanut__fluxgym",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 60,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "containers__podman-desktop-extension-ai-lab",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 0,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "datawhalechina__self-llm",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 0,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "deepjavalibrary__djl-serving",
+      "cases": 2,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 2
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 132,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "denizsafak__abogen",
+      "cases": 17,
+      "submitted": 6,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 17
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 552,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "docker__model-runner",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 36,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "dusty-nv__jetson-containers",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 1248,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "fishaudio__fish-speech",
+      "cases": 5,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 5
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 1082,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "francof2a__fxpmath",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 100,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "freemocap__freemocap",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 141,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "geometric-intelligence__TopoBench",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 192,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "geopandas__pyogrio",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 76,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "guqiong96__Lvllm",
+      "cases": 2,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 2
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 1286,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "helicalAI__helical",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 602,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "hpcaitech__ColossalAI",
+      "cases": 3,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 3
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 372,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "huggingface__optimum-nvidia",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 40,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "hustvl__Turbo-VAED",
+      "cases": 5,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 5
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 132,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "jamiepine__voicebox",
+      "cases": 5,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 5
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 147,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "k2-fsa__OmniVoice",
+      "cases": 4,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 4
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 144,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "kaixxx__noScribe",
+      "cases": 7,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 6,
+        "absent_from_both_target_graphs": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 31,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "kepengxu__PRISM-VL",
+      "cases": 10,
+      "submitted": 0,
+      "outcomes": {
+        "insufficient_evidence": 2,
+        "graph_or_selection_difference_retained": 8
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 548,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "lanpa__tensorboardX",
+      "cases": 8,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 7,
+        "insufficient_evidence": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 159,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "lee101__stock-prediction",
+      "cases": 3,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 1,
+        "absent_from_both_target_graphs": 2
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 1655,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "ludwig-ai__ludwig",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 172,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "lupinjia__LeggedGym-Ex",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 192,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "luzhisheng__js_reverse",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 28,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "memgraph__gqlalchemy",
+      "cases": 4,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 2,
+        "insufficient_evidence": 2
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 802,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "meta-pytorch__multipy",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 116,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "meta-pytorch__torchtune",
+      "cases": 19,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 16,
+        "insufficient_evidence": 3
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 192,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "microsoft__LMOps",
+      "cases": 9,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 8,
+        "insufficient_evidence": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 924,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "microsoft__mattergen",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 69,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "mit-han-lab__fastrl",
+      "cases": 7,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 7
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 208,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "mitkox__vllm-turboquant",
+      "cases": 5,
+      "submitted": 3,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 5
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 1122,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "mlcommons__ck",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 306,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "mlcommons__training",
+      "cases": 2,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 2
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 548,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "mozilla__translations",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 32,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "networkx__networkx",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 152,
+      "verified_original_contexts": 0,
+      "parse_notes": [
+        "benchmarks/pyproject.toml: toml: Invalid statement (at line 1, column 1)"
+      ]
+    },
+    {
+      "project": "nipy__nitime",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 52,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "oobabooga__textgen",
+      "cases": 1,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 32,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "rllm-team__rllm",
+      "cases": 5,
+      "submitted": 1,
+      "outcomes": {
+        "absent_from_both_target_graphs": 2,
+        "insufficient_evidence": 1,
+        "graph_or_selection_difference_retained": 2
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 24,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "ruvnet__agentic-flow",
+      "cases": 7,
+      "submitted": 3,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 7
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 60,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "safetensors__safetensors",
+      "cases": 1,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 128,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "salesforce__CodeRL",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 132,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "sgl-project__sglang",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 880,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "shenyangHuang__TGB",
+      "cases": 15,
+      "submitted": 11,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 15
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 144,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "siddsachar__Thoth",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 699,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "sophgo__tpu-mlir",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 314,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "spmallick__learnopencv",
+      "cases": 4,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 4
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 152,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "stepfun-ai__Step-3.5-Flash",
+      "cases": 11,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 11
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 82,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "styler00dollar__VSGAN-tensorrt-docker",
+      "cases": 4,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 3,
+        "insufficient_evidence": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 132,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "tc-mb__llama.cpp-omni",
+      "cases": 10,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 10
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 252,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "tensorflow__tfx",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 84,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "tgf123__YOLOv8_improve",
+      "cases": 4,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 4
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 92,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "thalesgroup-cert__Watcher",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 44,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "thoth-station__micropipenv",
+      "cases": 1,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 58,
+      "verified_original_contexts": 0,
+      "parse_notes": [
+        "tests/data/install/invalid_pyproject_toml/pyproject.toml: toml: Expected '=' after a key in a key/value pair (at line 1, column 12)"
+      ]
+    },
+    {
+      "project": "triton-inference-server__tensorrtllm_backend",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 12,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "visinf__INSID3",
+      "cases": 10,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 10
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 38,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "wagtail__Willow",
+      "cases": 1,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 44,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "wandahangFY__YOLOv11-RGBT",
+      "cases": 7,
+      "submitted": 3,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 4,
+        "absent_from_both_target_graphs": 2,
+        "insufficient_evidence": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 256,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "wladradchenko__wunjo.wladradchenko.ru",
+      "cases": 21,
+      "submitted": 4,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 20,
+        "insufficient_evidence": 1
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 94,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "xarray-contrib__flox",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 232,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "xiaomi-research__unidrivevla",
+      "cases": 0,
+      "submitted": 0,
+      "outcomes": {},
+      "developer_ready": 0,
+      "regenerated_contexts": 112,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "yfyang007__RealRestorer",
+      "cases": 5,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 5
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 168,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "zama-ai__concrete-ml",
+      "cases": 3,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 3
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 238,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "zerothi__sisl",
+      "cases": 4,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 4
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 103,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "zhangquanchen__3DThinker",
+      "cases": 8,
+      "submitted": 0,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 8
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 400,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    },
+    {
+      "project": "zhuang2002__Cobra",
+      "cases": 6,
+      "submitted": 1,
+      "outcomes": {
+        "graph_or_selection_difference_retained": 6
+      },
+      "developer_ready": 0,
+      "regenerated_contexts": 132,
+      "verified_original_contexts": 0,
+      "parse_notes": []
+    }
+  ]
+}

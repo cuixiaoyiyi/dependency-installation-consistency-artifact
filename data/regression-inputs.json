@@ -1,0 +1,176 @@
+[
+  {
+    "source": "reports/AOT-Technologies__forms-flow-ai/async-timeout_3b2fa1-010/context_a.json",
+    "artifact": "reports/AOT-Technologies__forms-flow-ai/async-timeout_3b2fa1-010/context_a.json",
+    "sha256": "4eed68e55470fc55e834469ca816f319abb0707bccb56369624f44b8ead299fb",
+    "bytes": 1053
+  },
+  {
+    "source": "reports/AOT-Technologies__forms-flow-ai/async-timeout_3b2fa1-010/context_b.json",
+    "artifact": "reports/AOT-Technologies__forms-flow-ai/async-timeout_3b2fa1-010/context_b.json",
+    "sha256": "4a05125653f142ac3a0ac9b1cb659abe54ec5784478a64075d9d73fb5f3b5bd7",
+    "bytes": 1089
+  },
+  {
+    "source": "reports/NVIDIA-AI-Blueprints__cuFOLIO/cffi_ee8bb3-001/context_a.json",
+    "artifact": "reports/NVIDIA-AI-Blueprints__cuFOLIO/cffi_ee8bb3-001/context_a.json",
+    "sha256": "b70e511875ab9381d3cf2b735c628366f7abcb00681863aad7b3bbe98f3eb094",
+    "bytes": 537
+  },
+  {
+    "source": "reports/NVIDIA-AI-Blueprints__cuFOLIO/cffi_ee8bb3-001/context_b.json",
+    "artifact": "reports/NVIDIA-AI-Blueprints__cuFOLIO/cffi_ee8bb3-001/context_b.json",
+    "sha256": "d77301b69ad9881bf64c180bccefa0d6cb33e4e81fe04aa10b3e0d7fca6f9bc3",
+    "bytes": 798
+  },
+  {
+    "source": "reports/NVlabs__RoboLab/cffi_ee8bb3-007/context_a.json",
+    "artifact": "reports/NVlabs__RoboLab/cffi_ee8bb3-007/context_a.json",
+    "sha256": "696153c07d060a4603566212a8e7bec90f29566bda71eeaed5777b70f90947d8",
+    "bytes": 868
+  },
+  {
+    "source": "reports/NVlabs__RoboLab/cffi_ee8bb3-007/context_b.json",
+    "artifact": "reports/NVlabs__RoboLab/cffi_ee8bb3-007/context_b.json",
+    "sha256": "fca234607e762a3868764556f1ab49629a2589f49421366edeedff4a5cdf1bba",
+    "bytes": 1238
+  },
+  {
+    "source": "reports/NX-AI__tirex/async-timeout_3b2fa1-009/context_a.json",
+    "artifact": "reports/NX-AI__tirex/async-timeout_3b2fa1-009/context_a.json",
+    "sha256": "918c493714d0470babeebd25c4c275b75c2aaec93f7403355d78f2f35807a147",
+    "bytes": 696
+  },
+  {
+    "source": "reports/NX-AI__tirex/async-timeout_3b2fa1-009/context_b.json",
+    "artifact": "reports/NX-AI__tirex/async-timeout_3b2fa1-009/context_b.json",
+    "sha256": "bc4696325bbd074d4bdfdd637c58475a0c3b78fbc137f756e639edfc18b43661",
+    "bytes": 732
+  },
+  {
+    "source": "reports/lee101__stock-prediction/tomli_b3bca2-002/context_a.json",
+    "artifact": "reports/lee101__stock-prediction/tomli_b3bca2-002/context_a.json",
+    "sha256": "2f7861fa7a77f07e636e5eae4f52730a2c497fd9362cd6dca20822dd9f2f54b9",
+    "bytes": 626
+  },
+  {
+    "source": "reports/lee101__stock-prediction/tomli_b3bca2-002/context_b.json",
+    "artifact": "reports/lee101__stock-prediction/tomli_b3bca2-002/context_b.json",
+    "sha256": "4efbab1c91b9591b8cffc8485fe00044d4df085613eddec27486b46078fef9a9",
+    "bytes": 1174
+  },
+  {
+    "source": "reports/rllm-team__rllm/cffi_ee8bb3-003/context_a.json",
+    "artifact": "reports/rllm-team__rllm/cffi_ee8bb3-003/context_a.json",
+    "sha256": "d2ce8643ad56f857d6f109f8fc7e9f9f799a810559345d17ba79764d2743a0da",
+    "bytes": 960
+  },
+  {
+    "source": "reports/rllm-team__rllm/cffi_ee8bb3-003/context_b.json",
+    "artifact": "reports/rllm-team__rllm/cffi_ee8bb3-003/context_b.json",
+    "sha256": "0880f85e9f8429953a2769ddee2d6d0bbe4ea3efb737f1c734833924b0cabda2",
+    "bytes": 996
+  },
+  {
+    "source": "reports/wandahangFY__YOLOv11-RGBT/tomli_b3bca2-030/context_a.json",
+    "artifact": "reports/wandahangFY__YOLOv11-RGBT/tomli_b3bca2-030/context_a.json",
+    "sha256": "67bb240ec0f4ec9baf6c531540471855f740f3cae2ed35bd91f02b476a2238fd",
+    "bytes": 554
+  },
+  {
+    "source": "reports/wandahangFY__YOLOv11-RGBT/tomli_b3bca2-030/context_b.json",
+    "artifact": "reports/wandahangFY__YOLOv11-RGBT/tomli_b3bca2-030/context_b.json",
+    "sha256": "d45aeee621bca95b34059c3579897e6afe10f4e63667e717e52537df809afbd9",
+    "bytes": 873
+  },
+  {
+    "source": "results/projects/AOT-Technologies__forms-flow-ai/runs/reqfile-forms-flow-api-requirements-txt_pip_declared_42cdf5/pip-report.json",
+    "artifact": "results/projects/AOT-Technologies__forms-flow-ai/runs/reqfile-forms-flow-api-requirements-txt_pip_declared_42cdf5/pip-report.json",
+    "sha256": "5e3b191d41ee095a10bddc98a469e637055290a0e4cf1c1db5b7ac57c0cd3b4f",
+    "bytes": 640563
+  },
+  {
+    "source": "results/projects/AOT-Technologies__forms-flow-ai/runs/reqfile-forms-flow-api-utils-requirements-txt_uv_declared_d86adf/uv.lock",
+    "artifact": "results/projects/AOT-Technologies__forms-flow-ai/runs/reqfile-forms-flow-api-utils-requirements-txt_uv_declared_d86adf/uv.lock",
+    "sha256": "f6eec30fa2c914d31592b6de2a009089717220f388b57b8c080e7394f0db8994",
+    "bytes": 76342
+  },
+  {
+    "source": "results/projects/NVIDIA-AI-Blueprints__cuFOLIO/runs/declared-runtime_pip_declared_50b431/pip-report.json",
+    "artifact": "results/projects/NVIDIA-AI-Blueprints__cuFOLIO/runs/declared-runtime_pip_declared_50b431/pip-report.json",
+    "sha256": "a1c8e7895915e043db5a3cdd09ada424865dc6568bae0e54a60acba87fc66a43",
+    "bytes": 865031
+  },
+  {
+    "source": "results/projects/NVIDIA-AI-Blueprints__cuFOLIO/runs/ip-ci-utils-run-notebooks-sh-2_uv_declared_797c92/uv.lock",
+    "artifact": "results/projects/NVIDIA-AI-Blueprints__cuFOLIO/runs/ip-ci-utils-run-notebooks-sh-2_uv_declared_797c92/uv.lock",
+    "sha256": "587db5cce7ab76ff604aa1140be975d38222a157a0357e01ffc8e561004503c3",
+    "bytes": 27670
+  },
+  {
+    "source": "results/projects/NVlabs__RoboLab/runs/declared-runtime_pip_declared_50b431/pip-report.json",
+    "artifact": "results/projects/NVlabs__RoboLab/runs/declared-runtime_pip_declared_50b431/pip-report.json",
+    "sha256": "16435efad4dd13254d4e2ab438df349049c9c73d152457b62ae5bb9871a348d5",
+    "bytes": 1091642
+  },
+  {
+    "source": "results/projects/NVlabs__RoboLab/runs/declared-runtime_uv_declared_13017a/uv.lock",
+    "artifact": "results/projects/NVlabs__RoboLab/runs/declared-runtime_uv_declared_13017a/uv.lock",
+    "sha256": "71d443148b74d5990438afdedeed28dcbfd57f43e5147069b5c52d6077d595cf",
+    "bytes": 68517
+  },
+  {
+    "source": "results/projects/NX-AI__tirex/runs/declared-runtime_pip_declared_50b431/pip-report.json",
+    "artifact": "results/projects/NX-AI__tirex/runs/declared-runtime_pip_declared_50b431/pip-report.json",
+    "sha256": "217f69dbf29c29eb8195ad3958d66b9945b2fc12157fc698cc7a8384eff39948",
+    "bytes": 470896
+  },
+  {
+    "source": "results/projects/NX-AI__tirex/runs/reqfile-inference-requirements-txt_uv_declared_40bb72/uv.lock",
+    "artifact": "results/projects/NX-AI__tirex/runs/reqfile-inference-requirements-txt_uv_declared_40bb72/uv.lock",
+    "sha256": "e57bd2e1b26d34266348a1c393183df74948b74f8ed7eade6f8ac1b777f807ba",
+    "bytes": 111598
+  },
+  {
+    "source": "results/projects/lee101__stock-prediction/runs/ip--github-workflows-ci-fast-yml-fast-unit-tests-3-2_pip_dec_494a7c/pip-report.json",
+    "artifact": "results/projects/lee101__stock-prediction/runs/ip--github-workflows-ci-fast-yml-fast-unit-tests-3-2_pip_dec_494a7c/pip-report.json",
+    "sha256": "7d3eba32b5826eb87b72a695a94350af72c92c2d7026651db1b53621d5d762b4",
+    "bytes": 71535
+  },
+  {
+    "source": "results/projects/lee101__stock-prediction/runs/ip--github-workflows-ci-fast-yml-fast-unit-tests-3-2_uv_decl_c9d77f/uv.lock",
+    "artifact": "results/projects/lee101__stock-prediction/runs/ip--github-workflows-ci-fast-yml-fast-unit-tests-3-2_uv_decl_c9d77f/uv.lock",
+    "sha256": "b79009b055ad0a3c561755ef6ac5c5a09270969f01383c505f4f8d02c504789e",
+    "bytes": 7656
+  },
+  {
+    "source": "results/projects/rllm-team__rllm/runs/reqfile-docs-requirements-txt_pip_declared_ed933d/pip-report.json",
+    "artifact": "results/projects/rllm-team__rllm/runs/reqfile-docs-requirements-txt_pip_declared_ed933d/pip-report.json",
+    "sha256": "26458e4538d39820d19fc732832e8f3e079812c502b77b75aff23f3bc1141a35",
+    "bytes": 1644316
+  },
+  {
+    "source": "results/projects/rllm-team__rllm/runs/reqfile-docs-requirements-txt_uv_declared_d2c703/uv.lock",
+    "artifact": "results/projects/rllm-team__rllm/runs/reqfile-docs-requirements-txt_uv_declared_d2c703/uv.lock",
+    "sha256": "ea25ce1b37d3d5842a6a6f468c72eb58e44f02a6244a6234fd8c09f52bf0c76b",
+    "bytes": 129897
+  },
+  {
+    "source": "results/projects/wandahangFY__YOLOv11-RGBT/runs/declared-runtime_pip_declared_50b431/pip-report.json",
+    "artifact": "results/projects/wandahangFY__YOLOv11-RGBT/runs/declared-runtime_pip_declared_50b431/pip-report.json",
+    "sha256": "674e3da0eb0ab435b5ec8e620d8ff14e4360e1182e8086a05eb0e0264aa78137",
+    "bytes": 840374
+  },
+  {
+    "source": "results/projects/wandahangFY__YOLOv11-RGBT/runs/ip--github-workflows-ci-yml-Benchmarks-3-1_uv_ip-github-work_4fd09c/uv.lock",
+    "artifact": "results/projects/wandahangFY__YOLOv11-RGBT/runs/ip--github-workflows-ci-yml-Benchmarks-3-1_uv_ip-github-work_4fd09c/uv.lock",
+    "sha256": "54d626fb96896459d11119415af609edbe3ab7bc3d0e5fa9498c80d4cb15c4ac",
+    "bytes": 3282
+  },
+  {
+    "source": "work/issue-audit-20261110/marker-checks.json",
+    "artifact": "work/issue-audit-20261110/marker-checks.json",
+    "sha256": "29e9d1c622f8eae9a7af851c59c986b7f5239841876c5f2fb8b493b1ee13d0e2",
+    "bytes": 3496
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "issue": "05",
+    "project": "wandahangFY__YOLOv11-RGBT",
+    "package": "tomli",
+    "case_id": "tomli_b3bca2-030",
+    "raw_lock": "results\\projects\\wandahangFY__YOLOv11-RGBT\\runs\\ip--github-workflows-ci-yml-Benchmarks-3-1_uv_ip-github-work_4fd09c\\uv.lock",
+    "incoming_edges": [
+      {
+        "parent": "coverage",
+        "kind": "extra:toml",
+        "dep": "tomli",
+        "marker": "python_full_version <= '3.11'",
+        "active_cpython31116": false
+      }
+    ]
+  },
+  {
+    "issue": "09",
+    "project": "NVlabs__RoboLab",
+    "package": "cffi",
+    "case_id": "cffi_ee8bb3-007",
+    "raw_lock": "results\\projects\\NVlabs__RoboLab\\runs\\declared-runtime_uv_declared_13017a\\uv.lock",
+    "incoming_edges": [
+      {
+        "parent": "pyzmq",
+        "kind": "dependencies",
+        "dep": "cffi",
+        "marker": "implementation_name == 'pypy'",
+        "active_cpython31116": false
+      }
+    ]
+  },
+  {
+    "issue": "21",
+    "project": "rllm-team__rllm",
+    "package": "cffi",
+    "case_id": "cffi_ee8bb3-003",
+    "raw_lock": "results\\projects\\rllm-team__rllm\\runs\\reqfile-docs-requirements-txt_uv_declared_d2c703\\uv.lock",
+    "incoming_edges": [
+      {
+        "parent": "pyzmq",
+        "kind": "dependencies",
+        "dep": "cffi",
+        "marker": "implementation_name == 'pypy'",
+        "active_cpython31116": false
+      }
+    ]
+  },
+  {
+    "issue": "22",
+    "project": "AOT-Technologies__forms-flow-ai",
+    "package": "async-timeout",
+    "case_id": "async-timeout_3b2fa1-010",
+    "raw_lock": "results\\projects\\AOT-Technologies__forms-flow-ai\\runs\\reqfile-forms-flow-api-utils-requirements-txt_uv_declared_d86adf\\uv.lock",
+    "incoming_edges": [
+      {
+        "parent": "redis",
+        "kind": "dependencies",
+        "dep": "async-timeout",
+        "marker": "python_full_version < '3.11.3'",
+        "active_cpython31116": false
+      }
+    ]
+  },
+  {
+    "issue": "23",
+    "project": "NVIDIA-AI-Blueprints__cuFOLIO",
+    "package": "cffi",
+    "case_id": "cffi_ee8bb3-001",
+    "raw_lock": "results\\projects\\NVIDIA-AI-Blueprints__cuFOLIO\\runs\\ip-ci-utils-run-notebooks-sh-2_uv_declared_797c92\\uv.lock",
+    "incoming_edges": [
+      {
+        "parent": "pyzmq",
+        "kind": "dependencies",
+        "dep": "cffi",
+        "marker": "implementation_name == 'pypy'",
+        "active_cpython31116": false
+      }
+    ]
+  },
+  {
+    "issue": "26",
+    "project": "NX-AI__tirex",
+    "package": "async-timeout",
+    "case_id": "async-timeout_3b2fa1-009",
+    "raw_lock": "results\\projects\\NX-AI__tirex\\runs\\reqfile-inference-requirements-txt_uv_declared_40bb72\\uv.lock",
+    "incoming_edges": [
+      {
+        "parent": "redis",
+        "kind": "dependencies",
+        "dep": "async-timeout",
+        "marker": "python_full_version < '3.11.3'",
+        "active_cpython31116": false
+      }
+    ]
+  },
+  {
+    "issue": "29",
+    "project": "lee101__stock-prediction",
+    "package": "tomli",
+    "case_id": "tomli_b3bca2-002",
+    "raw_lock": "results\\projects\\lee101__stock-prediction\\runs\\ip--github-workflows-ci-fast-yml-fast-unit-tests-3-2_uv_decl_c9d77f\\uv.lock",
+    "incoming_edges": [
+      {
+        "parent": "coverage",
+        "kind": "extra:toml",
+        "dep": "tomli",
+        "marker": "python_full_version <= '3.11'",
+        "active_cpython31116": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,1172 @@
+{
+  "cutoff_utc": "2026-11-11T09:28:30.873554+00:00",
+  "sources": [
+    {
+      "name": "run1",
+      "directory": "work/stateful-workflows-20261111/published/run1",
+      "protocol": {
+        "path": "work/stateful-workflows-20261111/published/run1/protocol.json",
+        "sha256": "c0b7d89b8db31c9d2564ac469e6e7b5010abe97e712c1842ff18f8316a489bbd"
+      },
+      "cases": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases.json",
+        "sha256": "777789c731c2d66d5f4b8f03885ef6c8609ffc4e2d9bb4d885887ef7c4cd7604"
+      }
+    },
+    {
+      "name": "corrected-continuation1",
+      "directory": "work/stateful-workflows-20261111/published/corrected-continuation1",
+      "protocol": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/protocol.json",
+        "sha256": "fec9518551aed67ec53f003a8c26d51150463c3cb0dc5d7a0f98e81837a47948"
+      },
+      "cases": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases.json",
+        "sha256": "992fa7dea7a2ec07bcd23a622f1572bcf365872fa069ba0134f3f424ca9c4ffb"
+      }
+    },
+    {
+      "name": "staged-continuation2",
+      "directory": "work/stateful-workflows-20261111/published/staged-continuation2",
+      "protocol": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/protocol.json",
+        "sha256": "a0c110042fd342cfa8f0ad6d7ae231df042756a87fb7340e55f0bcb55bc61f1c"
+      },
+      "cases": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases.json",
+        "sha256": "8e73aef63a2b7dc96bcca5ef5f593f30c72dec5e0d6f748ae600e1e8d010bd57"
+      }
+    }
+  ],
+  "eligible_inventories": [
+    {
+      "source_layer": "run1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/akshare/update/stages/pip-old/installed.json",
+        "sha256": "4c3eb5bf783ae7002f9001470488c696a0d16bc416834fac06deda5e76871894"
+      },
+      "mtime_utc": "2026-11-11T03:09:07.973243+00:00"
+    },
+    {
+      "source_layer": "run1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/pip-old/installed.json",
+        "sha256": "6a99244df524d71d78a45bc15f0d8a05dd53a69d37f83ad6dff9f1b04f9784de"
+      },
+      "mtime_utc": "2026-11-11T03:26:06.932585+00:00"
+    },
+    {
+      "source_layer": "run1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/pip-updated/installed.json",
+        "sha256": "ce88947fa49270bf2927c5fdc7cfba0fca1e04cfcb4e287f983d405408e53121"
+      },
+      "mtime_utc": "2026-11-11T03:30:17.645422+00:00"
+    },
+    {
+      "source_layer": "run1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "0ec5e4fd57613d583278a36983c0cbd6011b21197e92d0ac29502ddb718f62d9"
+      },
+      "mtime_utc": "2026-11-11T03:37:36.918833+00:00"
+    },
+    {
+      "source_layer": "run1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-old/installed.json",
+        "sha256": "78bc39308f56f684c156cdccde9a6c1c5f0d5180406ca23c2ffc659071291060"
+      },
+      "mtime_utc": "2026-11-11T03:33:25.953194+00:00"
+    },
+    {
+      "source_layer": "run1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-updated/installed.json",
+        "sha256": "e5b47dc2d23622530280c9bbec66a7beefa7c39060439e679cbc5dcb4b0b2786"
+      },
+      "mtime_utc": "2026-11-11T03:36:10.799955+00:00"
+    },
+    {
+      "source_layer": "run1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/diffusers/update/stages/pip-old/installed.json",
+        "sha256": "d69620fb9cbf380511f3591a1d4edf0e8774b28a8ee8ac2855992311d2d2cdc3"
+      },
+      "mtime_utc": "2026-11-11T03:33:55.766917+00:00"
+    },
+    {
+      "source_layer": "run1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/diffusers/update/stages/pip-updated/installed.json",
+        "sha256": "0becaef50d166badd533eadc688d2c6d3eaaf61ca5f2b3c97d832bba431e235d"
+      },
+      "mtime_utc": "2026-11-11T03:41:45.579146+00:00"
+    },
+    {
+      "source_layer": "run1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/jax/extras/stages/uv-base/installed.json",
+        "sha256": "1b44542b89b0f21758e0d8fe152f05d25a66e0604e464162cb1e13768587c5f4"
+      },
+      "mtime_utc": "2026-11-11T04:30:02.887816+00:00"
+    },
+    {
+      "source_layer": "run1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/jax/extras/stages/uv-extra/installed.json",
+        "sha256": "c85427f81fcab6fb45481a2db61aebf13fcf5611b2811784823420f43205e530"
+      },
+      "mtime_utc": "2026-11-11T04:38:20.689960+00:00"
+    },
+    {
+      "source_layer": "run1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/jax/update/stages/pip-old/installed.json",
+        "sha256": "95b5da06d2215a63327ab580a479edc973b6edd363fca0fe39419ad20f441c91"
+      },
+      "mtime_utc": "2026-11-11T04:15:36.388623+00:00"
+    },
+    {
+      "source_layer": "run1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/jax/update/stages/pip-updated/installed.json",
+        "sha256": "f4bf5bdf2c993ad785858fe50fca218c90e4308c2a1f4e7e7618fc7220922877"
+      },
+      "mtime_utc": "2026-11-11T04:24:23.103656+00:00"
+    },
+    {
+      "source_layer": "run1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases/llama-index/update/stages/pip-old/installed.json",
+        "sha256": "45230f2c13fa0442d0ee5b0eb7f0c15b355c13956677a44517233229dd199429"
+      },
+      "mtime_utc": "2026-11-11T04:22:19.643667+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/aider-chat/extras/stages/uv-base/installed.json",
+        "sha256": "4f8eca288fab2de31d2e0b97e594021d5d5d278e52109f0cc8f93d7aa01e5887"
+      },
+      "mtime_utc": "2026-11-11T05:06:56.777244+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/aider-chat/extras/stages/uv-extra/installed.json",
+        "sha256": "47f41cca647e4db7b7603e9896295ef15bb86f71191a607f5bd2498dca8fc7eb"
+      },
+      "mtime_utc": "2026-11-11T05:15:37.436286+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/aider-chat/relock/stages/uv-after-relock/installed.json",
+        "sha256": "15b3b0a7166ed1fb1047451957c3f5f61e3ee3b5974b4caf6f6e90cb24fd75b5"
+      },
+      "mtime_utc": "2026-11-11T05:25:37.782142+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/aider-chat/relock/stages/uv-before-relock/installed.json",
+        "sha256": "15b3b0a7166ed1fb1047451957c3f5f61e3ee3b5974b4caf6f6e90cb24fd75b5"
+      },
+      "mtime_utc": "2026-11-11T05:21:08.014151+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/aider-chat/relock/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "2d7de11cb05087e11270dbfb5b42e7a672937fc8745ea1d51d045e17d709b92c"
+      },
+      "mtime_utc": "2026-11-11T05:32:16.029766+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/akshare/relock/stages/uv-after-relock/installed.json",
+        "sha256": "fd407b5cd52d82ffb47e9f190c03060c1b8b70d82bc967ef853cbfde830c9849"
+      },
+      "mtime_utc": "2026-11-11T05:13:45.383207+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/akshare/relock/stages/uv-before-relock/installed.json",
+        "sha256": "fd407b5cd52d82ffb47e9f190c03060c1b8b70d82bc967ef853cbfde830c9849"
+      },
+      "mtime_utc": "2026-11-11T05:10:27.390002+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/akshare/relock/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "67efde8dab97440f0094fe986fda1e4b8848df16b5ca802439bd2547eb1ef73e"
+      },
+      "mtime_utc": "2026-11-11T05:16:41.685789+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/akshare/update/stages/pip-old/installed.json",
+        "sha256": "cdbcbdf3227805b1cca989e83a20c298c2b632d5e73969a23fd90e32ad6b25d8"
+      },
+      "mtime_utc": "2026-11-11T04:54:24.674014+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/akshare/update/stages/pip-updated/installed.json",
+        "sha256": "a8453501ddc95c14ce7a13c53f391e8beec795e3b476b6a6ce81f4f992bf4e29"
+      },
+      "mtime_utc": "2026-11-11T04:56:37.861810+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/akshare/update/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "d3deefa880f56506ace4782956fe61d21d38d05c0a9e81bb07166bb695c4331d"
+      },
+      "mtime_utc": "2026-11-11T05:06:29.885394+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/akshare/update/stages/uv-old/installed.json",
+        "sha256": "181f60f0c9cdc463a4ed26613bbd798112fb63198977cc9a34cac9187d1a10d2"
+      },
+      "mtime_utc": "2026-11-11T05:00:00.944352+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/akshare/update/stages/uv-updated/installed.json",
+        "sha256": "0c6262d71c69b026bb26125dd32a6fd0ac3ffb63d52e20ac6ac48971fb46a3d5"
+      },
+      "mtime_utc": "2026-11-11T05:02:30.105103+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/celery/relock/stages/uv-after-relock/installed.json",
+        "sha256": "8d2b82ad28e43455df20d9e2178ad4acf7462660f2f92ba93c18115a5dd22fb4"
+      },
+      "mtime_utc": "2026-11-11T05:20:45.767680+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/celery/relock/stages/uv-before-relock/installed.json",
+        "sha256": "8d2b82ad28e43455df20d9e2178ad4acf7462660f2f92ba93c18115a5dd22fb4"
+      },
+      "mtime_utc": "2026-11-11T05:19:20.737375+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/celery/relock/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "86f959514464f3d331a254a3a1dfbe23bc183d3cb05ab4550e680415584ebbb9"
+      },
+      "mtime_utc": "2026-11-11T05:21:27.561919+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/diffusers/relock/stages/uv-after-relock/installed.json",
+        "sha256": "8d403ce0d9e59258d8174ff0445b3614a6a0d83c2d697d80e7b57794b5a9ff10"
+      },
+      "mtime_utc": "2026-11-11T05:41:38.209821+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/diffusers/relock/stages/uv-before-relock/installed.json",
+        "sha256": "8d403ce0d9e59258d8174ff0445b3614a6a0d83c2d697d80e7b57794b5a9ff10"
+      },
+      "mtime_utc": "2026-11-11T05:39:46.626327+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/diffusers/relock/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "6ed530a5147e2a6bfa3938c4366b7bf9f4a99df62f44e7b24628ea8f95460a1f"
+      },
+      "mtime_utc": "2026-11-11T05:44:11.099447+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/diffusers/update/stages/pip-old/installed.json",
+        "sha256": "1e38095308fdbd3d3a681562316aac1cbb1574b767e14ebfa49fd83ecd7eca11"
+      },
+      "mtime_utc": "2026-11-11T05:25:13.434128+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/diffusers/update/stages/pip-updated/installed.json",
+        "sha256": "eada7e522cc245bc782d95d329d04d552178d76838748efd8668dae7ad1fe693"
+      },
+      "mtime_utc": "2026-11-11T05:28:39.460436+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/diffusers/update/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "38fad017ca677ca107221acdc127159d7d1afbe03d2b3d52b6fc76e9525fcdfb"
+      },
+      "mtime_utc": "2026-11-11T05:37:16.807912+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/diffusers/update/stages/uv-old/installed.json",
+        "sha256": "337d844249af867fec13cd67fd33c6f8858784f4ef9d8d790cbb8eaa12539bef"
+      },
+      "mtime_utc": "2026-11-11T05:31:22.755818+00:00"
+    },
+    {
+      "source_layer": "corrected-continuation1",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases/diffusers/update/stages/uv-updated/installed.json",
+        "sha256": "d97a299598bd3e87c32d7fa412d78a762b9d7dbd082fa4da3ede197a0343cc3d"
+      },
+      "mtime_utc": "2026-11-11T05:34:35.649108+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/aider-chat/extras/stages/uv-base/installed.json",
+        "sha256": "fee9a6a0bed82f432b46a4538972212ca7fa7d99e697f0f7964631cf49333f20"
+      },
+      "mtime_utc": "2026-11-11T06:14:20.782820+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/aider-chat/extras/stages/uv-base-restored/installed.json",
+        "sha256": "fee9a6a0bed82f432b46a4538972212ca7fa7d99e697f0f7964631cf49333f20"
+      },
+      "mtime_utc": "2026-11-11T06:23:13.658027+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/aider-chat/extras/stages/uv-extra/installed.json",
+        "sha256": "070b017b95738e0618c1a2031c11174e35a276d9964265aa7a2b7bcc1ae80062"
+      },
+      "mtime_utc": "2026-11-11T06:18:55.861273+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/aider-chat/extras/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "5eaffc3de5c4bf4e9f37d40da6a5662c54b0e7493899c805d48ab35d487183bc"
+      },
+      "mtime_utc": "2026-11-11T06:27:44.255105+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/graphrag/relock/stages/uv-after-relock/installed.json",
+        "sha256": "c009f9bddeabafe099dfddcd51ed50c317632f24a60a9207da32b7d97d261cfd"
+      },
+      "mtime_utc": "2026-11-11T07:06:26.512964+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/graphrag/relock/stages/uv-before-relock/installed.json",
+        "sha256": "c009f9bddeabafe099dfddcd51ed50c317632f24a60a9207da32b7d97d261cfd"
+      },
+      "mtime_utc": "2026-11-11T07:00:37.096143+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/graphrag/relock/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "09783129066e2b225fee7bc123180b18d6e5437bfc7dff5218e0b688f17a65c4"
+      },
+      "mtime_utc": "2026-11-11T07:13:27.993815+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/graphrag/update/stages/pip-old/installed.json",
+        "sha256": "5542c5f3caf1f880d0a90c0e9f7424d0b21b9e138e47201b6a97a804467233fb"
+      },
+      "mtime_utc": "2026-11-11T06:20:37.576615+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/graphrag/update/stages/pip-updated/installed.json",
+        "sha256": "408a5cf0a9ab18e6367b954c59c4f23618f1126e206f7c5a3b2496be2dfabe4a"
+      },
+      "mtime_utc": "2026-11-11T06:28:09.239997+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/graphrag/update/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "cf184ad3eb1b080125ed011a81fa1346a12c3531a111b23bb32952c58c766cb7"
+      },
+      "mtime_utc": "2026-11-11T06:51:39.794475+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/graphrag/update/stages/uv-old/installed.json",
+        "sha256": "0340472c4b0ccbf814b53790840efc17696f175359d3256ced246c2ada53a975"
+      },
+      "mtime_utc": "2026-11-11T06:37:45.618851+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/graphrag/update/stages/uv-updated/installed.json",
+        "sha256": "33565ec60ab9888793a66b71034811018402483b4be84272a8e38602d221fe6d"
+      },
+      "mtime_utc": "2026-11-11T06:43:56.363537+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/extras/stages/uv-base/installed.json",
+        "sha256": "fadd3efacbaccc464e816081230fcf86b19b968f345235ba724a88eb7b5456d9"
+      },
+      "mtime_utc": "2026-11-11T06:56:05.632952+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/extras/stages/uv-base-restored/installed.json",
+        "sha256": "fadd3efacbaccc464e816081230fcf86b19b968f345235ba724a88eb7b5456d9"
+      },
+      "mtime_utc": "2026-11-11T07:01:15.261307+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/extras/stages/uv-extra/installed.json",
+        "sha256": "b2b0051c73b0f07cbbd5e77aa8947c9b436243dc5ad4a52b449699b690cef43d"
+      },
+      "mtime_utc": "2026-11-11T06:57:52.076795+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/extras/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "7021f69fecf111ac9a61d2b480f7656c2d6e23f871bd1e1f8f75b29e1f4fed8b"
+      },
+      "mtime_utc": "2026-11-11T07:02:38.758641+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/relock/stages/uv-after-relock/installed.json",
+        "sha256": "4b6fd1700fd05bc39b5248d7ed6604d309799e664d36bae4fc4497b593711c6e"
+      },
+      "mtime_utc": "2026-11-11T07:05:37.626273+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/relock/stages/uv-before-relock/installed.json",
+        "sha256": "9dfc6288a1f5edddc214645be6830cf288e52d7370982e8e9d369593da83ff0c"
+      },
+      "mtime_utc": "2026-11-11T07:04:18.047022+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/relock/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "07b4cb052e3b3420c64e240f200f4b086717e19f8815bec5dd0bcb1dfbe52ca1"
+      },
+      "mtime_utc": "2026-11-11T07:07:00.773047+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/update/stages/pip-old/installed.json",
+        "sha256": "e35c2ca223f48e7eb74f5351e99b84a9f99a26846bbe90de2c6cd9eb2a244255"
+      },
+      "mtime_utc": "2026-11-11T06:47:04.116940+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/update/stages/pip-updated/installed.json",
+        "sha256": "e19b3ba33beb1af6c2f9e597e67b9b48a8ad28d76785d89817de7a8e7b06de48"
+      },
+      "mtime_utc": "2026-11-11T06:48:58.283043+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/update/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "5d8ef5b05ead65eb106ec38be1d159bb28ea9203cf184ab1f2cea547fdf60b07"
+      },
+      "mtime_utc": "2026-11-11T06:54:17.765178+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/update/stages/uv-old/installed.json",
+        "sha256": "05338bb3d72907d46b152c14e46d7d4c2ad10908977442e6912b9e0ad8ccea0c"
+      },
+      "mtime_utc": "2026-11-11T06:51:27.441436+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/jax/update/stages/uv-updated/installed.json",
+        "sha256": "582e60bf49f5c7099938e7181c6b6ee26e8e5fe32fe5ba9fa00d6d304a9355cf"
+      },
+      "mtime_utc": "2026-11-11T06:52:48.878398+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/llama-index/relock/stages/uv-after-relock/installed.json",
+        "sha256": "648632da72121e97ece0d2afb547d3123a696c548e3fbe65e377601308319a1c"
+      },
+      "mtime_utc": "2026-11-11T07:25:45.937844+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/llama-index/relock/stages/uv-before-relock/installed.json",
+        "sha256": "648632da72121e97ece0d2afb547d3123a696c548e3fbe65e377601308319a1c"
+      },
+      "mtime_utc": "2026-11-11T07:23:42.961302+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/llama-index/relock/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "36ae6dea2a5f4523f9146262ac7c062ec6bc938c4a214f5f8b1c96535664605a"
+      },
+      "mtime_utc": "2026-11-11T07:28:19.795627+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/llama-index/update/stages/pip-old/installed.json",
+        "sha256": "ba9c4370bbaecd1c44b8569f31e52ceb185e10a0038539c7ae639cef43a6572d"
+      },
+      "mtime_utc": "2026-11-11T07:10:47.325078+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/llama-index/update/stages/pip-updated/installed.json",
+        "sha256": "20f4582af3b77a6cafda51cf05f054c673ddddb91ba104563cef93d95cea6428"
+      },
+      "mtime_utc": "2026-11-11T07:13:47.760992+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/llama-index/update/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "c6caac240d1d1be49558bcf58dd8d3d48822782c24f12ca699a95d9e7bade447"
+      },
+      "mtime_utc": "2026-11-11T07:20:55.619315+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/llama-index/update/stages/uv-old/installed.json",
+        "sha256": "a2612803b6ce7a6b4bdb51d90082042817eb4694b4280bef93c8586c5bdf7fc7"
+      },
+      "mtime_utc": "2026-11-11T07:16:28.585185+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/llama-index/update/stages/uv-updated/installed.json",
+        "sha256": "5f9ba73a2f0b9f833ec3361ce1347deb962262f85207e71d6a641f56106d0635"
+      },
+      "mtime_utc": "2026-11-11T07:18:33.784271+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/matplotlib/relock/stages/uv-after-relock/installed.json",
+        "sha256": "423f40c4dc0f8020e0bf2b761bb5284dc80f977f98241c3a0f91070724a47773"
+      },
+      "mtime_utc": "2026-11-11T07:32:30.482347+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/matplotlib/relock/stages/uv-before-relock/installed.json",
+        "sha256": "423f40c4dc0f8020e0bf2b761bb5284dc80f977f98241c3a0f91070724a47773"
+      },
+      "mtime_utc": "2026-11-11T07:31:38.154294+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/matplotlib/relock/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "3f0cdd36c8ceb31ca2d77c41d6886ff8ee247ecd6a2138eaf94fb41ab55e0953"
+      },
+      "mtime_utc": "2026-11-11T07:33:46.457829+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/matplotlib/update/stages/pip-old/installed.json",
+        "sha256": "6605edaaf4593b40250164567bf386aa9ce64acb885a172a80b777cda94e44c6"
+      },
+      "mtime_utc": "2026-11-11T07:25:24.456578+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/matplotlib/update/stages/pip-updated/installed.json",
+        "sha256": "c6aea8a857c90ff9a9a06d4bf73059e66a7405d2d65ef033d5b40a7ddcadd9c0"
+      },
+      "mtime_utc": "2026-11-11T07:26:45.534285+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/matplotlib/update/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "a036659b261ff6316fb12e7ac2a3067855be9b6d6763606a8f8b5bceec25db23"
+      },
+      "mtime_utc": "2026-11-11T07:30:22.971511+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/matplotlib/update/stages/uv-old/installed.json",
+        "sha256": "1f5e813e8c70ca2f7215a9122bfa153c597906cd3cb950693ef35700e0991843"
+      },
+      "mtime_utc": "2026-11-11T07:28:13.401447+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/matplotlib/update/stages/uv-updated/installed.json",
+        "sha256": "d8c63d5a00a6777c183498774a0206cca2ebb8765bf8762acdbec4770f18ee88"
+      },
+      "mtime_utc": "2026-11-11T07:29:18.306823+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pandas/relock/stages/uv-after-relock/installed.json",
+        "sha256": "b878dc005b5dcbb5e37a1c49dd02eeb1a05c88e7e21488ae2ced31879add14f0"
+      },
+      "mtime_utc": "2026-11-11T07:50:08.864085+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pandas/relock/stages/uv-before-relock/installed.json",
+        "sha256": "b878dc005b5dcbb5e37a1c49dd02eeb1a05c88e7e21488ae2ced31879add14f0"
+      },
+      "mtime_utc": "2026-11-11T07:49:09.840159+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pandas/relock/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "a523ed3a54e6290e7940c10912c59bb83db6e53e90706047839c34afaba060b7"
+      },
+      "mtime_utc": "2026-11-11T07:51:21.823152+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pandas/update/stages/pip-old/installed.json",
+        "sha256": "2d6ea66b675c568545d6f112424a795c84f43c96c158dd2aabe1cf6aadd37071"
+      },
+      "mtime_utc": "2026-11-11T07:40:18.359715+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pandas/update/stages/pip-updated/installed.json",
+        "sha256": "5ad44a5cf4ca7400d7a592787798dbdbe81a34643eba1625be8102e34327f1d4"
+      },
+      "mtime_utc": "2026-11-11T07:42:45.950610+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pandas/update/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "4cee87e5e188e0521d44c240d5655cd3da50d8c052ae42a97ad0604371ac4857"
+      },
+      "mtime_utc": "2026-11-11T07:47:32.908618+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pandas/update/stages/uv-old/installed.json",
+        "sha256": "9806894fa40e600e17274a19d473f7be51d39f9d12822838854acf5a698a109f"
+      },
+      "mtime_utc": "2026-11-11T07:44:10.942142+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pandas/update/stages/uv-updated/installed.json",
+        "sha256": "5de6b030f8c28d6bf376cce0829336176b2199135bdb635e3158d41f5f39546a"
+      },
+      "mtime_utc": "2026-11-11T07:45:51.179194+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/extras/stages/uv-base/installed.json",
+        "sha256": "340086a66a29cf57e00ec33cc82de52d4adc4ad77befa2ba8f30c7beac13e4a8"
+      },
+      "mtime_utc": "2026-11-11T07:43:10.757055+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/extras/stages/uv-base-restored/installed.json",
+        "sha256": "340086a66a29cf57e00ec33cc82de52d4adc4ad77befa2ba8f30c7beac13e4a8"
+      },
+      "mtime_utc": "2026-11-11T07:44:37.222729+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/extras/stages/uv-extra/installed.json",
+        "sha256": "e61722ec132f5e658ec2526dbe0427d7a29719bebc4e8245f1ccad737391fd12"
+      },
+      "mtime_utc": "2026-11-11T07:43:50.855825+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/extras/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "f63b9e3d9d07e43124c7ea4f7d0aa0131e0504ce69898ff6fafe85ecdb172fc4"
+      },
+      "mtime_utc": "2026-11-11T07:45:32.225414+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/relock/stages/uv-after-relock/installed.json",
+        "sha256": "14c11a61615ed8bf4509896680f3cf9fd708ee87b8ca56a42a7024e86830672c"
+      },
+      "mtime_utc": "2026-11-11T07:47:32.099007+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/relock/stages/uv-before-relock/installed.json",
+        "sha256": "14c11a61615ed8bf4509896680f3cf9fd708ee87b8ca56a42a7024e86830672c"
+      },
+      "mtime_utc": "2026-11-11T07:46:35.055831+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/relock/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "dce812256557800fc0538e539498549eaea51763e583935946c271f8127d4d1a"
+      },
+      "mtime_utc": "2026-11-11T07:48:27.755826+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/update/stages/pip-old/installed.json",
+        "sha256": "c472b48e6567f1ba77f75660b2b95a78fb0cbdad8a18c32be084982de76d503a"
+      },
+      "mtime_utc": "2026-11-11T07:37:42.535953+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/update/stages/pip-updated/installed.json",
+        "sha256": "3115b0501ab55f7ba83851d4584bce9674064ddea21c7f59f82f58e64569caf6"
+      },
+      "mtime_utc": "2026-11-11T07:39:11.080729+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/update/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "a1af1ffa648885ce79cda43ab401bce39c40cb53fe389aa434db54d3989fbbfb"
+      },
+      "mtime_utc": "2026-11-11T07:42:10.653256+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/update/stages/uv-old/installed.json",
+        "sha256": "4740ed988241d523bc02ab070369eb443d5bbcc53436721504253c3f6b4e90b7"
+      },
+      "mtime_utc": "2026-11-11T07:40:11.812039+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/pipenv/update/stages/uv-updated/installed.json",
+        "sha256": "14bc0b441b89748761328539addd9230f3bda5665fc0de675e1b3009db7364b6"
+      },
+      "mtime_utc": "2026-11-11T07:41:15.709494+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/poetry/relock/stages/uv-after-relock/installed.json",
+        "sha256": "b18346f86669e7ba51f073a5a2c0dd532df08d1348814a63c3b9436acdb50b51"
+      },
+      "mtime_utc": "2026-11-11T08:05:25.789258+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/poetry/relock/stages/uv-before-relock/installed.json",
+        "sha256": "b18346f86669e7ba51f073a5a2c0dd532df08d1348814a63c3b9436acdb50b51"
+      },
+      "mtime_utc": "2026-11-11T08:04:31.100374+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/poetry/relock/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "e24a698775406d2ab926306eb1964edb5f14f8f1177346cbf24c8ea049a52396"
+      },
+      "mtime_utc": "2026-11-11T08:06:29.364975+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/poetry/update/stages/pip-old/installed.json",
+        "sha256": "7c55dbf8f8b1fb968e7ff5d1746bc6fc6888e4ec93199095db2f7991e35bc01a"
+      },
+      "mtime_utc": "2026-11-11T07:58:55.970870+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/poetry/update/stages/pip-updated/installed.json",
+        "sha256": "e6bec5f009f62c558789833d5eb66e745e5b69f79ab68293276c6f65652a3ffc"
+      },
+      "mtime_utc": "2026-11-11T08:00:06.301283+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/poetry/update/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "24010013a083124c79d655bc57fc69bd36b6854ff88612f63b8a5ba778a50cdd"
+      },
+      "mtime_utc": "2026-11-11T08:03:24.241657+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/poetry/update/stages/uv-old/installed.json",
+        "sha256": "2e862c184f5c58c209e8603d9d999914c5c7a0146f997907a751ff00bd66d50a"
+      },
+      "mtime_utc": "2026-11-11T08:01:16.318662+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/poetry/update/stages/uv-updated/installed.json",
+        "sha256": "d0da546f20f040d5b65a4c1812ed3c8f391c0865b0f91c28f36bc462d8330293"
+      },
+      "mtime_utc": "2026-11-11T08:02:22.373683+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/extras/stages/uv-base/installed.json",
+        "sha256": "13692e01063e1c958b18562f8eb6dc823c504fe678d7c0914eaf163ebbace544"
+      },
+      "mtime_utc": "2026-11-11T08:19:20.601200+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/extras/stages/uv-base-restored/installed.json",
+        "sha256": "13692e01063e1c958b18562f8eb6dc823c504fe678d7c0914eaf163ebbace544"
+      },
+      "mtime_utc": "2026-11-11T08:23:49.148314+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/extras/stages/uv-extra/installed.json",
+        "sha256": "24a9bc6bff2d80d5bfaaf0fc114e4df3afde71263a382b9d171a8222973a626f"
+      },
+      "mtime_utc": "2026-11-11T08:21:19.031297+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/extras/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "1b70eafc79b77d4f076c567cc1c3c79d867b0ab4ac33d8eeaba9f11d7294a3b2"
+      },
+      "mtime_utc": "2026-11-11T08:25:57.279028+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/relock/stages/uv-after-relock/installed.json",
+        "sha256": "35c3179837f32a9a02798eeecee0764c5a1c4f7f498cfcabe5382ca09c6b0a66"
+      },
+      "mtime_utc": "2026-11-11T08:29:23.979392+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/relock/stages/uv-before-relock/installed.json",
+        "sha256": "35c3179837f32a9a02798eeecee0764c5a1c4f7f498cfcabe5382ca09c6b0a66"
+      },
+      "mtime_utc": "2026-11-11T08:28:08.293802+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/relock/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "e15b58d880e02c0897b97f478e3b69f27d0dcb9da83be99d1251114241fb85c5"
+      },
+      "mtime_utc": "2026-11-11T08:31:23.217818+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/update/stages/pip-old/installed.json",
+        "sha256": "428ed309a5b6aa54a7785447fbb71d30a70fd43f68cf8e2a8e03bc1a25d87de8"
+      },
+      "mtime_utc": "2026-11-11T08:06:44.892854+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/update/stages/pip-updated/installed.json",
+        "sha256": "90d311512b5cfcfcd1656ab53f7ddaa8b038cc2c855e535816c9eb5299bcc3fd"
+      },
+      "mtime_utc": "2026-11-11T08:10:24.877570+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/update/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "197588351f254fe3e1dfc25dd480c05d4f4605e35e7b1e227edded747963bd00"
+      },
+      "mtime_utc": "2026-11-11T08:17:09.576004+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/update/stages/uv-old/installed.json",
+        "sha256": "1f5fc9f5c967b581544c9c855d8ad766f5672250c8448bd8fd2a4b02e5145a43"
+      },
+      "mtime_utc": "2026-11-11T08:12:25.350385+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/ray/update/stages/uv-updated/installed.json",
+        "sha256": "34758a9e416a6850fb177cb7f7d1a2ea00da2dfc11e58ef22871f7c8399136ac"
+      },
+      "mtime_utc": "2026-11-11T08:15:04.400769+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/superclaude/relock/stages/uv-after-relock/installed.json",
+        "sha256": "61aff126cc6d5e028e66b2abc0766abb0a896e3d82c18c7cb24f0d01fb71cd7e"
+      },
+      "mtime_utc": "2026-11-11T08:17:20.999341+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/superclaude/relock/stages/uv-before-relock/installed.json",
+        "sha256": "61aff126cc6d5e028e66b2abc0766abb0a896e3d82c18c7cb24f0d01fb71cd7e"
+      },
+      "mtime_utc": "2026-11-11T08:16:49.063295+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/superclaude/relock/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "482b0497bed7e8265847f368415a51c8f0020855f03c44bb2e760d8d1e72942c"
+      },
+      "mtime_utc": "2026-11-11T08:17:59.306720+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/superclaude/update/stages/pip-old/installed.json",
+        "sha256": "438ef015370c1fcd590c3efd7b64349d4530deeeb5dd1f54bd32390ad8505d0e"
+      },
+      "mtime_utc": "2026-11-11T08:13:08.962249+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/superclaude/update/stages/pip-updated/installed.json",
+        "sha256": "dfd2335ebd5d0ee1f6c72bcb57381a98b662ce512aca27784d1c5e8ad6e93c50"
+      },
+      "mtime_utc": "2026-11-11T08:14:07.632774+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/superclaude/update/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "9a6f451bd04b53b89863913cab276ba2bbdae92c07e3341015a2ec3f113adb26"
+      },
+      "mtime_utc": "2026-11-11T08:16:04.668167+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/superclaude/update/stages/uv-old/installed.json",
+        "sha256": "88090de4a104899cafb3aebd69f1d4ef6cc7cd5099f34ecc1ceaa656247484ac"
+      },
+      "mtime_utc": "2026-11-11T08:14:45.572126+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/superclaude/update/stages/uv-updated/installed.json",
+        "sha256": "c9a8bda378c584315a5fdfdcba247655a2802253205d790c8dd50aa7b921637a"
+      },
+      "mtime_utc": "2026-11-11T08:15:26.993361+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/torch-geometric/relock/stages/uv-after-relock/installed.json",
+        "sha256": "cb03c232d663579f61c02b8f52b8964b3a73957ff597b86a2e9c9804957477ae"
+      },
+      "mtime_utc": "2026-11-11T08:39:35.384371+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/torch-geometric/relock/stages/uv-before-relock/installed.json",
+        "sha256": "cb03c232d663579f61c02b8f52b8964b3a73957ff597b86a2e9c9804957477ae"
+      },
+      "mtime_utc": "2026-11-11T08:38:38.094391+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/torch-geometric/relock/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "0e09d4415e6fbee7700aa24122ed226d2140573a1b64b0212bd5b3830ab43211"
+      },
+      "mtime_utc": "2026-11-11T08:40:46.469525+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/torch-geometric/update/stages/pip-old/installed.json",
+        "sha256": "cb5c2b1eb3e2771e662dae72e8252eee554e376f45bbcc0a5e7b66a558db4aa1"
+      },
+      "mtime_utc": "2026-11-11T08:32:33.939914+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/torch-geometric/update/stages/pip-updated/installed.json",
+        "sha256": "5bfbafbc1c23d16ea90c3b324ef858bcdee54bdb0dae2dc64e4b8c42d7061afd"
+      },
+      "mtime_utc": "2026-11-11T08:34:01.528688+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/torch-geometric/update/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "cb3a57f229254794d320156bc6415f4135c019eed88c7657a74a03457e1ac99a"
+      },
+      "mtime_utc": "2026-11-11T08:37:17.800540+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/torch-geometric/update/stages/uv-old/installed.json",
+        "sha256": "6559cf36894e2a55d015327412ce5461854610a60ccc0e7cac40638ad436e1b6"
+      },
+      "mtime_utc": "2026-11-11T08:35:08.414113+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/torch-geometric/update/stages/uv-updated/installed.json",
+        "sha256": "17b5daf11e7af0dd6b4f359644228794c6c84bf933e1686fe0926456c763db83"
+      },
+      "mtime_utc": "2026-11-11T08:36:07.312886+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/transformers/relock/stages/uv-after-relock/installed.json",
+        "sha256": "20fae22f0aecc03dbd499587443172d300801c6bf3e1e03652621071dd0455d4"
+      },
+      "mtime_utc": "2026-11-11T09:00:48.218865+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/transformers/relock/stages/uv-before-relock/installed.json",
+        "sha256": "20fae22f0aecc03dbd499587443172d300801c6bf3e1e03652621071dd0455d4"
+      },
+      "mtime_utc": "2026-11-11T08:59:03.437958+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/transformers/relock/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "163dbba3bc2d95112fdc00294517e03efde4ce88568f798b81366c8f5c2186c8"
+      },
+      "mtime_utc": "2026-11-11T09:03:12.717722+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/transformers/update/stages/pip-old/installed.json",
+        "sha256": "73c19e3e14be86b0c170fb4b3426d15dfdd88ee5e7261e11dc7a8a37d7fdd698"
+      },
+      "mtime_utc": "2026-11-11T08:45:34.176086+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/transformers/update/stages/pip-updated/installed.json",
+        "sha256": "93266aba44dc71ff006243d396c9b4b377f3d0c22feb1cc37b267e065554b640"
+      },
+      "mtime_utc": "2026-11-11T08:49:24.689044+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/transformers/update/stages/uv-fresh-final-lock/installed.json",
+        "sha256": "12141fbf00052748c2d96d8a7cc00f12d58aa843d3a1fd784b822144688e9afa"
+      },
+      "mtime_utc": "2026-11-11T08:56:26.675471+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/transformers/update/stages/uv-old/installed.json",
+        "sha256": "71b283948504294357a2386abe03a76c6861d90be32988dc4ddfe4d1c6caae37"
+      },
+      "mtime_utc": "2026-11-11T08:51:36.876794+00:00"
+    },
+    {
+      "source_layer": "staged-continuation2",
+      "inventory": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases/transformers/update/stages/uv-updated/installed.json",
+        "sha256": "9f2edf4cfc1a6b4ac78db8a2acf19597aa983cd0d0832b68f8c9fb35812752af"
+      },
+      "mtime_utc": "2026-11-11T08:54:08.481142+00:00"
+    }
+  ],
+  "later_inventories_excluded": []
+}

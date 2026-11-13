@@ -1,0 +1,12 @@
+Using Python 3.11.16 environment at: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/m2-setup/venv
+Resolved 4 packages in 4.38s
+Downloading pip (1.9MiB)
+Downloading uv (16.4MiB)
+ Downloaded pip
+ Downloaded uv
+Prepared 4 packages in 8.00s
+Installed 4 packages in 2.02s
+ + packaging==26.3
+ + pip==26.3
+ + pyyaml==6.0.3
+ + uv==0.13.7

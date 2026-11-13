@@ -1,0 +1,2084 @@
+{
+  "schema": "stateful-complete-stage-prefix-target-lock-review-v2",
+  "immutable_stage_reviewer_sha256": "7f0d122d2018118e436bb23d54ee689b697e373b38b0025cd4c03b7c4e50ddea",
+  "reviewed_at_utc": "2026-11-11T08:33:40.261857+00:00",
+  "execution_out": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1",
+  "execution_protocol_sha256": "c0b7d89b8db31c9d2564ac469e6e7b5010abe97e712c1842ff18f8316a489bbd",
+  "script_sha256": "d083e599883d3a6864f71eaad11c3ac28db9467d306c5f8a9357057fd2142f22",
+  "rows": [
+    {
+      "name": "celery",
+      "workflow": "update",
+      "stage": "uv-old",
+      "request": "celery==5.6.3",
+      "status": "active_lock_membership_versions_and_official_artifact_sources_match",
+      "source_unknowns": [],
+      "source_mismatches": [],
+      "stage_evidence_source": "results.json",
+      "projection": {
+        "schema": "uv-lock-target-v1",
+        "status": "verified",
+        "environment": {
+          "implementation_name": "cpython",
+          "implementation_version": "3.11.16",
+          "os_name": "posix",
+          "platform_machine": "x86_64",
+          "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+          "platform_system": "Linux",
+          "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+          "python_full_version": "3.11.16",
+          "platform_python_implementation": "CPython",
+          "python_version": "3.11",
+          "sys_platform": "linux"
+        },
+        "selected": [
+          {
+            "name": "celery",
+            "version": "5.6.3",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "billiard",
+            "version": "4.3.2",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "click",
+            "version": "8.5.1",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "click-didyoumean",
+            "version": "0.3.1",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "click-plugins",
+            "version": "1.1.1.2",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "click-repl",
+            "version": "0.4.1",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "kombu",
+            "version": "5.7.0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "python-dateutil",
+            "version": "4.0.0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "tzlocal",
+            "version": "5.4.5",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "vine",
+            "version": "5.1.0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "prompt-toolkit",
+            "version": "3.0.53",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "typing-extensions",
+            "version": "4.16.0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "amqp",
+            "version": "5.4.2",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "tzdata",
+            "version": "2026.6",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "wcwidth",
+            "version": "0.9.4",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          }
+        ],
+        "excluded": [],
+        "reasons": [],
+        "active_edges": [
+          {
+            "parent": {
+              "name": "drc-probe",
+              "version": "0.0.1",
+              "source": {
+                "virtual": "."
+              }
+            },
+            "dependency": "celery",
+            "target": {
+              "name": "celery",
+              "version": "5.6.3",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.6.3",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "billiard",
+            "target": {
+              "name": "billiard",
+              "version": "4.3.2",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.6.3",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click",
+            "target": {
+              "name": "click",
+              "version": "8.5.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.6.3",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click-didyoumean",
+            "target": {
+              "name": "click-didyoumean",
+              "version": "0.3.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.6.3",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click-plugins",
+            "target": {
+              "name": "click-plugins",
+              "version": "1.1.1.2",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.6.3",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click-repl",
+            "target": {
+              "name": "click-repl",
+              "version": "0.4.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.6.3",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "kombu",
+            "target": {
+              "name": "kombu",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.6.3",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "python-dateutil",
+            "target": {
+              "name": "python-dateutil",
+              "version": "4.0.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.6.3",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "tzlocal",
+            "target": {
+              "name": "tzlocal",
+              "version": "5.4.5",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.6.3",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "vine",
+            "target": {
+              "name": "vine",
+              "version": "5.1.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "click-didyoumean",
+              "version": "0.3.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click",
+            "target": {
+              "name": "click",
+              "version": "8.5.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "click-plugins",
+              "version": "1.1.1.2",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click",
+            "target": {
+              "name": "click",
+              "version": "8.5.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "click-repl",
+              "version": "0.4.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click",
+            "target": {
+              "name": "click",
+              "version": "8.5.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "click-repl",
+              "version": "0.4.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "prompt-toolkit",
+            "target": {
+              "name": "prompt-toolkit",
+              "version": "3.0.53",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "click-repl",
+              "version": "0.4.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "typing-extensions",
+            "target": {
+              "name": "typing-extensions",
+              "version": "4.16.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "kombu",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "amqp",
+            "target": {
+              "name": "amqp",
+              "version": "5.4.2",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "kombu",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "vine",
+            "target": {
+              "name": "vine",
+              "version": "5.1.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "python-dateutil",
+              "version": "4.0.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "tzdata",
+            "target": {
+              "name": "tzdata",
+              "version": "2026.6",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "prompt-toolkit",
+              "version": "3.0.53",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "wcwidth",
+            "target": {
+              "name": "wcwidth",
+              "version": "0.9.4",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "amqp",
+              "version": "5.4.2",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "vine",
+            "target": {
+              "name": "vine",
+              "version": "5.1.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          }
+        ],
+        "requested_extras": [],
+        "unreachable_names": []
+      },
+      "original_virtual_project_name": "stateful-control-celery",
+      "virtual_root_alias_in_memory_only": true,
+      "actual_versions": {
+        "amqp": "5.4.2",
+        "billiard": "4.3.2",
+        "celery": "5.6.3",
+        "click": "8.5.1",
+        "click-didyoumean": "0.3.1",
+        "click-plugins": "1.1.1.2",
+        "click-repl": "0.4.1",
+        "kombu": "5.7.0",
+        "prompt-toolkit": "3.0.53",
+        "python-dateutil": "4.0.0",
+        "typing-extensions": "4.16.0",
+        "tzdata": "2026.6",
+        "tzlocal": "5.4.5",
+        "vine": "5.1.0",
+        "wcwidth": "0.9.4"
+      },
+      "active_lock_versions": {
+        "celery": "5.6.3",
+        "billiard": "4.3.2",
+        "click": "8.5.1",
+        "click-didyoumean": "0.3.1",
+        "click-plugins": "1.1.1.2",
+        "click-repl": "0.4.1",
+        "kombu": "5.7.0",
+        "python-dateutil": "4.0.0",
+        "tzlocal": "5.4.5",
+        "vine": "5.1.0",
+        "prompt-toolkit": "3.0.53",
+        "typing-extensions": "4.16.0",
+        "amqp": "5.4.2",
+        "tzdata": "2026.6",
+        "wcwidth": "0.9.4"
+      },
+      "installed_but_not_active_lock": [],
+      "active_lock_but_not_installed": [],
+      "version_mismatches": []
+    },
+    {
+      "name": "celery",
+      "workflow": "update",
+      "stage": "uv-updated",
+      "request": "celery==5.7.0",
+      "status": "active_lock_membership_versions_and_official_artifact_sources_match",
+      "source_unknowns": [],
+      "source_mismatches": [],
+      "stage_evidence_source": "results.json",
+      "projection": {
+        "schema": "uv-lock-target-v1",
+        "status": "verified",
+        "environment": {
+          "implementation_name": "cpython",
+          "implementation_version": "3.11.16",
+          "os_name": "posix",
+          "platform_machine": "x86_64",
+          "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+          "platform_system": "Linux",
+          "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+          "python_full_version": "3.11.16",
+          "platform_python_implementation": "CPython",
+          "python_version": "3.11",
+          "sys_platform": "linux"
+        },
+        "selected": [
+          {
+            "name": "celery",
+            "version": "5.7.0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "billiard",
+            "version": "4.3.2",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "click",
+            "version": "8.5.1",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "click-didyoumean",
+            "version": "0.3.1",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "click-plugins",
+            "version": "1.1.1.2",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "click-repl",
+            "version": "0.4.1",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "kombu",
+            "version": "5.7.0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "python-dateutil",
+            "version": "2.9.0.post0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "tzlocal",
+            "version": "5.4.5",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "vine",
+            "version": "5.1.0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "prompt-toolkit",
+            "version": "3.0.53",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "typing-extensions",
+            "version": "4.16.0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "amqp",
+            "version": "5.4.2",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "six",
+            "version": "1.17.0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "wcwidth",
+            "version": "0.9.4",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          }
+        ],
+        "excluded": [],
+        "reasons": [],
+        "active_edges": [
+          {
+            "parent": {
+              "name": "drc-probe",
+              "version": "0.0.1",
+              "source": {
+                "virtual": "."
+              }
+            },
+            "dependency": "celery",
+            "target": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "billiard",
+            "target": {
+              "name": "billiard",
+              "version": "4.3.2",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click",
+            "target": {
+              "name": "click",
+              "version": "8.5.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click-didyoumean",
+            "target": {
+              "name": "click-didyoumean",
+              "version": "0.3.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click-plugins",
+            "target": {
+              "name": "click-plugins",
+              "version": "1.1.1.2",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click-repl",
+            "target": {
+              "name": "click-repl",
+              "version": "0.4.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "kombu",
+            "target": {
+              "name": "kombu",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "python-dateutil",
+            "target": {
+              "name": "python-dateutil",
+              "version": "2.9.0.post0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "tzlocal",
+            "target": {
+              "name": "tzlocal",
+              "version": "5.4.5",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "vine",
+            "target": {
+              "name": "vine",
+              "version": "5.1.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "click-didyoumean",
+              "version": "0.3.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click",
+            "target": {
+              "name": "click",
+              "version": "8.5.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "click-plugins",
+              "version": "1.1.1.2",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click",
+            "target": {
+              "name": "click",
+              "version": "8.5.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "click-repl",
+              "version": "0.4.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click",
+            "target": {
+              "name": "click",
+              "version": "8.5.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "click-repl",
+              "version": "0.4.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "prompt-toolkit",
+            "target": {
+              "name": "prompt-toolkit",
+              "version": "3.0.53",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "click-repl",
+              "version": "0.4.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "typing-extensions",
+            "target": {
+              "name": "typing-extensions",
+              "version": "4.16.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "kombu",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "amqp",
+            "target": {
+              "name": "amqp",
+              "version": "5.4.2",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "kombu",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "vine",
+            "target": {
+              "name": "vine",
+              "version": "5.1.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "python-dateutil",
+              "version": "2.9.0.post0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "six",
+            "target": {
+              "name": "six",
+              "version": "1.17.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "prompt-toolkit",
+              "version": "3.0.53",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "wcwidth",
+            "target": {
+              "name": "wcwidth",
+              "version": "0.9.4",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "amqp",
+              "version": "5.4.2",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "vine",
+            "target": {
+              "name": "vine",
+              "version": "5.1.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          }
+        ],
+        "requested_extras": [],
+        "unreachable_names": []
+      },
+      "original_virtual_project_name": "stateful-control-celery",
+      "virtual_root_alias_in_memory_only": true,
+      "actual_versions": {
+        "amqp": "5.4.2",
+        "billiard": "4.3.2",
+        "celery": "5.7.0",
+        "click": "8.5.1",
+        "click-didyoumean": "0.3.1",
+        "click-plugins": "1.1.1.2",
+        "click-repl": "0.4.1",
+        "kombu": "5.7.0",
+        "prompt-toolkit": "3.0.53",
+        "python-dateutil": "2.9.0.post0",
+        "six": "1.17.0",
+        "typing-extensions": "4.16.0",
+        "tzlocal": "5.4.5",
+        "vine": "5.1.0",
+        "wcwidth": "0.9.4"
+      },
+      "active_lock_versions": {
+        "celery": "5.7.0",
+        "billiard": "4.3.2",
+        "click": "8.5.1",
+        "click-didyoumean": "0.3.1",
+        "click-plugins": "1.1.1.2",
+        "click-repl": "0.4.1",
+        "kombu": "5.7.0",
+        "python-dateutil": "2.9.0.post0",
+        "tzlocal": "5.4.5",
+        "vine": "5.1.0",
+        "prompt-toolkit": "3.0.53",
+        "typing-extensions": "4.16.0",
+        "amqp": "5.4.2",
+        "six": "1.17.0",
+        "wcwidth": "0.9.4"
+      },
+      "installed_but_not_active_lock": [],
+      "active_lock_but_not_installed": [],
+      "version_mismatches": []
+    },
+    {
+      "name": "celery",
+      "workflow": "update",
+      "stage": "uv-fresh-final-lock",
+      "request": "celery==5.7.0",
+      "status": "active_lock_membership_versions_and_official_artifact_sources_match",
+      "source_unknowns": [],
+      "source_mismatches": [],
+      "stage_evidence_source": "results.json",
+      "projection": {
+        "schema": "uv-lock-target-v1",
+        "status": "verified",
+        "environment": {
+          "implementation_name": "cpython",
+          "implementation_version": "3.11.16",
+          "os_name": "posix",
+          "platform_machine": "x86_64",
+          "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+          "platform_system": "Linux",
+          "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+          "python_full_version": "3.11.16",
+          "platform_python_implementation": "CPython",
+          "python_version": "3.11",
+          "sys_platform": "linux"
+        },
+        "selected": [
+          {
+            "name": "celery",
+            "version": "5.7.0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "billiard",
+            "version": "4.3.2",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "click",
+            "version": "8.5.1",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "click-didyoumean",
+            "version": "0.3.1",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "click-plugins",
+            "version": "1.1.1.2",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "click-repl",
+            "version": "0.4.1",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "kombu",
+            "version": "5.7.0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "python-dateutil",
+            "version": "2.9.0.post0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "tzlocal",
+            "version": "5.4.5",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "vine",
+            "version": "5.1.0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "prompt-toolkit",
+            "version": "3.0.53",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "typing-extensions",
+            "version": "4.16.0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "amqp",
+            "version": "5.4.2",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "six",
+            "version": "1.17.0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "wcwidth",
+            "version": "0.9.4",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+            },
+            "extras": []
+          }
+        ],
+        "excluded": [],
+        "reasons": [],
+        "active_edges": [
+          {
+            "parent": {
+              "name": "drc-probe",
+              "version": "0.0.1",
+              "source": {
+                "virtual": "."
+              }
+            },
+            "dependency": "celery",
+            "target": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "billiard",
+            "target": {
+              "name": "billiard",
+              "version": "4.3.2",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click",
+            "target": {
+              "name": "click",
+              "version": "8.5.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click-didyoumean",
+            "target": {
+              "name": "click-didyoumean",
+              "version": "0.3.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click-plugins",
+            "target": {
+              "name": "click-plugins",
+              "version": "1.1.1.2",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click-repl",
+            "target": {
+              "name": "click-repl",
+              "version": "0.4.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "kombu",
+            "target": {
+              "name": "kombu",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "python-dateutil",
+            "target": {
+              "name": "python-dateutil",
+              "version": "2.9.0.post0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "tzlocal",
+            "target": {
+              "name": "tzlocal",
+              "version": "5.4.5",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "celery",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "vine",
+            "target": {
+              "name": "vine",
+              "version": "5.1.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "click-didyoumean",
+              "version": "0.3.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click",
+            "target": {
+              "name": "click",
+              "version": "8.5.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "click-plugins",
+              "version": "1.1.1.2",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click",
+            "target": {
+              "name": "click",
+              "version": "8.5.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "click-repl",
+              "version": "0.4.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "click",
+            "target": {
+              "name": "click",
+              "version": "8.5.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "click-repl",
+              "version": "0.4.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "prompt-toolkit",
+            "target": {
+              "name": "prompt-toolkit",
+              "version": "3.0.53",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "click-repl",
+              "version": "0.4.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "typing-extensions",
+            "target": {
+              "name": "typing-extensions",
+              "version": "4.16.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "kombu",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "amqp",
+            "target": {
+              "name": "amqp",
+              "version": "5.4.2",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "kombu",
+              "version": "5.7.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "vine",
+            "target": {
+              "name": "vine",
+              "version": "5.1.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "python-dateutil",
+              "version": "2.9.0.post0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "six",
+            "target": {
+              "name": "six",
+              "version": "1.17.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "prompt-toolkit",
+              "version": "3.0.53",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "wcwidth",
+            "target": {
+              "name": "wcwidth",
+              "version": "0.9.4",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "amqp",
+              "version": "5.4.2",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "vine",
+            "target": {
+              "name": "vine",
+              "version": "5.1.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheelhouse"
+              }
+            }
+          }
+        ],
+        "requested_extras": [],
+        "unreachable_names": []
+      },
+      "original_virtual_project_name": "stateful-control-celery",
+      "virtual_root_alias_in_memory_only": true,
+      "actual_versions": {
+        "amqp": "5.4.2",
+        "billiard": "4.3.2",
+        "celery": "5.7.0",
+        "click": "8.5.1",
+        "click-didyoumean": "0.3.1",
+        "click-plugins": "1.1.1.2",
+        "click-repl": "0.4.1",
+        "kombu": "5.7.0",
+        "prompt-toolkit": "3.0.53",
+        "python-dateutil": "2.9.0.post0",
+        "six": "1.17.0",
+        "typing-extensions": "4.16.0",
+        "tzlocal": "5.4.5",
+        "vine": "5.1.0",
+        "wcwidth": "0.9.4"
+      },
+      "active_lock_versions": {
+        "celery": "5.7.0",
+        "billiard": "4.3.2",
+        "click": "8.5.1",
+        "click-didyoumean": "0.3.1",
+        "click-plugins": "1.1.1.2",
+        "click-repl": "0.4.1",
+        "kombu": "5.7.0",
+        "python-dateutil": "2.9.0.post0",
+        "tzlocal": "5.4.5",
+        "vine": "5.1.0",
+        "prompt-toolkit": "3.0.53",
+        "typing-extensions": "4.16.0",
+        "amqp": "5.4.2",
+        "six": "1.17.0",
+        "wcwidth": "0.9.4"
+      },
+      "installed_but_not_active_lock": [],
+      "active_lock_but_not_installed": [],
+      "version_mismatches": []
+    },
+    {
+      "name": "homeassistant",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "jax",
+      "workflow": "extras",
+      "stage": "uv-base",
+      "request": "jax==0.12.0.1",
+      "status": "active_lock_membership_versions_and_official_artifact_sources_match",
+      "source_unknowns": [],
+      "source_mismatches": [],
+      "stage_evidence_source": "complete saved stage prefix in progress.json; whole chain outcome unchanged",
+      "projection": {
+        "schema": "uv-lock-target-v1",
+        "status": "verified",
+        "environment": {
+          "implementation_name": "cpython",
+          "implementation_version": "3.12.14",
+          "os_name": "posix",
+          "platform_machine": "x86_64",
+          "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+          "platform_system": "Linux",
+          "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+          "python_full_version": "3.12.14",
+          "platform_python_implementation": "CPython",
+          "python_version": "3.12",
+          "sys_platform": "linux"
+        },
+        "selected": [
+          {
+            "name": "jax",
+            "version": "0.12.0.1",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "jaxlib",
+            "version": "0.12.0.1",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "ml-dtypes",
+            "version": "0.6.0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "numpy",
+            "version": "2.5.4",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "opt-einsum",
+            "version": "3.4.0",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+            },
+            "extras": []
+          },
+          {
+            "name": "scipy",
+            "version": "1.18.1",
+            "source": {
+              "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+            },
+            "extras": []
+          }
+        ],
+        "excluded": [],
+        "reasons": [],
+        "active_edges": [
+          {
+            "parent": {
+              "name": "drc-probe",
+              "version": "0.0.1",
+              "source": {
+                "virtual": "."
+              }
+            },
+            "dependency": "jax",
+            "target": {
+              "name": "jax",
+              "version": "0.12.0.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "jax",
+              "version": "0.12.0.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "jaxlib",
+            "target": {
+              "name": "jaxlib",
+              "version": "0.12.0.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "jax",
+              "version": "0.12.0.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "ml-dtypes",
+            "target": {
+              "name": "ml-dtypes",
+              "version": "0.6.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "jax",
+              "version": "0.12.0.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "numpy",
+            "target": {
+              "name": "numpy",
+              "version": "2.5.4",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "jax",
+              "version": "0.12.0.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "opt-einsum",
+            "target": {
+              "name": "opt-einsum",
+              "version": "3.4.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "jax",
+              "version": "0.12.0.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "scipy",
+            "target": {
+              "name": "scipy",
+              "version": "1.18.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "jaxlib",
+              "version": "0.12.0.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "ml-dtypes",
+            "target": {
+              "name": "ml-dtypes",
+              "version": "0.6.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "jaxlib",
+              "version": "0.12.0.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "numpy",
+            "target": {
+              "name": "numpy",
+              "version": "2.5.4",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "jaxlib",
+              "version": "0.12.0.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "scipy",
+            "target": {
+              "name": "scipy",
+              "version": "1.18.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "ml-dtypes",
+              "version": "0.6.0",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "numpy",
+            "target": {
+              "name": "numpy",
+              "version": "2.5.4",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            }
+          },
+          {
+            "parent": {
+              "name": "scipy",
+              "version": "1.18.1",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            },
+            "dependency": "numpy",
+            "target": {
+              "name": "numpy",
+              "version": "2.5.4",
+              "source": {
+                "registry": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheelhouse"
+              }
+            }
+          }
+        ],
+        "requested_extras": [],
+        "unreachable_names": []
+      },
+      "original_virtual_project_name": "stateful-control-jax",
+      "virtual_root_alias_in_memory_only": true,
+      "actual_versions": {
+        "jax": "0.12.0.1",
+        "jaxlib": "0.12.0.1",
+        "ml-dtypes": "0.6.0",
+        "numpy": "2.5.4",
+        "opt-einsum": "3.4.0",
+        "scipy": "1.18.1"
+      },
+      "active_lock_versions": {
+        "jax": "0.12.0.1",
+        "jaxlib": "0.12.0.1",
+        "ml-dtypes": "0.6.0",
+        "numpy": "2.5.4",
+        "opt-einsum": "3.4.0",
+        "scipy": "1.18.1"
+      },
+      "installed_but_not_active_lock": [],
+      "active_lock_but_not_installed": [],
+      "version_mismatches": []
+    },
+    {
+      "name": "llamafactory",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "matplotlib",
+      "workflow": "update",
+      "status": "unknown_workflow_not_finished"
+    },
+    {
+      "name": "matplotlib",
+      "workflow": "extras",
+      "status": "unknown_workflow_not_finished"
+    },
+    {
+      "name": "matplotlib",
+      "workflow": "relock",
+      "status": "unknown_workflow_not_finished"
+    },
+    {
+      "name": "mineru",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "openai-whisper",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "pandas",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "pipenv",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "poetry",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "pyqlib",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "rasa",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "ray",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "scikit-learn",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "superclaude",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "timm",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "torch",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "torch-geometric",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "transformers",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "ultralytics",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "unsloth",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "verl",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "vllm",
+      "status": "unknown_artifacts_not_prepared"
+    },
+    {
+      "name": "whisperx",
+      "status": "unknown_artifacts_not_prepared"
+    }
+  ],
+  "counts": {
+    "active_lock_membership_versions_and_official_artifact_sources_match": 4,
+    "unknown_artifacts_not_prepared": 21,
+    "unknown_workflow_not_finished": 3
+  },
+  "input_sha256": {
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/aider-chat/artifacts/wheel-manifest.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/aider-chat/update/results.json": "b1c01e71f1a75eb40296a624d533e0f53769ad70bf150bb0d213da8d3820ee36",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/aider-chat/extras/results.json": "f17e3f3f8d43961f87cad0979a2c67be215e522bae4608394e73bd4f8e12c7bd",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/aider-chat/relock/results.json": "64a87129eed267e2c6626ad0d0617e54dff2dc97b2c1b283867b83d4d335ca5a",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/akshare/artifacts/wheel-manifest.json": "922cbacbfe65bcc748cee12d1d753a9f3212f02a95397eb6febbe403c789fa64",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/akshare/update/results.json": "efaf18b06a903e0622c2377121b71d149fbbc59af84a725ba25a5666d2fecd88",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/akshare/extras/results.json": "44e611e645cac97bc98dbad7064eba66e0984a2399deb91afa8c5185f7fd7da8",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/akshare/relock/results.json": "a8a7aef3b6e522bdfa5ccc23bdbf52c6d42e80d2222ebc2f75e7e9f41656f733",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/artifacts/wheel-manifest.json": "e357c33c11a3ff100e80d1fb104470f9a12967f23ddcb070ef70e936d86de243",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/update/results.json": "7d6d9573d31b05ce6808d2547139869fa254732b3e10917da736b697e498b534",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-old/uv.lock": "045a250b10243a00d8f3529b4ec8f225134b2a772a07d1cf2f397b9ff2d030dc",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-old/pyproject.toml": "e058ce2f7958aece224d3417a08c8161372249ed87b0986b10a722cac9ccb7b8",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-old/installed.json": "78bc39308f56f684c156cdccde9a6c1c5f0d5180406ca23c2ffc659071291060",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-old/file-audit.json": "6dc07698f773f0bcac7f3fd2e5b3d0bae3aa6025b99157cd8ec04432953ba024",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-updated/uv.lock": "554db81e9813a338114007f107937a8909f4080b0e8dec2b9a9fa9e7b70b691a",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-updated/pyproject.toml": "b391057d31567baade5f059515666e5848623f64b7ba9d476507cef0b19db943",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-updated/installed.json": "e5b47dc2d23622530280c9bbec66a7beefa7c39060439e679cbc5dcb4b0b2786",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-updated/file-audit.json": "6bdb1c64bf9c765dcf23c5c9b7138a677f3ad232c4da100b7553cede0cd26e38",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-fresh-final-lock/uv.lock": "554db81e9813a338114007f107937a8909f4080b0e8dec2b9a9fa9e7b70b691a",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-fresh-final-lock/pyproject.toml": "b391057d31567baade5f059515666e5848623f64b7ba9d476507cef0b19db943",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-fresh-final-lock/installed.json": "0ec5e4fd57613d583278a36983c0cbd6011b21197e92d0ac29502ddb718f62d9",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/update/stages/uv-fresh-final-lock/file-audit.json": "6bdb1c64bf9c765dcf23c5c9b7138a677f3ad232c4da100b7553cede0cd26e38",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/extras/results.json": "fdb0eb100eb345162ed7592ca411a35207c64ec6e221178d4ae75c5001323dda",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/celery/relock/results.json": "ae3b69e6f0cf3eb6c8327066bf0033437725201ed75e6daa7ee210941c00341b",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/deepspeed/artifacts/wheel-manifest.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/deepspeed/update/results.json": "2729fc200255d1e4c3fedc1bacd8b728c7640a09729d618cf1086e4a375b35ed",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/deepspeed/extras/results.json": "4d53b8a8d37b851b4b03e6d4fc8ea46984c71762663b6a7b5bf0b2ab34c8c725",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/deepspeed/relock/results.json": "75153d69a77692262be94922e39fe2106eea4916cddf3ebc47c7c7c21494517f",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/diffusers/artifacts/wheel-manifest.json": "d5ebab1b1a5d4c0e66cb378a7908a825e861650bbcacb81f8aa921af3a023f65",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/diffusers/update/results.json": "01e9b5636ca3ac5d774bd9ee8a7570511146ef567e860a890d1e2f40ae7cc1ae",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/diffusers/update/progress.json": "cec12480aa21b5c71c5e47d5e54aad24d3db9827d48aad2a60c28a4e476a2262",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/diffusers/extras/results.json": "5639ca6d36e5e6eca25191d7a8b28c428b96f207f1f9fb295ce4786a785fb87a",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/diffusers/relock/results.json": "e5ab1e0e75fcd6702ff5dbf149b0bc160f6ddde666f2e456117acf1134b1d0cc",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/genesis-world/artifacts/wheel-manifest.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/genesis-world/update/results.json": "1e33c0358fe7159bcab099e2e2673b7cf8def3e0315eff1717abf2657cd5247d",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/genesis-world/extras/results.json": "c0d33b3728cee5dcd4df87b0825dc2fb480fb43fad787420b9c90d3750fb6775",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/genesis-world/relock/results.json": "19ee514f26b8d3ea6cda53b328623a4660319d1a5c88768e379be02f471413b1",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/graphrag/artifacts/wheel-manifest.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/graphrag/update/results.json": "b62e6c70e5842de2e07459d0cf2050fe15e9e7e98030f484963d0b7c537bd001",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/graphrag/extras/results.json": "98575937986aeb3534bd599ec21c812b3f6aaad926a90a2f0dcd04b8a82922d7",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/graphrag/relock/results.json": "36469a6b85a6c10ed015e86944b07e4df0b7b3efd7053a7702ce835a2a3e33f4",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/artifacts/wheel-manifest.json": "b9995ba1e131d79ad8839f906bdb0c0fe0239eedfdaa505e8c41f4d60adfa586",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/update/results.json": "d954b9f99a5065f6941bea9c1dd949693f5d28df91d8ff16a4e35b21273ea6d3",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/update/progress.json": "3b90b3c4a3fe088922f0623fb9b483e9f2be66c15f6adb796fc985a0f8c77dc1",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/extras/results.json": "0d2c64ad5c959d27c52dc038d7ed5e8dacda97122cb78c02eb381730c624193d",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/extras/progress.json": "65d168822cb80188c18b9f2dfe6749bd3eae8688d6ac2da2653cdc8d8b1fc876",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/extras/stages/uv-base/uv.lock": "d9d31ef892f2afad40264ed648217039346551707b21f67b52b26a3f942a058b",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/extras/stages/uv-base/pyproject.toml": "8c24da5e50a2b68e913d98a2a5a2046c18e8a86dfa34cfbe1a0bc55e98104fde",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/extras/stages/uv-base/installed.json": "1b44542b89b0f21758e0d8fe152f05d25a66e0604e464162cb1e13768587c5f4",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/extras/stages/uv-base/file-audit.json": "0b6e0169fe277a64001a72fee0a35af2fc680b3570b0b83a82f3eab34c78fe6b",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/jax/relock/results.json": "8deaa639863d8f540c0aa90c2c1ec1822a43a53ba55e4186a473dc1921e00e23",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/khoj/artifacts/wheel-manifest.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/khoj/update/results.json": "fff69f59d065b2496714f3fe0135480c0fb2c163e25ba8bbf910a54fecfdf548",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/khoj/extras/results.json": "66aeeaf2ead9337ddaaa966b84b2320bec37982873c9a348076ce36e0490fdb9",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/khoj/relock/results.json": "bee74d6d4fb83b4de40c96cf8e7cec05ef2687a1592c67728df11507b0c05307",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/langchain-chatchat/artifacts/wheel-manifest.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/langchain-chatchat/update/results.json": "25bf2a1bd68ff1e72b35f110885adfa2fc7e5ab9731a212f4a825e5066036361",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/langchain-chatchat/extras/results.json": "8e0cd91bbe32c062fd0b2a875ae93d5864a25b3ef3384982fdae418088192a1e",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/langchain-chatchat/relock/results.json": "d0c01ac8262dd3787712f487bec6fcfd71236d7336852d43fe1a0ea33e9200f4",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/llama-index/artifacts/wheel-manifest.json": "cd12da310b50e944cdf1b998de493b3e5a46bc6c82a3f29beba7188eb2513aa0",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/llama-index/update/results.json": "5aa03bb9dc5b3b38f6c8a8175e4fd87e7820af273e8d795e2fb80f7be7bc5631",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/llama-index/extras/results.json": "5b111b7bd49d09d062d85f98235fff60904b25a01f366e14044bf9e1b23ded92",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/llama-index/relock/results.json": "ac1b81c8f8c22a0b80695f48e74cbfaa893bb1a75c574bd7a8fec18bb4f232ce",
+    "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/stateful-workflows-20261111/published/run1/cases/matplotlib/artifacts/wheel-manifest.json": "475def60b416964f538d19965d28fe38bb1934df650c444c585ca9d847714ccc"
+  },
+  "all_reviewed_inputs_unchanged": true,
+  "core_unchanged": true,
+  "confirmed_defects": 0,
+  "limits": [
+    "No installed applications or package behavior are executed by this review.",
+    "Saved lock bytes are unchanged; only the synthetic control-project root name is aliased in memory for the existing target projection adapter.",
+    "Membership uses target marker/extras reachability, never all nodes from a universal lock.",
+    "Artifact source means the hash-verified official wheel prepared in the restricted local world, not live public-index resolver coverage.",
+    "Potential mismatches remain candidates for independent reproduction, not automatic new issues.",
+    "Complete progress-prefix stages of an unknown workflow are reviewed separately; the original workflow outcome and any missing historical file audit remain unchanged. No final live environment is substituted for an earlier state."
+  ]
+}

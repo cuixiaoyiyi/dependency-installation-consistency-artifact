@@ -1,0 +1,102 @@
+{
+  "schema": "published-99-slots-closed-attestation-v1",
+  "attested_at_utc": "2026-11-11T09:27:46.379396+00:00",
+  "status": "closed_with_coverage_limits_saved_inventory_sweep_pending",
+  "is_final": true,
+  "all_99_slots_closed": true,
+  "logical_slots": 99,
+  "registered_roots": 33,
+  "static_selected": 84,
+  "semantic_applicable": 84,
+  "active_actual_workers": 0,
+  "closure_counts": {
+    "closed_unmeasured": 51,
+    "completed": 33,
+    "not_applicable": 15
+  },
+  "effective_ledger": {
+    "path": "work/stateful-workflows-20261111/published/effective-ledger.json",
+    "sha256": "a21133302cc85e777395a0374c3e4d2a81ef6f577245a6bfd59956524be127de"
+  },
+  "staged_summary": {
+    "path": "work/stateful-workflows-20261111/published/staged-continuation2/summary.json",
+    "sha256": "50b77c4ad26613474d6249a2019461d41df3db918173b25ce184c84f4f90be6d"
+  },
+  "staged_protocol": {
+    "path": "work/stateful-workflows-20261111/published/staged-continuation2/protocol.json",
+    "sha256": "a0c110042fd342cfa8f0ad6d7ae231df042756a87fb7340e55f0bcb55bc61f1c"
+  },
+  "producer_handoff": {
+    "path": "work/stateful-workflows-20261111/published/finalization-inputs.json",
+    "sha256": "99b1e430a0d964c1cf71e06dba520808f1aa3b89ba1f2481651d775e39325310"
+  },
+  "producer_no_active_actual_workers": {
+    "path": "work/stateful-workflows-20261111/published/final-no-active-workers.json",
+    "sha256": "a509a65cd78f905c0c3232c4a0da3ee544b1cbbbfb678a13df27c5bda2b378b6"
+  },
+  "independent_no_active_actual_workers": {
+    "path": "work/stateful-workflows-20261111/published/independent-final-no-active-workers-before-sweep.json",
+    "sha256": "e9fadd66e82c40080026f59592f3dd2ce55d52880e169bd1769f7e84282713ca"
+  },
+  "registered_sources": [
+    {
+      "name": "run1",
+      "directory": "work/stateful-workflows-20261111/published/run1",
+      "protocol": {
+        "path": "work/stateful-workflows-20261111/published/run1/protocol.json",
+        "sha256": "c0b7d89b8db31c9d2564ac469e6e7b5010abe97e712c1842ff18f8316a489bbd"
+      },
+      "cases": {
+        "path": "work/stateful-workflows-20261111/published/run1/cases.json",
+        "sha256": "777789c731c2d66d5f4b8f03885ef6c8609ffc4e2d9bb4d885887ef7c4cd7604"
+      }
+    },
+    {
+      "name": "corrected-continuation1",
+      "directory": "work/stateful-workflows-20261111/published/corrected-continuation1",
+      "protocol": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/protocol.json",
+        "sha256": "fec9518551aed67ec53f003a8c26d51150463c3cb0dc5d7a0f98e81837a47948"
+      },
+      "cases": {
+        "path": "work/stateful-workflows-20261111/published/corrected-continuation1/cases.json",
+        "sha256": "992fa7dea7a2ec07bcd23a622f1572bcf365872fa069ba0134f3f424ca9c4ffb"
+      }
+    },
+    {
+      "name": "staged-continuation2",
+      "directory": "work/stateful-workflows-20261111/published/staged-continuation2",
+      "protocol": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/protocol.json",
+        "sha256": "a0c110042fd342cfa8f0ad6d7ae231df042756a87fb7340e55f0bcb55bc61f1c"
+      },
+      "cases": {
+        "path": "work/stateful-workflows-20261111/published/staged-continuation2/cases.json",
+        "sha256": "8e73aef63a2b7dc96bcca5ef5f593f30c72dec5e0d6f748ae600e1e8d010bd57"
+      }
+    }
+  ],
+  "frozen_sweep_registration": {
+    "path": "work/stateful-workflows-20261111/review/published-saved-inventory-sweep-v3/registration.json",
+    "sha256": "c17eda86c63db09add16135daabc968ac512a668c4bfb330cc7f944c5b230a4f"
+  },
+  "core29_unchanged": true,
+  "independent_registered_source_inputs_unchanged": true,
+  "producer_all_registered_inputs_unchanged": true,
+  "input_validation_scope": "Independently rehashed the handoff, final ledger/summary/protocol/process record, three frozen source case/protocol pairs, frozen checker/helper and29 core files. Producer summary separately seals its complete registered input world; complete archive/payload bytes were not rehashed here.",
+  "independent_closure_rows_verified": 99,
+  "native_case_bindings_verified": 99,
+  "readonly_composite_proofs_count": 3,
+  "readonly_proofs_add_actual_installations": 0,
+  "new_actual_installations_performed_by_this_attestation": 0,
+  "metadata_health_asserted_by_this_attestation": false,
+  "limits": [
+    "The final marker applies to workflow closure only.33 completed/51 closed-unmeasured/15 nonapplicable are distinct; no51 coverage gaps become negatives.",
+    "The saved-inventory final sweep is a separate later immutable artifact. This pre-sweep attestation intentionally does not reference it, avoiding a hash cycle.",
+    "Point-in-time quiescence and producer closure do not imply package-wide health, all public candidate coverage, file/payload integrity or new ecosystem novelty."
+  ],
+  "attestation_tool": {
+    "path": "work/stateful-workflows-20261111/review/attest_published_closure_1111.py",
+    "sha256": "b63613ac3477158c2207065830df903fe284569cdfcaadd3fe109e7ba739152f"
+  }
+}

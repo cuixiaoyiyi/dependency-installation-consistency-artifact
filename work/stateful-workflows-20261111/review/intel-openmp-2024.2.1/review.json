@@ -1,0 +1,429 @@
+{
+  "schema": "intel-openmp-actual-install-attribution-review-v1",
+  "reviewed_at_utc": "2026-11-11T03:44:32.072982+00:00",
+  "verdict": "actual_installed_dependency_inconsistency_from_known_cross_wheel_metadata_consistency_limitation",
+  "locally_reproduced_installed_requires_dist_violation": true,
+  "causal_chain": [
+    "Official intel-openmp2024.2.1 i686/win32 wheels declare no dependencies; official x86_64/win_amd64 wheels require intel-cmplr-lib-ur2024.2.1.",
+    "Every official wheel's original ZIP METADATA exactly matches its independently SHA-verified PyPI PEP658 sidecar; the sidecar protocol is consistent with the published artifact.",
+    "Fresh uv0.13.7 project lock at the explicitly frozen native Linux x86_64 target fetches i686 metadata with no dependencies; its lock subsequently contains only the native x86_64 wheel and no intel-cmplr-lib-ur edge/node.",
+    "Full locked sync succeeds but installs the x86_64 artifact whose actual METADATA requires the absent dependency. Both independent metadata evaluation and pip/uv checks fail.",
+    "Independent standard native pip and uv pip installs of the unchanged complete root request install both distributions and pass all checks."
+  ],
+  "baseline": {
+    "directory": "work/stateful-workflows-20261111/source-switch/direct-cpu-request-recovery/runs/vllm/02-cpu-install",
+    "inventory": {
+      "path": "work/stateful-workflows-20261111/source-switch/direct-cpu-request-recovery/runs/vllm/02-cpu-install/installed.json",
+      "sha256": "8a1b1992440b0ed45f4cf5306eed08569daa324ceb8c2005a8b41a6229ab5dd6",
+      "bytes": 1960617
+    },
+    "install_command": {
+      "path": "work/stateful-workflows-20261111/source-switch/direct-cpu-request-recovery/runs/vllm/02-cpu-install/uv.command.json",
+      "sha256": "227b0c96bce8b8790d5b3771f83e8a8be01871575a2127ca8edc4754bfaed9eb",
+      "bytes": 796
+    },
+    "installed_count": 151,
+    "native_intel_metadata": {
+      "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/baseline-intel-evidence/METADATA",
+      "sha256": "c7ecdb6c403c7a2a7f67cbc02189282823448bee55a1ce277fef322e0722e98f",
+      "bytes": 1199
+    },
+    "meaning": "A real vLLM CPU initial-install control is inconsistent before any source transition. This stops the source-switch experiment and is not evidence of source-reuse mechanism01."
+  },
+  "independent_controls": [
+    {
+      "label": "pip-full-install",
+      "environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "names_versions": {
+        "intel-cmplr-lib-ur": "2024.2.1",
+        "intel-openmp": "2024.2.1"
+      },
+      "active_base_conflicts": [],
+      "record_hashes_checked": 69,
+      "record_errors": [],
+      "pip_check_exit": 0,
+      "uv_check_exit": 0,
+      "metadata": {
+        "intel-cmplr-lib-ur": {
+          "sha256": "47493803f9a52f99862bcd65bbdf219ba611ba652a549da13a27f7a603e8de5a",
+          "name": "intel-cmplr-lib-ur",
+          "version": "2024.2.1",
+          "requires_dist": [],
+          "requires_python": null,
+          "metadata_version": "2.1"
+        },
+        "intel-openmp": {
+          "sha256": "c7ecdb6c403c7a2a7f67cbc02189282823448bee55a1ce277fef322e0722e98f",
+          "name": "intel-openmp",
+          "version": "2024.2.1",
+          "requires_dist": [
+            "intel-cmplr-lib-ur (==2024.2.1)"
+          ],
+          "requires_python": null,
+          "metadata_version": "2.1"
+        }
+      }
+    },
+    {
+      "label": "uv-pip-full-install",
+      "environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "names_versions": {
+        "intel-cmplr-lib-ur": "2024.2.1",
+        "intel-openmp": "2024.2.1"
+      },
+      "active_base_conflicts": [],
+      "record_hashes_checked": 70,
+      "record_errors": [],
+      "pip_check_exit": 0,
+      "uv_check_exit": 0,
+      "metadata": {
+        "intel-cmplr-lib-ur": {
+          "sha256": "47493803f9a52f99862bcd65bbdf219ba611ba652a549da13a27f7a603e8de5a",
+          "name": "intel-cmplr-lib-ur",
+          "version": "2024.2.1",
+          "requires_dist": [],
+          "requires_python": null,
+          "metadata_version": "2.1"
+        },
+        "intel-openmp": {
+          "sha256": "c7ecdb6c403c7a2a7f67cbc02189282823448bee55a1ce277fef322e0722e98f",
+          "name": "intel-openmp",
+          "version": "2024.2.1",
+          "requires_dist": [
+            "intel-cmplr-lib-ur (==2024.2.1)"
+          ],
+          "requires_python": null,
+          "metadata_version": "2.1"
+        }
+      }
+    },
+    {
+      "label": "uv-project-full-sync",
+      "environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.11.16",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "python_full_version": "3.11.16",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.11",
+        "sys_platform": "linux"
+      },
+      "names_versions": {
+        "intel-openmp": "2024.2.1"
+      },
+      "active_base_conflicts": [
+        {
+          "parent": "intel-openmp",
+          "requires_dist": "intel-cmplr-lib-ur (==2024.2.1)",
+          "installed": null
+        }
+      ],
+      "record_hashes_checked": 53,
+      "record_errors": [],
+      "pip_check_exit": 1,
+      "uv_check_exit": 1,
+      "metadata": {
+        "intel-openmp": {
+          "sha256": "c7ecdb6c403c7a2a7f67cbc02189282823448bee55a1ce277fef322e0722e98f",
+          "name": "intel-openmp",
+          "version": "2024.2.1",
+          "requires_dist": [
+            "intel-cmplr-lib-ur (==2024.2.1)"
+          ],
+          "requires_python": null,
+          "metadata_version": "2.1"
+        }
+      }
+    }
+  ],
+  "original_payload_reviews": [
+    {
+      "stage": "pip-full-install",
+      "name": "intel-cmplr-lib-ur",
+      "archive": {
+        "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/original-wheels/intel_cmplr_lib_ur-2024.2.1-py2.py3-none-manylinux1_x86_64.whl",
+        "sha256": "8b78d58ab501d6e5a582967be80fdbf7b03b33279135a303da36dbf11f481ed7",
+        "bytes": 5851804
+      },
+      "original_regular_files_compared": 15,
+      "explicit_data_scheme_files_mapped": 11,
+      "errors": [],
+      "unknowns": [],
+      "installed_metadata": {
+        "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/stages/pip-full-install/metadata/intel-cmplr-lib-ur/METADATA",
+        "sha256": "47493803f9a52f99862bcd65bbdf219ba611ba652a549da13a27f7a603e8de5a",
+        "bytes": 1198
+      }
+    },
+    {
+      "stage": "pip-full-install",
+      "name": "intel-openmp",
+      "archive": {
+        "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/original-wheels/intel_openmp-2024.2.1-py2.py3-none-manylinux1_x86_64.whl",
+        "sha256": "21892ea07a9c6e164707d2b44e6f396f9f2ab6cc7e108755011fad59b596182a",
+        "bytes": 29565156
+      },
+      "original_regular_files_compared": 51,
+      "explicit_data_scheme_files_mapped": 47,
+      "errors": [],
+      "unknowns": [],
+      "installed_metadata": {
+        "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/stages/pip-full-install/metadata/intel-openmp/METADATA",
+        "sha256": "c7ecdb6c403c7a2a7f67cbc02189282823448bee55a1ce277fef322e0722e98f",
+        "bytes": 1199
+      }
+    },
+    {
+      "stage": "uv-pip-full-install",
+      "name": "intel-cmplr-lib-ur",
+      "archive": {
+        "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/original-wheels/intel_cmplr_lib_ur-2024.2.1-py2.py3-none-manylinux1_x86_64.whl",
+        "sha256": "8b78d58ab501d6e5a582967be80fdbf7b03b33279135a303da36dbf11f481ed7",
+        "bytes": 5851804
+      },
+      "original_regular_files_compared": 15,
+      "explicit_data_scheme_files_mapped": 11,
+      "errors": [],
+      "unknowns": [],
+      "installed_metadata": {
+        "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/stages/uv-pip-full-install/metadata/intel-cmplr-lib-ur/METADATA",
+        "sha256": "47493803f9a52f99862bcd65bbdf219ba611ba652a549da13a27f7a603e8de5a",
+        "bytes": 1198
+      }
+    },
+    {
+      "stage": "uv-pip-full-install",
+      "name": "intel-openmp",
+      "archive": {
+        "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/original-wheels/intel_openmp-2024.2.1-py2.py3-none-manylinux1_x86_64.whl",
+        "sha256": "21892ea07a9c6e164707d2b44e6f396f9f2ab6cc7e108755011fad59b596182a",
+        "bytes": 29565156
+      },
+      "original_regular_files_compared": 51,
+      "explicit_data_scheme_files_mapped": 47,
+      "errors": [],
+      "unknowns": [],
+      "installed_metadata": {
+        "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/stages/uv-pip-full-install/metadata/intel-openmp/METADATA",
+        "sha256": "c7ecdb6c403c7a2a7f67cbc02189282823448bee55a1ce277fef322e0722e98f",
+        "bytes": 1199
+      }
+    },
+    {
+      "stage": "uv-project-full-sync",
+      "name": "intel-openmp",
+      "archive": {
+        "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/original-wheels/intel_openmp-2024.2.1-py2.py3-none-manylinux1_x86_64.whl",
+        "sha256": "21892ea07a9c6e164707d2b44e6f396f9f2ab6cc7e108755011fad59b596182a",
+        "bytes": 29565156
+      },
+      "original_regular_files_compared": 51,
+      "explicit_data_scheme_files_mapped": 47,
+      "errors": [],
+      "unknowns": [],
+      "installed_metadata": {
+        "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/stages/uv-project-full-sync/metadata/intel-openmp/METADATA",
+        "sha256": "c7ecdb6c403c7a2a7f67cbc02189282823448bee55a1ce277fef322e0722e98f",
+        "bytes": 1199
+      }
+    }
+  ],
+  "official_wheels": [
+    {
+      "filename": "intel_openmp-2024.2.1-py2.py3-none-manylinux1_x86_64.whl",
+      "wheel_sha256": "21892ea07a9c6e164707d2b44e6f396f9f2ab6cc7e108755011fad59b596182a",
+      "metadata": {
+        "sha256": "c7ecdb6c403c7a2a7f67cbc02189282823448bee55a1ce277fef322e0722e98f",
+        "name": "intel-openmp",
+        "version": "2024.2.1",
+        "requires_dist": [
+          "intel-cmplr-lib-ur (==2024.2.1)"
+        ],
+        "requires_python": null,
+        "metadata_version": "2.1"
+      },
+      "sidecar_exact_zip_match": true
+    },
+    {
+      "filename": "intel_cmplr_lib_ur-2024.2.1-py2.py3-none-manylinux1_x86_64.whl",
+      "wheel_sha256": "8b78d58ab501d6e5a582967be80fdbf7b03b33279135a303da36dbf11f481ed7",
+      "metadata": {
+        "sha256": "47493803f9a52f99862bcd65bbdf219ba611ba652a549da13a27f7a603e8de5a",
+        "name": "intel-cmplr-lib-ur",
+        "version": "2024.2.1",
+        "requires_dist": [],
+        "requires_python": null,
+        "metadata_version": "2.1"
+      },
+      "sidecar_exact_zip_match": false
+    },
+    {
+      "filename": "intel_openmp-2024.2.1-py2.py3-none-manylinux1_i686.whl",
+      "wheel_sha256": "ba6de86c394331719c795e743bcff3bbc10c3a16a0d3622d90819593de4c7e34",
+      "metadata": {
+        "sha256": "f913c7b04ba96a9d5563dacbaf1fe8cc9dc883e3e68a3cb98ac508db73d59fea",
+        "name": "intel-openmp",
+        "version": "2024.2.1",
+        "requires_dist": [],
+        "requires_python": null,
+        "metadata_version": "2.1"
+      },
+      "sidecar_exact_zip_match": true
+    },
+    {
+      "filename": "intel_openmp-2024.2.1-py2.py3-none-win32.whl",
+      "wheel_sha256": "3dbed102d8a79f091fc3364ff4b6268e1b2904d80a58926987fc6006171c18cd",
+      "metadata": {
+        "sha256": "8276d69cec0730976aa79726d7b94f9624d4e222603e7703a3855bed9ecdddbd",
+        "name": "intel-openmp",
+        "version": "2024.2.1",
+        "requires_dist": [],
+        "requires_python": null,
+        "metadata_version": "2.1"
+      },
+      "sidecar_exact_zip_match": true
+    },
+    {
+      "filename": "intel_openmp-2024.2.1-py2.py3-none-win_amd64.whl",
+      "wheel_sha256": "b1fb47eefc6cbc2358216684dd87bd2315464e6d29ac84f9313819fe1528d969",
+      "metadata": {
+        "sha256": "00cdc2fb70bb793a0beda9cefe6b3bf2bdbaf69715b18b266183345fdcec1dfd",
+        "name": "intel-openmp",
+        "version": "2024.2.1",
+        "requires_dist": [
+          "intel-cmplr-lib-ur ==2024.2.1"
+        ],
+        "requires_python": null,
+        "metadata_version": "2.1"
+      },
+      "sidecar_exact_zip_match": true
+    }
+  ],
+  "primary_sources": [
+    {
+      "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/upstream/uv-0.13.7-resolver.md",
+      "sha256": "ba7eef3400c2a09c9e61d73a00c4b749018bc7527cd6f85d6682bc811d92f87e",
+      "bytes": 22477,
+      "url": "https://github.com/astral-sh/uv/blob/0.13.7/docs/reference/internals/resolver.md#metadata-consistency",
+      "lines": "154-170",
+      "meaning": "The tested uv version documents identical dependencies across all same-version wheels as an explicit resolution assumption."
+    },
+    {
+      "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/upstream/uv-issue12588.json",
+      "sha256": "afd3c5a99dc1af227572cd2fd821c650b5fba29a2138181ac6ae280f51b855f8",
+      "bytes": 5058,
+      "url": "https://github.com/astral-sh/uv/issues/12588",
+      "title": "dependencies are assumed to be the same among wheels",
+      "state": "closed",
+      "meaning": "Previously reported same root cause: uv project operations assume equal dependencies across platform wheels whereas native pip/uv pip can use their own metadata."
+    },
+    {
+      "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/upstream/uv-issue12588-comments.json",
+      "sha256": "ab23bf5c2964de46410c1d0616f1e5cb351a9b614e68e58f0c46f10603a7563d",
+      "bytes": 1886,
+      "url": "https://github.com/astral-sh/uv/issues/12588#issuecomment-2766635863",
+      "author": "charliermarsh",
+      "author_association": "MEMBER",
+      "meaning": "Maintainer describes this as a hard uv/Poetry requirement and points to explicit static dependency metadata as an escape hatch."
+    }
+  ],
+  "attribution": {
+    "pep658_sidecar_mismatch": false,
+    "wrong_native_wheel_download_or_install": false,
+    "incomplete_no_deps_experiment": false,
+    "warm_source_reuse": false,
+    "publisher_metadata_is_proven_malformed": false,
+    "cross_wheel_dependency_metadata_differs": true,
+    "uv_documented_assumption_violated_by_input_release": true,
+    "novel_upstream_root_cause": false,
+    "independent_new02_issue_ready": false
+  },
+  "counting_recommendation": {
+    "new_novel_mechanisms": 0,
+    "real_affected_roots_added_to_source_reuse_issue01": 0,
+    "new_issue_files": 0,
+    "observation": "Record a real installed-environment inconsistency under an already known metadata-consistency limitation. Preserve it separately from both method unknowns and newly discovered defects.",
+    "source_switch_status": "unknown_initial_control_not_clean; CPU-to-PyPI transition was not executed"
+  },
+  "limitations": [
+    "No Intel native library is loaded or executed; file integrity and dependency metadata/check consistency are tested.",
+    "The supplemental direct Intel root is for causal triage; it does not change the frozen52 cohort or create an additional independently selected sample.",
+    "This review does not establish that Intel's platform-specific requirements violate a packaging standard; it establishes incompatibility with uv's explicitly documented universal-resolution metadata assumption.",
+    "No public issue/comment is sent, no historical evidence is edited, and no manual metadata/dependency injection is used."
+  ],
+  "key_evidence": [
+    {
+      "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/protocol.json",
+      "sha256": "9547f6c667a3a1672326c1ac8619fb645cf124b2dfa38d815f5196eb90b560d9",
+      "bytes": 1361
+    },
+    {
+      "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/install-protocol.json",
+      "sha256": "e3d70cbb20d9b5e56a29b10ef1ff652b75cc70705e7f22f1cb61d00a02a912e2",
+      "bytes": 1374
+    },
+    {
+      "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/archive-budget.json",
+      "sha256": "fa3056cc348249755e8b60466aab9496ab2fca77b38f6d24d4e81e3f5110ba40",
+      "bytes": 5371
+    },
+    {
+      "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/official-metadata.json",
+      "sha256": "873efd0a05d1989714a621aeb70d2aacaaa34287cc8786d94597d9b8b21dc0e5",
+      "bytes": 16868
+    },
+    {
+      "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/actual-wheel-metadata.json",
+      "sha256": "3ca081433bcb14569341b2e6a98f54ebc09a3707d693ffa54b8990e7f0167d53",
+      "bytes": 2425
+    },
+    {
+      "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/native-install-results.json",
+      "sha256": "f62866ea155777e2b65d31f7403886d23adbf6fb69c0df6f578fb736d923fe0b",
+      "bytes": 7191
+    },
+    {
+      "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/commands/uv-project-lock/stderr",
+      "sha256": "5d1534bf8492cfe6e228b02be8709bac1499f95b219e4eb664a91c5e52973eaf",
+      "bytes": 2896
+    },
+    {
+      "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/project/pyproject.toml",
+      "sha256": "4778e8e940a8cc9a64e0629143782415e38d0b0663a8b658bcbe762abc0efbef",
+      "bytes": 332
+    },
+    {
+      "path": "work/stateful-workflows-20261111/review/intel-openmp-2024.2.1/project/uv.lock",
+      "sha256": "a62019e2deea1adf57e23f06137a8a9d764fd42bc37a9c3d057176f207f0aaf9",
+      "bytes": 901
+    }
+  ]
+}

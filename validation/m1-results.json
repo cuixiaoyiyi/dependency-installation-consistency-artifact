@@ -1,0 +1,903 @@
+{
+  "schema": "uv-warm-closure-repro-v1",
+  "at_utc": "2026-11-13T05:16:55.166987+00:00",
+  "tool": "uv 0.13.7 (x86_64-unknown-linux-gnu)",
+  "uv_binary_sha256": "4b5e59bc557ff2cd70934beb59d0eaa92820702853d49f0066b50aa11a8f0c52",
+  "python": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+  "python_binary_sha256": "1e761eb19d6f2594ab8dc64bd99ad4e1753589f3bf1ec199e4eef3aaa21e3930",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "script_sha256": "a7c753483531c82e4f4b7fd2ae25f3bad31909c72e9e634cf2b13a1546eafb63",
+  "checks": {
+    "initial_old_probe_old_dep_consistent": true,
+    "relock_leaves_old_environment_consistent": true,
+    "new_lock_selects_new_probe_hash_registry_and_dep": true,
+    "warm_fresh_reinstall_identical_manifest": true,
+    "warm_fresh_reinstall_identical_lock": true,
+    "warm_keeps_exact_old_probe_metadata": true,
+    "warm_removes_old_dep_installs_new_dep": true,
+    "warm_both_checkers_fail": true,
+    "warm_independent_missing_old_dep": true,
+    "fresh_new_probe_new_dep_consistent": true,
+    "reinstall_new_probe_new_dep_consistent": true,
+    "all_installed_record_hashes_match": true,
+    "same_full_target_environment": true,
+    "initial_probe_http_full_bytes_sha": true,
+    "initial_dep_http_full_bytes_sha": true,
+    "warm_new_dep_http_full_bytes_sha": true,
+    "fresh_probe_http_full_bytes_sha": true,
+    "fresh_dep_http_full_bytes_sha": true,
+    "reinstall_probe_http_full_bytes_sha": true
+  },
+  "reproduced_closure_violation": true,
+  "steps": [
+    {
+      "step": "01-initial-lock",
+      "environment_path": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared",
+      "cwd": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project",
+      "cache_path": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/01-initial-lock/cache",
+      "environment_controls": {
+        "HOME": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/01-initial-lock/home",
+        "XDG_CONFIG_HOME": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/01-initial-lock/config",
+        "UV_CACHE_DIR": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/01-initial-lock/cache",
+        "UV_PROJECT_ENVIRONMENT": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared",
+        "UV_NO_INPUT": "1",
+        "UV_PYTHON_DOWNLOADS": "never",
+        "UV_LINK_MODE": "copy",
+        "PIP_CONFIG_FILE": "/dev/null",
+        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "command": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv",
+          "lock",
+          "--no-build",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+          "--no-python-downloads"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv lock --no-build --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python --no-python-downloads",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "Using CPython 3.11.16 interpreter at: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python\nResolved 3 packages in 81ms\n"
+      },
+      "http": [
+        {
+          "method": "GET",
+          "path": "/old/simple/warm-closure-probe",
+          "port": 41387,
+          "status": 200,
+          "response_sha256": "4e615e5b93557fd167884186438db3470ade88db8f2b868f3e320517b96ad9fa",
+          "bytes": 176,
+          "body_written": true,
+          "range_requested": null
+        },
+        {
+          "method": "HEAD",
+          "path": "/old/files/warm_closure_probe-1.0-py3-none-any.whl",
+          "port": 41387,
+          "status": 200,
+          "response_sha256": "5e06eed9fbbe0dfdd67774f9bb610907346293f570423101190d3a225aee9bc3",
+          "bytes": 842,
+          "body_written": false,
+          "range_requested": null
+        },
+        {
+          "method": "GET",
+          "path": "/old/files/warm_closure_probe-1.0-py3-none-any.whl",
+          "port": 41387,
+          "status": 200,
+          "response_sha256": "5e06eed9fbbe0dfdd67774f9bb610907346293f570423101190d3a225aee9bc3",
+          "bytes": 842,
+          "body_written": true,
+          "range_requested": null
+        },
+        {
+          "method": "GET",
+          "path": "/new/simple/old-dep",
+          "port": 42925,
+          "status": 200,
+          "response_sha256": "92cd714ea59f88ab2cc1363c1a306a8d4d2950756c1d09b2e4630d6ae027cbff",
+          "bytes": 154,
+          "body_written": true,
+          "range_requested": null
+        },
+        {
+          "method": "HEAD",
+          "path": "/new/files/old_dep-1.0-py3-none-any.whl",
+          "port": 42925,
+          "status": 200,
+          "response_sha256": "a3156a1a4b3b57a1d06732ff358cd8d6dfa7f3368546895565175050ee82a9cd",
+          "bytes": 753,
+          "body_written": false,
+          "range_requested": null
+        },
+        {
+          "method": "GET",
+          "path": "/new/files/old_dep-1.0-py3-none-any.whl",
+          "port": 42925,
+          "status": 200,
+          "response_sha256": "a3156a1a4b3b57a1d06732ff358cd8d6dfa7f3368546895565175050ee82a9cd",
+          "bytes": 753,
+          "body_written": true,
+          "range_requested": null
+        }
+      ],
+      "pyproject.toml_sha256": "1614ab5f9523c402b6e85ed3b90eac8db36766f23a683f38a645b000ef1e8d97",
+      "uv.lock_sha256": "4d2f5e17beb0dc2e557e6799cb1ed0337c5a3200bf813b5af09f16f7feb879ba"
+    },
+    {
+      "step": "02-initial-sync",
+      "environment_path": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared",
+      "cwd": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project",
+      "cache_path": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/02-initial-sync/cache",
+      "environment_controls": {
+        "HOME": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/02-initial-sync/home",
+        "XDG_CONFIG_HOME": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/02-initial-sync/config",
+        "UV_CACHE_DIR": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/02-initial-sync/cache",
+        "UV_PROJECT_ENVIRONMENT": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared",
+        "UV_NO_INPUT": "1",
+        "UV_PYTHON_DOWNLOADS": "never",
+        "UV_LINK_MODE": "copy",
+        "PIP_CONFIG_FILE": "/dev/null",
+        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "command": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv",
+          "sync",
+          "--no-build",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+          "--no-python-downloads",
+          "--no-install-project",
+          "--locked",
+          "--verbose"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv sync --no-build --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python --no-python-downloads --no-install-project --locked --verbose",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "DEBUG Found workspace root: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project\nDEBUG Adding root workspace member: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project\nDEBUG Found workspace configuration at `/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project/pyproject.toml`\nDEBUG Searching for user configuration in: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/02-initial-sync/config/uv/uv.toml\nDEBUG uv 0.13.7 (x86_64-unknown-linux-gnu)\nDEBUG Found project root: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project\nDEBUG Using Python request `/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python` from explicit request\nDEBUG Checking for Python environment at: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared\nDEBUG Checking for Python interpreter at path `/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python`\nUsing CPython 3.11.16 interpreter at: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python\nCreating virtual environment at: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared\nDEBUG Assessing Python executable as base candidate: /home/clm/.local/share/uv/python/cpython-3.11-linux-x86_64-gnu/bin/python3.11\nDEBUG Using base executable for virtual environment: /home/clm/.local/share/uv/python/cpython-3.11-linux-x86_64-gnu/bin/python3.11\nDEBUG Omitting `warm-closure-control` from resolution due to `--no-install-project`\nDEBUG Using request connect timeout of 10s and read timeout of 30s\nDEBUG Found static `requires-dist` for: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project/\nDEBUG Existing `uv.lock` satisfies workspace requirements\nResolved 3 packages in 16ms\nDEBUG Omitting `warm-closure-control` from resolution due to `--no-install-project`\nDEBUG Identified uncached distribution: warm-closure-probe==1.0\nDEBUG Identified uncached distribution: old-dep==1.0\nDEBUG Using request connect timeout of 10s and read timeout of 30s\nDEBUG No cache entry for: http://127.0.0.1:42925/new/files/old_dep-1.0-py3-none-any.whl\nDEBUG Sending fresh GET request for: http://127.0.0.1:42925/new/files/old_dep-1.0-py3-none-any.whl\nDEBUG No cache entry for: http://127.0.0.1:41387/old/files/warm_closure_probe-1.0-py3-none-any.whl\nDEBUG Sending fresh GET request for: http://127.0.0.1:41387/old/files/warm_closure_probe-1.0-py3-none-any.whl\nPrepared 2 packages in 60ms\nInstalled 2 packages in 46ms\n + old-dep==1.0\n + warm-closure-probe==1.0\n"
+      },
+      "http": [
+        {
+          "method": "GET",
+          "path": "/new/files/old_dep-1.0-py3-none-any.whl",
+          "port": 42925,
+          "status": 200,
+          "response_sha256": "a3156a1a4b3b57a1d06732ff358cd8d6dfa7f3368546895565175050ee82a9cd",
+          "bytes": 753,
+          "body_written": true,
+          "range_requested": null
+        },
+        {
+          "method": "GET",
+          "path": "/old/files/warm_closure_probe-1.0-py3-none-any.whl",
+          "port": 41387,
+          "status": 200,
+          "response_sha256": "5e06eed9fbbe0dfdd67774f9bb610907346293f570423101190d3a225aee9bc3",
+          "bytes": 842,
+          "body_written": true,
+          "range_requested": null
+        }
+      ],
+      "pyproject.toml_sha256": "1614ab5f9523c402b6e85ed3b90eac8db36766f23a683f38a645b000ef1e8d97",
+      "uv.lock_sha256": "4d2f5e17beb0dc2e557e6799cb1ed0337c5a3200bf813b5af09f16f7feb879ba",
+      "inventory": {
+        "environment": {
+          "implementation_name": "cpython",
+          "implementation_version": "3.11.16",
+          "os_name": "posix",
+          "platform_machine": "x86_64",
+          "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+          "platform_system": "Linux",
+          "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+          "python_full_version": "3.11.16",
+          "platform_python_implementation": "CPython",
+          "python_version": "3.11",
+          "sys_platform": "linux"
+        },
+        "executable": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python",
+        "installed": [
+          {
+            "name": "old-dep",
+            "version": "1.0",
+            "requires_dist": [],
+            "origin": "dependency-old",
+            "metadata_sha256": "30508bd0fc53d9279979da9647056612a3e8d04c70e98f52749411795dbb1d56",
+            "record_sha256": "7846904fed88b2ca5cfd27834de21b1ee63605099892af7f346494e370f40e51",
+            "record_files_checked": 4,
+            "record_mismatches": []
+          },
+          {
+            "name": "warm-closure-probe",
+            "version": "1.0",
+            "requires_dist": [
+              "old-dep==1.0"
+            ],
+            "origin": "old",
+            "metadata_sha256": "34b1b0a41120986cdb2a23042caea50b7ff58b5163ab883a6ba8dd6bf7d407ef",
+            "record_sha256": "de37f4c39c5b778407fb1b8ec19f1a3c03deb160329efcfad4650d5b7852fa4e",
+            "record_files_checked": 4,
+            "record_mismatches": []
+          }
+        ]
+      },
+      "independent_constraint_violations": [],
+      "pip_check": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+          "-m",
+          "pip",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python",
+          "check"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python -m pip --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python check",
+        "exit": 0,
+        "stdout": "No broken requirements found.\n",
+        "stderr": ""
+      },
+      "uv_check": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv",
+          "--no-config",
+          "pip",
+          "check",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv --no-config pip check --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "Using Python 3.11.16 environment at: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared\nChecked 2 packages in 246ms\nAll installed packages are compatible\n"
+      },
+      "pip_inspect": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+          "-m",
+          "pip",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python",
+          "inspect",
+          "--local"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python -m pip --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python inspect --local",
+        "exit": 0,
+        "stdout": "{\n  \"version\": \"1\",\n  \"pip_version\": \"26.3\",\n  \"installed\": [\n    {\n      \"metadata\": {\n        \"metadata_version\": \"2.3\",\n        \"name\": \"old-dep\",\n        \"version\": \"1.0\",\n        \"requires_python\": \">=3.11\"\n      },\n      \"metadata_location\": \"/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/lib/python3.11/site-packages/old_dep-1.0.dist-info\",\n      \"installer\": \"uv\",\n      \"requested\": true\n    },\n    {\n      \"metadata\": {\n        \"metadata_version\": \"2.3\",\n        \"name\": \"warm-closure-probe\",\n        \"version\": \"1.0\",\n        \"requires_dist\": [\n          \"old-dep==1.0\"\n        ],\n        \"requires_python\": \">=3.11\"\n      },\n      \"metadata_location\": \"/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/lib/python3.11/site-packages/warm_closure_probe-1.0.dist-info\",\n      \"installer\": \"uv\",\n      \"requested\": true\n    }\n  ],\n  \"environment\": {\n    \"implementation_name\": \"cpython\",\n    \"implementation_version\": \"3.11.16\",\n    \"os_name\": \"posix\",\n    \"platform_machine\": \"x86_64\",\n    \"platform_release\": \"6.6.87.2-microsoft-standard-WSL2\",\n    \"platform_system\": \"Linux\",\n    \"platform_version\": \"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025\",\n    \"python_full_version\": \"3.11.16\",\n    \"platform_python_implementation\": \"CPython\",\n    \"python_version\": \"3.11\",\n    \"sys_platform\": \"linux\"\n  }\n}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "step": "03-relock-new-source",
+      "environment_path": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared",
+      "cwd": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project",
+      "cache_path": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/03-relock-new-source/cache",
+      "environment_controls": {
+        "HOME": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/03-relock-new-source/home",
+        "XDG_CONFIG_HOME": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/03-relock-new-source/config",
+        "UV_CACHE_DIR": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/03-relock-new-source/cache",
+        "UV_PROJECT_ENVIRONMENT": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared",
+        "UV_NO_INPUT": "1",
+        "UV_PYTHON_DOWNLOADS": "never",
+        "UV_LINK_MODE": "copy",
+        "PIP_CONFIG_FILE": "/dev/null",
+        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "command": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv",
+          "lock",
+          "--no-build",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+          "--no-python-downloads"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv lock --no-build --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python --no-python-downloads",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "Resolved 3 packages in 119ms\nAdded new-dep v1.0\nRemoved old-dep v1.0\n"
+      },
+      "http": [
+        {
+          "method": "GET",
+          "path": "/new/simple/warm-closure-probe",
+          "port": 42925,
+          "status": 200,
+          "response_sha256": "932a73b516b6d33bad3c05ffaaf1e745d32d7007a1c5aff2cd40316ab06425cd",
+          "bytes": 176,
+          "body_written": true,
+          "range_requested": null
+        },
+        {
+          "method": "HEAD",
+          "path": "/new/files/warm_closure_probe-1.0-py3-none-any.whl",
+          "port": 42925,
+          "status": 200,
+          "response_sha256": "d3cdbf43c5d40902f2d95ecb3a82e8a34ebab6341ea853f7d79fab143e29b971",
+          "bytes": 841,
+          "body_written": false,
+          "range_requested": null
+        },
+        {
+          "method": "GET",
+          "path": "/new/files/warm_closure_probe-1.0-py3-none-any.whl",
+          "port": 42925,
+          "status": 200,
+          "response_sha256": "d3cdbf43c5d40902f2d95ecb3a82e8a34ebab6341ea853f7d79fab143e29b971",
+          "bytes": 841,
+          "body_written": true,
+          "range_requested": null
+        },
+        {
+          "method": "GET",
+          "path": "/new/simple/new-dep",
+          "port": 42925,
+          "status": 200,
+          "response_sha256": "ed1161350223687087987fe93bd9607d7830cccaa6cb7920438ce685dbf05f9c",
+          "bytes": 154,
+          "body_written": true,
+          "range_requested": null
+        },
+        {
+          "method": "GET",
+          "path": "/new/files/new_dep-1.0-py3-none-any.whl",
+          "port": 42925,
+          "status": 200,
+          "response_sha256": "675ebf68ad8517af1220f9482ad29c4fc89be98fb868c214da57d06e722d3a75",
+          "bytes": 753,
+          "body_written": true,
+          "range_requested": null
+        }
+      ],
+      "pyproject.toml_sha256": "603c26049c6dea20ee78d0b5af187eb2a53bc0114f6f2301d6c59c249dffe9ca",
+      "uv.lock_sha256": "a82512aa56823c761b27f310af194c5fe5eee81a6ad1068419cc453f07a772c3",
+      "inventory": {
+        "environment": {
+          "implementation_name": "cpython",
+          "implementation_version": "3.11.16",
+          "os_name": "posix",
+          "platform_machine": "x86_64",
+          "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+          "platform_system": "Linux",
+          "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+          "python_full_version": "3.11.16",
+          "platform_python_implementation": "CPython",
+          "python_version": "3.11",
+          "sys_platform": "linux"
+        },
+        "executable": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python",
+        "installed": [
+          {
+            "name": "old-dep",
+            "version": "1.0",
+            "requires_dist": [],
+            "origin": "dependency-old",
+            "metadata_sha256": "30508bd0fc53d9279979da9647056612a3e8d04c70e98f52749411795dbb1d56",
+            "record_sha256": "7846904fed88b2ca5cfd27834de21b1ee63605099892af7f346494e370f40e51",
+            "record_files_checked": 4,
+            "record_mismatches": []
+          },
+          {
+            "name": "warm-closure-probe",
+            "version": "1.0",
+            "requires_dist": [
+              "old-dep==1.0"
+            ],
+            "origin": "old",
+            "metadata_sha256": "34b1b0a41120986cdb2a23042caea50b7ff58b5163ab883a6ba8dd6bf7d407ef",
+            "record_sha256": "de37f4c39c5b778407fb1b8ec19f1a3c03deb160329efcfad4650d5b7852fa4e",
+            "record_files_checked": 4,
+            "record_mismatches": []
+          }
+        ]
+      },
+      "independent_constraint_violations": [],
+      "pip_check": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+          "-m",
+          "pip",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python",
+          "check"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python -m pip --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python check",
+        "exit": 0,
+        "stdout": "No broken requirements found.\n",
+        "stderr": ""
+      },
+      "uv_check": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv",
+          "--no-config",
+          "pip",
+          "check",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv --no-config pip check --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "Using Python 3.11.16 environment at: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared\nChecked 2 packages in 41ms\nAll installed packages are compatible\n"
+      },
+      "pip_inspect": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+          "-m",
+          "pip",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python",
+          "inspect",
+          "--local"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python -m pip --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python inspect --local",
+        "exit": 0,
+        "stdout": "{\n  \"version\": \"1\",\n  \"pip_version\": \"26.3\",\n  \"installed\": [\n    {\n      \"metadata\": {\n        \"metadata_version\": \"2.3\",\n        \"name\": \"old-dep\",\n        \"version\": \"1.0\",\n        \"requires_python\": \">=3.11\"\n      },\n      \"metadata_location\": \"/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/lib/python3.11/site-packages/old_dep-1.0.dist-info\",\n      \"installer\": \"uv\",\n      \"requested\": true\n    },\n    {\n      \"metadata\": {\n        \"metadata_version\": \"2.3\",\n        \"name\": \"warm-closure-probe\",\n        \"version\": \"1.0\",\n        \"requires_dist\": [\n          \"old-dep==1.0\"\n        ],\n        \"requires_python\": \">=3.11\"\n      },\n      \"metadata_location\": \"/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/lib/python3.11/site-packages/warm_closure_probe-1.0.dist-info\",\n      \"installer\": \"uv\",\n      \"requested\": true\n    }\n  ],\n  \"environment\": {\n    \"implementation_name\": \"cpython\",\n    \"implementation_version\": \"3.11.16\",\n    \"os_name\": \"posix\",\n    \"platform_machine\": \"x86_64\",\n    \"platform_release\": \"6.6.87.2-microsoft-standard-WSL2\",\n    \"platform_system\": \"Linux\",\n    \"platform_version\": \"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025\",\n    \"python_full_version\": \"3.11.16\",\n    \"platform_python_implementation\": \"CPython\",\n    \"python_version\": \"3.11\",\n    \"sys_platform\": \"linux\"\n  }\n}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "step": "04-warm-sync",
+      "environment_path": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared",
+      "cwd": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project",
+      "cache_path": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/04-warm-sync/cache",
+      "environment_controls": {
+        "HOME": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/04-warm-sync/home",
+        "XDG_CONFIG_HOME": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/04-warm-sync/config",
+        "UV_CACHE_DIR": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/04-warm-sync/cache",
+        "UV_PROJECT_ENVIRONMENT": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared",
+        "UV_NO_INPUT": "1",
+        "UV_PYTHON_DOWNLOADS": "never",
+        "UV_LINK_MODE": "copy",
+        "PIP_CONFIG_FILE": "/dev/null",
+        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "command": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv",
+          "sync",
+          "--no-build",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+          "--no-python-downloads",
+          "--no-install-project",
+          "--locked",
+          "--verbose"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv sync --no-build --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python --no-python-downloads --no-install-project --locked --verbose",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "DEBUG Found workspace root: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project\nDEBUG Adding root workspace member: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project\nDEBUG Found workspace configuration at `/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project/pyproject.toml`\nDEBUG Searching for user configuration in: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/04-warm-sync/config/uv/uv.toml\nDEBUG uv 0.13.7 (x86_64-unknown-linux-gnu)\nDEBUG Found project root: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project\nDEBUG Using Python request `/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python` from explicit request\nDEBUG Checking for Python environment at: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared\nDEBUG The project environment's Python version satisfies the request: `path `/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python``\nDEBUG Omitting `warm-closure-control` from resolution due to `--no-install-project`\nDEBUG Using request connect timeout of 10s and read timeout of 30s\nDEBUG Found static `requires-dist` for: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project/\nDEBUG Existing `uv.lock` satisfies workspace requirements\nResolved 3 packages in 22ms\nDEBUG Omitting `warm-closure-control` from resolution due to `--no-install-project`\nDEBUG Requirement already installed: warm-closure-probe==1.0\nDEBUG Identified uncached distribution: new-dep==1.0\nDEBUG Unnecessary package: old-dep==1.0\nDEBUG Using request connect timeout of 10s and read timeout of 30s\nDEBUG No cache entry for: http://127.0.0.1:42925/new/files/new_dep-1.0-py3-none-any.whl\nDEBUG Sending fresh GET request for: http://127.0.0.1:42925/new/files/new_dep-1.0-py3-none-any.whl\nPrepared 1 package in 50ms\nDEBUG Uninstalled old-dep (5 files, 1 directory)\nUninstalled 1 package in 19ms\nInstalled 1 package in 63ms\n + new-dep==1.0\n - old-dep==1.0\n"
+      },
+      "http": [
+        {
+          "method": "GET",
+          "path": "/new/files/new_dep-1.0-py3-none-any.whl",
+          "port": 42925,
+          "status": 200,
+          "response_sha256": "675ebf68ad8517af1220f9482ad29c4fc89be98fb868c214da57d06e722d3a75",
+          "bytes": 753,
+          "body_written": true,
+          "range_requested": null
+        }
+      ],
+      "pyproject.toml_sha256": "603c26049c6dea20ee78d0b5af187eb2a53bc0114f6f2301d6c59c249dffe9ca",
+      "uv.lock_sha256": "a82512aa56823c761b27f310af194c5fe5eee81a6ad1068419cc453f07a772c3",
+      "inventory": {
+        "environment": {
+          "implementation_name": "cpython",
+          "implementation_version": "3.11.16",
+          "os_name": "posix",
+          "platform_machine": "x86_64",
+          "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+          "platform_system": "Linux",
+          "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+          "python_full_version": "3.11.16",
+          "platform_python_implementation": "CPython",
+          "python_version": "3.11",
+          "sys_platform": "linux"
+        },
+        "executable": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python",
+        "installed": [
+          {
+            "name": "new-dep",
+            "version": "1.0",
+            "requires_dist": [],
+            "origin": "dependency-new",
+            "metadata_sha256": "ca5a126a14aaa52e91739232bd6e2851a3c3c748ea96142c0d90bebc411cf53f",
+            "record_sha256": "ff48b1cffc947c798fd3b92a1e622e84a0f835cf9ed00ad9799aa0023b8b514e",
+            "record_files_checked": 4,
+            "record_mismatches": []
+          },
+          {
+            "name": "warm-closure-probe",
+            "version": "1.0",
+            "requires_dist": [
+              "old-dep==1.0"
+            ],
+            "origin": "old",
+            "metadata_sha256": "34b1b0a41120986cdb2a23042caea50b7ff58b5163ab883a6ba8dd6bf7d407ef",
+            "record_sha256": "de37f4c39c5b778407fb1b8ec19f1a3c03deb160329efcfad4650d5b7852fa4e",
+            "record_files_checked": 4,
+            "record_mismatches": []
+          }
+        ]
+      },
+      "independent_constraint_violations": [
+        {
+          "parent": "warm-closure-probe",
+          "requirement": "old-dep==1.0",
+          "actual_version": null
+        }
+      ],
+      "pip_check": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+          "-m",
+          "pip",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python",
+          "check"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python -m pip --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python check",
+        "exit": 1,
+        "stdout": "warm-closure-probe 1.0 requires old-dep, which is not installed.\n",
+        "stderr": ""
+      },
+      "uv_check": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv",
+          "--no-config",
+          "pip",
+          "check",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv --no-config pip check --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python",
+        "exit": 1,
+        "stdout": "",
+        "stderr": "Using Python 3.11.16 environment at: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared\nChecked 2 packages in 37ms\nFound 1 incompatibility\nThe package `warm-closure-probe` requires `old-dep==1.0`, but it's not installed\n"
+      },
+      "pip_inspect": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+          "-m",
+          "pip",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python",
+          "inspect",
+          "--local"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python -m pip --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python inspect --local",
+        "exit": 0,
+        "stdout": "{\n  \"version\": \"1\",\n  \"pip_version\": \"26.3\",\n  \"installed\": [\n    {\n      \"metadata\": {\n        \"metadata_version\": \"2.3\",\n        \"name\": \"new-dep\",\n        \"version\": \"1.0\",\n        \"requires_python\": \">=3.11\"\n      },\n      \"metadata_location\": \"/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/lib/python3.11/site-packages/new_dep-1.0.dist-info\",\n      \"installer\": \"uv\",\n      \"requested\": true\n    },\n    {\n      \"metadata\": {\n        \"metadata_version\": \"2.3\",\n        \"name\": \"warm-closure-probe\",\n        \"version\": \"1.0\",\n        \"requires_dist\": [\n          \"old-dep==1.0\"\n        ],\n        \"requires_python\": \">=3.11\"\n      },\n      \"metadata_location\": \"/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/lib/python3.11/site-packages/warm_closure_probe-1.0.dist-info\",\n      \"installer\": \"uv\",\n      \"requested\": true\n    }\n  ],\n  \"environment\": {\n    \"implementation_name\": \"cpython\",\n    \"implementation_version\": \"3.11.16\",\n    \"os_name\": \"posix\",\n    \"platform_machine\": \"x86_64\",\n    \"platform_release\": \"6.6.87.2-microsoft-standard-WSL2\",\n    \"platform_system\": \"Linux\",\n    \"platform_version\": \"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025\",\n    \"python_full_version\": \"3.11.16\",\n    \"platform_python_implementation\": \"CPython\",\n    \"python_version\": \"3.11\",\n    \"sys_platform\": \"linux\"\n  }\n}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "step": "05-fresh-sync",
+      "environment_path": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/fresh",
+      "cwd": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project",
+      "cache_path": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/05-fresh-sync/cache",
+      "environment_controls": {
+        "HOME": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/05-fresh-sync/home",
+        "XDG_CONFIG_HOME": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/05-fresh-sync/config",
+        "UV_CACHE_DIR": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/05-fresh-sync/cache",
+        "UV_PROJECT_ENVIRONMENT": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/fresh",
+        "UV_NO_INPUT": "1",
+        "UV_PYTHON_DOWNLOADS": "never",
+        "UV_LINK_MODE": "copy",
+        "PIP_CONFIG_FILE": "/dev/null",
+        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "command": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv",
+          "sync",
+          "--no-build",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+          "--no-python-downloads",
+          "--no-install-project",
+          "--locked",
+          "--verbose"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv sync --no-build --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python --no-python-downloads --no-install-project --locked --verbose",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "DEBUG Found workspace root: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project\nDEBUG Adding root workspace member: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project\nDEBUG Found workspace configuration at `/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project/pyproject.toml`\nDEBUG Searching for user configuration in: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/05-fresh-sync/config/uv/uv.toml\nDEBUG uv 0.13.7 (x86_64-unknown-linux-gnu)\nDEBUG Found project root: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project\nDEBUG Using Python request `/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python` from explicit request\nDEBUG Checking for Python environment at: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/fresh\nDEBUG Checking for Python interpreter at path `/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python`\nUsing CPython 3.11.16 interpreter at: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python\nCreating virtual environment at: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/fresh\nDEBUG Assessing Python executable as base candidate: /home/clm/.local/share/uv/python/cpython-3.11-linux-x86_64-gnu/bin/python3.11\nDEBUG Using base executable for virtual environment: /home/clm/.local/share/uv/python/cpython-3.11-linux-x86_64-gnu/bin/python3.11\nDEBUG Omitting `warm-closure-control` from resolution due to `--no-install-project`\nDEBUG Using request connect timeout of 10s and read timeout of 30s\nDEBUG Found static `requires-dist` for: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project/\nDEBUG Existing `uv.lock` satisfies workspace requirements\nResolved 3 packages in 22ms\nDEBUG Omitting `warm-closure-control` from resolution due to `--no-install-project`\nDEBUG Identified uncached distribution: warm-closure-probe==1.0\nDEBUG Identified uncached distribution: new-dep==1.0\nDEBUG Using request connect timeout of 10s and read timeout of 30s\nDEBUG No cache entry for: http://127.0.0.1:42925/new/files/new_dep-1.0-py3-none-any.whl\nDEBUG Sending fresh GET request for: http://127.0.0.1:42925/new/files/new_dep-1.0-py3-none-any.whl\nDEBUG No cache entry for: http://127.0.0.1:42925/new/files/warm_closure_probe-1.0-py3-none-any.whl\nDEBUG Sending fresh GET request for: http://127.0.0.1:42925/new/files/warm_closure_probe-1.0-py3-none-any.whl\nPrepared 2 packages in 76ms\nInstalled 2 packages in 62ms\n + new-dep==1.0\n + warm-closure-probe==1.0\n"
+      },
+      "http": [
+        {
+          "method": "GET",
+          "path": "/new/files/warm_closure_probe-1.0-py3-none-any.whl",
+          "port": 42925,
+          "status": 200,
+          "response_sha256": "d3cdbf43c5d40902f2d95ecb3a82e8a34ebab6341ea853f7d79fab143e29b971",
+          "bytes": 841,
+          "body_written": true,
+          "range_requested": null
+        },
+        {
+          "method": "GET",
+          "path": "/new/files/new_dep-1.0-py3-none-any.whl",
+          "port": 42925,
+          "status": 200,
+          "response_sha256": "675ebf68ad8517af1220f9482ad29c4fc89be98fb868c214da57d06e722d3a75",
+          "bytes": 753,
+          "body_written": true,
+          "range_requested": null
+        }
+      ],
+      "pyproject.toml_sha256": "603c26049c6dea20ee78d0b5af187eb2a53bc0114f6f2301d6c59c249dffe9ca",
+      "uv.lock_sha256": "a82512aa56823c761b27f310af194c5fe5eee81a6ad1068419cc453f07a772c3",
+      "inventory": {
+        "environment": {
+          "implementation_name": "cpython",
+          "implementation_version": "3.11.16",
+          "os_name": "posix",
+          "platform_machine": "x86_64",
+          "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+          "platform_system": "Linux",
+          "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+          "python_full_version": "3.11.16",
+          "platform_python_implementation": "CPython",
+          "python_version": "3.11",
+          "sys_platform": "linux"
+        },
+        "executable": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/fresh/bin/python",
+        "installed": [
+          {
+            "name": "new-dep",
+            "version": "1.0",
+            "requires_dist": [],
+            "origin": "dependency-new",
+            "metadata_sha256": "ca5a126a14aaa52e91739232bd6e2851a3c3c748ea96142c0d90bebc411cf53f",
+            "record_sha256": "ff48b1cffc947c798fd3b92a1e622e84a0f835cf9ed00ad9799aa0023b8b514e",
+            "record_files_checked": 4,
+            "record_mismatches": []
+          },
+          {
+            "name": "warm-closure-probe",
+            "version": "1.0",
+            "requires_dist": [
+              "new-dep==1.0"
+            ],
+            "origin": "new",
+            "metadata_sha256": "3db7d0024a43529c11a64b380dabb337d4a17e42fd0f58403bb9899b1e9c5c94",
+            "record_sha256": "465fe84c0cf03267fc679acdce1cbdd7bdde0acea10f428428e15784a03c5817",
+            "record_files_checked": 4,
+            "record_mismatches": []
+          }
+        ]
+      },
+      "independent_constraint_violations": [],
+      "pip_check": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+          "-m",
+          "pip",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/fresh/bin/python",
+          "check"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python -m pip --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/fresh/bin/python check",
+        "exit": 0,
+        "stdout": "No broken requirements found.\n",
+        "stderr": ""
+      },
+      "uv_check": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv",
+          "--no-config",
+          "pip",
+          "check",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/fresh/bin/python"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv --no-config pip check --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/fresh/bin/python",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "Using Python 3.11.16 environment at: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/fresh\nChecked 2 packages in 238ms\nAll installed packages are compatible\n"
+      },
+      "pip_inspect": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+          "-m",
+          "pip",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/fresh/bin/python",
+          "inspect",
+          "--local"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python -m pip --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/fresh/bin/python inspect --local",
+        "exit": 0,
+        "stdout": "{\n  \"version\": \"1\",\n  \"pip_version\": \"26.3\",\n  \"installed\": [\n    {\n      \"metadata\": {\n        \"metadata_version\": \"2.3\",\n        \"name\": \"new-dep\",\n        \"version\": \"1.0\",\n        \"requires_python\": \">=3.11\"\n      },\n      \"metadata_location\": \"/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/fresh/lib/python3.11/site-packages/new_dep-1.0.dist-info\",\n      \"installer\": \"uv\",\n      \"requested\": true\n    },\n    {\n      \"metadata\": {\n        \"metadata_version\": \"2.3\",\n        \"name\": \"warm-closure-probe\",\n        \"version\": \"1.0\",\n        \"requires_dist\": [\n          \"new-dep==1.0\"\n        ],\n        \"requires_python\": \">=3.11\"\n      },\n      \"metadata_location\": \"/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/fresh/lib/python3.11/site-packages/warm_closure_probe-1.0.dist-info\",\n      \"installer\": \"uv\",\n      \"requested\": true\n    }\n  ],\n  \"environment\": {\n    \"implementation_name\": \"cpython\",\n    \"implementation_version\": \"3.11.16\",\n    \"os_name\": \"posix\",\n    \"platform_machine\": \"x86_64\",\n    \"platform_release\": \"6.6.87.2-microsoft-standard-WSL2\",\n    \"platform_system\": \"Linux\",\n    \"platform_version\": \"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025\",\n    \"python_full_version\": \"3.11.16\",\n    \"platform_python_implementation\": \"CPython\",\n    \"python_version\": \"3.11\",\n    \"sys_platform\": \"linux\"\n  }\n}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "step": "06-reinstall-probe",
+      "environment_path": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared",
+      "cwd": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project",
+      "cache_path": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/06-reinstall-probe/cache",
+      "environment_controls": {
+        "HOME": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/06-reinstall-probe/home",
+        "XDG_CONFIG_HOME": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/06-reinstall-probe/config",
+        "UV_CACHE_DIR": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/06-reinstall-probe/cache",
+        "UV_PROJECT_ENVIRONMENT": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared",
+        "UV_NO_INPUT": "1",
+        "UV_PYTHON_DOWNLOADS": "never",
+        "UV_LINK_MODE": "copy",
+        "PIP_CONFIG_FILE": "/dev/null",
+        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+        "PYTHONNOUSERSITE": "1"
+      },
+      "command": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv",
+          "sync",
+          "--no-build",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+          "--no-python-downloads",
+          "--no-install-project",
+          "--locked",
+          "--verbose",
+          "--reinstall-package",
+          "warm-closure-probe"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv sync --no-build --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python --no-python-downloads --no-install-project --locked --verbose --reinstall-package warm-closure-probe",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "DEBUG Found workspace root: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project\nDEBUG Adding root workspace member: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project\nDEBUG Found workspace configuration at `/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project/pyproject.toml`\nDEBUG Searching for user configuration in: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/06-reinstall-probe/config/uv/uv.toml\nDEBUG uv 0.13.7 (x86_64-unknown-linux-gnu)\nDEBUG Found project root: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project\nDEBUG Using Python request `/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python` from explicit request\nDEBUG Checking for Python environment at: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared\nDEBUG The project environment's Python version satisfies the request: `path `/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python``\nDEBUG Omitting `warm-closure-control` from resolution due to `--no-install-project`\nDEBUG Using request connect timeout of 10s and read timeout of 30s\nDEBUG Found static `requires-dist` for: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/project/\nDEBUG Existing `uv.lock` satisfies workspace requirements\nResolved 3 packages in 22ms\nDEBUG Omitting `warm-closure-control` from resolution due to `--no-install-project`\nDEBUG Must revalidate requirement: warm-closure-probe\nDEBUG Requirement already installed: new-dep==1.0\nDEBUG Using request connect timeout of 10s and read timeout of 30s\nDEBUG No cache entry for: http://127.0.0.1:42925/new/files/warm_closure_probe-1.0-py3-none-any.whl\nDEBUG Sending fresh GET request for: http://127.0.0.1:42925/new/files/warm_closure_probe-1.0-py3-none-any.whl\nPrepared 1 package in 55ms\nDEBUG Uninstalled warm-closure-probe (5 files, 1 directory)\nUninstalled 1 package in 24ms\nInstalled 1 package in 68ms\n ~ warm-closure-probe==1.0\n"
+      },
+      "http": [
+        {
+          "method": "GET",
+          "path": "/new/files/warm_closure_probe-1.0-py3-none-any.whl",
+          "port": 42925,
+          "status": 200,
+          "response_sha256": "d3cdbf43c5d40902f2d95ecb3a82e8a34ebab6341ea853f7d79fab143e29b971",
+          "bytes": 841,
+          "body_written": true,
+          "range_requested": null
+        }
+      ],
+      "pyproject.toml_sha256": "603c26049c6dea20ee78d0b5af187eb2a53bc0114f6f2301d6c59c249dffe9ca",
+      "uv.lock_sha256": "a82512aa56823c761b27f310af194c5fe5eee81a6ad1068419cc453f07a772c3",
+      "inventory": {
+        "environment": {
+          "implementation_name": "cpython",
+          "implementation_version": "3.11.16",
+          "os_name": "posix",
+          "platform_machine": "x86_64",
+          "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+          "platform_system": "Linux",
+          "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+          "python_full_version": "3.11.16",
+          "platform_python_implementation": "CPython",
+          "python_version": "3.11",
+          "sys_platform": "linux"
+        },
+        "executable": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python",
+        "installed": [
+          {
+            "name": "new-dep",
+            "version": "1.0",
+            "requires_dist": [],
+            "origin": "dependency-new",
+            "metadata_sha256": "ca5a126a14aaa52e91739232bd6e2851a3c3c748ea96142c0d90bebc411cf53f",
+            "record_sha256": "ff48b1cffc947c798fd3b92a1e622e84a0f835cf9ed00ad9799aa0023b8b514e",
+            "record_files_checked": 4,
+            "record_mismatches": []
+          },
+          {
+            "name": "warm-closure-probe",
+            "version": "1.0",
+            "requires_dist": [
+              "new-dep==1.0"
+            ],
+            "origin": "new",
+            "metadata_sha256": "3db7d0024a43529c11a64b380dabb337d4a17e42fd0f58403bb9899b1e9c5c94",
+            "record_sha256": "465fe84c0cf03267fc679acdce1cbdd7bdde0acea10f428428e15784a03c5817",
+            "record_files_checked": 4,
+            "record_mismatches": []
+          }
+        ]
+      },
+      "independent_constraint_violations": [],
+      "pip_check": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+          "-m",
+          "pip",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python",
+          "check"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python -m pip --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python check",
+        "exit": 0,
+        "stdout": "No broken requirements found.\n",
+        "stderr": ""
+      },
+      "uv_check": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv",
+          "--no-config",
+          "pip",
+          "check",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/uv --no-config pip check --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python",
+        "exit": 0,
+        "stdout": "",
+        "stderr": "Using Python 3.11.16 environment at: /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared\nChecked 2 packages in 39ms\nAll installed packages are compatible\n"
+      },
+      "pip_inspect": {
+        "argv": [
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python",
+          "-m",
+          "pip",
+          "--python",
+          "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python",
+          "inspect",
+          "--local"
+        ],
+        "command": "/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-env/bin/python -m pip --python /mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/bin/python inspect --local",
+        "exit": 0,
+        "stdout": "{\n  \"version\": \"1\",\n  \"pip_version\": \"26.3\",\n  \"installed\": [\n    {\n      \"metadata\": {\n        \"metadata_version\": \"2.3\",\n        \"name\": \"new-dep\",\n        \"version\": \"1.0\",\n        \"requires_python\": \">=3.11\"\n      },\n      \"metadata_location\": \"/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/lib/python3.11/site-packages/new_dep-1.0.dist-info\",\n      \"installer\": \"uv\",\n      \"requested\": true\n    },\n    {\n      \"metadata\": {\n        \"metadata_version\": \"2.3\",\n        \"name\": \"warm-closure-probe\",\n        \"version\": \"1.0\",\n        \"requires_dist\": [\n          \"new-dep==1.0\"\n        ],\n        \"requires_python\": \">=3.11\"\n      },\n      \"metadata_location\": \"/mnt/d/wsl/personal/dr/paper/FSE2027DependencyResolution/work/artifact-public-20261113/reader-m1/environments/shared/lib/python3.11/site-packages/warm_closure_probe-1.0.dist-info\",\n      \"installer\": \"uv\",\n      \"requested\": true\n    }\n  ],\n  \"environment\": {\n    \"implementation_name\": \"cpython\",\n    \"implementation_version\": \"3.11.16\",\n    \"os_name\": \"posix\",\n    \"platform_machine\": \"x86_64\",\n    \"platform_release\": \"6.6.87.2-microsoft-standard-WSL2\",\n    \"platform_system\": \"Linux\",\n    \"platform_version\": \"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025\",\n    \"python_full_version\": \"3.11.16\",\n    \"platform_python_implementation\": \"CPython\",\n    \"python_version\": \"3.11\",\n    \"sys_platform\": \"linux\"\n  }\n}\n",
+        "stderr": ""
+      }
+    }
+  ],
+  "fixtures": {
+    "old": {
+      "name": "warm-closure-probe",
+      "filename": "warm_closure_probe-1.0-py3-none-any.whl",
+      "sha256": "5e06eed9fbbe0dfdd67774f9bb610907346293f570423101190d3a225aee9bc3",
+      "metadata_sha256": "34b1b0a41120986cdb2a23042caea50b7ff58b5163ab883a6ba8dd6bf7d407ef",
+      "requirements": [
+        "old-dep==1.0"
+      ],
+      "origin": "old"
+    },
+    "new": {
+      "name": "warm-closure-probe",
+      "filename": "warm_closure_probe-1.0-py3-none-any.whl",
+      "sha256": "d3cdbf43c5d40902f2d95ecb3a82e8a34ebab6341ea853f7d79fab143e29b971",
+      "metadata_sha256": "3db7d0024a43529c11a64b380dabb337d4a17e42fd0f58403bb9899b1e9c5c94",
+      "requirements": [
+        "new-dep==1.0"
+      ],
+      "origin": "new"
+    },
+    "old-dep": {
+      "name": "old-dep",
+      "filename": "old_dep-1.0-py3-none-any.whl",
+      "sha256": "a3156a1a4b3b57a1d06732ff358cd8d6dfa7f3368546895565175050ee82a9cd",
+      "metadata_sha256": "30508bd0fc53d9279979da9647056612a3e8d04c70e98f52749411795dbb1d56",
+      "requirements": [],
+      "origin": "dependency-old"
+    },
+    "new-dep": {
+      "name": "new-dep",
+      "filename": "new_dep-1.0-py3-none-any.whl",
+      "sha256": "675ebf68ad8517af1220f9482ad29c4fc89be98fb868c214da57d06e722d3a75",
+      "metadata_sha256": "ca5a126a14aaa52e91739232bd6e2851a3c3c748ea96142c0d90bebc411cf53f",
+      "requirements": [],
+      "origin": "dependency-new"
+    }
+  },
+  "indexes": {
+    "old": "http://127.0.0.1:41387/old/simple/",
+    "new": "http://127.0.0.1:42925/new/simple/"
+  },
+  "scope": "Inert local dist-info-only wheels; no package modules or build hooks; same-version cross-index reuse with dependency closure observation, not another mechanism count."
+}

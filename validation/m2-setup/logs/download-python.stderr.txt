@@ -1,0 +1,7 @@
+Downloading cpython-3.11.16-linux-x86_64-gnu (download) (29.4MiB)
+ Downloaded cpython-3.11.16-linux-x86_64-gnu (download)
+Installed Python 3.11.16 in 22.17s
+ + cpython-3.11.16-linux-x86_64-gnu
+warning: `/home/clm/.local/bin` is not on your PATH. To use installed Python executables, run `export PATH="/home/clm/.local/bin:$PATH"` or `uv python update-shell`.
+warning: Failed to install executable for cpython-3.11.16-linux-x86_64-gnu
+  cause: Executable already exists at `/home/clm/.local/bin/python3.11` but is not managed by uv; use `--force` to replace it

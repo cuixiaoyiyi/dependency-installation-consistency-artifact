@@ -1,0 +1,88 @@
+{
+  "schema": "published-final-saved-inventory-delivery-v1",
+  "sealed_at_utc": "2026-11-11T09:33:47.846732+00:00",
+  "is_final": true,
+  "status": "independent_final_saved_metadata_sweep_accepted_with_coverage_limits",
+  "closure_attestation": {
+    "path": "work/stateful-workflows-20261111/published/closure-attestation.json",
+    "sha256": "57f75e12d076e4f19266df92df85be842f9b9b554553f04d631617261ce6d4b3"
+  },
+  "final_sweep": {
+    "path": "work/stateful-workflows-20261111/review/published-saved-inventory-sweep-v3/final/results.json",
+    "sha256": "71cb8f5245a321e99bbfb1d72cac64e6030b58ef23982137723abf1df62d2a6f"
+  },
+  "frozen_sweep_registration": {
+    "path": "work/stateful-workflows-20261111/review/published-saved-inventory-sweep-v3/registration.json",
+    "sha256": "c17eda86c63db09add16135daabc968ac512a668c4bfb330cc7f944c5b230a4f"
+  },
+  "independent_no_active_workers_before_sweep": {
+    "path": "work/stateful-workflows-20261111/published/independent-final-no-active-workers-before-sweep.json",
+    "sha256": "e9fadd66e82c40080026f59592f3dd2ce55d52880e169bd1769f7e84282713ca"
+  },
+  "independent_no_active_workers_after_sweep": {
+    "path": "work/stateful-workflows-20261111/published/independent-final-no-active-workers-after-sweep.json",
+    "sha256": "c6ab4945388faec68c79612854856c63e74a40a732ae563cd2e3c927b85201ad"
+  },
+  "effective_ledger": {
+    "path": "work/stateful-workflows-20261111/published/effective-ledger.json",
+    "sha256": "a21133302cc85e777395a0374c3e4d2a81ef6f577245a6bfd59956524be127de"
+  },
+  "staged_summary": {
+    "path": "work/stateful-workflows-20261111/published/staged-continuation2/summary.json",
+    "sha256": "50b77c4ad26613474d6249a2019461d41df3db918173b25ce184c84f4f90be6d"
+  },
+  "counts": {
+    "published_registered_roots": 33,
+    "logical_root_workflow_slots": 99,
+    "semantic_applicable_slots": 84,
+    "completed_workflows": 33,
+    "closed_coverage_gaps": 51,
+    "not_applicable_slots": 15,
+    "saved_inventory_observations": 141,
+    "unaggregated_inventory_observations": 23,
+    "successful_pip_current_request_observations": 34,
+    "successful_strict_sync_observations": 107,
+    "candidate_saved_metadata_contract_violations": 0,
+    "unknown_saved_stage_reviews": 0,
+    "observed_installed_canonical_roots": 15,
+    "readonly_composite_proofs": 3,
+    "new_actual_installations_performed_by_review": 0
+  },
+  "saved_inventory_observations_by_layer": {
+    "run1": 13,
+    "corrected-continuation1": 24,
+    "staged-continuation2": 104
+  },
+  "independently_checked_before_after_source_paths": 6168,
+  "observed_installed_root_names": [
+    "aider-chat",
+    "akshare",
+    "celery",
+    "diffusers",
+    "graphrag",
+    "jax",
+    "llama-index",
+    "matplotlib",
+    "pandas",
+    "pipenv",
+    "poetry",
+    "ray",
+    "superclaude",
+    "torch-geometric",
+    "transformers"
+  ],
+  "all_source_saved_inventory_paths_exactly_equal_reviewed_paths": true,
+  "registered_inputs_and_core29_still_unchanged": true,
+  "final_gate_passed": true,
+  "scope": "All saved inventories in the three frozen published layers, including partial/unaggregated stages, full frozen native targets, successful actual operation/collection records, original METADATA field consistency, active current-root/extra fixed points for pip and strict sync, and strict all-installed-base closure. Read-only composite proofs bind existing logical chains without new installs.",
+  "limits": [
+    "Zero saved-metadata contradictions does not certify51 coverage gaps, all33 roots installed, package-wide health, artifact/source identity, file integrity, model inference or ecosystem novelty.",
+    "Wheel/payload/RECORD and target-lock/source prefix reviews remain separate evidence. M2 shared-file failure can coexist with satisfied metadata closure and remains independently confirmed.",
+    "141 observations and23 unaggregated observations are saved stages across historical layers, not141 independent logical workflows or projects.",
+    "The pre-sweep closure attestation does not reference this seal or the later sweep; this post-sweep delivery binds both without a hash cycle."
+  ],
+  "seal_tool": {
+    "path": "work/stateful-workflows-20261111/review/seal_published_final_saved_inventory_delivery.py",
+    "sha256": "d3c70c10804286e5c61627fa11cafeb0645a8a9d4aefb8258f9feef14e1d3389"
+  }
+}

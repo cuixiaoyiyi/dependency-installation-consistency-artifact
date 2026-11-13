@@ -1,0 +1,527 @@
+{
+  "schema": "implementation-sources-v1",
+  "files": [
+    {
+      "source": "1110ISSUEs/01-uv-dependency-closure-repro.py",
+      "artifact": "reproductions/source_reuse.py",
+      "sha256": "a7c753483531c82e4f4b7fd2ae25f3bad31909c72e9e634cf2b13a1546eafb63",
+      "kind": "implementation"
+    },
+    {
+      "source": "corpus/repos/HKUDS__VideoAgent/requirements.txt",
+      "artifact": "corpus/repos/HKUDS__VideoAgent/requirements.txt",
+      "sha256": "6224f87cb22f64766e31cc2551988c96bdb31fcad02c7cb1cc13066fb11d5223",
+      "kind": "upstream_fixture"
+    },
+    {
+      "source": "corpus/repos/HKUDS__VideoAgent/tools/fish-speech/dockerfile",
+      "artifact": "corpus/repos/HKUDS__VideoAgent/tools/fish-speech/dockerfile",
+      "sha256": "1182c700772d2f4155a895a85b35641c6df844c1e46ec9d472a45af2e177a432",
+      "kind": "upstream_fixture"
+    },
+    {
+      "source": "corpus/repos/Vchitect__Evaluation-Agent/eval_agent/eval_models/VC09/requirements.txt",
+      "artifact": "corpus/repos/Vchitect__Evaluation-Agent/eval_agent/eval_models/VC09/requirements.txt",
+      "sha256": "0f9bf95c1bb8c292b697fb809acab0dc8d2f303ac985520ec1ae7fe308fb90da",
+      "kind": "upstream_fixture"
+    },
+    {
+      "source": "corpus/repos/Vchitect__Evaluation-Agent/eval_agent/eval_models/show1/requirements.txt",
+      "artifact": "corpus/repos/Vchitect__Evaluation-Agent/eval_agent/eval_models/show1/requirements.txt",
+      "sha256": "4eec3f1d978865bacbf86656af8f4641395218ad376e91542c7c7950e8678c12",
+      "kind": "upstream_fixture"
+    },
+    {
+      "source": "corpus/repos/denizsafak__abogen/pyproject.toml",
+      "artifact": "corpus/repos/denizsafak__abogen/pyproject.toml",
+      "sha256": "3595e8762a35be8598ca2a29b0ba596673ea874e3170df845d018eb7d325500f",
+      "kind": "upstream_fixture"
+    },
+    {
+      "source": "corpus/repos/fishaudio__fish-speech/docs/zh/install.md",
+      "artifact": "corpus/repos/fishaudio__fish-speech/docs/zh/install.md",
+      "sha256": "6ba5e24439d13c62ebc2e37e79c989320e680f6efa34ad8e1ad9254b3ec3c3d6",
+      "kind": "upstream_fixture"
+    },
+    {
+      "source": "corpus/repos/fishaudio__fish-speech/pyproject.toml",
+      "artifact": "corpus/repos/fishaudio__fish-speech/pyproject.toml",
+      "sha256": "745028b0e1d5b520c4188ca9d3ac30592f77d98298a17d88ce43751f9bee1365",
+      "kind": "upstream_fixture"
+    },
+    {
+      "source": "corpus/repos/guqiong96__Lvllm/.buildkite/scripts/check-ray-compatibility.sh",
+      "artifact": "corpus/repos/guqiong96__Lvllm/.buildkite/scripts/check-ray-compatibility.sh",
+      "sha256": "4123c670ea435f421e8d0550e8e77a147354322c4d17f8dedfc97697255836f4",
+      "kind": "upstream_fixture"
+    },
+    {
+      "source": "corpus/repos/mitkox__vllm-turboquant/.buildkite/scripts/check-ray-compatibility.sh",
+      "artifact": "corpus/repos/mitkox__vllm-turboquant/.buildkite/scripts/check-ray-compatibility.sh",
+      "sha256": "e8c5663d49d711fdcb3a84d8a50266f71308bd7960fea5f394c8c01495c1a642",
+      "kind": "upstream_fixture"
+    },
+    {
+      "source": "corpus/repos/styler00dollar__VSGAN-tensorrt-docker/Dockerfile",
+      "artifact": "corpus/repos/styler00dollar__VSGAN-tensorrt-docker/Dockerfile",
+      "sha256": "ed4f272e4e312f2f3d12046e394cb1c8e2b0c74f6dbd90ea53950392d8b6f90a",
+      "kind": "upstream_fixture"
+    },
+    {
+      "source": "corpus/repos/styler00dollar__VSGAN-tensorrt-docker/LICENSE.txt",
+      "artifact": "corpus/repos/styler00dollar__VSGAN-tensorrt-docker/LICENSE.txt",
+      "sha256": "4adfe2ac696f49e4930c4227843bcbfd45163052cf831b62ae23d96f0cbccde4",
+      "kind": "upstream_fixture_license"
+    },
+    {
+      "source": "drc/__init__.py",
+      "artifact": "drc/__init__.py",
+      "sha256": "a01fe38b5096bcaf899f0068b4f6ff2dc7b06d2044c85d5370dfa2dbe1d37751",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/__main__.py",
+      "artifact": "drc/__main__.py",
+      "sha256": "cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/artifact_identity.py",
+      "artifact": "drc/artifact_identity.py",
+      "sha256": "b158958fe0d326779b3d4d8adfa43c72867e0c6d41d6bf7a7e575ad6c6894f16",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/cli.py",
+      "artifact": "drc/cli.py",
+      "sha256": "4a5d963ceee4961348abef6a5400f8ad0383ec22688e0f5e6da18f61ec3037b6",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/contexts/__init__.py",
+      "artifact": "drc/contexts/__init__.py",
+      "sha256": "9ade88033c1ed3899f78967f55ec0d58139df4376f6290c50b814a8f44965eda",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/contracts.py",
+      "artifact": "drc/contracts.py",
+      "sha256": "5a3c567057ae681dee6fae420debb459dfc5a2994bb8da45e3279b54dbe51ed8",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/frontend/__init__.py",
+      "artifact": "drc/frontend/__init__.py",
+      "sha256": "0ec98d005212a7c8fb238b4232fc80be605243191490f340ed35d96766bc32ed",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/frontend/ci.py",
+      "artifact": "drc/frontend/ci.py",
+      "sha256": "ea9667ddf171813aa277231a481a16304d02a82f1508d63841f436a9c3c8e0e3",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/frontend/lockfile.py",
+      "artifact": "drc/frontend/lockfile.py",
+      "sha256": "cafd376c1595c1060ba4667ab6d238a1fa0b0d27bd8a54117fcede08aae2fe2b",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/frontend/pipconf.py",
+      "artifact": "drc/frontend/pipconf.py",
+      "sha256": "0342625d28eaac780f98eccdfaa9c03478881daedf43f75692ccdef126e88433",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/frontend/pyproject.py",
+      "artifact": "drc/frontend/pyproject.py",
+      "sha256": "e9b6d8da793d7ec87b887f338f164943a204133ed17e5dcdca4ce06f97ebc996",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/frontend/requirements.py",
+      "artifact": "drc/frontend/requirements.py",
+      "sha256": "86cae56715238bb30813455d13f077bc281fbb96c937f7114f6ed8f4809ea708",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/frontend/shell.py",
+      "artifact": "drc/frontend/shell.py",
+      "sha256": "22eacc627776f2cb880f2f5a13e3ed2d2dcb89e8bf29716154cc99cead706eef",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/intent/__init__.py",
+      "artifact": "drc/intent/__init__.py",
+      "sha256": "c786839ebdeaa0f1963fb7c4081542f3ccc22736e0a2ccdbd2fc802cbc59e614",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/intent/evidence_graph.py",
+      "artifact": "drc/intent/evidence_graph.py",
+      "sha256": "ce569e97c7f375b8f536a4a1c156fbbf86d450a70a30a85d88ba9d786c16b77a",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/intent/llm_miner.py",
+      "artifact": "drc/intent/llm_miner.py",
+      "sha256": "5c922a3a2ba6c56f4fdbf22bc741f8a01187d079a4af420af0325aa2de23f869",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/intent/structured_evidence.py",
+      "artifact": "drc/intent/structured_evidence.py",
+      "sha256": "9345b8dd7ac093123bbd50c88a6e73fca42ab3abfb4779e389254f71b61309cb",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/minimize/__init__.py",
+      "artifact": "drc/minimize/__init__.py",
+      "sha256": "cc33859a7ac471a786e02652bd7579127250111b790d21b448fabd2e25d2b3c3",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/model.py",
+      "artifact": "drc/model.py",
+      "sha256": "4a4dd03eb749c50f8a15c067020625c77e519dc9cfaedb052e4c0689187348eb",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/oracle/__init__.py",
+      "artifact": "drc/oracle/__init__.py",
+      "sha256": "80ace54fc9feb6e2554a57eea7a53ce38d98aca6abf12fba0ded370fb1aba709",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/pipeline.py",
+      "artifact": "drc/pipeline.py",
+      "sha256": "47d8fdbf0b4923c3240ef453bd28f0e3d074d6f7a5270ee503a3112ccbed8907",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/proxy.py",
+      "artifact": "drc/proxy.py",
+      "sha256": "7d7f1e3f1fc0ac76b88f4faf81751dbc15f7f2a3694d82051d54e4d379c9d3b6",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/report/__init__.py",
+      "artifact": "drc/report/__init__.py",
+      "sha256": "5d09a17844ab944728b0c9b4c82962757325ad484d49d34717f2a3c6a6379f2e",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/report/reliability.py",
+      "artifact": "drc/report/reliability.py",
+      "sha256": "513acb3fb9a53cae5fa58f923ee97b2f0d96c65a2c5adfe3c45ad41ee34d04b0",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/resolvers/__init__.py",
+      "artifact": "drc/resolvers/__init__.py",
+      "sha256": "a1ae6e8c2e7e93f519c1a798ccc9f6dc0d8c642a15dd322859295e52f190fe25",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/resolvers/lock_projection.py",
+      "artifact": "drc/resolvers/lock_projection.py",
+      "sha256": "9fa1f97ce84e4caaba552831c7f55783a9bc6e8df466f82fca992e8a973f47f9",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/stats.py",
+      "artifact": "drc/stats.py",
+      "sha256": "4d81f76f8824e6f541e2acfd4c706c46a4c1c1031fcad0b513c39bc11c7fa980",
+      "kind": "implementation"
+    },
+    {
+      "source": "drc/triage/__init__.py",
+      "artifact": "drc/triage/__init__.py",
+      "sha256": "9c688d2c80dadc9d9a222ec00743bb0f75d0b205bd7d5da149c40d12ce8284e7",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/audit_existing_results.py",
+      "artifact": "scripts/audit_existing_results.py",
+      "sha256": "c56794c85e0a2341bb1b3731903be55d19cb553851f964857a6d5ef8888f27f2",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/continue_published_staged_v2_1111.py",
+      "artifact": "scripts/continue_published_staged_v2_1111.py",
+      "sha256": "e6c55fece72bf6ad615ac94e7ca503ce0dd6838d1859d28f29ad804ca7962d21",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/make_issues.py",
+      "artifact": "scripts/make_issues.py",
+      "sha256": "549fe54c8fd0c13bcdaae8ea4bced8113fff89f60ab776a33e5ba887cea0db7e",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/make_issues_v2.py",
+      "artifact": "scripts/make_issues_v2.py",
+      "sha256": "78bfb6b842d198eb70319e8b552ef770c44fa5d47bb6ede59169ff52fbfc5112",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/real_source_switch_workflows_1111.py",
+      "artifact": "scripts/real_source_switch_workflows_1111.py",
+      "sha256": "e814ee738f484eaa4f8bd8e30e2bfae3216da4697be8ff66daab9ab1df058a72",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/recover_foundational_stateful_continuation_1111.py",
+      "artifact": "scripts/recover_foundational_stateful_continuation_1111.py",
+      "sha256": "3acb3924eb36842009a3b64f7cee418a62caf80fccbc252b9c38e061a6640aaf",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/recover_stateful_preparation_1111.py",
+      "artifact": "scripts/recover_stateful_preparation_1111.py",
+      "sha256": "a8e6c7021528e41a9829b51023cba5ed027597dbe90307b01bde83eaccb3c016",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/recover_stateful_relock_strategy_1111.py",
+      "artifact": "scripts/recover_stateful_relock_strategy_1111.py",
+      "sha256": "f511118635fe96d56459ff590e9b3df04b958de9d1c872ea9825b749bd8af673",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/recover_stateful_workflow_methods_1111.py",
+      "artifact": "scripts/recover_stateful_workflow_methods_1111.py",
+      "sha256": "9a038c65892f7f599fa9d9ef2895d928b63e7839c8efda6a3adae0f827a53617",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/recover_stateful_workflow_methods_with_readonly_1111.py",
+      "artifact": "scripts/recover_stateful_workflow_methods_with_readonly_1111.py",
+      "sha256": "69a2baf39459be301132a4b7b04413e39ed1d4738da8f6ef19ed5699c3f6308b",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/replay_ultralytics_extra_root_1111.py",
+      "artifact": "scripts/replay_ultralytics_extra_root_1111.py",
+      "sha256": "62ca90e8867f6311efe540f80b5061ead1a14161fb3faad0747a81d3033fb1c1",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/retriage.py",
+      "artifact": "scripts/retriage.py",
+      "sha256": "12b5dd5d0023a4d31da6df6a1380f2126914f0794de07431f5fbc547e90b112f",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/revalidate_audited_cases.py",
+      "artifact": "scripts/revalidate_audited_cases.py",
+      "sha256": "dca227c03b9644f2101e818f879c9cf40c816b7be82df4e6777c0e639e7715a6",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/review_akshare_readonly_root_1111.py",
+      "artifact": "scripts/review_akshare_readonly_root_1111.py",
+      "sha256": "483b9ed9ddec347b1fb98102a86be0639025b45b9859a9c3efbda11ec52ee7e8",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/review_completed_published_diffusers_readonly_1111.py",
+      "artifact": "scripts/review_completed_published_diffusers_readonly_1111.py",
+      "sha256": "f489a27bc4c75a35addff9ea6044c2d52fb774c88b81f9855c8bf590da46e19c",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/review_completed_published_readonly_1111.py",
+      "artifact": "scripts/review_completed_published_readonly_1111.py",
+      "sha256": "c478123012e770a3256fac1462d989ecad1ae8c87a847778145ac8eaad6cc5d7",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/review_completed_published_relock_readonly_1111.py",
+      "artifact": "scripts/review_completed_published_relock_readonly_1111.py",
+      "sha256": "8cb005eb1060572641171df9e8409508282584369a030ceb55eb73f8d270e7c5",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/review_published_stateful_target_locks_1111.py",
+      "artifact": "scripts/review_published_stateful_target_locks_1111.py",
+      "sha256": "d996fc69f12ccf9a9a24e03b02249627b4969dfe33344ab197b6b63e64ff59f5",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/review_recovery_1111.py",
+      "artifact": "scripts/review_recovery_1111.py",
+      "sha256": "125b6a42e79da1aea32d29c40ad4d37dbd23f26bc7888ce0cf93a094134db319",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/review_stateful_complete_stage_prefixes_v2_1111.py",
+      "artifact": "scripts/review_stateful_complete_stage_prefixes_v2_1111.py",
+      "sha256": "d083e599883d3a6864f71eaad11c3ac28db9467d306c5f8a9357057fd2142f22",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/review_stateful_workflows_1111.py",
+      "artifact": "scripts/review_stateful_workflows_1111.py",
+      "sha256": "7f0d122d2018118e436bb23d54ee689b697e373b38b0025cd4c03b7c4e50ddea",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/review_torch_source_root_1111.py",
+      "artifact": "scripts/review_torch_source_root_1111.py",
+      "sha256": "5091eec39c7541b5b39ff619da9348c74eca9576ebb1dad72476c7066615953c",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/review_vllm_source_sequence_root_1111.py",
+      "artifact": "scripts/review_vllm_source_sequence_root_1111.py",
+      "sha256": "abd743dec1aff1502411d6f5da4dc0d2f776aeb1cecfbe9cf5394ae6d32bf04c",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/run_expanded_validation.py",
+      "artifact": "scripts/run_expanded_validation.py",
+      "sha256": "c988f4303154185908a424316aa712d6c704de415cae9d2279e580cd9eb62a6a",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/select_stateful_workflows_v2_20261111.py",
+      "artifact": "scripts/select_stateful_workflows_v2_20261111.py",
+      "sha256": "e8ebde3d7f636aceb4d423d51c3a60db94bea89aeb5209c131267b2c0cc34d4d",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/stateful_fast_file_audit_1111.py",
+      "artifact": "scripts/stateful_fast_file_audit_1111.py",
+      "sha256": "b688b8eea4f80ccc5ac4fa18447fcbde097f585a422cb175e473083bb9ff910e",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/stateful_real_workflows_1111.py",
+      "artifact": "scripts/stateful_real_workflows_1111.py",
+      "sha256": "adac69aa7d91832a8e11add933c20f859e98502da2397ec7dc78767cae0e943e",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/summarize_foundational_stateful_1111.py",
+      "artifact": "scripts/summarize_foundational_stateful_1111.py",
+      "sha256": "629b5f211b4804803eed13514b074ea9f1e5a7b54a4bff8921e0d6f09046066d",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/summarize_published_stateful_1111.py",
+      "artifact": "scripts/summarize_published_stateful_1111.py",
+      "sha256": "6b830f5fee3ed94ff6f795c8331ffc9c3135b7637d734a2168da66b59634360b",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/torch_source_transition_control_1111.py",
+      "artifact": "scripts/torch_source_transition_control_1111.py",
+      "sha256": "51a94040573a7aac4437d42b863ee4b2402a96b27860f3851f5c8d137911e2e2",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/validate_foundational_installs_1111.py",
+      "artifact": "scripts/validate_foundational_installs_1111.py",
+      "sha256": "0afc01d88be42238b2eadd047c95bdbc7910fa040039e0752c18b2f3f4a016bd",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/validate_stateful_fast_file_audit_1111.py",
+      "artifact": "scripts/validate_stateful_fast_file_audit_1111.py",
+      "sha256": "bfe0e115c14c3b1bfd0e99e3b2076f7987d01e80a17c9cfd100b924578fe741d",
+      "kind": "implementation"
+    },
+    {
+      "source": "scripts/vllm_source_transport_continuation_1111.py",
+      "artifact": "scripts/vllm_source_transport_continuation_1111.py",
+      "sha256": "94d8f38ce79e6867a291f20d8d512595c0168a1e425337dbd81e8c155ec4fc33",
+      "kind": "implementation"
+    },
+    {
+      "source": "tests/test_artifact_identity.py",
+      "artifact": "tests/test_artifact_identity.py",
+      "sha256": "d0ac1a922177c61265718a0cc97a264128863beadfdb0fa1ef41f991d81c7908",
+      "kind": "implementation"
+    },
+    {
+      "source": "tests/test_audited_context_regressions.py",
+      "artifact": "tests/test_audited_context_regressions.py",
+      "sha256": "ee5b318cf1afd4b695edac841840ad637bf6c20b4d3834476fe0c7eb66cb52aa",
+      "kind": "implementation"
+    },
+    {
+      "source": "tests/test_audited_revalidation.py",
+      "artifact": "tests/test_audited_revalidation.py",
+      "sha256": "4a7c5735278bd93dcc970eee04deea255060d6999877f0387d97ab6c2e3898e5",
+      "kind": "implementation"
+    },
+    {
+      "source": "tests/test_context_reliability.py",
+      "artifact": "tests/test_context_reliability.py",
+      "sha256": "e8cc436aee79286dcb0c24aae9d5a09e8ca4bd0d5e866d38c0b31a8377dd41c6",
+      "kind": "implementation"
+    },
+    {
+      "source": "tests/test_contracts.py",
+      "artifact": "tests/test_contracts.py",
+      "sha256": "ccd744bca4e24541963b4910032be2dd05f9552217b459633ddfbafc7c665e93",
+      "kind": "implementation"
+    },
+    {
+      "source": "tests/test_install_command_regressions.py",
+      "artifact": "tests/test_install_command_regressions.py",
+      "sha256": "c96bcfcd8e556a3660cedfc33689530ff3585919d40a9c17318a602608a9c5b6",
+      "kind": "implementation"
+    },
+    {
+      "source": "tests/test_lock_projection_regressions.py",
+      "artifact": "tests/test_lock_projection_regressions.py",
+      "sha256": "38955a5a205a7a7b886f97e4bba61fe4f53f0120f61a967a8d08996012d8eff8",
+      "kind": "implementation"
+    },
+    {
+      "source": "tests/test_pipeline_reliability.py",
+      "artifact": "tests/test_pipeline_reliability.py",
+      "sha256": "c66da439b8fb93172e48640aeba8a5acce599afdcc5744e0da773ba537b45760",
+      "kind": "implementation"
+    },
+    {
+      "source": "tests/test_report_reliability.py",
+      "artifact": "tests/test_report_reliability.py",
+      "sha256": "2c97a6c728d4ca3f2a2d77dcbf938db33ed3874dd13c525013e1f2e0bd4099a7",
+      "kind": "implementation"
+    },
+    {
+      "source": "tests/test_resolver_reliability.py",
+      "artifact": "tests/test_resolver_reliability.py",
+      "sha256": "21ce35ccbcd13a659e5fa663097f04a480759a98b478a1e44e5cbb8c5a5c04b6",
+      "kind": "implementation"
+    },
+    {
+      "source": "tests/test_round04_residuals.py",
+      "artifact": "tests/test_round04_residuals.py",
+      "sha256": "ce2e7599cf31fcea2cdbd68c8fe5846c9073c6d987e6b984d2d2dce9c9f90d18",
+      "kind": "implementation"
+    },
+    {
+      "source": "work/stateful-workflows-20261111/review/admit_ultralytics_extra_actual.py",
+      "artifact": "work/stateful-workflows-20261111/review/admit_ultralytics_extra_actual.py",
+      "sha256": "12d427daab39bc5ef56507be5ed3782ef18fa3f9ab313e577b2a3a8bb4f4cda8",
+      "kind": "implementation"
+    },
+    {
+      "source": "work/stateful-workflows-20261111/review/review_saved_partial_stages.py",
+      "artifact": "work/stateful-workflows-20261111/review/review_saved_partial_stages.py",
+      "sha256": "f644cbb5b88fbd6bf2e9e24139b354928428b1fbce12eee2b766bf2c5d1851c7",
+      "kind": "implementation"
+    },
+    {
+      "source": "work/stateful-workflows-20261111/review/ultralytics_extra_actual.py",
+      "artifact": "work/stateful-workflows-20261111/review/ultralytics_extra_actual.py",
+      "sha256": "5f314a5b4f9c9c6890399cda1eef06b903b71b0d153217ffe7748e105f10619c",
+      "kind": "implementation"
+    }
+  ]
+}
