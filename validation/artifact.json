@@ -1,11 +1,12 @@
 {
   "schema": "public-artifact-validation-v1",
-  "checked_at_utc": "2026-11-13T05:19:16.856812+00:00",
+  "checked_at_utc": "2026-11-13T05:31:38.801297+00:00",
   "status": "passed",
   "unit_tests": {
-    "count": 192,
+    "count": 197,
     "passed": true,
-    "skipped": 0
+    "skipped": 0,
+    "log": "validation/unittest.log"
   },
   "m1_replay": {
     "passed": 19,
@@ -30,5 +31,6 @@
   "limits": [
     "The full M2 installation and main cohort were not rerun for this repository update.",
     "Link availability and response sizes do not replace full archive SHA-256 checks; downloads are verified by the supplied downloader."
-  ]
+  ],
+  "packaging_input_validation": "validation/packaging-inputs.json"
 }

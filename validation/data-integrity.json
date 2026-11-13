@@ -2,7 +2,7 @@
   "status": "passed",
   "archive_members_verified": 36003,
   "plain_original_records_verified": 73,
-  "repository_plain_files_scanned": 209,
+  "repository_plain_files_scanned": 224,
   "hash_failures": [],
   "credential_pattern_matches": [],
   "excluded_material_present": false

@@ -4,8 +4,8 @@ __pycache__/
 .venv/
 .venv-m2/
 venv/
-runs/
-downloads/
+/runs/
+/downloads/
 *.extracting
 .env
 .env.*

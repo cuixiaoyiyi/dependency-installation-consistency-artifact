@@ -1,0 +1,14 @@
+{
+  "schema": "packaging-input-validation-v1",
+  "status": "passed",
+  "checked_at_utc": "2026-11-13T05:31:38.801297+00:00",
+  "unit_tests": 197,
+  "test_failures": 0,
+  "test_errors": 0,
+  "test_skips": 0,
+  "fixture_files": 29,
+  "implementation_source_files": 87,
+  "packaging_regression_tests": 5,
+  "log": "validation/unittest.log",
+  "change": "All indexed regression inputs, including nested runs directories, are included in the file manifest. Verification now requires both input indexes to agree with the manifest and actual files."
+}

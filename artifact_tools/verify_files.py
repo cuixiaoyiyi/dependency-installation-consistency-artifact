@@ -7,11 +7,34 @@ def sha(stream):
     h=hashlib.sha256()
     for chunk in iter(lambda:stream.read(1024*1024),b''):h.update(chunk)
     return h.hexdigest()
+def verify_required_files(root,manifest):
+    """Check indexed implementation and test inputs against the published file list."""
+    root=Path(root); listed={entry['path']:entry for entry in manifest['files']}; failures=[]
+    for index_path in ('data/regression-inputs.json','data/implementation-sources.json'):
+        path=root/index_path
+        if not path.is_file():
+            failures.append({'path':index_path,'error':'required input index missing'});continue
+        index=json.loads(path.read_text(encoding='utf-8'))
+        rows=index['files'] if isinstance(index,dict) else index
+        for row in rows:
+            relative=row['artifact']; entry=listed.get(relative)
+            if entry is None:
+                failures.append({'path':relative,'index':index_path,'error':'required indexed file absent from manifest'})
+            elif entry['sha256']!=row['sha256']:
+                failures.append({'path':relative,'index':index_path,'error':'indexed hash differs from manifest'})
+            target=root/relative
+            if not target.is_file():
+                failures.append({'path':relative,'index':index_path,'error':'required indexed file missing'});continue
+            with target.open('rb') as source: actual=sha(source)
+            if actual!=row['sha256']:
+                failures.append({'path':relative,'index':index_path,'error':'required indexed file hash mismatch'})
+    return failures
+
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--quick',action='store_true');args=p.parse_args()
     with (ROOT/'manifest.json').open('rb') as f: manifest_sha=sha(f)
     if manifest_sha!=(ROOT/'manifest.sha256').read_text(encoding='ascii').split()[0]:raise ValueError('Manifest hash mismatch')
-    manifest=json.loads((ROOT/'manifest.json').read_text(encoding='utf-8'));failures=[]
+    manifest=json.loads((ROOT/'manifest.json').read_text(encoding='utf-8'));failures=verify_required_files(ROOT,manifest)
     for entry in manifest['files']:
         path=ROOT/entry['path']
         if not path.is_file():failures.append({'path':entry['path'],'error':'missing'});continue

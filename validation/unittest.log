@@ -33,6 +33,11 @@ test_python_constraint_difference_has_a_version_witness (test_artifact_identity.
 test_redundant_python_constraint_is_unknown_rather_than_false_violation (test_artifact_identity.LocalWheelIdentityTests.test_redundant_python_constraint_is_unknown_rather_than_false_violation) ... ok
 test_valid_identity_and_metadata_certificate_is_json_serializable (test_artifact_identity.LocalWheelIdentityTests.test_valid_identity_and_metadata_certificate_is_json_serializable) ... ok
 test_wrong_expected_digest_is_an_input_violation (test_artifact_identity.LocalWheelIdentityTests.test_wrong_expected_digest_is_an_input_violation) ... ok
+test_changed_file_bytes_fail_against_required_input_hash (test_artifact_packaging.RequiredFilePackagingTests.test_changed_file_bytes_fail_against_required_input_hash) ... ok
+test_complete_manifest_and_matching_required_files_pass (test_artifact_packaging.RequiredFilePackagingTests.test_complete_manifest_and_matching_required_files_pass) ... ok
+test_local_file_does_not_hide_missing_manifest_entry_for_either_index (test_artifact_packaging.RequiredFilePackagingTests.test_local_file_does_not_hide_missing_manifest_entry_for_either_index) ... ok
+test_manifest_hash_must_match_required_input_index (test_artifact_packaging.RequiredFilePackagingTests.test_manifest_hash_must_match_required_input_index) ... ok
+test_missing_required_file_fails_even_when_manifest_lists_it (test_artifact_packaging.RequiredFilePackagingTests.test_missing_required_file_fails_even_when_manifest_lists_it) ... ok
 test_incomplete_source_witness_is_rejected (test_artifact_results.SavedResultTests.test_incomplete_source_witness_is_rejected) ... ok
 test_input_alias_is_checked_without_original_issue_directory (test_artifact_results.SavedResultTests.test_input_alias_is_checked_without_original_issue_directory) ... ok
 test_missing_experimental_reference_is_not_silently_omitted (test_artifact_results.SavedResultTests.test_missing_experimental_reference_is_not_silently_omitted) ... ok
@@ -193,6 +198,6 @@ test_sdist_only_lock_retains_its_hash (test_round04_residuals.PylockArchiveHashT
 test_valid_sdist_in_mixed_enforced_lock_is_not_a_hash_violation (test_round04_residuals.PylockArchiveHashTests.test_valid_sdist_in_mixed_enforced_lock_is_not_a_hash_violation) ... ok
 
 ----------------------------------------------------------------------
-Ran 192 tests in 8.274s
+Ran 197 tests in 8.823s
 
 OK

@@ -8,8 +8,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 247,
-      "sha256": "afc487137e68d29cccd23a750d91380b62a41485f2e3e1508e8152673f7b71a1"
+      "bytes": 249,
+      "sha256": "1295846ea4a0cff4606519297abed3d22f2c86c3a098f38d83cc2bfc9523e47b"
     },
     {
       "path": "artifact_tools/__init__.py",
@@ -53,8 +53,8 @@
     },
     {
       "path": "artifact_tools/verify_files.py",
-      "bytes": 2453,
-      "sha256": "d5682e4bbfd890a24efaa20879b792baeb35991a9288f9edc6fed2c05e36f45f"
+      "bytes": 3918,
+      "sha256": "df66555125a39a599e0caf92b8a177c935fc63b8165c5f11d1604eade7cc6828"
     },
     {
       "path": "corpus/repos/denizsafak__abogen/pyproject.toml",
@@ -507,6 +507,76 @@
       "sha256": "0c71bfe280ef13a9cc0e19bb34b8fa03dfa4b2d281a3afe2c79d8472dac8fb02"
     },
     {
+      "path": "results/projects/AOT-Technologies__forms-flow-ai/runs/reqfile-forms-flow-api-requirements-txt_pip_declared_42cdf5/pip-report.json",
+      "bytes": 640563,
+      "sha256": "5e3b191d41ee095a10bddc98a469e637055290a0e4cf1c1db5b7ac57c0cd3b4f"
+    },
+    {
+      "path": "results/projects/AOT-Technologies__forms-flow-ai/runs/reqfile-forms-flow-api-utils-requirements-txt_uv_declared_d86adf/uv.lock",
+      "bytes": 76342,
+      "sha256": "f6eec30fa2c914d31592b6de2a009089717220f388b57b8c080e7394f0db8994"
+    },
+    {
+      "path": "results/projects/lee101__stock-prediction/runs/ip--github-workflows-ci-fast-yml-fast-unit-tests-3-2_pip_dec_494a7c/pip-report.json",
+      "bytes": 71535,
+      "sha256": "7d3eba32b5826eb87b72a695a94350af72c92c2d7026651db1b53621d5d762b4"
+    },
+    {
+      "path": "results/projects/lee101__stock-prediction/runs/ip--github-workflows-ci-fast-yml-fast-unit-tests-3-2_uv_decl_c9d77f/uv.lock",
+      "bytes": 7656,
+      "sha256": "b79009b055ad0a3c561755ef6ac5c5a09270969f01383c505f4f8d02c504789e"
+    },
+    {
+      "path": "results/projects/NVIDIA-AI-Blueprints__cuFOLIO/runs/declared-runtime_pip_declared_50b431/pip-report.json",
+      "bytes": 865031,
+      "sha256": "a1c8e7895915e043db5a3cdd09ada424865dc6568bae0e54a60acba87fc66a43"
+    },
+    {
+      "path": "results/projects/NVIDIA-AI-Blueprints__cuFOLIO/runs/ip-ci-utils-run-notebooks-sh-2_uv_declared_797c92/uv.lock",
+      "bytes": 27670,
+      "sha256": "587db5cce7ab76ff604aa1140be975d38222a157a0357e01ffc8e561004503c3"
+    },
+    {
+      "path": "results/projects/NVlabs__RoboLab/runs/declared-runtime_pip_declared_50b431/pip-report.json",
+      "bytes": 1091642,
+      "sha256": "16435efad4dd13254d4e2ab438df349049c9c73d152457b62ae5bb9871a348d5"
+    },
+    {
+      "path": "results/projects/NVlabs__RoboLab/runs/declared-runtime_uv_declared_13017a/uv.lock",
+      "bytes": 68517,
+      "sha256": "71d443148b74d5990438afdedeed28dcbfd57f43e5147069b5c52d6077d595cf"
+    },
+    {
+      "path": "results/projects/NX-AI__tirex/runs/declared-runtime_pip_declared_50b431/pip-report.json",
+      "bytes": 470896,
+      "sha256": "217f69dbf29c29eb8195ad3958d66b9945b2fc12157fc698cc7a8384eff39948"
+    },
+    {
+      "path": "results/projects/NX-AI__tirex/runs/reqfile-inference-requirements-txt_uv_declared_40bb72/uv.lock",
+      "bytes": 111598,
+      "sha256": "e57bd2e1b26d34266348a1c393183df74948b74f8ed7eade6f8ac1b777f807ba"
+    },
+    {
+      "path": "results/projects/rllm-team__rllm/runs/reqfile-docs-requirements-txt_pip_declared_ed933d/pip-report.json",
+      "bytes": 1644316,
+      "sha256": "26458e4538d39820d19fc732832e8f3e079812c502b77b75aff23f3bc1141a35"
+    },
+    {
+      "path": "results/projects/rllm-team__rllm/runs/reqfile-docs-requirements-txt_uv_declared_d2c703/uv.lock",
+      "bytes": 129897,
+      "sha256": "ea25ce1b37d3d5842a6a6f468c72eb58e44f02a6244a6234fd8c09f52bf0c76b"
+    },
+    {
+      "path": "results/projects/wandahangFY__YOLOv11-RGBT/runs/declared-runtime_pip_declared_50b431/pip-report.json",
+      "bytes": 840374,
+      "sha256": "674e3da0eb0ab435b5ec8e620d8ff14e4360e1182e8086a05eb0e0264aa78137"
+    },
+    {
+      "path": "results/projects/wandahangFY__YOLOv11-RGBT/runs/ip--github-workflows-ci-yml-Benchmarks-3-1_uv_ip-github-work_4fd09c/uv.lock",
+      "bytes": 3282,
+      "sha256": "54d626fb96896459d11119415af609edbe3ab7bc3d0e5fa9498c80d4cb15c4ac"
+    },
+    {
       "path": "scripts/audit_existing_results.py",
       "bytes": 9932,
       "sha256": "c56794c85e0a2341bb1b3731903be55d19cb553851f964857a6d5ef8888f27f2"
@@ -682,6 +752,11 @@
       "sha256": "d0ac1a922177c61265718a0cc97a264128863beadfdb0fa1ef41f991d81c7908"
     },
     {
+      "path": "tests/test_artifact_packaging.py",
+      "bytes": 2905,
+      "sha256": "1284111d2e9344796c2c1fe7c2e2a14d5c9c4bba4b0b0b971fbf47a6890a849c"
+    },
+    {
       "path": "tests/test_artifact_results.py",
       "bytes": 3099,
       "sha256": "fdcc9acadafb81f7a9b38717c63165dc2f7e3a0b6e06222a132d582da3916861"
@@ -738,13 +813,13 @@
     },
     {
       "path": "validation/artifact.json",
-      "bytes": 932,
-      "sha256": "e2550cd25c416904caf6de6e66c92f5b7f1cd5dfdf7a75b42fd13aba3e948f26"
+      "bytes": 1040,
+      "sha256": "6c7c4d03a9cc2d26941a0e2091dcd301cc96b7c2e8da185442247353d24dea46"
     },
     {
       "path": "validation/data-integrity.json",
       "bytes": 250,
-      "sha256": "6daf11ec8158b7a794c98c58cd9714b960eb4849a7db6270a8681ae491a22810"
+      "sha256": "411f57b22d4203f4538704c9281eb1aea7bde441bd504264759e0e68de9ffa6f"
     },
     {
       "path": "validation/download-link-check.json",
@@ -837,6 +912,11 @@
       "sha256": "a818fb9c737b68643250e71a91736da811c2c6b2bcc9619044d505b7b5891764"
     },
     {
+      "path": "validation/packaging-inputs.json",
+      "bytes": 559,
+      "sha256": "5fee29f84808a28321787b586d526bb6b0c7a0154a3e61dc46a0af9c21961a2a"
+    },
+    {
       "path": "validation/reader-environment.json",
       "bytes": 3718,
       "sha256": "246c48e369e32bba886051f09bdc868bdc64de27cb58286f940ce8d5000f5986"
@@ -893,8 +973,8 @@
     },
     {
       "path": "validation/unittest.log",
-      "bytes": 32926,
-      "sha256": "a253f0b6c27b4cb2212ef4a24898db5300eca2614322cd64a36022c9bede7ad0"
+      "bytes": 33816,
+      "sha256": "affab86884b003b2f8458ea2c3af8f8da8588c8865c4e6b79149883ef1c578cc"
     },
     {
       "path": "work/expanded-validation-20261111/install-review/uv-closure-review.json",
@@ -1102,6 +1182,6 @@
       "sha256": "483addcde1cf21ba62e974da68457d6a1fbf0d3221008d56a0f1f144943d5aeb"
     }
   ],
-  "file_count": 220,
-  "bytes": 247438980
+  "file_count": 236,
+  "bytes": 253494228
 }
